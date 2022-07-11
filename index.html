@@ -10,20 +10,30 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="menu">
-            <div class="logo">
-                <img src="logo.png" alt="Logo ElHurtPlus">
+    <div class="full-page">
+        <div class="main">
+            <div class="menu">
+                <div class="upper-menu">
+                    <div class="logo">
+                        <img src="logo.png" alt="Logo ElHurtPlus">
+                    </div>
+                    <div class="three-information">
+                        <div class="upper-headers">
+                            <img src="icon_03.svg" alt="Pionek - Kontakt" />
+                            KONTAKT
+                        </div>
+                        <div class="upper-headers">
+                            <img src="icon_02.svg" alt="Gwiazda - Ulubione" />
+                            ULUBIONE
+                        </div>
+                        <div class="upper-headers">
+                            <img src="icon_01.svg" alt="Telefon - Moje Konto" />
+                            MOJE KONTO
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="headers"><img src="icon_03.svg" alt="Pionek - Kontakt" width="18"
-                    height="18" />&nbsp;&nbsp;&nbsp;&nbsp;MOJE
-                KONTO </div>
-            <div class="headers"><img src="icon_02.svg" alt="Gwiazda - Ulubione" width="18"
-                    height="18" />&nbsp;&nbsp;&nbsp;&nbsp;ULUBIONE</div>
-            <div class="headers"><img src="icon_01.svg" alt="Telefon - Moje Konto" width="18"
-                    height="18" />&nbsp;&nbsp;&nbsp;&nbsp;KONTAKT</div>
         </div>
-
         <div class="header">
             <div class="headers">ŹRÓDŁA ŚWIATŁA</div>
             <div class="headers">OŚWIETLENIE WEWNĘTRZNE</div>
@@ -38,15 +48,15 @@
                 <img src="MaskGroup40.png" alt="Informacje o Sedna" />
 
                 <div class="text-main-image">
-                    <b>POZNAJ SEDNA</b><br />
+                    <h4>POZNAJ SEDNA</h4>
                     <h3>Schneider Electric</h3>
                     <br />
-                    <p style="font-size: 20px; text-align: left;"> Sedna to osprzęt
+                    <p> Sedna to osprzęt
                         elektroinstalacyjny <br />o wyrazistym kształce oraz <br />unikalnej formie.</p> <br />
                     <button class="button button1">ZOBACZ WIĘCEJ</button>
                 </div>
-                <div class="right-arrow"><img src="Icon-Arrow-Right.png" alt="Prawa strzałka"/></div>
-                <div class="left-arrow"><img src="Icon-Arrow-Left.png" alt="Lewa strzałka"/></div>
+                <div class="right-arrow"><img src="Icon-Arrow-Right.png" alt="Prawa strzałka" /></div>
+                <div class="left-arrow"><img src="Icon-Arrow-Left.png" alt="Lewa strzałka" /></div>
             </div>
         </div>
 
@@ -55,8 +65,7 @@
                 <img src="Image203.png" alt="Pomoc eksperta">
                 <div class="text-on-sub-image">
                     <b>Pomoc eksperta</b><br />
-                    Doradzamy
-                    <br />
+                    <p>Doradzamy</p>
                     <button class="button button2">ZOBACZ WIĘCEJ</button>
                 </div>
             </div>
@@ -65,8 +74,7 @@
                 <img src="img_03.jpg" alt="Szukaj wygodnie">
                 <div class="text-on-sub-image">
                     <b>Szukaj wygodnie</b><br />
-                    Elhurt Plus
-                    <br />
+                    <p>Elhurt Plus</p>
                     <button class="button button2">ZOBACZ WIĘCEJ</button>
                 </div>
             </div>
@@ -75,8 +83,7 @@
                 <img src="img_05.jpg" alt="Seria Unica">
                 <div class="text-on-sub-image">
                     <b>Seria Unica</b><br />
-                    Wyjątkowy wzór
-                    <br />
+                    <p>Wyjątkowy wzór</p>
                     <button class="button button2">ZOBACZ WIĘCEJ</button>
                 </div>
             </div>
@@ -87,9 +94,11 @@
 
         <div class="choice-products">
             <div class="lights-row">
-                <div class="lights">
+                <div class="left-arrow-lights"><img src="Path30.png" alt="Lewa strzałka na żarówce"></div>
+                <div class="right-arrow-lights"><img src="prawa-strzalka.png" alt="Prawa strzałka na żarówce"></div>
+                <div class="light">
                     <img src="img_06.jpg" alt="Żarówka">
-                    <div class="text-on-lights">
+                    <div class="text-under-lights">
                         <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                         <p>Kod produktu: CW1.01/11</p>
                         <br />
@@ -97,23 +106,18 @@
                         <br />
                         <b>442,85 zł</b>
                     </div>
-                    <div class="left-arrow-lights"><img src="Path30.png" alt="Lewa strzałka na żarówce"></div>
-                </div>
-                <div class="lights">
-                    <img src="img_06.jpg" alt="Żarówka">
-                    <div class="text-on-lights">
-                        <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
-                        <br />
-                        <p>Kod produktu: CW1.01/11</p>
-                        <br />
-                        <s>656,65 zł</s>
-                        <br />
-                        <b>442,85 zł</b>
+                    <div class="tile-product">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input type="text" value="1" disabled />
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="shoppingcart"><img src="icon_06.svg" alt="Koszyk" /></div>
                     </div>
                 </div>
-                <div class="lights">
+                <div class="light">
                     <img src="img_06.jpg" alt="Żarówka">
-                    <div class="text-on-lights">
+                    <div class="text-under-lights">
                         <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                         <br />
                         <p>Kod produktu: CW1.01/11</p>
@@ -121,11 +125,19 @@
                         <s>656,65 zł</s>
                         <br />
                         <b>442,85 zł</b>
+                    </div>
+                    <div class="tile-product">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input type="text" value="1" disabled />
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="shoppingcart"><img src="icon_06.svg" alt="Koszyk" /></div>
                     </div>
                 </div>
-                <div class="lights">
+                <div class="light">
                     <img src="img_06.jpg" alt="Żarówka">
-                    <div class="text-on-lights">
+                    <div class="text-under-lights">
                         <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                         <br />
                         <p>Kod produktu: CW1.01/11</p>
@@ -133,11 +145,19 @@
                         <s>656,65 zł</s>
                         <br />
                         <b>442,85 zł</b>
+                    </div>
+                    <div class="tile-product">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input type="text" value="1" disabled />
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="shoppingcart"><img src="icon_06.svg" alt="Koszyk" /></div>
                     </div>
                 </div>
-                <div class="lights">
+                <div class="light">
                     <img src="img_06.jpg" alt="Żarówka">
-                    <div class="text-on-lights">
+                    <div class="text-under-lights">
                         <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                         <br />
                         <p>Kod produktu: CW1.01/11</p>
@@ -146,25 +166,54 @@
                         <br />
                         <b>442,85 zł</b>
                     </div>
-                    <div class="right-arrow-lights"><img src="prawa-strzalka.png" alt="Prawa strzałka na żarówce"></div>
+                    <div class="tile-product">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input type="text" value="1" disabled />
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="shoppingcart"><img src="icon_06.svg" alt="Koszyk" /></div>
+                    </div>
+                </div>
+                <div class="light">
+                    <img src="img_06.jpg" alt="Żarówka">
+                    <div class="text-under-lights">
+                        <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                        <br />
+                        <p>Kod produktu: CW1.01/11</p>
+                        <br />
+                        <s>656,65 zł</s>
+                        <br />
+                        <b>442,85 zł</b>
+                    </div>
+                    <div class="tile-product">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input type="text" value="1" disabled />
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="shoppingcart"><img src="icon_06.svg" alt="Koszyk" /></div>
+                    </div>
                 </div>
             </div>
+            <div class="only-button">
+                <button class="button button3">ZOBACZ WSZYSTKIE INSPIRACJE</button>
+            </div>
         </div>
-        <div class="only-button">
-            <button class="button button3">ZOBACZ WSZYSTKIE INSPIRACJE</button>
-        </div>
-
         <div class="about-section">
             <img src="img_07.jpg" alt="Dlaczego my" />
-            
+
             <div class="content-area">
                 <h3>Sprawdź dlaczego my</h3>
 
-                <p>Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawowe produkty do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych.</p>
+                <p>Początki działalności to rok 2002r i otwarcie hurtowni elektrycznej, oferującej podstawowe
+                    produkty
+                    do instalacji elektrycznych jak i również materiały używane w przemyśle wydobywczym. Firma
+                    dostarczała produkty trudno dostępne do kopalń, zakładów przemysłowych.</p>
 
 
                 <div class="icons">
-                    
+
                     <div class="icon">
                         <img src="icon_07.png" alt="" />
                         <div class="icon-text">

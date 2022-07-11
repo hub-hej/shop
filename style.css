@@ -3,29 +3,47 @@
     font-weight: normal;
     src: url("fonts/Metropolis-Regular.otf") format("opentype");
 }
-
 @font-face {
     font-family: 'Metropolis-Bold';
     font-weight: bold;
     src: url("fonts/Metropolis-Bold.otf") format("opentype");
 }
-
 @font-face {
     font-family: 'Metropolis-Lights';
     src: url("fonts/Metropolis-Lights.otf") format("opentype");
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+.full-page{
+    border: 1px solid #E1E2E8;
+}
+span {
+    cursor: context-menu;
+}
+.number{
+    border: 1px solid #E1E2E8;
+}
+.minus, .plus{
+    background-color: #F8F8F8;
+    padding: 9px 5px 13px 5px;
+}
+input {
+    font-size: 14px;
+    width: 30px;
+    height: 40px;
+    background-color: #FFFFFF;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Metropolis';
+    border: none;
+}
 img {
     max-width: 100%;
     max-height: 100%;
 }
-
 html {
     width: 100%;
     height: 100%;
@@ -35,9 +53,8 @@ html {
     max-width: 100%;
     margin: auto;
     background-color: white;
-    border: 1px solid #E1E2E8;
+    border-bottom: 1px solid #E1E2E8;
 }
-
 .menu {
     text-align: center;
     font-size: 14px;
@@ -48,34 +65,37 @@ html {
     display: block;
     margin: 0;
 }
-
-.logo {
-    float: left;
+.upper-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
-
+.three-information{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Metropolis-Bold';
+}
 .header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    font-weight: bold;
-    height: 50px;
-    border-top: 1px solid #E1E2E8;
+    height: 100%;
+    font-family: 'Metropolis-Bold';
+    padding: 10px;
 }
-
 .headers {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     text-align: center;
-    float: right;
-    font-weight: bold;
-    padding-right: 75px;
-    margin: auto;
-    padding-top: 10px;
-    font-size: 14px;
 }
-
+.upper-headers {
+    float: right;
+}
+.upper-headers img 
+{
+    width: 18px;
+    height: 18px;
+}
 .container {
     background-color: #F2F3F4;
     width: 100%;
@@ -85,7 +105,6 @@ html {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 .main-image {
     max-width: 100%;
     width: 100%;
@@ -93,8 +112,8 @@ html {
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
+    cursor: pointer;
 }
-
 .main-image img{
     width:100%;
 }
@@ -111,16 +130,19 @@ html {
     margin: 0 auto;
     color: white;
 }
-
 .text-main-image p{
-    font-size: 30px; 
+    font-size: 20px; 
     font-family: 'Metropolis';
+    text-align: left;
 }
 .text-main-image b{
     font-family: 'Metropolis-Bold';
 }
 .text-main-image h3{
     font-family: 'Metropolis-Lights';
+}
+.text-main-image h4{
+    font-family: 'Metropolis-Bold';
 }
 .right-arrow {
     position: absolute;
@@ -131,7 +153,6 @@ html {
     width: 30px;
     height: 30px;
 }
-
 .left-arrow {
     position: absolute;
     top: 50%;
@@ -141,15 +162,12 @@ html {
     width: 30px;
     height: 30px;
 }
-
 .right-arrow img {
     padding: 10px;
 }
-
 .left-arrow img {
     padding: 10px;
 }
-
 .add-information {
     background-color: #F2F3F4;
     width: 100%;
@@ -162,44 +180,47 @@ html {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    font-size: 0;
 }
-
 .three-sub-images {
-    max-width: 100%;
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    /*padding-top: 10px;*/
-    padding-bottom: 10px;
     position: relative;
     overflow: hidden;
 }
 
 .three-sub-images img {
     transition: transform 0.3s ease;
-    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
-
 .three-sub-images:hover img {
     transform: scale(1.05);
+    width: 100%;
+    height: 100%;
 }
-
 .text-on-sub-image {
     position: absolute;
     top: 35%;
     left: 0;
     padding-left: 40px;
     transform: translateY(-20%);
-    font-size: 32px;
+    font-size: 33px;
     text-align: left;
-    font: normal normal bold 44px/200px;
     letter-spacing: 0px;
     opacity: 1;
     margin: 0 auto;
     color: white;
 }
-
+.text-on-sub-image h4
+{
+    font-weight: 800;
+    font-family: 'Metropolis-Bold';
+}
+.text-on-sub-image p 
+{
+    font-family: 'Metropolis-Lights';
+}
 .recommend-products{
     text-align: center;
     background-color: #F2F3F4;
@@ -207,7 +228,6 @@ html {
     opacity: 1;
     font-family: 'Metropolis-Bold';
 }
-
 .recommend-products::after {
     content: '';
     height: 3px;
@@ -217,7 +237,6 @@ html {
     margin: 0 auto;
     text-align: center;
 }
-
 .choice-products {
     background-color: #F2F3F4;
     width: 100%;
@@ -228,59 +247,59 @@ html {
     padding-right: 30px;
     border-top: 1px solid #E1E2E8;
 }
-
 .lights-row {
+    position: relative;
     background-color: #F2F3F4;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
-    display: block;
     display: flex;
     gap: 15px;
 }
-
-.lights {
+.light {
     margin: 0 auto;
-    padding-bottom: 200px;
+    padding-bottom: 70px;
     padding-top: 70px;
-    position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    float: left;
     max-width: 100%;
     height: 100%;
-    /*padding-top: 10px;*/
-    position: relative;
     width: 100%;
     text-align: center;
 }
-
-.lights img {
+.light img {
     max-width: 100%;
     height: auto;
 }
-
-.text-on-lights {
-    position: absolute;
-    top: 68%;
-    left: 39%;
-    transform: translateX(-32%);
+.text-under-lights {
     text-align: center;
-    font: normal normal bold 44px/200px;
-    letter-spacing: 0px;
-    opacity: 1;
     margin: 0 auto;
     color: black;
     font-size: 15px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    transform: translateY(50px);
 }
-.text-on-lights s{
+
+.tile-product {
+    opacity: 0;
+}
+
+.light:hover .tile-product {
+    opacity: 1;
+}
+
+.light:hover .text-under-lights {
+    transform: translateY(0);
+}
+
+.text-under-lights s{
     color: #A3A3A3;
     font-family: 'Metropolis';
 }
-
-.text-on-lights b{
+.text-under-lights b{
     font-family: 'Metropolis-Bold';
 }
-.text-on-lights p{
+.text-under-lights p{
     font-family: 'Metropolis';
 }
 .left-arrow-lights {
@@ -292,11 +311,9 @@ html {
     width: 30px;
     height: 30px;
 }
-
 .left-arrow-lights img {
     padding: 10px;
 }
-
 .right-arrow-lights {
     position: absolute;
     top: 50%;
@@ -306,11 +323,20 @@ html {
     width: 30px;
     height: 30px;
 }
-
 .right-arrow-lights img {
     padding: 10px;
 }
-
+.shoppingcart{
+    width: 40px; 
+    background-color: #9BCB3B;
+    padding: 7px;
+}
+.tile-product{
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+    gap: 10px;
+}
 .only-button {
     text-align: center;
     background-color: #F2F3F4;
@@ -324,11 +350,9 @@ html {
     color: white;
     width: 100%;
 }
-
 .footer-information h3 {
     border-bottom: 0.5px solid #E1E2E8;
 }
-
 .footer-information h3::after {
     content: '';
     height: 3px;
@@ -346,36 +370,30 @@ html {
     padding: 25px;
     font-family: 'Metropolis';
 }
-
 .footer-information li {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
 .primary ul {
     padding-top: 30px;
 }
-
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 25px;
     font-family: 'Metropolis';
+    border: 1px solid #E1E2E8;
 }
-
 .three-sub-images img {
     filter: brightness(0.7);
     width: 100%;
 }
-
-ul,
-ul li {
+ul, ul li {
     display: block;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .button {
     border: none;
     color: white;
@@ -387,44 +405,40 @@ ul li {
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Metropolis';
+    cursor: context-menu;
 }
-
 .button1 {
     background-color: #F74137;
+    cursor: pointer;
 }
-
 .button2 {
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-
 .button2:hover {
     background-color: #F74137;
     color: white;
+    border: 0;
+    transition-duration: 0.3s;
 }
-
 .button3 {
     background-color: #F74137;
 }
-
 .button4 {
     background-color: #F74137;
     margin-top: 40px; 
 }
-
 /* About us section */
 .about-section {
     position: relative;
     color: #fff;
 }
-
 .about-section > img {
     vertical-align: top;
     filter: brightness(0.5);
     width:100%;
 }
-
 .about-section .content-area {
     position: absolute;
     left: 0;
@@ -432,7 +446,6 @@ ul li {
     width: 100%;
     text-align: center;
 }
-
 .content-area p{
     font-family: 'Metropolis';
     font-size: 18px;
@@ -443,7 +456,6 @@ ul li {
     border-bottom: 1px solid #fff;
     font-family: 'Metropolis-Bold';
 }
-
 .about-section h3::after {
     content: '';
     width: 50px;
@@ -453,30 +465,25 @@ ul li {
     margin-right: auto;
     padding-top: 10px;
 }
-
 .about-section  p {
     max-width: 800px;
     margin: 30px auto;
-    font-size: 20px;
+    font-size: 18px;
 }
-
 .about-section .icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-
 .about-section .icon {
     border: 1px solid #fff;
     padding: 60px;
 }
-
 .about-section .icon img {
     width: 48px;
     height: 40px;
 }
-
 .about-section .icon-text {
     margin-top: 20px;
 }
