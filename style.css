@@ -86,7 +86,11 @@ html {
     background-color: white;
     height: 100%;
     font-family: 'Metropolis-Bold';
-    padding: 10px;
+    padding: 20px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
 }
 .headers {
     flex: 1 0 auto;
@@ -224,10 +228,14 @@ html {
     font-weight: 800;
     font-family: 'Metropolis-Bold';
 }
+.text-on-sub-image b{
+    font-size: 27px;
+    font-family: 'Metropolis-Bold';
+}
 .text-on-sub-image p 
 {
     font-family: 'Metropolis-Light';
-    font-size: 29px;
+    font-size: 28px;
 }
 .recommend-products{
     text-align: center;
@@ -355,6 +363,7 @@ html {
 }
 .footer-information h3 {
     border-bottom: 0.5px solid #E1E2E8;
+    font-family: 'Metropolis-Bold';
 }
 .footer-information h3::after {
     content: '';
@@ -371,12 +380,12 @@ html {
     gap: 20px;
     background: #393E40;
     padding: 25px;
-    font-family: 'Metropolis';
     grid-template-columns: repeat(4,minmax(0,1fr));
 }
 .footer-information li {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-family: 'Metropolis';
 }
 .primary ul {
     padding-top: 30px;
@@ -423,7 +432,7 @@ ul, ul li {
     background-color: #F74137;
     color: white;
     border: 0;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
 }
 .button3 {
     background-color: #F74137;
@@ -472,7 +481,7 @@ ul, ul li {
     padding-top: 10px;
 }
 .about-section  p {
-    max-width: 800px;
+    max-width: 900px;
     margin: 30px auto;
     font-size: 18px;
     font-family: 'Metropolis';
@@ -535,9 +544,12 @@ ul, ul li {
         padding-left: 50px;
         top: 55%
     }
-    .add-information .text-on-sub-image p, .text-on-sub-image b{
+    .add-information .text-on-sub-image p{
         font-size: 25px;
         padding-bottom: 15px;
+    }
+    .text-on-sub-image b{
+        font-size: 23px;
     }
 }
 @media screen and (max-width: 801px) {
