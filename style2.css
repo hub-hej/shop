@@ -47,12 +47,15 @@ html {
     justify-content: space-between;
     gap: 20px;
 }
+.logo img{
+    max-width: 100%;
+}
 .three-information{
     text-align: center;
     padding: 20px;
     font-family: 'Metropolis-Bold';
     display: flex;
-    gap: 50px;
+    gap: 35px;
     justify-content: space-between;
 }
 .header {
@@ -77,6 +80,47 @@ html {
 {
     width: 18px;
     height: 18px;
+}
+.cart-family{
+    display: flex;
+}
+.cart-brother{
+    position: relative;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #E1E2E8;
+    height:100%;
+}
+.cart img{
+    width: 45px;
+    height: 30px;
+    border-right: 1px solid #E1E2E8;
+}
+.text-on-cart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 9px;
+    display: block;
+}
+.text-cart{
+    padding: 12px;
+}
+.number-orders{
+    border: 1px solid #9BCB3B;
+    color: white;
+    background-color: #9BCB3B;
+    font-family: 'Metropolis';
+}
+.arrow-cart{
+    display: flex;
+    background-color: #9BCB3B;
+}
+.arrow-cart img{
+    padding: 15px;
 }
 .third-header{
     background-color: #F2F3F4;
