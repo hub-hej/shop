@@ -65,11 +65,12 @@ html {
     background-color: white;
     height: 100%;
     font-family: 'Metropolis-Bold';
-    padding: 20px;
+    padding: 10px;
 }
 .headers {
     flex: 1 0 auto;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
 }
 .upper-headers {
     display: flex;
@@ -130,10 +131,56 @@ html {
     display: flex;
     padding: 20px;
     gap: 40px;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 .header-information{
     text-align: center;
+}
+.main-page{
+    display: flex;
+}
+.main-content{
+    display: flex;
+    background-color: #F74137;
+    width: 80%;
+}
+.left-main-menu{
+    width: 20%;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.first-left-menu{
+    width: 100%;
+    border: 1px solid #E1E2E8;
+}
+.first-left-menu h3{
+    text-align: left;
+    font-family: 'Metropolis-Bold';
+    padding: 15px;
+    border-bottom: 2px solid #F74137;
+}
+.first-left-menu p{
+    font-family: 'Metropolis';
+    padding: 15px;
+}
+.text-menu{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E1E2E8;
+    align-items: center;
+    padding: 0 10px;
+}
+.filters{
+    width: 100%;
+    border: 1px solid #E1E2E8;
+    display: flex;
+    margin-top: 15px;
+}
+.filters h3{
+    text-align: left;
+    font-family: 'Metropolis-Bold';
+    padding: 15px;
 }
 .under-footer {
     display: grid;

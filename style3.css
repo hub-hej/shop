@@ -439,6 +439,9 @@ td{
     width: 100px;
     padding: 20px;
 }
+body{
+    overflow-anchor: none;
+}
 tbody tr:nth-child(even)
 {
   background: #F8F8F8;
@@ -869,6 +872,9 @@ p.title-paragraph{
     .add-information-light{
         flex-direction: column;
         border: none;
+    }
+    .three-information{
+        gap: 5px;
     }
 }
 @media screen and (max-width: 435px) {

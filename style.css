@@ -82,7 +82,7 @@ html {
     background-color: white;
     height: 100%;
     font-family: 'Metropolis-Bold';
-    padding: 20px;
+    padding: 10px;
 }
 .header a{
     text-decoration: none;
@@ -90,7 +90,8 @@ html {
 }
 .headers {
     flex: 1 0 auto;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
 }
 .upper-headers {
     display: flex;
@@ -611,14 +612,8 @@ ul, ul li {
     .content-area p{
         font-size: 15px;
     }
-    .upper-headers p{
-        display: none;
-    }
     .upper-menu{
         flex-direction: column;
-    }
-    .upper-headers img{
-        width: 100px;
     }
     .logo img{
         width: 250px;
@@ -626,9 +621,10 @@ ul, ul li {
     .three-information{
         gap: 10px;
     }
-    .header{
+    .header, .headers{
         flex-direction: column;
         gap: 10px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 600px) {
@@ -650,6 +646,10 @@ ul, ul li {
     }
     .three-information{
         gap: 5px;
+    }
+    .text-on-cart{
+        top: 0;
+        right: 30%;
     }
 }
 /* 
