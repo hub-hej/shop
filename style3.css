@@ -439,9 +439,6 @@ td{
     width: 100px;
     padding: 20px;
 }
-body{
-    overflow-anchor: none;
-}
 tbody tr:nth-child(even)
 {
   background: #F8F8F8;
