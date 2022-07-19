@@ -625,7 +625,8 @@ ul, ul li {
         width: 250px;
     }
     .three-information{
-        gap: 10px;
+        gap: 15px;
+        justify-content: space-around;
     }
     .header, .headers{
         flex-direction: column;

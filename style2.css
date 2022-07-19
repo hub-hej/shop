@@ -173,6 +173,7 @@ html {
     display: grid;
     grid-template-columns: repeat(6, minmax(0,1fr));
     gap: 10px;
+    font-family: 'Metropolis';
 }
 .light-text-image-menu{
     display: flex;
@@ -195,10 +196,10 @@ html {
     padding: 15px 35px;
 }
 .light-text-image-menu p{
-    padding: 15px 35px;
+    margin-left: 10px;
 }
 .light-text-image-menu-red p{
-    padding: 15px 35px;
+    margin-left: 10px;
 }
 .light-text-image-menu img{
     border-right: 1px solid #E1E2E8;
@@ -763,6 +764,7 @@ ul, ul li {
     .left-side{
         flex-direction: row;
         justify-content: center;
+        margin-top: 5px;
     }
     .right-side{
         justify-content: center;
@@ -810,7 +812,7 @@ ul, ul li {
     .lights-row{
         grid-template-columns: repeat(3,minmax(0,1fr));
     }
-    .option-producer, .producer h3{
+    .option-producer, .producer h3, .choose-colors h3, .producer p{
         overflow: hidden;
     }
 }
@@ -845,6 +847,9 @@ ul, ul li {
     .right-side{
         flex-direction: column;
     }
+    .left-main-menu{
+        overflow: hidden;
+    }
 }
 @media screen and (max-width: 800px){
     .light-left-menu{
@@ -876,10 +881,13 @@ ul, ul li {
     }
     .text-menu{
         flex-direction: column;
-        padding-bottom: 10px;
     }
     .upper-menu{
         flex-direction: column;
+    }
+    .three-information{
+        justify-content: space-around;
+        gap: 15px;
     }
     .header, .headers{
         flex-direction: column;
@@ -925,6 +933,23 @@ ul, ul li {
     .different-color{
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    .lights-row{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .text-main-image br{
+        display: none;
+    }
+    .pagination > .no-active {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .left-main-menu{
+        display: none;
+    }
+    .main-content{
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 400px) {

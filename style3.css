@@ -791,6 +791,7 @@ p.title-paragraph{
     }
     .three-information{
         gap: 12px;
+        justify-content: space-around;
     }
     .philips{
         font-size: 20px;
