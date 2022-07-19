@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Strona Główna</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -47,7 +50,9 @@
                                 </div>
                             </div>
                             <div class="arrow-cart">
-                                <img src="prawa-strzalka.png" alt="Strzałka" />
+                                <a href="#" class="activity">
+                                    <img src="prawa-strzalka.png" alt="Strzałka" />
+                                </a>
                             </div>
                         </div>
 
@@ -66,8 +71,7 @@
 
         <div class="container">
             <div class="main-image">
-                <img src="MaskGroup40.png" alt="Informacje o Sedna" />
-
+                <img src="MaskGroup40.png" alt="Informacje o Sedna" id="image-back"/>
                 <div class="text-main-image">
                     <h4>POZNAJ SEDNA</h4>
                     <h3>Schneider Electric</h3>
@@ -76,9 +80,10 @@
                         elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.</p> <br />
                     <button class="button button1">ZOBACZ WIĘCEJ</button>
                 </div>
-                <div class="right-arrow"><img src="Icon-Arrow-Right.png" alt="Prawa strzałka" /></div>
+                <div class="right-arrow"><img src="Icon-Arrow-Right.png"  alt="Prawa strzałka" /></div>
                 <div class="left-arrow"><img src="Icon-Arrow-Left.png" alt="Lewa strzałka" /></div>
             </div>
+            <script src="app.js"></script>
         </div>
 
         <div class="add-information">
@@ -317,4 +322,5 @@
         </div>
     </div>
 </body>
+
 </html>

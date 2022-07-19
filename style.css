@@ -88,6 +88,9 @@ html {
     text-decoration: none;
     color: black;
 }
+#images{
+    transition: 2s ease;
+}
 .headers {
     flex: 1 0 auto;
     text-align: left;
@@ -120,7 +123,7 @@ html {
     background-color: #9BCB3B;
 }
 .arrow-cart img{
-    padding: 15px;
+    padding: 25px 10px;
 }
 .text-cart{
     padding: 12px;
@@ -164,6 +167,9 @@ html {
 }
 .main-image img{
     width:100%;
+}
+#image-back img{
+    opacity: 0;
 }
 .text-main-image {
     position: absolute;
