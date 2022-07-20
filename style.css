@@ -12,32 +12,44 @@
     font-family: 'Metropolis-Light';
     src: url("fonts/Metropolis-Light.otf") format("opentype");
 }
-* {
+:root {
+    --border-primary: 1px solid #E1E2E8;
+    --font-family-primary: 'Metropolis-Bold';
+    --font-family-secondary: 'Metropolis';
+    --font-family-tertiary: 'Metropolis-Light';
+    --background-color-button: #F74137;
+}
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 .full-page{
-    border: 1px solid #E1E2E8;
+    border: var(--border-primary);
 }
 span {
     cursor: context-menu;
 }
 .number{
-    border: 1px solid #E1E2E8;
+    border: var(--border-primary);
+    display: flex;
+    align-items: center;
 }
 .minus, .plus{
     background-color: #F8F8F8;
     padding: 9px 5px 13px 5px;
+    height: 100%;
+    font-family: var(--font-family-primary);
+    display: flex;
+    align-items: center;
 }
 input {
     font-size: 14px;
-    width: 30px;
-    height: 40px;
+    width: 50px;
     background-color: #FFFFFF;
     vertical-align: middle;
     text-align: center;
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
     border: none;
 }
 html {
@@ -50,7 +62,7 @@ html {
     max-width: 100%;
     margin: auto;
     background-color: white;
-    border-bottom: 1px solid #E1E2E8;
+    border-bottom: var(--border-primary);
 }
 .menu {
     text-align: center;
@@ -66,11 +78,12 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    align-items: center;
 }
 .three-information{
     text-align: center;
     padding: 20px;
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
     display: flex;
     gap: 35px;
     justify-content: space-between;
@@ -81,7 +94,7 @@ html {
     flex-wrap: wrap;
     background-color: white;
     height: 100%;
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
     padding: 10px;
 }
 .header a{
@@ -106,17 +119,48 @@ html {
     width: 18px;
     height: 18px;
 }
+.upper-headers img:hover{
+    transition: 2s;
+    transform:rotate(360deg);
+}
+.upper-headers p{
+    position: relative;
+}
+.upper-headers a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.upper-headers p::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #F74137;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+.upper-headers p:hover::before{
+    transform: scaleX(1);
+}
 .cart{
     display: flex;
     align-items: center;
     gap: 5px;
-    border: 1px solid #E1E2E8;
+    border: var(--border-primary);
     height:100%;
 }
 .cart img{
     width: 45px;
     height: 30px;
-    border-right: 1px solid #E1E2E8;
+    border-right: var(--border-primary);
+    padding-right: 5px;
 }
 .arrow-cart{
     display: flex;
@@ -134,6 +178,7 @@ html {
     right: 0;
     font-size: 9px;
     display: block;
+    padding-right: 5px;
 }
 .cart-family{
     display: flex;
@@ -145,7 +190,7 @@ html {
     border: 1px solid #9BCB3B;
     color: white;
     background-color: #9BCB3B;
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
 }
 .container {
     background-color: #F2F3F4;
@@ -186,19 +231,19 @@ html {
 }
 .text-main-image p{
     font-size: 20px; 
-    font-family: 'Metropolis-Light';
+    font-family: var(--font-family-tertiary);
     text-align: left;
     max-width: 345px;
 }
 .text-main-image b{
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
 }
 .text-main-image h3{
-    font-family: 'Metropolis-Light';
+    font-family: var(--font-family-tertiary);
     font-weight: normal;
 }
 .text-main-image h4{
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
 }
 .right-arrow {
     position: absolute;
@@ -270,15 +315,15 @@ html {
 .text-on-sub-image h4
 {
     font-weight: 800;
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
 }
 .text-on-sub-image b{
     font-size: 27px;
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
 }
 .text-on-sub-image p 
 {
-    font-family: 'Metropolis-Light';
+    font-family: var(--font-family-tertiary);
     font-size: 28px;
 }
 .recommend-products{
@@ -286,7 +331,7 @@ html {
     background-color: #F2F3F4;
     letter-spacing: 0px;
     opacity: 1;
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
     padding-top: 25px;
 }
 .recommend-products::after {
@@ -306,7 +351,7 @@ html {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    border-top: 1px solid #E1E2E8;
+    border-top: var(--border-primary);
 }
 .lights-row {
     position: relative;
@@ -351,13 +396,13 @@ html {
 }
 .text-under-lights s{
     color: #A3A3A3;
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
 }
 .text-under-lights b{
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
 }
 .text-under-lights p{
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
 }
 .left-arrow-lights {
     position: absolute;
@@ -406,8 +451,8 @@ html {
     width: 100%;
 }
 .footer-information h3 {
-    border-bottom: 0.5px solid #E1E2E8;
-    font-family: 'Metropolis-Bold';
+    border-bottom: var(--border-primary);
+    font-family: var(--font-family-primary);
 }
 .footer-information h3::after {
     content: '';
@@ -429,7 +474,7 @@ html {
 .footer-information li {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
 }
 .primary ul {
     padding-top: 30px;
@@ -438,18 +483,12 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 25px;
-    font-family: 'Metropolis';
-    border: 1px solid #E1E2E8;
+    font-family: var(--font-family-secondary);
+    border: var(--border-primary);
 }
 .three-sub-images img {
     filter: brightness(0.7);
     width: 100%;
-}
-ul, ul li {
-    display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 .button {
     border: none;
@@ -460,11 +499,11 @@ ul, ul li {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
     cursor: context-menu;
 }
 .button1 {
-    background-color: #F74137;
+    background-color: var(--background-color-button);
     cursor: pointer;
 }
 .button2 {
@@ -473,16 +512,16 @@ ul, ul li {
     border: 1px solid white;
 }
 .button2:hover {
-    background-color: #F74137;
+    background-color: var(--background-color-button);
     color: white;
     border: 0;
     transition-duration: 0.4s;
 }
 .button3 {
-    background-color: #F74137;
+    background-color: var(--background-color-button);
 }
 .button4 {
-    background-color: #F74137;
+    background-color: var(--background-color-button);
     margin-top: 40px; 
 }
 /* About us section */
@@ -506,14 +545,14 @@ ul, ul li {
     text-align: center;
 }
 .content-area p{
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
     font-size: 10vw;
 }
 .about-section h3 {
     font-size: 40px;
     padding-top: 30px;
     border-bottom: 1px solid #fff;
-    font-family: 'Metropolis-Bold';
+    font-family: var(--font-family-primary);
 }
 .about-section h3::after {
     content: '';
@@ -528,7 +567,7 @@ ul, ul li {
     max-width: 900px;
     margin: 30px auto;
     font-size: 18px;
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
 }
 .about-section .icons {
     display: flex;
@@ -546,6 +585,12 @@ ul, ul li {
 }
 .about-section .icon-text {
     margin-top: 20px;
+}
+ul, ul li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 @media screen and (max-width: 885px) {
     .lights-row {

@@ -22,7 +22,7 @@ const text1 = [
 
 const text2 = [
     "Philips HUE",
-    "Oswietl swój dom",
+    "Oświetl swój dom",
     "Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła."
 ];
 
