@@ -7,7 +7,7 @@ const sliderAnim = [
   ];
   
 const sliderAnimOptions = {
-    duration: 700,
+    duration: 500,
     iterations: 1
 }
 
