@@ -971,6 +971,12 @@ ul, ul li {
     .pagination{
         margin-left: 15px;
     }
+    .three-information{
+        gap: 7px;
+    }
+    .arrow-cart img{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 450px) {
     .left-main-menu{

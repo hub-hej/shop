@@ -101,9 +101,6 @@ html {
     text-decoration: none;
     color: black;
 }
-#images{
-    transition: 2s ease;
-}
 .headers {
     flex: 1 0 auto;
     text-align: left;
@@ -501,7 +498,7 @@ html {
     margin: 4px 2px;
     font-family: var(--font-family-secondary);
     cursor: context-menu;
-}
+} 
 .button1 {
     background-color: var(--background-color-button);
     cursor: pointer;
@@ -592,6 +589,15 @@ ul, ul li {
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width:1000px) {
+    .main-image img{
+        object-fit: cover;
+        height: 100%;
+    } 
+    .text-main-image{
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 885px) {
     .lights-row {
         flex-wrap: wrap;
@@ -670,7 +676,6 @@ ul, ul li {
         width: 250px;
     }
     .three-information{
-        gap: 15px;
         justify-content: space-around;
     }
     .header, .headers{
