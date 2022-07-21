@@ -136,6 +136,12 @@ html {
 .text-cart{
     padding: 12px;
 }
+.text-cart > .first-text-cart{
+    font-family: 'Metropolis-Bold';
+}
+.second-text-cart{
+    font-family: 'Metropolis';
+}
 .text-on-cart{
     position: absolute;
     top: 0;
@@ -398,6 +404,8 @@ html {
     justify-content: center;
     align-content: center;
     font-family: var(--font-family-primary);
+    border: none;
+    cursor: pointer;
 }
 .shopping-button{ 
     width: 100%;
@@ -576,7 +584,7 @@ span {
     display: flex;
     align-items: center;
 }
-.number-light input {
+.number-light input[type="number"]{
     font-size: 14px;
     width: 65px;
     background-color: var(--background-color-primary);
@@ -585,14 +593,17 @@ span {
     font-family: var(--font-family-secondary);
     border: none;
 }
-input {
+input[type="number"]{
     font-size: 14px;
     width: 50px;
-    background-color: var(--background-color-primary);
+    background-color: #FFFFFF;
     vertical-align: middle;
     text-align: center;
     font-family: var(--font-family-secondary);
     border: none;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
 }
 .minus, .plus{
     background-color: #F8F8F8;
@@ -602,6 +613,8 @@ input {
     justify-content: center;
     align-items: center;
     font-family: var(--font-family-primary);
+    border: none; 
+    cursor: pointer;
 }
 .shoppingcart{
     width: 40px; 
@@ -743,7 +756,8 @@ p.title-paragraph{
     .minus-light, .plus-light {
         border-left: none;
         border-right: none;
-        padding-bottom: 5px;
+        padding: 5px;
+        width: 100%;
     }
     .number-light input{
         border-bottom: var(--border-primary);

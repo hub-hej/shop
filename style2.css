@@ -149,6 +149,12 @@ html {
 .text-cart{
     padding: 12px;
 }
+.text-cart > .first-text-cart{
+    font-family: 'Metropolis-Bold';
+}
+.second-text-cart{
+    font-family: 'Metropolis';
+}
 .number-orders{
     border: 1px solid #9BCB3B;
     color: white;
@@ -180,7 +186,7 @@ html {
 }
 .main-content{
     width: 80%;
-    margin-right: 20px;
+    margin-right: 24px;
 }
 .nav-h1{
     margin-top: 25px;
@@ -289,7 +295,7 @@ html {
 .right-side{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     font-family: var(--font-family-secondary);
 }
 .view{
@@ -331,9 +337,9 @@ html {
 }
 .pagination{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 .pagination a{
     color: black;
@@ -436,8 +442,10 @@ html {
     justify-content: center;
     align-content: center;
     font-family: var(--font-family-primary);
+    border: none;
+    cursor: pointer;
 }
-.number input{
+input[type="number"]{
     font-size: 14px;
     background-color: #FFFFFF;
     vertical-align: middle;
@@ -445,6 +453,9 @@ html {
     font-family: var(--font-family-secondary);
     border: none;
     width: 50px;
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
 }
 .button{
     border: none;
@@ -839,6 +850,11 @@ ul, ul li {
     }
     .size-65{
         padding: 5px 12px;
+    }
+    .image-container img{
+        object-fit: cover;
+        width: 100%;
+        margin-right: 25px;
     }
 }
 @media screen and (max-width: 900px) {

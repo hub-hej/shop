@@ -42,8 +42,13 @@ span {
     font-family: var(--font-family-primary);
     display: flex;
     align-items: center;
+    border: none;
+    cursor: pointer;
 }
-input {
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+input[type="number"]{
     font-size: 14px;
     width: 50px;
     background-color: #FFFFFF;
@@ -168,6 +173,12 @@ html {
 }
 .text-cart{
     padding: 12px;
+}
+.text-cart > .first-text-cart{
+    font-family: 'Metropolis-Bold';
+}
+.second-text-cart{
+    font-family: 'Metropolis';
 }
 .text-on-cart{
     position: absolute;
