@@ -5,24 +5,13 @@ numbers.forEach((number) => {
         const minus = number.querySelector('.minus');
         const input = number.querySelector('input');
 
-        if (e.target == plus) {
+        if (e.target == plus && input.value < 10) {
             input.value = parseInt(input.value) + 1;
-        } else if (e.target == minus) {
+        } else if (e.target == minus && input.value > 0) {
             input.value = parseInt(input.value) - 1;
         }
-            if (input.value < 10) {
-                input.value++;
-            } else{
-                input.value = 11;
-            }
-
-            if (input.value > 0){
-                input.value--;
-            } else {
-                input.value = 0;
-            }
     })
-});
+})
 
 /*function increment(target) {
     const plus = target;

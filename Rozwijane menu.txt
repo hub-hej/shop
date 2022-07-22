@@ -1,0 +1,31 @@
+KOD HTML:
+<div class="dropdown">
+	<a href="#">
+           <img src="icon_03.svg" alt="Telefon - Moje Konto" />
+       <p>MOJE KONTO</p>
+           <div class="dropdown-content">
+                 <p>Zaloguj się</p>
+                 <p>Rejestracja</p>
+          </div>
+      </a>
+</div>
+
+KOD CSS:
+.dropdown {
+    position: relative;
+    display: inline-block;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    padding: 12px 20px;
+    z-index: 1;
+    margin-top: 70px;
+} 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content p:hover{
+    color: white;
+}

@@ -45,6 +45,9 @@ html {
     display: block;
     margin: 0;
 }
+.logo img:hover{
+    transform: scale(1.05);
+}
 .upper-menu{
     display: flex;
     justify-content: space-between;
@@ -67,6 +70,10 @@ html {
     height: 100%;
     font-family: var(--font-family-primary);
     padding: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
 }
 .headers {
     flex: 1 0 auto;
@@ -141,6 +148,7 @@ html {
 }
 .second-text-cart{
     font-family: 'Metropolis';
+    text-align: left;
 }
 .text-on-cart{
     position: absolute;
@@ -187,6 +195,9 @@ html {
     position: relative;
     width: 65%;
 }
+.border1{
+    border: 1px solid #E1E2E8;
+}
 .left-small-lights{
     flex-direction: column;
     position: absolute;
@@ -194,6 +205,10 @@ html {
     left: 3%;
     width: 30px;
     height: 30px;
+}
+.left-small-lights img:hover{
+    border: 1px solid #1BB0F7;
+    transition: 0.5s ease-out;
 }
 .left-small-lights img{
     border: var(--border-primary);
@@ -204,12 +219,16 @@ html {
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    background-color: silver;
+    background-color: #C1C2C6;
     width: 45px;
     height: 45px;
+    cursor: pointer;
 }
 .right-arrow-lights img {
     padding: 15px;
+}
+.right-arrow-lights:hover{
+    background-color: #999999;
 }
 .left-arrow-lights {
     position: absolute;
@@ -219,9 +238,13 @@ html {
     background-color: #F2F3F4;
     width: 45px;
     height: 45px;
+    cursor: pointer;
 }
 .left-arrow-lights img {
     padding: 15px;
+}
+.left-arrow-lights:hover{
+    background-color: #e6e6e6;
 }
 .lights-offer{
     display:flex;
@@ -334,6 +357,10 @@ html {
 .first-image-variant{
     border: var(--border-primary);
     padding: 10px;
+}
+.first-image-variant:hover{
+    border: 1px solid #1BB0F7;
+    transition: 0.3s ease-in-out;
 }
 .first-image-variant img{
     height: 65px;
@@ -738,6 +765,10 @@ p.title-paragraph{
     height: 20px;
     color: white;
     padding: 3px;
+    cursor: pointer;
+}
+.fa-angle-up:hover{
+    background-color: #999999;
 }
 .fa-angle-down{
     background-color: #F2F3F4;
@@ -745,6 +776,10 @@ p.title-paragraph{
     height: 20px;
     color: white;
     padding: 3px;
+    cursor: pointer;
+}
+.fa-angle-down:hover{
+    background-color: #e6e6e6;
 }
 @media screen and (max-width: 1000px) {
     .tile-light, .number-light{

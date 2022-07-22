@@ -79,6 +79,10 @@ html {
     display: block;
     margin: 0;
 }
+.logo img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .upper-menu{
     display: flex;
     justify-content: space-between;
@@ -110,6 +114,19 @@ html {
     flex: 1 0 auto;
     text-align: left;
     padding: 15px;
+}
+.hamburger-menu{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.build-icon{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 4px 0;
 }
 .upper-headers {
     display: flex;
@@ -179,6 +196,7 @@ html {
 }
 .second-text-cart{
     font-family: 'Metropolis';
+    text-align: left;
 }
 .text-on-cart{
     position: absolute;
@@ -258,18 +276,26 @@ html {
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    background-color: silver;
+    background-color: #C1C2C6;
     width: 30px;
     height: 35px;
+    cursor: pointer;
+}
+.right-arrow:hover{
+    background-color: #b3b3b3;
 }
 .left-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    background-color: silver;
+    background-color: #C1C2C6;
     width: 30px;
     height: 35px;
+    cursor: pointer;
+}
+.left-arrow:hover{
+    background-color:#b3b3b3;
 }
 .right-arrow img {
     padding: 10px;
@@ -420,9 +446,13 @@ html {
     background-color: silver;
     width: 30px;
     height: 35px;
+    cursor: pointer;
 }
 .left-arrow-lights img {
     padding: 10px;
+}
+.left-arrow-lights:hover{
+    background-color: #999999;
 }
 .right-arrow-lights {
     position: absolute;
@@ -432,9 +462,13 @@ html {
     background-color: silver;
     width: 30px;
     height: 35px;
+    cursor: pointer;
 }
 .right-arrow-lights img {
     padding: 10px;
+}
+.right-arrow-lights:hover{
+    background-color: #999999;
 }
 .shoppingcart{
     width: 40px; 
