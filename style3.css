@@ -423,16 +423,15 @@ html {
 }
 .minus-light, .plus-light{
     padding: 9px 10px 13px 10px;
-    border-left: var(--border-primary);
-    border-right: var(--border-primary);
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     font-family: var(--font-family-primary);
-    border: none;
     cursor: pointer;
+    background-color: var(--background-color-primary);
+    border: var(--border-primary);
 }
 .shopping-button{ 
     width: 100%;
@@ -613,12 +612,13 @@ span {
 }
 .number-light input[type="number"]{
     font-size: 14px;
-    width: 65px;
     background-color: var(--background-color-primary);
     vertical-align: middle;
     text-align: center;
     font-family: var(--font-family-secondary);
-    border: none;
+    border-top: var(--border-primary);
+    border-bottom: var(--border-primary);
+    height: 100%;
 }
 input[type="number"]{
     font-size: 14px;
@@ -646,7 +646,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .shoppingcart{
     width: 40px; 
     background-color: var(--background-color-secondary);
-    padding: 7px;
+    padding: 9px;
 }
 .tile-product{
     display: flex;
@@ -709,7 +709,7 @@ ul, ul li {
     gap: 15px;
     justify-content: center;
     width: 95%;
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-secondary);
     cursor: pointer;
 }
 .product-description{
@@ -784,9 +784,7 @@ p.title-paragraph{
 @media screen and (max-width: 1000px) {
     .tile-light, .number-light{
         flex-direction: column;
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 96%;
+        align-items: center;
     }
     .minus-light, .plus-light {
         border-left: none;
