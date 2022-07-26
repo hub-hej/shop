@@ -11,8 +11,8 @@ const sliderAnimOptions = {
     iterations: 1
 }
 
-const image1 = 'MaskGroup40.png';
-const image2 = 'Mask Group 40.png';
+const image1 = 'photos/MaskGroup40.png';
+const image2 = 'photos/Mask Group 40.png';
 
 const text1 = [
     "POZNAJ SEDNA",

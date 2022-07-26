@@ -128,10 +128,11 @@ html {
     height:100%;
 }
 .cart img{
-    width: 45px;
-    height: 30px;
+    width: 40px;
+    height: 35px;
     border-right: var(--border-primary);
     padding-right: 5px;
+    margin-left: 5px;
 }
 .arrow-cart{
     display: flex;
@@ -334,6 +335,9 @@ html {
     font-size: 17px;
     width: 100%;
 }
+.option1 img{
+    width: 20px;
+}
 .option2{
     display: flex;
     align-items: center;
@@ -343,6 +347,9 @@ html {
     width: 100%;
     border-left: var(--border-primary);
     line-height: 35px;
+}
+.option2 img{
+    width: 20px;
 }
 .variants{
     font-family: var(--font-family-primary);
@@ -926,7 +933,6 @@ p.title-paragraph{
         font-size: 25px;
     }
     .tile-light p{
-        font-size: 15px;
         display: none;
     }
     .shopping-button img{
@@ -956,6 +962,9 @@ p.title-paragraph{
     }
     .three-information{
         gap: 15px;
+    }
+    .number-light, .shopping-button{
+        margin-right: 10px;
     }
 }
 @media screen and (max-width: 435px) {

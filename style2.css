@@ -137,10 +137,11 @@ html {
     height:100%;
 }
 .cart img{
-    width: 45px;
-    height: 30px;
+    width: 40px;
+    height: 35px;
     border-right: var(--border-primary);
     padding-right: 5px;
+    margin-left: 5px;
 }
 .text-on-cart{
     position: absolute;
@@ -306,6 +307,9 @@ html {
 .view{
     font-size: 12px;
     margin: 15px;
+}
+.icon-menu img{
+    width: 15px;
 }
 .sort{
     font-size: 12px;
