@@ -165,6 +165,22 @@ html {
     transform-origin: left;
     transition: transform 0.5s ease-in-out;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    padding: 12px 20px;
+    z-index: 1;
+    border: var(--border-primary);
+    border-radius: 15px;
+} 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .upper-headers p:hover::before{
     transform: scaleX(1);
 }
@@ -692,9 +708,6 @@ ul, ul li {
     .text-on-sub-image b{
         font-size: 23px;
     }
-    .cart img{
-        width:100%;
-    }
     .text-cart{
         width:100%;
     }
@@ -737,22 +750,17 @@ ul, ul li {
     .button4{
         transform: translateY(-40%);
     }
-    .cart{
-        display: inline-block;
-    }
     .cart img{
-        width:100%;
         border: none;
+    }
+    .text-cart{
+        display: none;
     }
     .arrow-cart img{
         width: 100%;
     }
     .three-information{
         gap: 5px;
-    }
-    .text-on-cart{
-        top: 0;
-        right: 30%;
     }
 }
 /* 

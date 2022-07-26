@@ -1,18 +1,16 @@
 <?php
-    $host = 'localhost';
-    $db = 'testowa';
-    $user = 'user';
-    $password = 'password';
-
-    $dsn="mysql:host=$host;dbname=$db;charset=UTF8";
 
     try{
-        $pdo = new PDO($dsn, $user, $password);
-
-        if ($pdo) {
-            echo "Connected to the $db database successfully!";
-        } 
+        $dsn = 'mysql:host=localhost;port=3307;dbname=testowa';
+        $dbuser = 'root';
+        $dbpass = '';
+        
+        $params = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
+        
+        $pdo = new PDO($dsn, $dbuser, $dbpass, $params);
+    
     }catch(PDOException $e) {
-        echo $e->getMessage();
+        echo $e;
     }
 ?>
