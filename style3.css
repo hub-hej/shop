@@ -474,7 +474,7 @@ html {
     display: block;
     text-align: left;
 }
-.footer {
+footer {
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -804,6 +804,9 @@ p.title-paragraph{
         border-top: var(--border-primary);
         width: 100%;
     }
+    .product-description p{
+        width: 80%;
+    }
 }
 @media screen and (max-width: 900px) {
     .shopping-button{
@@ -858,10 +861,6 @@ p.title-paragraph{
     .lights-row {
         flex-wrap: wrap;
     }
-    .product-description p{
-        font-size: 15px;
-        padding-left: 30px;
-    }
     .title-offer h1{
         font-size: 30px;
         margin-left: 20px;
@@ -873,7 +872,7 @@ p.title-paragraph{
         grid-template-columns: repeat(2,minmax(0,1fr));
         gap: 40px;
     }
-    .footer {
+    footer {
         flex-direction: column;
         text-align: center;
         gap: 10px;
