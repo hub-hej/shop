@@ -51,7 +51,7 @@ html {
 .upper-menu{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 .three-information{
@@ -59,7 +59,7 @@ html {
     padding: 20px;
     font-family: var(--font-family-primary);
     display: flex;
-    gap: 35px;
+    gap: 30px;
     justify-content: space-between;
 }
 .header {
@@ -84,11 +84,6 @@ html {
     display: flex;
     align-items: center;
     gap: 5px;
-}
-.upper-headers img 
-{
-    width: 18px;
-    height: 18px;
 }
 .upper-headers a{
     text-decoration: none;
@@ -455,6 +450,14 @@ html {
     background-color: #393E40;
     color: white;
     width: 100%;
+    margin-bottom: 15px;
+}
+.footer-information a{
+    text-decoration: none;
+    color: white;
+}
+.footer-information ul{
+    margin-top: 30px;
 }
 .footer-information h3 {
     border-bottom: var(--border-primary);
@@ -540,6 +543,9 @@ tbody tr:nth-child(even)
     padding-top: 25px;
     border-bottom: var(--border-primary);
     scroll-behavior: smooth;
+}
+.basic-information h2{
+    font-size: 3px;
 }
 .basic-information::after {
     content: '';
@@ -725,7 +731,7 @@ ul, ul li {
     padding-top: 50px;
     font-family: var(--font-family-primary);
 }
-.product-description h1{
+.product-description h2{
     font-size: 40px;
     border-bottom: var(--border-primary);
     font-family: var(--font-family-primary);
@@ -745,7 +751,7 @@ ul, ul li {
 p.title-paragraph{
     font-family: var(--font-family-primary);
 }
-.product-description h1::after{
+.product-description h2::after{
     content: '';
     width: 50px;
     border-bottom: 3px solid #F74137;
@@ -893,7 +899,7 @@ p.title-paragraph{
     .philips, .title-offer h1{
         font-size: 20px;
     }
-    .basic-information h1, .other-items h1, .product-description h1{
+    .basic-information h2, .other-items h2, .product-description h2{
         font-size: 30px;
     }
     .upper-menu{

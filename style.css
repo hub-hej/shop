@@ -145,9 +145,6 @@ html {
     align-items: center;
     gap: 5px;
 }
-.icon-icon_01:before {
-    content: "\e900";
-  }
 .upper-headers img:hover{
     transition: 2s;
     transform:rotate(360deg);
@@ -266,9 +263,6 @@ html {
 .main-image img{
     width:100%;
     display: block;
-}
-#image-back img{
-    display: none;
 }
 .text-main-image {
     position: absolute;
@@ -408,6 +402,7 @@ html {
     opacity: 1;
     font-family: var(--font-family-primary);
     padding-top: 25px;
+    font-size: 35px;
 }
 .recommend-products::after {
     content: '';
@@ -591,7 +586,6 @@ footer {
     font-size: 13px;
     margin: 4px 2px;
     font-family: var(--font-family-primary);
-    cursor: context-menu;
 } 
 .button1 {
     background-color: var(--background-color-button);

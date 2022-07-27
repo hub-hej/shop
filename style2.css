@@ -51,7 +51,7 @@ html {
 .upper-menu{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 .logo img:hover{
@@ -62,7 +62,7 @@ html {
     padding: 20px;
     font-family: var(--font-family-primary);
     display: flex;
-    gap: 35px;
+    gap: 30px;
     justify-content: space-between;
 }
 .header {
@@ -87,11 +87,6 @@ html {
     display: flex;
     align-items: center;
     gap: 5px;
-}
-.upper-headers img 
-{
-    width: 18px;
-    height: 18px;
 }
 .upper-headers a{
     text-decoration: none;
@@ -469,12 +464,12 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .button{
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 21px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    font-family: var(--font-family-secondary);
+    font-size: 13px;
+    font-family: var(--font-family-primary);
 }
 .button1{
     background-color: #F74137;
@@ -761,10 +756,18 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     padding: 25px;
     grid-template-columns: repeat(4,minmax(0,1fr));
 }
+.footer-information a{
+    text-decoration: none;
+    color: white;
+}
 .footer-information {
     background-color: #393E40;
     color: white;
     width: 100%;
+    margin-bottom: 15px;
+}
+.footer-information ul{
+    margin-top: 30px;
 }
 .footer-information h3 {
     border-bottom: var(--border-primary);
