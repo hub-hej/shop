@@ -545,7 +545,7 @@ tbody tr:nth-child(even)
     scroll-behavior: smooth;
 }
 .basic-information h2{
-    font-size: 3px;
+    font-size: 35px;
 }
 .basic-information::after {
     content: '';
@@ -683,7 +683,6 @@ ul, ul li {
 }
 .three-button a{
     text-decoration: none;
-    color: black;
     scroll-behavior: smooth;
     font-family: var(--font-family-primary);
 }
