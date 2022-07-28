@@ -1,0 +1,54 @@
+.search {
+	display: block;
+	margin-left: 1300px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: -30px;
+	cursor: pointer;
+}
+
+.burger-menu {
+	display: block;
+	margin-left: 100px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 1px;
+	cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 250px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 30px 16px;
+	text-align: center;
+    text-decoration: none;
+    display: block;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-size: 24px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.dropdown-content a:hover {
+	background-color: #ffffff;
+	color: black;
+}
+
+.dropdown .dropdown-content.show {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffffff;
+}
