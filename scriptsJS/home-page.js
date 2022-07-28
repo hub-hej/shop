@@ -1,3 +1,5 @@
+(function ()
+{
 const numbers = document.querySelectorAll('.tile-product .number');
 
 numbers.forEach((number) => {
@@ -13,6 +15,9 @@ numbers.forEach((number) => {
         }
     })
 })
+})();
+
+
 const img = document.getElementById('image-back');
 let toogle = true;
 
@@ -94,17 +99,91 @@ function plusDivs(n) {
     paragraph.textContent = sliderData[slideIndex].text;
     img.animate(sliderAnim, sliderAnimOptions);
 }
-
 // menu hamburger
-const hamburger = document.querySelector(".hamburger");
-const header = document.querySelector(".header");
+ const hamburger = document.querySelector(".button-menu .hamburger");
+ const header = document.querySelector(".nav-items");
 
-hamburger.addEventListener("click", mobileMenu);
+ hamburger.addEventListener("click", mobileMenu);
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    header.classList.toggle("active");
+ function mobileMenu() {
+     hamburger.classList.toggle("active");
+     header.classList.toggle("active");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function show_list() {
+//     var courses = document.getElementsByClassName("courses_class");
+
+//     if (courses.style.display == "block") {
+//         courses.style.display = "none";
+//     } else {
+//         courses.style.display = "block";
+//     }
+// }
+// window.onclick = function (event) {
+//     if (!event.target.matches('.button-menu')) {
+//         document.getElementsByClassName('courses_class')
+//             .style.display = "none";
+//     }
+// }  
+
     /*function increment(target) {
     const plus = target;
     const input = plus.previousElementSibling;
