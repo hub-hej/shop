@@ -557,9 +557,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     font-size: 19px;
     margin-bottom: 25px;
 }
-.li-producer{
-    display: flex;
-}
 .option-producer{
     margin: 20px;
     display: flex;
@@ -568,24 +565,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .option-producer ul{
     font-family: var(--font-family-secondary);
     font-size: 20px;
-}
-.option-producer li{
-    padding: 15px;
-}
-.li-parameter{
-    display: flex;
-    align-items: center;
-}
-.box{
-    border: var(--border-primary);
-    width: 30px;
-    height: 30px;
-}
-.box-inside-red{
-    background-color: #F74137;
-    width: 20px;
-    height: 20px;
-    margin: 4px;
+    flex-direction: column;
 }
 .different-color{
     display: grid;
@@ -800,6 +780,34 @@ ul, ul li {
     margin: 0;
     padding: 0;
 }
+.checkbox-button{
+    display: flex;
+    align-items: center;
+}
+.checkbox-button__label{
+    margin-left: 10px;
+}
+.checkbox-button__input {
+    opacity: 0;
+    position: absolute;
+}
+.checkbox-button__control {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border: var(--border-primary);
+}
+.checkbox-button__input:checked+.checkbox-button__control:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #F74137;
+    margin: 4px;
+}
 @media screen and (max-width: 1800px){
     .different-color{
         grid-template-columns: repeat(3, minmax(0,1fr));
@@ -883,7 +891,7 @@ ul, ul li {
     .lights-row{
         grid-template-columns: repeat(3,minmax(0,1fr));
     }
-    .option-producer, .producer h3, .choose-colors h3, .producer p{
+    .option-producer, .producer h3, .choose-colors h3, .producer p, .checkbox-button__label span{
         overflow: hidden;
     }
 }
@@ -914,6 +922,9 @@ ul, ul li {
     }
     .left-main-menu{
         overflow: hidden;
+    }
+    .full-box-red2{
+        left: 62%;
     }
 }
 @media screen and (max-width: 800px){
@@ -994,8 +1005,11 @@ ul, ul li {
     .lights-row{
         grid-template-columns: repeat(2,minmax(0,1fr));
     }
-    .text-main-image br{
+    .text-main-image br, .left-main-menu{
         display: none;
+    }
+    .main-content{
+        margin: 0 auto;
     }
     .pagination{
         margin-left: 15px;
@@ -1008,11 +1022,8 @@ ul, ul li {
     }
 }
 @media screen and (max-width: 450px) {
-    .left-main-menu, .pagination{
+    .pagination{
         display: none;
-    }
-    .main-content{
-        margin: 0 auto;
     }
     .text-main-image{
         font-size: 15px;
