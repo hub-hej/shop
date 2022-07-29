@@ -110,7 +110,16 @@ function plusDivs(n) {
      header.classList.toggle("active");
 }
 
+window.onscroll = function() {myFunction()};
 
+var headers = document.getElementById("myFixed");
+var sticky = headers.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    headers.classList.add("sticky");
+  }
+}
 
 
 
