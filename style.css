@@ -109,6 +109,7 @@ html {
 .header a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 .headers {
     text-align: left;
@@ -120,10 +121,6 @@ html {
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-}
-.nav-items.active{
-    display: block!important;
-    flex: 1 0 auto;
 }
 .headers li{
     list-style: none;
@@ -140,6 +137,7 @@ html {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
+    cursor: pointer;
 }
 .button-menu{
     border: none;
@@ -625,6 +623,13 @@ footer {
     margin-top: 40px; 
     cursor: pointer;
 }
+.button5{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    display: block;
+    width: 100%;
+}
 /* About us section */
 .about-section {
     position: relative;
@@ -772,10 +777,23 @@ ul, ul li {
     .header, .headers{
         flex-direction: column;
         gap: 10px;
-        text-align: center;
+        border-bottom: var(--border-primary);
+        width: 100%;
+    }
+    .headers:hover{
+        background: #E1E2E8;
+    }
+    .header a{
+        display: inline-block;
+        width: 100%;
+        padding: 5px;
     }
     .nav-items, .dropdown:hover .dropdown-content{
         display: none;
+    }
+    .nav-items.active{
+        display: block!important;
+        flex: 1 0 auto;
     }
 }
 @media screen and (max-width: 801px) {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista produktów">
     <title>Lista produktów</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -71,29 +72,37 @@
                 </div>
             </div>
             <div class="header">
-                <div class="headers"><a href="index2.html">
-                        <p>ŹRÓDŁA ŚWIATŁA</p>
-                    </a>
-                </div>
-                <div class="headers"><a href="#">
-                        <p>OŚWIETLENIE WEWNĘTRZNE</p>
-                    </a>
-                </div>
-                <div class="headers"><a href="#">
-                        <p>GNIAZDKA, WYŁACZNIKI</p>
-                    </a>
-                </div>
-                <div class="headers"><a href="#">
-                        <p>AUTOMATYKA, STEROWANIE</p>
-                    </a>
-                </div>
-                <div class="headers"><a href="#">
-                        <p>ROZDZIELANIE I APARATURA</p>
-                    </a>
-                </div>
-                <div class="headers"><a href="#">
-                        <p>MATERIALY INSTALACYJNE</p>
-                    </a>
+                <button type="button" class="button-menu" aria-label="Przycisk na menu">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </button>
+                <div class="nav-items">
+                    <div class="headers">
+                        <a href="index2.html" target="_blank">ŹRÓDŁA ŚWIATŁA</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank">OŚWIETLENIE WEWNĘTRZNE</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank">GNIAZDKA, WYŁACZNIKI</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank">AUTOMATYKA, STEROWANIE</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank">ROZDZIELANIE I APARATURA</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank">MATERIALY INSTALACYJNE</a>
+                    </div>
                 </div>
             </div>
 
@@ -159,18 +168,21 @@
                         <div class="option-filter">
                             <ul>
                                 <div class="li-filter">
-                                    <li>Filtr (parametr)</li>
-                                    <i class="fa-solid fa-xmark"></i>
+                                    <li class="removes">Filtr1 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 1"><i
+                                            class="fa-solid fa-xmark"></i></button>
                                 </div>
 
                                 <div class="li-filter">
-                                    <li>Filtr (parametr)</li>
-                                    <i class="fa-solid fa-xmark"></i>
+                                    <li class="removes">Filtr2 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 2"><i
+                                            class="fa-solid fa-xmark"></i></button>
                                 </div>
 
                                 <div class="li-filter">
-                                    <li>Filtr (parametr)</li>
-                                    <i class="fa-solid fa-xmark"></i>
+                                    <li class="removes">Filtr3 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
                                 </div>
                             </ul>
                         </div>
@@ -182,40 +194,40 @@
                         <div class="option-producer">
                             <ul>
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr</span>
                                 </label>
                                 <br /><br />
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr</span>
                                 </label>
                                 <br /><br />
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr</span>
                                 </label>
                                 <br /><br />
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr</span>
                                 </label>
                                 <br /><br />
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr</span>
                                 </label>
                                 <br /><br />
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="choice1">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr</span>
-                                  </label>
+                                </label>
 
                             </ul>
                         </div>
@@ -252,48 +264,32 @@
                         <div class="one-size">
 
                             <div class="size-65">
-                                <p>65</p>
+                                <p>5</p>
                             </div>
                             <div class="size-65">
-                                <p>65</p>
+                                <p>10</p>
                             </div>
                             <div class="size-65">
-                                <p>65</p>
+                                <p>20</p>
                             </div>
                             <div class="size-65">
-                                <p>65</p>
+                                <p>25</p>
                             </div>
                             <div class="size-65">
-                                <p>65</p>
-                            </div>
-
-                            <div class="size-65">
-                                <p>65</p>
-                            </div>
-                            <div class="size-65">
-                                <p>65</p>
-                            </div>
-                            <div class="size-65">
-                                <p>65</p>
-                            </div>
-                            <div class="size-65">
-                                <p>65</p>
-                            </div>
-                            <div class="size-65">
-                                <p>65</p>
+                                <p>30</p>
                             </div>
 
                             <div class="size-65">
-                                <p>65</p>
+                                <p>35</p>
                             </div>
                             <div class="size-65">
-                                <p>65</p>
+                                <p>40</p>
                             </div>
                             <div class="size-65">
-                                <p>65</p>
+                                <p>50</p>
                             </div>
                             <div class="size-65">
-                                <p>65</p>
+                                <p>60</p>
                             </div>
                             <div class="size-65">
                                 <p>65</p>
@@ -302,7 +298,7 @@
                         </div>
                     </div>
                     <div class="range-filter">
-                        <h3>FILTR</h3>
+                        <h3>FILTR - ZAKRES</h3>
 
                         <div class="range-size">
                             <div class="range-size-filter">
@@ -436,23 +432,23 @@
                             </div>
 
                             <div class="pagination">
-                                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                                <a href="#" aria-label="strzałka lewa"><i class="fa-solid fa-angle-left"></i></a>
                                 <a href="#">1</a>
                                 <a href="#" class="active">2</a>
                                 <a href="#">3</a>
                                 <a href="#">...</a>
                                 <a href="#">56</a>
-                                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                <a href="#" aria-label="strzałka prawa"><i class="fa-solid fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="lights-row">
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -463,7 +459,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -471,10 +469,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -485,7 +483,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -493,10 +493,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -507,7 +507,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -515,10 +517,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -529,7 +531,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -537,10 +541,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -551,7 +555,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -559,10 +565,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -573,7 +579,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -581,10 +589,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -595,7 +603,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -603,10 +613,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -617,7 +627,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -625,10 +637,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -639,7 +651,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -647,10 +661,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -661,7 +675,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -669,10 +685,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -683,7 +699,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -691,10 +709,10 @@
                         </div>
 
                         <div class="light">
-                            <a href="index3.html" class="link-tag"></a>
+                            <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag"></a>
+                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
                                 <p>Kod produktu: CW1.01/11</p>
                                 <br />
@@ -705,7 +723,9 @@
                             <div class="tile-product">
                                 <div class="number">
                                     <button class="tile-minus">-</button>
-                                    <input type="number" value="1" disabled />
+                                    <label>
+                                        <input type="number" value="1" disabled />
+                                    </label>
                                     <button class="tile-plus">+</button>
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
@@ -754,69 +774,69 @@
                             </div>
 
                             <div class="pagination">
-                                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                                <a href="#" aria-label="strzałka lewa"><i class="fa-solid fa-angle-left"></i></a>
                                 <a href="#">1</a>
                                 <a href="#" class="active">2</a>
                                 <a href="#">3</a>
                                 <a href="#">...</a>
                                 <a href="#">56</a>
-                                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                <a href="#" aria-label="strzałka prawa"><i class="fa-solid fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        <div class="under-footer">
-            <div class="footer-information">
-                <h3>INFORMACJE</h3>
-                <ul>
-                    <li><a href="#">Informacje o sklepie</a></li>
-                    <li><a href="#">Porady</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Galeria inspiracji</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Informacje o sklepie</a></li>
-                </ul>
-            </div>
+            <div class="under-footer">
+                <div class="footer-information">
+                    <h3>INFORMACJE</h3>
+                    <ul>
+                        <li><a href="#">Informacje o sklepie</a></li>
+                        <li><a href="#">Porady</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Galeria inspiracji</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Informacje o sklepie</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-information">
-                <h3>INFORMACJE</h3>
-                <ul>
-                    <li><a href="#">Czas realizacji</a></li>
-                    <li><a href="#">Koszty przesyłki</a></li>
-                    <li><a href="#">Zamów próbkę</a></li>
-                    <li><a href="#">Szycie na wymiar</a></li>
-                    <li><a href="#">Czas realizacji</a></li>
-                    <li><a href="#">Koszty przesyłki</a></li>
-                </ul>
-            </div>
+                <div class="footer-information">
+                    <h3>INFORMACJE</h3>
+                    <ul>
+                        <li><a href="#">Czas realizacji</a></li>
+                        <li><a href="#">Koszty przesyłki</a></li>
+                        <li><a href="#">Zamów próbkę</a></li>
+                        <li><a href="#">Szycie na wymiar</a></li>
+                        <li><a href="#">Czas realizacji</a></li>
+                        <li><a href="#">Koszty przesyłki</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-information">
-                <h3>MOJE KONTO</h3>
-                <ul>
-                    <li><a href="#">Logowanie</a></li>
-                    <li><a href="#">Rejestracja</a></li>
-                    <li><a href="#">Zamowienia</a></li>
-                    <li><a href="#">Ustawienia konta</a></li>
-                    <li><a href="#">Zmiana hasla</a></li>
-                    <li><a href="#">Schowek</a></li>
-                </ul>
-            </div>
+                <div class="footer-information">
+                    <h3>MOJE KONTO</h3>
+                    <ul>
+                        <li><a href="#">Logowanie</a></li>
+                        <li><a href="#">Rejestracja</a></li>
+                        <li><a href="#">Zamowienia</a></li>
+                        <li><a href="#">Ustawienia konta</a></li>
+                        <li><a href="#">Zmiana hasla</a></li>
+                        <li><a href="#">Schowek</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-information">
-                <h3>INFORMACJE</h3>
-                <ul>
-                    <li><a href="#">Informacje o sklepie</a></li>
-                    <li><a href="#">Porady</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Galeria inspiracji</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Informacje o sklepie</a></li>
-                </ul>
+                <div class="footer-information">
+                    <h3>INFORMACJE</h3>
+                    <ul>
+                        <li><a href="#">Informacje o sklepie</a></li>
+                        <li><a href="#">Porady</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Galeria inspiracji</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Informacje o sklepie</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
         <footer>
             <div>Coppyright 2022. Wszystkie prawa zastrzeżone</div>
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>

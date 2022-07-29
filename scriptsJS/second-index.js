@@ -1,3 +1,4 @@
+//plus and minus shop orders
 const numbers = document.querySelectorAll('.tile-product .number');
 numbers.forEach((number) => {
     number.addEventListener('click', (e) => {
@@ -12,3 +13,26 @@ numbers.forEach((number) => {
         }
     })
 })
+
+// menu hamburger
+const hamburger = document.querySelector(".button-menu .hamburger");
+const header = document.querySelector(".nav-items");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    header.classList.toggle("active");
+}
+
+// delete elements
+function removeFilter(button){
+    button.parentElement.remove();
+    // const element = document.querySelector(".li-filter");
+    // element.remove();
+
+    // const btn1 = document.getElementsByClassName('btn');
+    // btn1.addEventListener('click', () => {
+    // btn1.style.display = 'none';
+// })
+}

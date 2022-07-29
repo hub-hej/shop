@@ -79,7 +79,7 @@ html {
     text-decoration: none;
 }
 .headers {
-    flex: 1 0 auto;
+    width: fit-content;
     text-align: left;
     padding: 15px;
 }
@@ -475,7 +475,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     background-color: #F74137;
 }
 .left-main-menu{
-    width: 20%;
+    width: 21.75rem;
     margin: 25px;
 }
 .first-left-menu{
@@ -661,6 +661,13 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     border: var(--border-primary);
     padding: 10px 17px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.size-65:hover{
+    border-color: #bec1cd;
+    cursor: pointer;
+    transition: border-color .45s ease-out;
 }
 .range-size{
     display: flex;
@@ -674,6 +681,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     font-family: var(--font-family-secondary);
     border: var(--border-primary);
     padding: 25px 30px;
+}
+.range-size-filter:hover{
+    border-color: #bec1cd;
+    transition: border-color .45s ease-out;
 }
 .minus{
     text-align: center;
@@ -783,6 +794,10 @@ ul, ul li {
 .checkbox-button{
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.checkbox-button:hover{
+    color: #F74137;
 }
 .checkbox-button__label{
     margin-left: 10px;
@@ -807,6 +822,33 @@ ul, ul li {
     height: 20px;
     background-color: #F74137;
     margin: 4px;
+}
+.button-menu{
+    border: none;
+    background-color: white;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+    cursor: pointer;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.btn{
+    border: none;
+    cursor: pointer;
 }
 @media screen and (max-width: 1800px){
     .different-color{
@@ -849,15 +891,17 @@ ul, ul li {
         margin-bottom: 10px;
         flex-direction: column;
     }
-    .view{
+    .view, .text-main-image br{
         display: none;
+    }
+    .text-main-image{
+        font-size: 30px;
+    }
+    .button1{
+        padding: 15px 25px;
     }
 }
 @media screen and (max-width: 1000px) {
-    .different-color{
-        grid-template-columns: repeat(2, minmax(0,1fr));
-        gap: 5px;
-    }
     .range-size-filter{
         width: 75%;
         text-align: center;
@@ -870,6 +914,9 @@ ul, ul li {
     }
     .text-main-image{
         font-size: 25px;
+    }
+    .button1{
+        padding: 10px 27px;
     }
     .light-left-menu{
         grid-template-columns: repeat(2, minmax(0,1fr));
@@ -926,6 +973,40 @@ ul, ul li {
     .full-box-red2{
         left: 62%;
     }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header, .headers{
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: var(--border-primary);
+        width: 100%;
+    }
+    .headers:hover{
+        background: #E1E2E8;
+    }
+    .header a{
+        display: inline-block;
+        width: 100%;
+        padding: 5px;
+    }
+    .nav-items, .dropdown:hover .dropdown-content{
+        display: none;
+    }
+    .nav-items.active{
+        display: block!important;
+        flex: 1 0 auto;
+    }
 }
 @media screen and (max-width: 800px){
     .light-left-menu{
@@ -934,9 +1015,6 @@ ul, ul li {
     .text-main-image{
         font-size: 20px;
         top: 20%;
-    }
-    .button1{
-        padding: 10px 27px;
     }
 }
 @media screen and (max-width: 750px) {

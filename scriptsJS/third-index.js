@@ -26,3 +26,14 @@ number_cart.forEach((numbers) => {
         }
     })
 });
+
+// menu hamburger
+const hamburger = document.querySelector(".button-menu .hamburger");
+const header = document.querySelector(".nav-items");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    header.classList.toggle("active");
+}
