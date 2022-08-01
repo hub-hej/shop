@@ -109,7 +109,10 @@ html {
 .header a{
     text-decoration: none;
     color: black;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 .headers {
     text-align: left;
@@ -142,6 +145,31 @@ html {
 .button-menu{
     border: none;
     background-color: white;
+}
+.searchTop{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.searchTop__textfield{
+    padding: 15px 150px;
+    border-bottom: 1px solid #E1E2E8;
+    border-left: 1px solid #E1E2E8;
+    border-top: 1px solid #E1E2E8;
+    border-right: none;
+    outline: none;
+}
+.fa-search{
+    color: white;
+}
+.searchTop__submit{
+    background-color: #6b6f71;
+    width: 3.4375rem;
+    border: none;
+    cursor: pointer;
+}
+.searchTop__submit:hover{
+    background-color: #F74137;
 }
 .menu-paragraph {
     display: flex;
@@ -186,7 +214,8 @@ html {
     padding: 12px 20px;
     z-index: 1;
     border: var(--border-primary);
-    border-radius: 15px;
+    line-height: 50px;
+    background-color: white;
 } 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -694,6 +723,16 @@ ul, ul li {
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width:1450px) {
+    .searchTop__textfield{
+        padding: 15px 90px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .upper-menu{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width:1000px) {
     .main-image img{
         object-fit: cover;
@@ -715,8 +754,7 @@ ul, ul li {
         height: 100%;
     }
     .add-information{
-        padding-bottom: 15px;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .left-arrow-lights, .right-arrow-lights{
         opacity: 0;
@@ -788,7 +826,7 @@ ul, ul li {
         width: 100%;
         padding: 5px;
     }
-    .nav-items, .dropdown:hover .dropdown-content{
+    .nav-items, .dropdown:hover .dropdown-content, .header img{
         display: none;
     }
     .nav-items.active{
@@ -807,9 +845,6 @@ ul, ul li {
     }
     .content-area p{
         font-size: 15px;
-    }
-    .upper-menu{
-        flex-direction: column;
     }
     .logo img{
         width: 250px;
@@ -833,6 +868,9 @@ ul, ul li {
     }
     .arrow-cart img{
         width: 100%;
+    }
+    .searchTop__textfield{
+        padding: 15px 30px;
     }
 }
 /* 

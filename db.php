@@ -1,7 +1,7 @@
 <?php
 
     try{
-        $dsn = 'mysql:host=localhost;port=3307;dbname=testowa';
+        $dsn = 'mysql:host=localhost;port=3307;dbname=loginsystem';
         $dbuser = 'root';
         $dbpass = '';
         

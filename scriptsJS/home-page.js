@@ -176,7 +176,6 @@ function myFunction() {
 
 
 
-
 // function show_list() {
 //     var courses = document.getElementsByClassName("courses_class");
 

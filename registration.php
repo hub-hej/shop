@@ -30,7 +30,7 @@
                         </div>
                         <div class="upper-headers">
                             <div class="dropdown">
-                                <a href="#">
+                                <a href="login.php">
                                        <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
                                    <p>MOJE KONTO</p>
                                        <div class="dropdown-content">
@@ -91,18 +91,74 @@
             </div>
         </div>
 
+        <?php
+    require('db.php');
+    // When form submitted, insert values into the database.
+    if (isset($_REQUEST['username'])) {
+        // removes backslashes
+        $username = stripslashes($_REQUEST['username']);
+        //escapes special characters in a string
+        $username = mysqli_real_escape_string($pdo, $username);
+        $email    = stripslashes($_REQUEST['email']);
+        $email    = mysqli_real_escape_string($pdo, $email);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($pdo, $password);
+        $create_datetime = date("Y-m-d H:i:s");
+        $query    = "INSERT into `users` (username, password, email, create_datetime)
+                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
+        $result   = mysqli_query($pdo, $query);
+        if ($result) {
+            echo "<div class='form'>
+                  <h3>Rejestracja sie powiodła.</h3><br/>
+                  <p class='link'>Kliknij tu aby się<a href='login.php'>zalogować</a></p>
+                  </div>";
+        } else {
+            echo "<div class='form'>
+                  <h3>Brakuje wypełnienia wymaganych pól.</h3><br/>
+                  <p class='link'>Kliknij tu aby się <a href='registration.php'>zarejestrować</a> ponownie.</p>
+                  </div>";
+        }
+    } else {
+?>
+
+        <div class="orderHeader">
+            <span class="orderHeader__text">Rejestracja</span>
+        </div>
         <div class="information">
             <div class="register">
                 <form class="form" action="" method="post" autocomplete="off">
-                    <h1 class="login-title">Rejestracja</h1>
-                    <input type="text" class="login-input" name="username" placeholder="Username" maxlength="50" required />
-                    <input type="text" class="login-input" name="email" placeholder="Email Adress" maxlenght="50">
-                    <input type="password" class="login-input" name="password" placeholder="Password" maxlength="50">
-                    <input type="submit" name="submit" value="Rejestracja" class="login-button">
+                    <input type="text" class="login-input" name="username" placeholder="Nazwa użytkownika*" maxlength="50" required />
+                    <input type="text" class="login-input" name="email" placeholder="Email*" maxlenght="50">
+                    <input type="password" class="login-input" name="password" placeholder="Hasło*" maxlength="50">
+                    <div class="regulations">
+                    <ul>
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Zapoznałem się z regulaminem oraz moim prawem do odstąpienia od umowy i rękojmi*</span>
+                                </label>
+                                <br />
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie informacji na temat nowości oraz zmian w ofercie sklepu</span>
+                                </label>
+                    </ul>
+                    </div>
+                    <br>
+
+                    <div class="orderButtonRow">
+                        <p class="left-text">*Pola wymagane</p>
+                        <input type="submit" name="submit" value="Załóż konto" class="login-button">
+                    </div>
                     <p class="link"><a href="login.php">Kliknij aby się zalogować</a></p>
                  </form>
             </div>
         </div>
+        
+        <?php
+            }
+?>
 
         <div class="under-footer">
 
@@ -160,9 +216,7 @@
             <div class="right-part">Agencja Interaktywna [ti] Powered By 2ClickShop</div>
         </div>
     </div>
-    <?php
-    include 'db.php'; 
-    // $data = $pdo->query("SELECT * FROM users")->fetchAll();
+    <!-- // $data = $pdo->query("SELECT * FROM users")->fetchAll();
     // // and somewhere later:
     // foreach ($data as $row) {
     //     echo $row['username']."<br />\n";
@@ -191,7 +245,6 @@
 //     $stmt= $pdo->prepare($sql);
 //     if($stmt->execute()) {
 //     echo "Post deleted successfully!";
-//   }
-?>
+//   } -->
 </body>
 </html>

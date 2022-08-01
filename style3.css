@@ -54,6 +54,31 @@ html {
     gap: 10px;
     align-items: center;
 }
+.searchTop{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.searchTop__textfield{
+    padding: 15px 150px;
+    border-bottom: 1px solid #E1E2E8;
+    border-left: 1px solid #E1E2E8;
+    border-top: 1px solid #E1E2E8;
+    border-right: none;
+    outline: none;
+}
+.fa-search{
+    color: white;
+}
+.searchTop__submit{
+    background-color: #6b6f71;
+    width: 3.4375rem;
+    border: none;
+    cursor: pointer;
+}
+.searchTop__submit:hover{
+    background-color: #F74137;
+}
 .three-information{
     text-align: center;
     padding: 20px;
@@ -74,6 +99,10 @@ html {
 .header a{
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 .headers {
     width: fit-content;
@@ -629,8 +658,6 @@ span {
     vertical-align: middle;
     text-align: center;
     font-family: var(--font-family-secondary);
-    border-top: var(--border-primary);
-    border-bottom: var(--border-primary);
     height: 100%;
 }
 input[type="number"]{
@@ -823,6 +850,16 @@ p.title-paragraph{
     width: 100%;
     flex-wrap: wrap;
 }
+@media screen and (max-width: 1450px) {
+    .searchTop__textfield{
+        padding: 15px 90px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .upper-menu{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 1000px) {
     .tile-light, .number-light{
         flex-direction: column;
@@ -887,7 +924,6 @@ p.title-paragraph{
     .header, .headers{
         flex-direction: column;
         gap: 10px;
-        text-align: center;
     }
     .lights-wrapper img{
         width: 100%;
@@ -943,7 +979,7 @@ p.title-paragraph{
         width: 100%;
         padding: 5px;
     }
-    .nav-items, .dropdown:hover .dropdown-content{
+    .nav-items, .dropdown:hover .dropdown-content, .header img{
         display: none;
     }
     .nav-items.active{
@@ -965,12 +1001,12 @@ p.title-paragraph{
     .basic-information h2, .other-items h2, .product-description h2{
         font-size: 30px;
     }
-    .upper-menu{
-        flex-direction: column;
-    }
     .three-button{
         flex-direction: column;
         text-align: center;
+    }
+    .searchTop__textfield{
+        padding: 15px 60px;
     }
 }
 @media screen and (max-width: 585px) {
