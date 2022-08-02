@@ -598,7 +598,13 @@ html {
     border: none;
     cursor: pointer;
 }
-
+.categoryDesc{
+    font-family: var(--font-family-tertiary);
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+}
 input[type="number"] {
     font-size: 14px;
     background-color: #FFFFFF;
@@ -1124,13 +1130,11 @@ ul li {
     .text-main-image {
         font-size: 35px;
     }
-
     .image-container img {
         object-fit: cover;
         height: 100%;
         width: 100%;
     }
-
     .range-size {
         flex-direction: column;
         padding: 15px;
@@ -1139,38 +1143,34 @@ ul li {
         flex-direction: column;
     }
 }
-
 @media screen and (max-width: 1100px) {
     .tile-page{
         flex-direction: column;
     }
-
     .left-side {
         flex-direction: row;
         justify-content: center;
         margin-top: 5px;
     }
-
     .right-side {
         justify-content: center;
         margin-bottom: 10px;
         flex-direction: column;
     }
-
     .view,
     .text-main-image br {
         display: none;
     }
-
     .text-main-image {
         font-size: 30px;
     }
-
+    .categoryDesc{
+        font-size: 15px;
+    }
     .button1 {
         padding: 15px 25px;
     }
 }
-
 @media screen and (max-width: 1000px) {
     .range-size-filter {
         width: 75%;

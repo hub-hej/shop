@@ -821,6 +821,7 @@ ul, ul li {
     .galleryFooter, .galleryFooterDelivery{
         border-bottom: 1px solid hsla(0,0%,100%,.3);
         width: 100%;
+        gap: 45px;
     }
     .footerSocialMedia{
         margin: 0 auto;
