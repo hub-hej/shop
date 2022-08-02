@@ -1,3 +1,4 @@
+//Plus and minus add product including with shopping cart
 (function ()
 {
 const numbers = document.querySelectorAll('.tile-product .number');
@@ -82,8 +83,9 @@ const paragraph = document.querySelector(".main-image .text-main-image p");
 // })
 // slider button left-right arrow 
 
-let slideIndex = 0;
 
+//Change photo thanks to slider button left-right arrow
+let slideIndex = 0;
 function plusDivs(n) {
     slideIndex += n
 
@@ -110,15 +112,33 @@ function plusDivs(n) {
      header.classList.toggle("active");
 }
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var headers = document.getElementById("myFixed");
-var sticky = headers.offsetTop;
+// var headers = document.getElementById("myFixed");
+// var sticky = headers.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    headers.classList.add("sticky");
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     headers.classList.add("sticky");
+//   }
+// }
+
+
+//Button scroll
+var mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
   }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 
