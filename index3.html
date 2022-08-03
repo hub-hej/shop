@@ -26,8 +26,9 @@
                             </a>
                         </div>
                         <div class="search-menu">
-                            <form class="searchTop"> 
-                                <input type="text" class="searchTop__textfield" placeholder="Wpisz nazwę produktu" name="search" autocomplete="off">
+                            <form class="searchTop">
+                                <input type="text" class="searchTop__textfield" placeholder="Wpisz nazwę produktu"
+                                    name="search" autocomplete="off">
                                 <button type="submit" class="searchTop__submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
@@ -136,25 +137,22 @@
                     </div>
                     <div class="lights-offer">
                         <div class="lights-wrapper">
-                            <img src="photos/Photo–1.png" alt="Duża żarówka" />
+                            <img src="photos/Photo–1.png" alt="Duża żarówka" id="image-back" />
                             <div class="left-small-lights">
-                                <i class="fa-solid fa-angle-up"></i>
-                                <img src="photos/Image149.png" alt="Żarówki" />
-                                <img src="photos/Image149.png" alt="Żarówki" />
-                                <img src="photos/Image149.png" alt="Żarówki" />
-                                <img src="photos/Image149.png" alt="Żarówki" />
-                                <img src="photos/Image149.png" alt="Żarówki" />
-                                <i class="fa-solid fa-angle-down"></i>
+                                <button class="button-up"><i class="fa-solid fa-angle-up"></i></button>
+                                <img src="photos/Image149@2x.png" alt="Żarówki" />
+                                <img src="photos/Image149@2x.png" alt="Żarówki" />
+                                <img src="photos/Image149@2x.png" alt="Żarówki" />
+                                <img src="photos/Image149@2x.png" alt="Żarówki" />
+                                <img src="photos/Image149@2x.png" alt="Żarówki" />
+                                <button class="button-down"><i class="fa-solid fa-angle-down"></i></button>
                             </div>
                             <div class="text-offer">
                                 <p class="one">PROMOCJA</p>
                                 <p class="two">NOWOŚĆ</p>
                             </div>
-                            <div class="left-arrow-lights"><img src="icons/Path30.png" alt="Lewa strzałka na żarówce">
-                            </div>
-                            <div class="right-arrow-lights"><img src="icons/prawa-strzalka.png"
-                                    alt="Prawa strzałka na żarówce">
-                            </div>
+                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                         </div>
 
                         <div class="lights-information">
@@ -207,7 +205,7 @@
                                         <button class="plus-light">+</button>
                                     </div>
                                     <div class="shopping-button">
-                                        <a href=""><button class="button button4"><img src="icons/Group807.png"
+                                        <a href=""><button class="button button6"><img src="icons/Group807.png"
                                                     alt="Koszyk" />
                                                 <p>DODAJ
                                                     DO KOSZYKA</p>
@@ -219,16 +217,66 @@
 
                     </div>
                 </div>
+
+                <div class="gallleryFeaturesFullWrapper">
+
+                    <div class="galleryFeatures">
+                        <div class="galleryFeaturesFullItem">
+                            <img src="./photos/fotos-19.jpg" alt="" />
+                        </div>
+                        <div class="galleryFeaturesFullItem__content">
+                            SZYBKA WYSYŁKA
+                        </div>
+                    </div>
+
+                    <div class="galleryFeatures">
+                        <div class="galleryFeaturesFullItem">
+                            <img src="./photos/fotos-21.jpg" alt="" />
+                        </div>
+                        <div class="galleryFeaturesFullItem__content">
+                            SZEROKI ASORTYMENT
+                        </div>
+                    </div>
+
+                    <div class="galleryFeatures">
+                        <div class="galleryFeaturesFullItem">
+                            <img src="./photos/fotos-25.jpg" alt="" />
+                        </div>
+                        <div class="galleryFeaturesFullItem__content">
+                            BEZPIECZNE ZWROTY
+                        </div>
+                    </div>
+
+                    <div class="galleryFeatures">
+                        <div class="galleryFeaturesFullItem">
+                            <img src="./photos/fotos-26.jpg" alt="" />
+                        </div>
+                        <div class="galleryFeaturesFullItem__content">
+                            NAJLEPSZE CENY
+                        </div>
+                    </div>
+
+                    <div class="galleryFeatures">
+                        <div class="galleryFeaturesFullItem">
+                            <img src="./photos/fotos-27.jpg" alt="" />
+                        </div>
+                        <div class="galleryFeaturesFullItem__content">
+                            DOGODNE FORMY PŁATNOŚCI
+                        </div>
+                    </div>
+                </div>
                 <div class="three-button">
-                    <a href="#" class="button button1">OPIS PRODUKTU</a>
-                    <form action="#section2" class="forms"><button class="button button2">DANE TECHNICZNE</button>
+                    <form action="#section1" class="forms"><button class="button button1">OPIS PRODUKTU</button></form>
+                    <form action="#section2" class="forms"><button class="button button2">SZCZEGÓŁY</button></form>
+                    <form action="#section3" class="forms"><button class="button button3">OPINIE</button></form>
+                    <form action="#section4" class="forms"><button class="button button4">DANE TECHNICZNE</button>
                     </form>
-                    <form action="#section3"><button class="button button3">INNE Z KATEGORII</button></form>
+                    <form action="#section5"><button class="button button5">INNE Z KATEGORII</button></form>
                 </div>
             </section>
 
             <section>
-                <div class="product-description">
+                <div class="product-description" id="section1">
                     <h2>Opis produktu</h2>
 
                     <p>Simon 10 to ekonomiczna seria modułowa dla inwestycji, na których zróżnicowana kolorystyka nie
@@ -278,13 +326,54 @@
             </section>
 
             <section>
-                <div class="basic-information" id="section2">
-                    <h2>Dane podstawowe</h2>
+                <div class="section_header_container" id="section2">
+                    <h2>Szczegóły</h2>
+
+                    <p>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="section_header_opinion" id="section3">
+                    <h2>Opinie</h2>
+
+                    <p>Miałaś juz kontakt z naszym produktem? Zostaw nam swoja opinię <br />
+                        - to dla Ciebie staramy sie byc najlepsi, a Twoje zdanie bardzo nam w tym pomoże!</p>
+                    <div class="five_icon_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="systemForm_text_input">
+                    <form class="form" action method="post" autocomplete="off">
+                        <p>Nazwa użytkownika*</p>
+                        <input type="text" class="user-login" name="username" maxlength="50"
+                            placeholder="Wpisz nazwę użytkownika" required="true" aria-required="true">
+                        <p>Adres e-mail*</p>
+                        <input type="email" class="email-login" name="email" maxlength="50"
+                            placeholder="Wpisz adres e-mail" required="true" aria-required="true">
+                        <p>Komentarz*</p>
+                        <textarea name="desc" class="form_textarea" placeholder="Napisz komentarz" required="true"
+                            aria-required="true" rows="2" cols="1"></textarea>
+                        <button class="button send_opinion">DODAJ OPINIĘ</button>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="basic-information" id="section4">
+                    <h2>Dane techniczne</h2>
 
                 </div>
 
                 <div class="general-table">
                     <table>
+                        <tr>
+                            <th class="left-header-table">PARAMETR</th>
+                            <th class="right-header-table">WARTOŚĆ</th>
+                        </tr>
                         <tr>
                             <td class="right-text-table">Seria</td>
                             <td class="left-text-table">Simon 10</td>
@@ -324,7 +413,7 @@
             </section>
 
             <section>
-                <div class="other-items" id="section3">
+                <div class="other-items" id="section5">
                     <h2>Inne z kategorii</h2>
                 </div>
 
@@ -348,7 +437,7 @@
                                     </label>
                                     <button class="plus">+</button>
                                 </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                <div class="shoppingcart"><button class="button7"><img src="icons/Group807.png"
                                             alt="Koszyk" /></button></div>
                             </div>
                         </div>
@@ -371,7 +460,7 @@
                                     </label>
                                     <button class="plus">+</button>
                                 </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                <div class="shoppingcart"><button class="button7"><img src="icons/Group807.png"
                                             alt="Koszyk" /></button></div>
                             </div>
                         </div>
@@ -394,7 +483,7 @@
                                     </label>
                                     <button class="plus">+</button>
                                 </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                <div class="shoppingcart"><button class="button7"><img src="icons/Group807.png"
                                             alt="Koszyk" /></button></div>
                             </div>
                         </div>
@@ -417,7 +506,7 @@
                                     </label>
                                     <button class="plus">+</button>
                                 </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                <div class="shoppingcart"><button class="button7"><img src="icons/Group807.png"
                                             alt="Koszyk" /></button></div>
                             </div>
                         </div>
@@ -440,7 +529,7 @@
                                     </label>
                                     <button class="plus">+</button>
                                 </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                <div class="shoppingcart"><button class="button7"><img src="icons/Group807.png"
                                             alt="Koszyk" /></button></div>
                             </div>
                         </div>
