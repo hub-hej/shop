@@ -999,7 +999,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer-information h3 {
-    border-bottom: var(--border-primary);
+    border-bottom: 1px solid hsla(0,0%,100%,.3);
     font-family: var(--font-family-primary);
 }
 
