@@ -1008,7 +1008,6 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 15px;
     font-family: var(--font-family-secondary);
 }
-
 .footer-information h3::after {
     content: '';
     height: 3px;
@@ -1225,57 +1224,45 @@ ul li {
         display: none;
         flex-direction: column;
     }
-
     .under-footer {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 40px;
     }
-
     .main-content {
         width: 80%;
     }
-
     .range-size-filter {
         width: 75%;
         text-align: center;
         margin: 0 auto;
     }
-
     footer {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
-
     .one-size {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
     .left-main-menu {
         overflow: hidden;
     }
-
     .full-box-red2 {
         left: 62%;
     }
-
     .hamburger {
         display: block;
         cursor: pointer;
     }
-
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
     .header,
     .headers {
         flex-direction: column;
@@ -1283,25 +1270,21 @@ ul li {
         border-bottom: var(--border-primary);
         width: 100%;
     }
-
     .headers img{
         display: none;
     }
     .headers:hover {
         background: #E1E2E8;
     }
-
     .header a {
         display: inline-block;
         width: 100%;
         padding: 5px;
     }
-
     .nav-items,
     .dropdown:hover .dropdown-content {
         display: none;
     }
-
     .nav-items.active {
         display: block !important;
         flex: 1 0 auto;
@@ -1310,18 +1293,15 @@ ul li {
         padding: 15px 50px;
     }
 }
-
 @media screen and (max-width: 800px) {
     .light-left-menu {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-
     .text-main-image {
         font-size: 20px;
         top: 20%;
     }
 }
-
 @media screen and (max-width: 750px) {
     .first-left-menu h3,
     .first-left-menu p,
@@ -1430,35 +1410,28 @@ ul li {
         font-size: 10px;
     }
 }
-
 @media screen and (max-width: 450px) {
     .pagination {
         display: none;
     }
-
     .text-main-image {
         font-size: 15px;
     }
-
     .button1 {
         padding: 5px 22px;
     }
 }
-
 @media screen and (max-width: 400px) {
     .third-header {
         width: 100%;
         flex-direction: column;
     }
-
     .text-cart {
         display: none;
     }
-
     .cart img {
         border-right: none;
     }
-
     .searchTop__textfield{
         padding: 15px 30px;
     }
