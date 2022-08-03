@@ -1,3 +1,4 @@
+(function (){
 const numbers = document.querySelectorAll('.tile-product .number');
 numbers.forEach((number) => {
     number.addEventListener('click', (e) => {
@@ -12,6 +13,9 @@ numbers.forEach((number) => {
         }
     })
 })
+})();
+
+(function(){
 const number_cart = document.querySelectorAll('.tile-light .number-light');
 number_cart.forEach((numbers) => {
     numbers.addEventListener('click', (e) => {
@@ -25,8 +29,10 @@ number_cart.forEach((numbers) => {
             input.value = parseInt(input.value) - 1;
         }
     })
-});
+})
+})();
 
+(function(){
 // menu hamburger
 const hamburger = document.querySelector(".button-menu .hamburger");
 const header = document.querySelector(".nav-items");
@@ -37,6 +43,7 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     header.classList.toggle("active");
 }
+})();
 
 //Button scroll
 var mybutton = document.getElementById("myBtn");
@@ -53,4 +60,59 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+
+const img = document.getElementById('image-back');
+let toogle = true;
+
+const sliderAnim = [
+    { opacity: '0' },
+    { opacity: '1' }
+];
+
+const sliderAnimOptions = {
+    duration: 500,
+    iterations: 1
+}
+
+const sliderData = [
+    {
+        image: 'photos/Photo–1.png',
+    },
+    {
+        image: 'photos/product-1.png',
+    }
+];
+// img.addEventListener('click', function () {
+//     toogle = !toogle;
+//     if (toogle) {
+//         img.src = image1;
+//         headerTag.textContent = text1[0];
+//         subheaderTag.textContent = text1[1];
+//         paragraph.textContent = text1[2];
+//     } else {
+//         img.src = image2;
+//         headerTag.textContent = text2[0];
+//         subheaderTag.textContent = text2[1];
+//         paragraph.textContent = text2[2];
+//     }
+//     img.animate(sliderAnim, sliderAnimOptions);
+// })
+// slider button left-right arrow 
+document.getElementById("image-back").height = "518";
+
+//Change photo thanks to slider button left-right arrow
+let slideIndex = 0;
+function plusDivs(n) {
+    slideIndex += n
+
+    if (slideIndex == -1) {
+        slideIndex = sliderData.length - 1;
+    } else if (slideIndex == sliderData.length) {
+        slideIndex = 0;
+    }
+
+    img.src = sliderData[slideIndex].image;
+    img.animate(sliderAnim, sliderAnimOptions);
 }
