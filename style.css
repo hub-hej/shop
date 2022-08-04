@@ -949,9 +949,6 @@ ul li {
     width: 100%;
 }
 
-.hide-text{
-    
-}
 @media screen and (max-width:1450px) {
     .searchTop__textfield {
         padding: 15px 90px;

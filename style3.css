@@ -308,6 +308,7 @@ html {
     display:flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 .title-offer{
     height: 100%;
@@ -1145,9 +1146,6 @@ p.title-paragraph{
     }
     .product-description p, .section_header_container p{
         width: 80%;
-    }
-    .fileAddItem_name{
-
     }
 }
 @media screen and (max-width: 900px) {
