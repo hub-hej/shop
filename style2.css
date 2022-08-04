@@ -286,6 +286,7 @@ header{
     font-size: 14px;
     font-family: var(--font-family-secondary);
     padding-bottom: 30px;
+    display: none;
 }
 
 .background-height {
@@ -297,11 +298,13 @@ header{
     align-items: center;
 }
 
-.text-expand {
+.text-expand a{
     display: flex;
     font-family: var(--font-family-primary);
     background-color: white;
     padding-left: 5px;
+    text-decoration: none;
+    color: black;
 }
 
 .light-left-menu {
