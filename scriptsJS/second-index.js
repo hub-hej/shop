@@ -53,3 +53,10 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//This function hides us text thanks to the button (ROZWIŃ)
+jQuery(document).ready(function($){
+  op = function(obj) {
+    $(obj).stop().slideToggle();
+    };
+});
