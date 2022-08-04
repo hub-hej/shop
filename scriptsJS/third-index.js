@@ -78,6 +78,15 @@ const sliderAnimOptions = {
 
 const sliderData = [
     {
+        image: 'photos/Photo–1.png',   
+    },
+    {
+        image: 'photos/Photo–1.png',
+    },
+    {
+        image: 'photos/Photo–1.png',
+    },
+    {
         image: 'photos/Photo–1.png',
     },
     {
