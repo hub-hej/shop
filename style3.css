@@ -28,6 +28,11 @@ html {
     height: 100%;
     scroll-behavior: smooth;
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 #myBtn {
     display: none;
     position: fixed;
@@ -57,7 +62,7 @@ html {
 .menu {
     text-align: center;
     font-size: 14px;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--background-color-primary);
     justify-content: space-between;
     list-style: none;
@@ -266,7 +271,7 @@ html {
     top: 50%;
     transform: translateY(-50%);
     right: 5%;
-    background-color: #A3A3A3;
+    background-color: #C1C2C6;
     width: 50px;
     height: 48px;
     cursor: pointer;
@@ -285,7 +290,7 @@ html {
     top: 50%;
     transform: translateY(-50%);
     left: 15%;
-    background-color: #A3A3A3;
+    background-color: #F2F3F4;
     width: 50px;
     height: 48px;
     cursor: pointer;
@@ -647,18 +652,18 @@ tbody tr:nth-child(even)
 .five_icon_star:hover{
     color: #fde4ae;
 }
-.section_header_opinion{
+.section_header_opinion, .section_header_download{
     text-align: center;
     background-color: var(--background-color-primary);
     padding-top: 25px;
 }
-.section_header_opinion h2{
+.section_header_opinion h2, .section_header_download h2{
     cursor: pointer;
     font-size: 35px;
     border-bottom: var(--border-primary);
     font-family: var(--font-family-primary);
 }
-.section_header_opinion h2::after{
+.section_header_opinion h2::after, .section_header_download h2::after{
     content: '';
     width: 50px;
     border-bottom: 3px solid #F74137;
@@ -713,6 +718,76 @@ tbody tr:nth-child(even)
     border: 1px solid #E1E2E8;
     resize: none;
     outline: none;
+}
+.fileAddItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.fileAddItem_general{
+    display: flex;
+    border: 1px solid #E1E2E8;
+    margin: 0 auto;
+    width: 60%;
+}
+.fileAddItem_left{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #E1E2E8;
+    flex-grow: 1;
+}
+.fileAddItem_icon{
+    background-color: #F8F8F8;
+    border-right: 1px solid #E1E2E8;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fileAddItem_name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+.fileAddItem_name a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+    width: 100%;
+    margin-left: 10px;
+}
+.fileAddItem_general_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    gap: 15px;
+}
+.fileAddItem-name{
+    margin-left: 10px;
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+}
+.buttondownload{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.buttondownload a{
+    background-color: #f2f3f4;
+    cursor: pointer;
+    color: #22262c;
+    font-family: var(--font-family-primary);
+}
+.buttondownload a:hover{
+    background-color: #e7e9eb;
 }
 .basic-information{
     text-align: center;
@@ -988,10 +1063,10 @@ p.title-paragraph{
     background-color: #C1C2C6;
     cursor: pointer;
 }
-.button-up:hover{
-    background-color: #f74137;
+.button-up{
+    background-color: #F2F3F4;
 }
-.button-down:hover{
+.button-up:hover, .button-down:hover{
     background-color: #f74137;
 }
 .fa-angle-up{
@@ -1026,7 +1101,8 @@ p.title-paragraph{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: auto;
 }
 @media screen and (max-width: 1450px) {
     .searchTop__textfield{
@@ -1069,6 +1145,9 @@ p.title-paragraph{
     }
     .product-description p, .section_header_container p{
         width: 80%;
+    }
+    .fileAddItem_name{
+
     }
 }
 @media screen and (max-width: 900px) {
@@ -1161,6 +1240,9 @@ p.title-paragraph{
         display: block!important;
         flex: 1 0 auto;
     }
+    .header{
+        padding: 5px
+    }
 }
 @media screen and (max-width: 750px) {
     .logo img{
@@ -1178,6 +1260,9 @@ p.title-paragraph{
     }
     .searchTop__textfield{
         padding: 15px 60px;
+    }
+    .fileAddItem-name{
+        display: none;
     }
 }
 @media screen and (max-width: 585px) {
@@ -1229,6 +1314,19 @@ p.title-paragraph{
     }
     .number-light, .shopping-button{
         margin-right: 10px;
+    }
+    .fileAddItem{
+        white-space: nowrap;
+        overflow: auto;
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (max-width: 550px) {
+    .buttondownload{
+        display: none;
+    }
+    .fileAddItem_name{
+        padding: 15px;
     }
 }
 @media screen and (max-width: 435px) {

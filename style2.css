@@ -32,6 +32,11 @@ html {
     font-size: 100%;
     scroll-behavior: smooth;
 }
+header{
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+}
 #myBtn {
     position: fixed;
     bottom: 50px;
@@ -61,7 +66,7 @@ html {
 .menu {
     text-align: center;
     font-size: 14px;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     justify-content: space-between;
     list-style: none;
@@ -539,6 +544,8 @@ html {
     transition: transform 0.3s ease;
     overflow: hidden;
     transform: translateY(60px);
+    background-color: hsla(0,0%,100%,.9);
+    overflow-wrap: break-word;
 }
 
 .text-under-lights b {
@@ -1096,7 +1103,8 @@ ul li {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: auto;
 }
 
 .btn {
@@ -1270,9 +1278,6 @@ ul li {
         border-bottom: var(--border-primary);
         width: 100%;
     }
-    .headers img{
-        display: none;
-    }
     .headers:hover {
         background: #E1E2E8;
     }
@@ -1281,7 +1286,7 @@ ul li {
         width: 100%;
         padding: 5px;
     }
-    .nav-items,
+    .nav-items, .headers img,
     .dropdown:hover .dropdown-content {
         display: none;
     }
@@ -1291,6 +1296,9 @@ ul li {
     }
     .searchTop__textfield{
         padding: 15px 50px;
+    }
+    .header{
+        padding: 5px;
     }
 }
 @media screen and (max-width: 800px) {
