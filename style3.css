@@ -28,11 +28,11 @@ html {
     height: 100%;
     scroll-behavior: smooth;
 }
-header{
+/* header{
     position: sticky;
     top: 0;
     z-index: 1;
-}
+} */
 #myBtn {
     display: none;
     position: fixed;
@@ -971,17 +971,17 @@ ul, ul li {
     font-family: var(--font-family-secondary);
     cursor: context-menu;
 }
-.button1, .button2, .button3, .button4, .button5{
+.button1, .button2, .button3, .button4, .button5, .button6{
     font-family: var(--font-family-primary);
     cursor: pointer;
     color: black;
     background-color: var(--background-color-primary);
 }
-.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover {
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover {
     background-color: #F74137;
     color: white;
 }
-.button6{
+.button7{
     background-color: var(--background-color-secondary);
     display: flex;
     align-items: center;
@@ -991,7 +991,7 @@ ul, ul li {
     font-family: var(--font-family-secondary);
     cursor: pointer;
 }
-.button7{
+.button8{
     border: none;
     cursor: pointer;
     background: transparent;
