@@ -111,7 +111,7 @@ const sliderData = [
 // slider button left-right arrow 
 document.getElementById("image-back").height = "518";
 
-//Change photo thanks to slider button left-right arrow
+//Change photo thanks to slider button left-right arrow for lights
 let slideIndex = 0;
 function plusDivs(n) {
     slideIndex += n
