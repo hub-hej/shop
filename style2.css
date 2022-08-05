@@ -323,26 +323,7 @@ header{
     height: 100%;
 }
 
-.light-text-image-menu-red {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: var(--border-primary);
-    height: 100%;
-}
-
-.light-text-image-menu-red img {
-    border-bottom: 3px solid #ED654B;
-    border-right: var(--border-primary);
-    width: 110px;
-    padding: 15px 35px;
-}
-
 .light-text-image-menu p {
-    margin-left: 10px;
-}
-
-.light-text-image-menu-red p {
     margin-left: 10px;
 }
 
@@ -351,7 +332,9 @@ header{
     width: 110px;
     padding: 15px 35px;
 }
-
+.light-text-image-menu img:hover{
+    border-bottom: 3px solid #ED654B;
+}
 .image-container {
     max-width: 100%;
     width: 100%;

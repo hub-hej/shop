@@ -646,7 +646,7 @@ tbody tr:nth-child(even)
     padding-top: 15px;
 }
 .section_header_container p{
-    max-width: 1400px;
+    max-width: 1550px;
     font-family: var(--font-family-secondary);
     margin: 15px auto;
     text-align: left;
@@ -1115,6 +1115,9 @@ p.title-paragraph{
     .searchTop__textfield{
         padding: 15px 90px;
     }
+    .product-description p, .section_header_container p{
+        width: 80%;
+    }
 }
 @media screen and (max-width: 1300px){
     .upper-menu{
@@ -1149,9 +1152,6 @@ p.title-paragraph{
         border-bottom: var(--border-primary);
         border-top: var(--border-primary);
         width: 100%;
-    }
-    .product-description p, .section_header_container p{
-        width: 80%;
     }
 }
 @media screen and (max-width: 900px) {
