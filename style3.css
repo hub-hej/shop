@@ -8,10 +8,16 @@
     font-weight: bold;
     src: url("fonts/Metropolis-Bold.otf") format("opentype");
 }
+@font-face {
+    font-family: 'Metropolis-Light';
+    font-weight: bold;
+    src: url("fonts/Metropolis-Light.otf") format("opentype");
+}
 :root{
     --border-primary: 1px solid #E1E2E8;
     --font-family-primary: 'Metropolis-Bold';
     --font-family-secondary: 'Metropolis';
+    --font-family-tertiary: 'Metropolis-Light';
     --background-color-primary: #FFFFFF;
     --background-color-secondary: #9BCB3B;
 }
@@ -250,7 +256,7 @@ html {
 .left-small-lights{
     flex-direction: column;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 3%;
     display: flex;
     align-items: center;
@@ -264,7 +270,7 @@ html {
 .left-small-lights img{
     border: var(--border-primary);
     padding: 10px;
-    width: 50px;
+    width: 60px;
 }
 .w3-display-right {
     position: absolute;
@@ -1013,7 +1019,7 @@ ul, ul li {
     text-align: center;
     background-color: var(--background-color-primary);
     padding-top: 50px;
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-tertiary);
 }
 .product-description h2{
     font-size: 35px;
@@ -1022,11 +1028,11 @@ ul, ul li {
     cursor: pointer;
 }
 .product-description p{
-    max-width: 1400px;
+    max-width: 1550px;
     margin: 30px auto;
-    font-size: 20px;
+    font-size: 19px;
     text-align: left;
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-tertiary);
 }
 .product-description h3{
     font-size: 25px;
@@ -1059,7 +1065,7 @@ p.title-paragraph{
 }
 .button-up, .button-down{
     border: none;
-    width: 50px;
+    width: 60px;
     height: 45px;
     background-color: #C1C2C6;
     cursor: pointer;
@@ -1118,14 +1124,14 @@ p.title-paragraph{
 @media screen and (max-width: 1100px) {
     .left-small-lights{
         flex-direction: initial;
-        top: 95%;
-        left: 20%;
+        top: 93%;
+        left: 15%;
     }
     .w3-display-left{
         left: 5%;
     }
-    .button-up, .button-down{
-        height: 69px;
+    .button-up, .button-down, .outlet, .left-small-lights img{
+        height: 70px;
     }
 }
 @media screen and (max-width: 1000px) {
