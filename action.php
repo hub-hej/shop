@@ -22,11 +22,3 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
-<!-- //     $result = mysqli_query($pdo, $query);
-
-//     if($result){
-//         echo "<script>alert('Comment added successfully.')</script>";
-//     } else{
-//         echo "<script>alert('Comment does not add.')</script>";
-//     }
-// } -->

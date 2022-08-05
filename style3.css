@@ -155,7 +155,7 @@ html {
     transition: 2s;
     transform:rotate(360deg);
 }
-.upper-headers p{
+.upper-headers p, .cart-brother{
     position: relative;
 }
 .upper-headers p::before{
@@ -215,9 +215,6 @@ html {
 }
 .cart-family{
     display: flex;
-}
-.cart-brother{
-    position: relative;
 }
 .number-orders{
     border: 1px solid #9BCB3B;
@@ -288,9 +285,6 @@ html {
     font-size: 18px;
     color: white;
 }
-.w3-display-right:hover{
-    background-color: #f74137;
-}
 .w3-display-left {
     position: absolute;
     top: 50%;
@@ -307,7 +301,7 @@ html {
     font-size: 18px;
     color: white;
 }
-.w3-display-left:hover{
+.w3-display-left:hover, .w3-display-right:hover{
     background-color: #f74137;
 }
 .lights-offer{
@@ -399,7 +393,7 @@ html {
     font-size: 17px;
     width: 100%;
 }
-.option1 img{
+.option1 img, .option2 img{
     width: 20px;
 }
 .option2{
@@ -411,9 +405,6 @@ html {
     width: 100%;
     border-left: var(--border-primary);
     line-height: 35px;
-}
-.option2 img{
-    width: 20px;
 }
 .variants{
     font-family: var(--font-family-primary);
@@ -433,10 +424,7 @@ html {
     border: 1px solid #1BB0F7;
     transition: 0.3s ease-in-out;
 }
-.first-image-variant img{
-    height: 65px;
-}
-.second-image-variant img{
+.first-image-variant img, .second-image-variant img{
     height: 65px;
 }
 .second-image-variant{
@@ -654,10 +642,11 @@ tbody tr:nth-child(even)
     margin-top: 65px;
 }
 .five_icon_star{
-    color: #fef4de;
-}
-.five_icon_star:hover{
     color: #fde4ae;
+}
+.five_icon_star i:hover~i::before ,.five_icon_star>i:hover::before{
+  color: #fef4de;
+  cursor: pointer;
 }
 .section_header_opinion, .section_header_download{
     text-align: center;
@@ -861,7 +850,7 @@ tbody tr:nth-child(even)
     color: #A3A3A3;
     font-family: var(--font-family-secondary);
 }
-.text-under-lights b{
+.text-under-lights b, p.title-paragraph{
     font-family: var(--font-family-primary);
 }
 .text-under-lights p{
@@ -1040,9 +1029,6 @@ ul, ul li {
     font-family: var(--font-family-primary);
     text-align: left;
 }
-p.title-paragraph{
-    font-family: var(--font-family-primary);
-}
 .product-description h2::after{
     content: '';
     width: 50px;
@@ -1077,13 +1063,7 @@ p.title-paragraph{
 .button-up:hover, .button-down:hover{
     background-color: #f74137;
 }
-.fa-angle-up{
-    color: white;
-    padding: 3px;
-    cursor: pointer;
-    display: none;
-}
-.fa-angle-down{
+.fa-angle-up, .fa-angle-down{
     color: white;
     padding: 3px;
     cursor: pointer;
