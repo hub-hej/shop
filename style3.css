@@ -855,6 +855,7 @@ tbody tr:nth-child(even)
     transition: transform 0.3s ease;
     overflow: hidden;
     transform: translateY(60px);
+    overflow-wrap: break-word;
 }
 .text-under-lights s{
     color: #A3A3A3;
