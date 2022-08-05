@@ -349,7 +349,7 @@
                     </div>
                 </div>
                 <div class="systemForm_text_input">
-                    <form class="form" action="action.php" method="post" autocomplete="off">
+                    <form class="form" action="action.php" method="POST" autocomplete="off">
                         <p>Nazwa użytkownika*</p>
                         <input type="text" class="user-login" name="username" maxlength="50"
                             placeholder="Wpisz nazwę użytkownika" required="true" aria-required="true">
@@ -357,9 +357,9 @@
                         <input type="email" class="email-login" name="email" maxlength="50"
                             placeholder="Wpisz adres e-mail" required="true" aria-required="true">
                         <p>Komentarz*</p>
-                        <textarea name="desc" class="form_textarea" placeholder="Napisz komentarz" required="true"
+                        <textarea name="comment" class="form_textarea" placeholder="Napisz komentarz" required="true"
                             aria-required="true" rows="2" cols="1"></textarea>
-                        <button class="button send_opinion">DODAJ OPINIĘ</button>
+                        <button name="submit" class="button send_opinion">DODAJ OPINIĘ</button>
                     </form>
                 </div>
             </section>
