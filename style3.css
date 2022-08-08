@@ -1079,7 +1079,6 @@ ul, ul li {
     margin: 30px auto;
     font-size: 19px;
     text-align: left;
-    font-family: var(--font-family-tertiary);
 }
 .product-description h3{
     font-size: 25px;
