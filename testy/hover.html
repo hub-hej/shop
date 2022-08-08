@@ -1,70 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/rSlider.min.css">
-</head>
 
+<!-- Design by foolishdeveloper.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pure javascript image zoom </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
 <body>
-  <template>
-    <div class="overflow-auto">
-      <!-- Use text in props -->
-      <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        first-text="First"
-        prev-text="Prev"
-        next-text="Next"
-        last-text="Last"
-      ></b-pagination>
-  
-      <!-- Use emojis in props -->
-      <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        first-text="⏮"
-        prev-text="⏪"
-        next-text="⏩"
-        last-text="⏭"
-        class="mt-4"
-      ></b-pagination>
-  
-      <!-- Use HTML and sub-components in slots -->
-      <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        class="mt-4"
-      >
-        <template #first-text><span class="text-success">First</span></template>
-        <template #prev-text><span class="text-danger">Prev</span></template>
-        <template #next-text><span class="text-warning">Next</span></template>
-        <template #last-text><span class="text-info">Last</span></template>
-        <template #ellipsis-text>
-          <b-spinner small type="grow"></b-spinner>
-          <b-spinner small type="grow"></b-spinner>
-          <b-spinner small type="grow"></b-spinner>
-        </template>
-        <template #page="{ page, active }">
-          <b v-if="active">{{ page }}</b>
-          <i v-else>{{ page }}</i>
-        </template>
-      </b-pagination>
-    </div>
-  </template>
-  
-  <script>
-    export default {
-      data() {
-        return {
-          rows: 100,
-          perPage: 10,
-          currentPage: 1
-        }
-      }
-    }
-  </script>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Marlon</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+            <i class='bx bx-home-alt nav__icon'></i>
+            <span class="nav__name">Home</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+            <i class='bx bx-user nav__icon'></i>
+            <span class="nav__name">About</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+            <i class='bx bx-book-alt nav__icon'></i>
+            <span class="nav__name">Skills</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+            <i class='bx bx-briefcase-alt nav__icon'></i>
+            <span class="nav__name">Portfolio</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contactme" class="nav__link">
+            <i class='bx bx-message-square-detail nav__icon'></i>
+            <span class="nav__name">Contactme</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img src="assets/img/perfil.png" alt="" class="nav__img">
+    </nav>
+  </header>
 </body>
 </html>

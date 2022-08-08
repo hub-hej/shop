@@ -125,3 +125,4 @@ function plusDivs(n) {
     img.src = sliderData[slideIndex].image;
     img.animate(sliderAnim, sliderAnimOptions);
 }
+
