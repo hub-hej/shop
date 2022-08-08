@@ -839,7 +839,7 @@ ul li {
         object-fit: cover;
         height: 100%;
     }
-    .add-information {
+    .add-information, .menu-paragraph a {
         flex-direction: column;
     }
     .left-arrow-lights,
@@ -872,10 +872,6 @@ ul li {
     }
     .text-cart {
         width: 100%;
-    }
-    .menu-paragraph p {
-        display: none;
-        flex-direction: column;
     }
     .w3-display-left,
     .w3-display-right,
@@ -927,6 +923,35 @@ ul li {
     .icon-text{
         font-size: 13px;
     }
+    .menu-elements{
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 15%;
+        border-radius: 10px;
+    }
+    #myBtn{
+        bottom: 115px;
+    }
+    .menu-paragraph:not(:last-child)
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex: 1 1 0;
+        border-radius: 10px;
+        border: 1px solid #E1E2E8;
+    }
+    .searchTop, .logo img{
+        height: 40px;
+    }
+    .arrow-cart img{
+        padding: 20px 10px;
+    }
 }
 @media screen and (max-width: 700px) {
     .content-area h3 {
@@ -938,6 +963,12 @@ ul li {
     .menu-elements {
         justify-content: space-around;
     }
+    .menu-paragraph p, .text-cart{
+        display: none;
+    }
+    .cart img {
+        border: none;
+    }
 }
 @media screen and (max-width: 600px) {
     .about-section {
@@ -945,12 +976,6 @@ ul li {
     }
     .button4 {
         transform: translateY(-40%);
-    }
-    .cart img {
-        border: none;
-    }
-    .text-cart {
-        display: none;
     }
     .arrow-cart img {
         width: 100%;
