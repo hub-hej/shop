@@ -606,6 +606,7 @@ html {
     justify-content: flex-start;
     align-items: center;
     font-family: 'Metropolis-Bold';
+    gap: 20px;
 }
 .galleryFooter,
 .galleryFooterDelivery {
@@ -630,7 +631,6 @@ html {
     display: flex;
     align-items: center;
     font-family: 'Metropolis-Bold';
-    margin-left: 15px;
 }
 .textSocialMedia {
     color: white;
@@ -767,7 +767,7 @@ footer {
 .about-section .icons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
 }
 .about-section .icon {
@@ -776,6 +776,7 @@ footer {
 }
 .about-section .icon-text {
     margin-top: 20px;
+    font-family: var(--font-family-primary);
 }
 ul,
 ul li {
@@ -803,12 +804,8 @@ ul li {
     }
 }
 @media screen and (max-width: 1120px) {
-    .footerDetails {
+    .footerDetails, .row-up {
         flex-direction: column;
-    }
-    .row-up {
-        flex-direction: column;
-        line-height: 50px;
     }
     .galleryFooter,
     .galleryFooterDelivery {
@@ -851,9 +848,6 @@ ul li {
     .right-arrow,
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
-    }
-    .about-section {
-        height: 750px;
     }
     .under-footer {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -924,10 +918,14 @@ ul li {
     .header{
         padding: 5px;
     }
-}
-@media screen and (max-width: 801px) {
-    .about-section h3 {
-        font-size: 30px;
+    .about-section .icon{
+        padding: 20px;
+    }
+    .icons img{
+        width: 40px;
+    }
+    .icon-text{
+        font-size: 13px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -943,7 +941,7 @@ ul li {
 }
 @media screen and (max-width: 600px) {
     .about-section {
-        height: 950px;
+        height: 700px;
     }
     .button4 {
         transform: translateY(-40%);

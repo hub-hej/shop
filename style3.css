@@ -261,13 +261,13 @@ html {
     gap: 5px;
 }
 .left-small-lights img:hover{
-    border-color: #1BB0F7;
-    transition: border-color .5s ease-out;
+    border-color: #F74137;
 }
 .left-small-lights img{
     border: var(--border-primary);
     padding: 10px;
     width: 60px;
+    transition: border-color .3s ease-out;
 }
 .w3-display-right {
     position: absolute;
@@ -419,10 +419,10 @@ html {
 .first-image-variant{
     border: var(--border-primary);
     padding: 10px;
+    transition: border-color 0.3s ease-out;
 }
 .first-image-variant:hover{
     border: 1px solid #1BB0F7;
-    transition: 0.3s ease-in-out;
 }
 .first-image-variant img, .second-image-variant img{
     height: 65px;
@@ -533,6 +533,63 @@ html {
     margin-bottom: -2px;
     display: block;
     text-align: left;
+}
+.footerDetails{
+    display: flex;
+    justify-content: space-between;
+    background-color: #323940;
+    padding: 25px;
+    border-top: 1px solid hsla(0,0%,100%,.3)
+}
+.row-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.galleryTextListFooterPayment{
+    color: white;
+    font-family: var(--font-family-primary);
+}
+.galleryFooter, .galleryFooterDelivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.galleryTextListFooterDelivery{
+    color: white;
+    font-family: var(--font-family-primary);
+    font-size: 16px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.footerSocialMedia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.textSocialMedia{
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-family-primary);
+}
+.footerSocialMedia a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid hsla(0,0%,100%,.3);
+    transition: border-color .3s ease-out;
+    padding: 20px;
+}
+.footerSocialMedia__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.footerSocialMedia a:hover{
+    border-color: white;
 }
 footer {
     display: flex;
@@ -1116,6 +1173,18 @@ ul, ul li {
     }
     .button-up, .button-down, .outlet, .left-small-lights img{
         height: 70px;
+    }
+    .footerDetails, .row-up{
+        flex-direction: column;
+    }
+    .footerSocialMedia{
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .galleryFooter, .galleryFooterDelivery{
+        border-bottom: 1px solid hsla(0,0%,100%,.3);
+        gap: 45px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 1000px) {
