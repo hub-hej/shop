@@ -802,6 +802,9 @@ ul li {
         width: 100%;
         height: auto;
     }
+    .menu-elements{
+        padding: 0;
+    }
 }
 @media screen and (max-width: 1120px) {
     .footerDetails, .row-up {
@@ -932,6 +935,7 @@ ul li {
         justify-content: space-evenly;
         height: 15%;
         border-radius: 10px;
+        padding: 20px;
     }
     #myBtn{
         bottom: 115px;
