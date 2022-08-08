@@ -60,3 +60,18 @@ jQuery(document).ready(function($){
     $(obj).stop().slideToggle();
     };
 });
+
+(function (){
+//This function allows for change color after click on pagination
+links = document.querySelectorAll(".pagination a")
+links.forEach(function (item) {
+  item.addEventListener('click', function () {
+    //reset the color of other links
+    links.forEach(function (item) {
+      item.style.backgroundColor = 'white'
+    })
+    // apply the style to the link
+    this.style.backgroundColor = '#F74137'
+  });
+})
+})();
