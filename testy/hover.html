@@ -3,33 +3,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pure javascript image zoom </title>
+  <title>Testy </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="hover.css" />
 </head>
 <body>
-<div>
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-            <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>First</div>
-            <div class="collapsible-body">
-                <p>Hello StackOverflow! SO's da' bomb diggidy!</p>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Second</div>
-            <div class="collapsible-body">
-                <p>Why is the person who invests your money called a broker?</p>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>Third</div>
-            <div class="collapsible-body">
-                <p>I'd like to <a href="#" data-click=".collapsible .collapsible-header:first">open the First collapsible element</a> in this list.</p>
-            </div>
-        </li>
-    </ul>
+<div class="wrapper">
+  <div class="values">
+    <span id="range1">
+      0
+    </span>
+    <span> &dash; </span>
+    <span id="range2">
+      100
+    </span>
+  </div>
+  <div class="container">
+    <div class="slider-track"></div>
+    <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+    <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+  </div>
 </div>
 <script src="hover.js"></script>
 </body>
