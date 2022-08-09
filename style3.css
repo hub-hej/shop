@@ -1185,6 +1185,9 @@ ul, ul li {
         gap: 45px;
         width: 100%;
     }
+    .searchTop, .logo img{
+        height: 40px;
+    }
 }
 @media screen and (max-width: 1000px) {
     .tile-light, .number-light{
