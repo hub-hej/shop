@@ -332,18 +332,21 @@
                     </div>
 
                     <div class="price">
-                        <div class="full-box-red1"></div>
-                        <div class="full-box-red2"></div>
                         <h3>CENA</h3>
-                        <div class="size-price">
-                            <div class="range-size-price">
-                                <p>34</p>
-                            </div>
-
-                            <div class="range-size-price">
-                                <p>220</p>
-                            </div>
-                        </div>
+                          <div class="container">
+                            <div class="slider-track"></div>
+                            <input type="range" min="0" max="449" value="1" id="slider-1" oninput="slideOne()">
+                            <input type="range" min="1" max="450" value="450" id="slider-2" oninput="slideTwo()">
+                          </div>
+                          <div class="values">
+                            <span id="range1">
+                              0
+                            </span>
+                            <span> &dash; </span>
+                            <span id="range2">
+                              100
+                            </span>
+                          </div>
                     </div>
                 </div>
 
