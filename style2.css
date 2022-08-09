@@ -280,6 +280,7 @@ header{
     gap: 5px;
     border: var(--border-primary);
     height: 100%;
+    overflow-wrap: break-word;
 }
 .light-text-image-menu p, .checkbox-button__label{
     margin-left: 10px;
@@ -1309,9 +1310,6 @@ ul li {
     .headers {
         flex-direction: column;
         gap: 10px;
-    }
-    .logo img {
-        width: 250px;
     }
     .nav-h1 h1 {
         font-size: 30px;
