@@ -325,9 +325,6 @@ html {
 .philips{
     display: flex;
     align-items: center;
-    font-family: var(--font-family-primary);
-    color: #2780BC;
-    font-size: 25px;
     margin-right: 35px;
 }
 .text-offer{
@@ -338,9 +335,9 @@ html {
     display: block;
 }
 .one{
-    border: 1px solid #F74137;
+    border: 1px solid #EE5C61;
     color: white; 
-    background-color: #F74137;
+    background-color: #EE5C61;
     font-family: var(--font-family-secondary);
     padding: 6px;
     margin: 2px;
@@ -1066,7 +1063,7 @@ ul, ul li {
     text-align: center;
     background-color: var(--background-color-primary);
     padding-top: 50px;
-    font-family: var(--font-family-tertiary);
+    font-family: var(--font-family-secondary);
 }
 .product-description h2{
     font-size: 35px;
