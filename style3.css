@@ -111,7 +111,7 @@ html {
 }
 .three-information{
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-family: var(--font-family-primary);
     display: flex;
     gap: 30px;
@@ -1215,21 +1215,8 @@ ul, ul li {
         width:100%;
         height: 100%;
     }
-    .left-small-lights{
-        display: none;
-    }
 }
 @media screen and (max-width:870px) {
-    .text-offer{
-        display: none;
-    }
-    .upper-headers p{
-        display: none;
-        flex-direction: column;
-    }
-    i{
-        width: 55px;
-    }
     .fa-arrow-up{
         width: 10px;
     }
@@ -1238,6 +1225,12 @@ ul, ul li {
     .header, .headers{
         flex-direction: column;
         gap: 10px;
+    }
+    .image-button{
+        position: absolute;
+    }
+    .w3-display-left, .w3-display-right, .text-offer, .left-small-lights{
+        display: none;
     }
     .lights-row {
         flex-wrap: wrap;
@@ -1299,14 +1292,39 @@ ul, ul li {
     .header{
         padding: 5px
     }
+    .three-information{
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        border: 1px solid #e1e2e8;
+        z-index: 1;
+    }
+    #myBtn{
+        bottom: 95px;
+    }
+    .upper-headers:not(:last-child)
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex: 1 1 0;
+        border-right: 1px solid #e1e2e8;
+        border-left: 1px solid #e1e2e8;
+    }
+    .upper-headers a{
+        flex-direction: column;
+        width: 100%;
+    }
+    .searchTop, .logo img{
+        height: 40px;
+    }
 }
 @media screen and (max-width: 750px) {
     .logo img{
         width: 200px;
-    }
-    .three-information{
-        gap: 15px;
-        justify-content: space-around;
     }
     .philips, .title-offer h1{
         font-size: 20px;
@@ -1365,9 +1383,6 @@ ul, ul li {
         flex-direction: column;
         border: none;
     }
-    .three-information{
-        gap: 15px;
-    }
     .number-light, .shopping-button{
         margin-right: 10px;
     }
@@ -1386,9 +1401,6 @@ ul, ul li {
     }
 }
 @media screen and (max-width: 435px) {
-    .left-small-lights, i{
-        width: 50px;
-    }
     .shopping-button img{
         width: 20px;
         height: 20px;
@@ -1399,7 +1411,7 @@ ul, ul li {
     .two-text-variant{
         font-size: 10px;
     }
-    .w3-display-left, .w3-display-right{
+    .w3-display-left, .w3-display-right, .upper-headers p{
         display: none;
     }
     .user-login, .email-login{
