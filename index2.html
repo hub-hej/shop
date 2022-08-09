@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lista produktów">
     <title>Lista produktów</title>
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style2.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -321,13 +321,9 @@
                         <h3>FILTR - ZAKRES</h3>
 
                         <div class="range-size">
-                            <div class="range-size-filter">
-                                <p>min. 65</p>
-                            </div>
-                            <h3 class="minus">- </h3>
-                            <div class="range-size-filter">
-                                <p>max. 90</p>
-                            </div>
+                            <input class="inpColumnSize" type="text" value placeholder="min. 5" min="5">
+                            <span class="minus">&dash;</span>
+                            <input class="inpColumnSize" type="text" value placeholder="max. 25" max="25">
                         </div>
                     </div>
 
@@ -335,14 +331,16 @@
                         <h3>CENA</h3>
                           <div class="container">
                             <div class="slider-track"></div>
-                            <input type="range" min="0" max="449" value="1" id="slider-1" oninput="slideOne()">
-                            <input type="range" min="1" max="450" value="450" id="slider-2" oninput="slideTwo()">
-                          </div>
+                            <label>
+                            <input type="range" min="1" max="449" value="1" id="slider-1" oninput="slideOne()">
+                            <input type="range" min="2" max="450" value="450" id="slider-2" oninput="slideTwo()">
+                        </label>
+                        </div>
                           <div class="values">
                             <span id="range1">
                               0
                             </span>
-                            <span> &dash; </span>
+                            <span class="minus">&dash;</span>
                             <span id="range2">
                               100
                             </span>

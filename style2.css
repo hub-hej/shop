@@ -807,6 +807,16 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
     font-weight: bolder;
 }
+.inpColumnSize{
+    width: 6.5rem;
+    height: 2.8125rem;
+    text-align: center;
+    border: 1px solid #e1e2e8;
+    transition: border-color .15s ease-out;
+}
+.inpColumnSize:hover{
+    border-color: #bec1cd;
+}
 .price h3 {
     text-align: left;
     font-family: var(--font-family-primary);
@@ -815,7 +825,7 @@ input[type=number]::-webkit-outer-spin-button {
 .container{
     position: relative;
     width: 80%;
-    height: 100px;
+    height: 50px;
     margin: 0 auto;
 }
 input[type="range"]::-webkit-slider-runnable-track{
@@ -1058,7 +1068,7 @@ ul li {
     }
     .range-size {
         flex-direction: column;
-        padding: 15px;
+        align-items: center;
     }
     .upper-menu {
         flex-direction: column;

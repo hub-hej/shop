@@ -340,11 +340,13 @@ html {
     padding-top: 15px;
 }
 .text-main-image b, .text-main-image h4 {
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-secondary);
+    font-weight: 100;
 }
 .text-main-image h3 {
-    font-family: var(--font-family-tertiary);
+    font-family: var(--font-family-primary);
     font-weight: normal;
+    font-size: 2.17rem;
 }
 .w3-display-right {
     position: absolute;
@@ -829,7 +831,7 @@ ul li {
         object-fit: cover;
         height: 100%;
     }
-    .text-main-image {
+    .text-main-image, .text-main-image h3 {
         font-size: 20px;
     }
 }
