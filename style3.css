@@ -1107,8 +1107,11 @@ ul, ul li {
     gap: 15px;
     justify-content: center;
     width: 95%;
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-primary);
     cursor: pointer;
+}
+.button7:hover, .shoppingcart:hover{
+    background-color: #84af2e;
 }
 .button8{
     border: none;

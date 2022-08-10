@@ -558,6 +558,9 @@ html {
     background-color: #9BCB3B;
     padding: 7px;
 }
+.shoppingcart:hover{
+    background-color: #84af2e;;
+}
 .tile-product {
     display: flex;
     padding-top: 35px;
