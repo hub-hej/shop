@@ -719,16 +719,19 @@ footer {
     background-color: var(--background-color-button);
     cursor: pointer;
 }
+.button1:hover, .button3:hover, .button4:hover{
+    background-color: #f51c10;
+}
 .button2 {
     background-color: transparent;
     color: white;
-    border: 1px solid white;
+    outline: 1px solid white;
     cursor: pointer;
 }
 .button2:hover {
     background-color: var(--background-color-button);
     color: white;
-    border: 0;
+    outline: 0;
     transition-duration: 0.4s;
 }
 .button4 {
@@ -744,16 +747,16 @@ footer {
     width: 100%;
 }
 .form{
-    border: 1px solid white;
+    outline: 1px solid white;
     padding: 21px 40px;
     margin: 4px 2px;
     display: inline-block;
     font-family: var(--font-family-primary);
 }
 .form:hover{
-    background-color: var(--background-color-button);
+    background-color: #f51c10;
     color: white;
-    border: 0;
+    outline: 0;
     transition-duration: 0.4s;
 }
 .section-body{
@@ -850,6 +853,9 @@ ul li {
 .responsive-image {
     height: auto;
     width: 100%;
+}
+.productTileTileV1BasketButton__icon:before {
+    content: "\f109";
 }
 @media screen and (max-width:1450px) {
     .searchTop__textfield {

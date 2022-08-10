@@ -535,6 +535,41 @@ html {
     display: block;
     text-align: left;
 }
+.general_module{
+    font-family: var(--font-family-secondary);
+}
+.module_body{
+    margin-top: 30px;
+    font-size: 2.75rem;
+    font-family: var(--font-family-secondary);
+    padding-bottom: 1.25rem;
+    cursor: pointer;
+}
+.module_body a:hover{
+    color: #f74137;
+}
+.module_information{
+    font-size: .875rem;
+    padding-bottom: 1.25rem;
+}
+.fa-phone-volume{
+    transform: rotate(-45deg);
+    font-size: 2.75rem;
+    color: #f74137;
+}
+.forms{
+    outline: 1px solid white;
+    padding: 21px 40px;
+    margin: 4px 2px;
+    display: inline-block;
+    font-family: var(--font-family-primary);
+}
+.forms:hover{
+    background-color: #f51c10;
+    color: white;
+    outline: 0;
+    transition-duration: 0.4s;
+}
 .footerDetails{
     display: flex;
     justify-content: space-between;
@@ -1225,6 +1260,9 @@ ul, ul li {
     .searchTop, .logo img{
         height: 40px;
     }
+    .module_body, .fa-phone-volume{
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 1000px) {
     .minus-light, .plus-light {
@@ -1353,6 +1391,9 @@ ul, ul li {
     .lights-information{
         width: 100%;
     }
+    .module_body, .fa-phone-volume{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 585px) {
     .lights-wrapper, .arrow-cart img{
@@ -1425,6 +1466,9 @@ ul, ul li {
     }
     .title-offer h1{
         font-size: 20px;
+    }
+    .forms{
+        padding: 15px 10px;
     }
 }
 @media screen and (max-width: 400px) {
