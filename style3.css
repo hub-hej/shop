@@ -557,14 +557,14 @@ html {
     font-size: 2.75rem;
     color: #f74137;
 }
-.forms{
+.formularz{
     outline: 1px solid white;
     padding: 21px 40px;
     margin: 4px 2px;
     display: inline-block;
     font-family: var(--font-family-primary);
 }
-.forms:hover{
+.formularz:hover{
     background-color: #f51c10;
     color: white;
     outline: 0;
@@ -1467,7 +1467,7 @@ ul, ul li {
     .title-offer h1{
         font-size: 20px;
     }
-    .forms{
+    .formularz{
         padding: 15px 10px;
     }
 }
