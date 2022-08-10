@@ -235,6 +235,10 @@ header{
 .header-information, .range-size p {
     text-align: center;
 }
+.header-information a{
+    text-decoration: none;
+    color: black;
+}
 .main-content {
     width: 80%;
     margin-right: 24px;

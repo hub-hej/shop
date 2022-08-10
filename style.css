@@ -596,6 +596,28 @@ html {
     display: block;
     text-align: left;
 }
+.general_module{
+    font-family: var(--font-family-secondary);
+}
+.module_body{
+    margin-top: 30px;
+    font-size: 2.75rem;
+    font-family: var(--font-family-secondary);
+    padding-bottom: 1.25rem;
+    cursor: pointer;
+}
+.module_body a:hover{
+    color: #f74137;
+}
+.module_information{
+    font-size: .875rem;
+    padding-bottom: 1.25rem;
+}
+.fa-phone-volume{
+    transform: rotate(-45deg);
+    font-size: 2.75rem;
+    color: #f74137;
+}
 .footerDetails {
     display: flex;
     justify-content: space-between;
@@ -721,6 +743,44 @@ footer {
     display: block;
     width: 100%;
 }
+.form{
+    border: 1px solid white;
+    padding: 21px 40px;
+    margin: 4px 2px;
+    display: inline-block;
+    font-family: var(--font-family-primary);
+}
+.form:hover{
+    background-color: var(--background-color-button);
+    color: white;
+    border: 0;
+    transition-duration: 0.4s;
+}
+.section-body{
+    background-color: #F2F3F4;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.galleryRecommended{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0,1fr));
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.galleryItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+}
+.galleryItem a{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
 /* About us section */
 .about-section {
     position: relative;
@@ -729,7 +789,7 @@ footer {
 }
 .about-section>img {
     vertical-align: top;
-    filter: brightness(0.5);
+    filter: brightness(0.6);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -824,6 +884,12 @@ ul li {
     }
     .searchTop, .logo img{
         height: 40px;
+    }
+    .galleryRecommended{
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+    .module_body, .fa-phone-volume{
+        font-size: 35px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -957,6 +1023,9 @@ ul li {
         flex-direction: column;
         width: 100%;
     }
+    .module_body, .fa-phone-volume{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 700px) {
     .content-area h3 {
@@ -967,6 +1036,9 @@ ul li {
     }
     .cart img {
         border: none;
+    }
+    .recommend-products h3{
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -984,6 +1056,17 @@ ul li {
     }
     .menu-paragraph p, .text-cart{
         display: none;
+    }
+    .galleryRecommended{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 500px){
+    .galleryRecommended{
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+    .form{
+        padding: 15px 10px;
     }
 }
 
