@@ -100,6 +100,7 @@ function plusDivs(n) {
     paragraph.textContent = sliderData[slideIndex].text;
     img.animate(sliderAnim, sliderAnimOptions);
 }
+(function (){
 // menu hamburger
  const hamburger = document.querySelector(".button-menu .hamburger");
  const header = document.querySelector(".nav-items");
@@ -110,7 +111,7 @@ function plusDivs(n) {
      hamburger.classList.toggle("active");
      header.classList.toggle("active");
 }
-
+})();
 // window.onscroll = function() {myFunction()};
 
 // var headers = document.getElementById("myFixed");
@@ -161,8 +162,12 @@ function myFunction() {
     }
   }
   
-
-
+  //Function which allows for hide and show text in class footer-information
+  jQuery(document).ready(function($){
+    op = function(obj) {
+      $(obj).stop().slideToggle();
+      };
+  });
 
 
 

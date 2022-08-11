@@ -589,6 +589,7 @@ html {
 .footer-information h3 {
     border-bottom: 1px solid hsla(0, 0%, 100%, .3);
     font-family: var(--font-family-primary);
+    width: 100%;
 }
 .footer-information h3::after {
     content: '';
@@ -598,6 +599,11 @@ html {
     margin-bottom: -2px;
     display: block;
     text-align: left;
+}
+.footer-information li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: var(--font-family-secondary);
 }
 .general_module{
     font-family: var(--font-family-secondary);
@@ -687,11 +693,6 @@ html {
     background: #323940;
     padding: 25px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.footer-information li {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: var(--font-family-secondary);
 }
 .primary ul {
     padding-top: 30px;
@@ -860,6 +861,17 @@ ul li {
 .productTileTileV1BasketButton__icon:before {
     content: "\f109";
 }
+#hide1, #hide2, #hide3{
+    display: none;
+}
+#arrow-down1, #arrow-down2, #arrow-down3{
+    font-size: 40px;
+}
+.hide-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 @media screen and (max-width:1450px) {
     .searchTop__textfield {
         padding: 15px 90px;
@@ -910,7 +922,24 @@ ul li {
         font-size: 20px;
     }
 }
+@media screen and (min-width: 886px) {
+    #poka1, #poka2, #poka3{
+        display: block!important;
+    }
+}
 @media screen and (max-width: 885px) {
+    .footer-information{
+        margin-bottom: 0px;
+    }
+    .footer-information ul{
+        margin-top: 0px;
+    }
+    #hide1, #hide2, #hide3{
+        display: block;
+    }
+    #poka1, #poka2, #poka3{
+        display: none;
+    }
     .lights-row,
     .about-section .icons {
         flex-wrap: wrap;
@@ -933,8 +962,7 @@ ul li {
         opacity: 0;
     }
     .under-footer {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 40px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     footer {
         flex-direction: column;

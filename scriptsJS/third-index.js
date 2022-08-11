@@ -126,3 +126,9 @@ function plusDivs(n) {
     img.animate(sliderAnim, sliderAnimOptions);
 }
 
+  //Function which allows for hide and show text in class footer-information
+  jQuery(document).ready(function($){
+    op = function(obj) {
+      $(obj).stop().slideToggle();
+      };
+  });

@@ -54,7 +54,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-//This function hides us text thanks to the button (ROZWIŃ)
+//This function allows for hide and show us text in class text-expand and footer-information
 jQuery(document).ready(function($){
   op = function(obj) {
     $(obj).stop().slideToggle();
