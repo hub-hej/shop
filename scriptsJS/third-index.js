@@ -132,3 +132,17 @@ function plusDivs(n) {
       $(obj).stop().slideToggle();
       };
   });
+
+//Function which allows the opinion to be marked stars
+function onMouseEnter(index){
+    var fa = document.getElementsByClassName("fa-star");
+    var j;
+    for(j = 0; j <= fa.length; j++){
+      if(j < index){
+        fa[j].style.color = "orange";
+      }
+      else{
+        fa[j].style.color = "#fde4ae";
+      }
+    }
+  }

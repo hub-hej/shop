@@ -736,24 +736,24 @@ tbody tr:nth-child(even)
     margin-top: 65px;
 }
 .five_icon_star{
-    color: #fde4ae;
-}
+    color: #fef4de;
+    cursor: pointer;
+} 
 .five_icon_star i:hover~i::before ,.five_icon_star>i:hover::before{
-  color: #fef4de;
-  cursor: pointer;
-}
-.section_header_opinion, .section_header_download{
+  color: #fde4ae;
+} 
+.section_header_opinion, .section_header_download, .section_related{
     text-align: center;
     background-color: var(--background-color-primary);
     padding-top: 25px;
 }
-.section_header_opinion h2, .section_header_download h2{
+.section_header_opinion h2, .section_header_download h2, .section_related h2{
     cursor: pointer;
     font-size: 35px;
     border-bottom: var(--border-primary);
     font-family: var(--font-family-primary);
 }
-.section_header_opinion h2::after, .section_header_download h2::after{
+.section_header_opinion h2::after, .section_header_download h2::after, .section_related h2::after{
     content: '';
     width: 50px;
     border-bottom: 3px solid #F74137;
@@ -1091,17 +1091,17 @@ ul, ul li {
     font-family: var(--font-family-secondary);
     cursor: context-menu;
 }
-.button1, .button2, .button3, .button4, .button5, .button6{
+.button1, .button2, .button3, .button4, .button5, .button6, .button7{
     font-family: var(--font-family-primary);
     cursor: pointer;
     color: black;
     background-color: var(--background-color-primary);
 }
-.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover {
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover, .button7:hover {
     background-color: #F74137;
     color: white;
 }
-.button7{
+.button8{
     background-color: var(--background-color-secondary);
     display: flex;
     align-items: center;
@@ -1111,10 +1111,10 @@ ul, ul li {
     font-family: var(--font-family-primary);
     cursor: pointer;
 }
-.button7:hover, .shoppingcart:hover{
+.button8:hover, .shoppingcart:hover{
     background-color: #84af2e;
 }
-.button8{
+.button9{
     border: none;
     cursor: pointer;
     background: transparent;
