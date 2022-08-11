@@ -1,30 +1,99 @@
-
-<!-- Design by foolishdeveloper.com -->
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Testy </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="hover.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
 </head>
 <body>
-<div class="wrapper">
-  <div class="values">
-    <span id="range1">
-      0
-    </span>
-    <span> &dash; </span>
-    <span id="range2">
-      100
-    </span>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
   </div>
-  <div class="container">
-    <div class="slider-track"></div>
-    <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
-    <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
-  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-<script src="hover.js"></script>
+
+<div style="padding-left:16px">
+  <h3>Vertical Mobile Navbar</h3>
+  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+</div>
+<button type="button" id="eye" class="btn btn-default" onclick="show()"> <i class="fa fa-eye"></i> </button>
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function show() {
+  $('#eye').find("i").toggleClass("fa-eye fa-eye-slash");
+}
+</script>
+
 </body>
 </html>
