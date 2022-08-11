@@ -278,6 +278,7 @@
 .footer-information h3 {
     border-bottom: 1px solid hsla(0,0%,100%,.3);
     font-family: var(--font-family-primary);
+    width: 100%;
 }
 .footer-information li {
     padding-top: 15px;
@@ -292,6 +293,17 @@
     margin-bottom: -2px;
     display: block;
     text-align: left;
+}
+#hide1, #hide2, #hide3{
+    display: none;
+}
+#arrow-down1, #arrow-down2, #arrow-down3{
+    font-size: 40px;
+}
+.hide-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .general_module{
     font-family: var(--font-family-secondary);
@@ -445,14 +457,30 @@ ul, ul li {
         font-size: 35px;
     }
 }
+@media screen and (min-width: 851px) {
+    #poka1, #poka2, #poka3{
+        display: block!important;
+    }
+}
 @media screen and (max-width: 850px) {
+    .footer-information{
+        margin-bottom: 0px;
+    }
+    .footer-information ul{
+        margin-top: 0px;
+    }
+    #hide1, #hide2, #hide3{
+        display: block;
+    }
+    #poka1, #poka2, #poka3{
+        display: none;
+    }
     .header, .headers{
         flex-direction: column;
         gap: 10px;
     }
     .under-footer{
-        grid-template-columns: repeat(2,minmax(0,1fr));
-        gap: 40px;
+        grid-template-columns: repeat(1,minmax(0,1fr));
     }
     footer {
         flex-direction: column;

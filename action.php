@@ -14,7 +14,8 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
-</head>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    </head>
 <body>
     <div class="full-page">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
@@ -142,11 +143,16 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="under-footer">
                     <div class="footer-information">
-                        <h3>INFORMACJE</h3>
-                        <ul>
+                        <div class="hide-info">
+                            <h3>O NAS</h3>
+                            <a id="hide1" onClick="op('#poka1');"><span id="arrow-down1"
+                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka1">
                             <li><a href="#">Informacje o sklepie</a></li>
                             <li><a href="#">Porady</a></li>
                             <li><a href="#">Blog</a></li>
@@ -157,8 +163,12 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                     </div>
 
                     <div class="footer-information">
-                        <h3>INFORMACJE</h3>
-                        <ul>
+                        <div class="hide-info">
+                            <h3>INFORMACJE</h3>
+                            <a id="hide2" onClick="op('#poka2');"><span id="arrow-down2"
+                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka2">
                             <li><a href="#">Czas realizacji</a></li>
                             <li><a href="#">Koszty przesyłki</a></li>
                             <li><a href="#">Zamów próbkę</a></li>
@@ -169,8 +179,12 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                     </div>
 
                     <div class="footer-information">
-                        <h3>MOJE KONTO</h3>
-                        <ul>
+                        <div class="hide-info">
+                            <h3>MOJE KONTO</h3>
+                            <a id="hide3" onClick="op('#poka3');"><span id="arrow-down3"
+                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka3">
                             <li><a href="#">Logowanie</a></li>
                             <li><a href="#">Rejestracja</a></li>
                             <li><a href="#">Zamowienia</a></li>
@@ -208,7 +222,7 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                     </div>
                 </div>
             </section>
-
+            
             <section>
                 <div class="footerDetails">
                     <div class="row-up">

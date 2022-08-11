@@ -26,4 +26,11 @@ function topFunction() {
         hamburger.classList.toggle("active");
         header.classList.toggle("active");
     }
-    })();
+})();
+
+//Function which allows for hide and show text in class footer-information
+jQuery(document).ready(function($){
+    op = function(obj) {
+      $(obj).stop().slideToggle();
+      };
+ });
