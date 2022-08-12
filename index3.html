@@ -13,9 +13,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
-        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    </head>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
 
 <body>
     <div class="full-page">
@@ -217,7 +217,7 @@
                                     <div class="shopping-button">
                                         <a href=""><button class="button button8"><img src="icons/Group807.png"
                                                     alt="Koszyk" />
-                                                <p>DO KOSZYKA</p>
+                                                DO KOSZYKA
                                             </button></a>
                                     </div>
                                 </div>
@@ -278,8 +278,10 @@
                     <form action="#section1" class="forms"><button class="button button1">OPIS PRODUKTU</button></form>
                     <form action="#section2" class="forms"><button class="button button2">SZCZEGÓŁY</button></form>
                     <form action="#section3" class="forms"><button class="button button3">OPINIE</button></form>
-                    <form action="#section4" class="forms"><button class="button button4">PLIKI DO POBRANIA</button></form>
-                    <form action="#section5" class="forms"><button class="button button5">DANE TECHNICZNE</button></form>
+                    <form action="#section4" class="forms"><button class="button button4">PLIKI DO POBRANIA</button>
+                    </form>
+                    <form action="#section5" class="forms"><button class="button button5">DANE TECHNICZNE</button>
+                    </form>
                     <form action="#section6" class="forms"><button class="button button6">POWIĄZANE</button></form>
                     <form action="#section7"><button class="button button7">INNE Z KATEGORII</button></form>
                 </div>
@@ -337,526 +339,562 @@
 
             <section>
                 <div class="section_header_container" id="section2">
-                    <h2>Szczegóły</h2>
-
-                    <p>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</p>
+                    <div class="section_header_hide">
+                        <h2>Szczegóły</h2>
+                        <a class="hide" onClick="op('#poka4');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
+                    <div id="poka4">
+                        <p>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</p>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <div class="section_header_opinion" id="section3">
-                    <h2>Opinie</h2>
-
-                    <p>Miałaś juz kontakt z naszym produktem? Zostaw nam swoja opinię <br />
-                        - to dla Ciebie staramy sie byc najlepsi, a Twoje zdanie bardzo nam w tym pomoże!</p>
-                    <div class="five_icon_star">
-                        <i class="fa fa-star"  onmouseenter="onMouseEnter(1)" onmouseout="onMouseOut()"></i>
-                        <i class="fa fa-star"  onmouseenter="onMouseEnter(2)" onmouseout="onMouseOut()"></i>
-                        <i class="fa fa-star"  onmouseenter="onMouseEnter(3)" onmouseout="onMouseOut()"></i>
-                        <i class="fa fa-star"  onmouseenter="onMouseEnter(4)" onmouseout="onMouseOut()"></i>
-                        <i class="fa fa-star"  onmouseenter="onMouseEnter(5)" onmouseout="onMouseOut()"></i>
+                    <div class="section_header_opi_hide">
+                        <h2>Opinie</h2>
+                        <a class="hide" onClick="op('#poka-all');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
-                </div>
-                <div class="systemForm_text_input">
-                    <form class="form" action="action.php" method="POST" autocomplete="off">
-                        <p>Nazwa użytkownika*</p>
-                        <input type="text" class="user-login" name="username" maxlength="50"
-                            placeholder="Wpisz nazwę użytkownika" required="true" aria-required="true">
-                        <p>Adres e-mail*</p>
-                        <input type="email" class="email-login" name="email" maxlength="50"
-                            placeholder="Wpisz adres e-mail" required="true" aria-required="true">
-                        <p>Komentarz*</p>
-                        <textarea name="comment" class="form_textarea" placeholder="Napisz komentarz" required="true"
-                            aria-required="true" rows="2" cols="1"></textarea>
-                        <button name="submit" class="button send_opinion">DODAJ OPINIĘ</button>
-                    </form>
+                    <div id="poka-all">
+                        <div id="poka5">
+                            <p>Miałaś juz kontakt z naszym produktem? Zostaw nam swoja opinię <br />
+                                - to dla Ciebie staramy sie byc najlepsi, a Twoje zdanie bardzo nam w tym pomoże!</p>
+                            <div class="five_icon_star">
+                                <div class="star d-inline" id="0"><i class="fas fa-star stars"></i></div>
+                                <div class="star d-inline" id="1"><i class="fas fa-star stars"></i></div>
+                                <div class="star d-inline" id="2"><i class="fas fa-star stars"></i></div>
+                                <div class="star d-inline" id="3"><i class="fas fa-star stars"></i></div>
+                                <div class="star d-inline" id="4"><i class="fas fa-star stars"></i></div>
+                            </div>
+                        </div>
+                        <div class="systemForm_text_input">
+                            <form class="form" action="action.php" method="POST" autocomplete="off">
+                                <p>Nazwa użytkownika*</p>
+                                <input type="text" class="user-login" name="username" maxlength="50"
+                                    placeholder="Wpisz nazwę użytkownika" required>
+                                <p>Adres e-mail*</p>
+                                <input type="email" class="email-login" name="email" maxlength="50"
+                                    placeholder="Wpisz adres e-mail" required>
+                                <p>Komentarz*</p>
+                                <textarea name="comment" class="form_textarea" placeholder="Napisz komentarz" required
+                                    rows="2" cols="1"></textarea>
+                                <button name="submit" class="button send_opinion">DODAJ OPINIĘ</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <div class="section_header_download" id="section4">
-                    <h2>Pliki do pobrania</h2>
+                    <div class="section_header_down_hide">
+                        <h2>Pliki do pobrania</h2>
+                        <a class="hide" onClick="op('#poka6');">
+                            <span class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
                 </div>
 
-                <div class="fileAddItem">
-                    <div class="fileAddItem_general">
-                        <div class="fileAddItem_left">
-                            <div class="fileAddItem_icon">
-                                <i class="fa-solid fa-file-arrow-down"></i>
+                <div id="poka6">
+                    <div class="fileAddItem">
+                        <div class="fileAddItem_general">
+                            <div class="fileAddItem_left">
+                                <div class="fileAddItem_icon">
+                                    <i class="fa-solid fa-file-arrow-down"></i>
+                                </div>
+                                <div class="fileAddItem_name">
+                                    <a href="./testy/testowyplik.pdf" download>
+                                        test
+                                    </a>
+                                </div>
                             </div>
-                            <div class="fileAddItem_name">
-                                <a href="./testy/testowyplik.pdf" download>
-                                    test
-                                </a>
+
+                            <div class="fileAddItem_right">
+                                <div class="fileAddItem_general_right">
+                                    <div class="fileAddItem-name">
+                                        Format: pdf
+                                    </div>
+                                    <div class="buttondownload">
+                                        <a href="./testy/testowyplik.pdf" class="button download" download>POBIERZ</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="fileAddItem_right">
-                            <div class="fileAddItem_general_right">
-                                <div class="fileAddItem-name">
-                                    Format: pdf
+                        <div class="fileAddItem_general">
+                            <div class="fileAddItem_left">
+                                <div class="fileAddItem_icon">
+                                    <i class="fa-solid fa-file-arrow-down"></i>
                                 </div>
-                                <div class="buttondownload">
-                                    <a href="./testy/testowyplik.pdf" class="button download"
-                                        download>POBIERZ</a></button>
+                                <div class="fileAddItem_name">
+                                    <a href="./testy/przykladowyplik.pdf" download>
+                                        testowy pdf
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="fileAddItem_right">
+                                <div class="fileAddItem_general_right">
+                                    <div class="fileAddItem-name">
+                                        Format: pdf
+                                    </div>
+                                    <div class="buttondownload">
+                                        <a href="./testy/przykladowyplik.pdf" class="button download"
+                                            download>POBIERZ</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="fileAddItem_general">
+                            <div class="fileAddItem_left">
+                                <div class="fileAddItem_icon">
+                                    <i class="fa-solid fa-file-arrow-down"></i>
+                                </div>
+                                <div class="fileAddItem_name">
+                                    <a href="./testy/przykladowypdf.pdf" download>
+                                        Plik-testowy.pdf
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="fileAddItem_right">
+                                <div class="fileAddItem_general_right">
+                                    <div class="fileAddItem-name">
+                                        Format: pdf
+                                    </div>
+                                    <div class="buttondownload">
+                                        <a href="./testy/przykladowypdf.pdf" class="button download"
+                                            download>POBIERZ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <div class="fileAddItem_general">
-                        <div class="fileAddItem_left">
-                            <div class="fileAddItem_icon">
-                                <i class="fa-solid fa-file-arrow-down"></i>
-                            </div>
-                            <div class="fileAddItem_name">
-                                <a href="./testy/przykladowyplik.pdf" download>
-                                    testowy pdf
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="fileAddItem_right">
-                            <div class="fileAddItem_general_right">
-                                <div class="fileAddItem-name">
-                                    Format: pdf
-                                </div>
-                                <div class="buttondownload">
-                                    <a href="./testy/przykladowyplik.pdf" class="button download"
-                                        download>POBIERZ</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="fileAddItem_general">
-                        <div class="fileAddItem_left">
-                            <div class="fileAddItem_icon">
-                                <i class="fa-solid fa-file-arrow-down"></i>
-                            </div>
-                            <div class="fileAddItem_name">
-                                <a href="./testy/przykladowypdf.pdf" download>
-                                    Plik-testowy.pdf
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="fileAddItem_right">
-                            <div class="fileAddItem_general_right">
-                                <div class="fileAddItem-name">
-                                    Format: pdf
-                                </div>
-                                <div class="buttondownload">
-                                    <a href="./testy/przykladowypdf.pdf" class="button download"
-                                        download>POBIERZ</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
             <section>
                 <div class="basic-information" id="section5">
-                    <h2>Dane techniczne</h2>
+                    <div class="basic_hide">
+                        <h2>Dane techniczne</h2>
+                        <a class="hide" onClick="op('#poka7');">
+                            <span class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
                 </div>
 
-                <div class="general-table">
-                    <table>
-                        <tr>
-                            <th class="left-header-table">PARAMETR</th>
-                            <th class="right-header-table">WARTOŚĆ</th>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Seria</td>
-                            <td class="left-text-table">Simon 10</td>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Nazwa produktu/Rodzaj</td>
-                            <td class="left-text-table">łącznik jednobiegunowy</td>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Typ produktu</td>
-                            <td class="left-text-table">moduł</td>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Prąd znamionowy świetlówkowy</td>
-                            <td class="left-text-table">10 AX</td>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Napięcie znamionowe</td>
-                            <td class="left-text-table">250V</td>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Rodzaj podłączenia/Typ zacisku</td>
-                            <td class="left-text-table">zaciski śrubowe</td>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Stopień ochrony IP</td>
-                            <td class="left-text-table">IP20/IP44</td>
-                        </tr>
-                        <tr>
-                            <td class="right-text-table">Uwagi</td>
-                            <td class="left-text-table">Do uzyskania klasy bryzgoszczelności IP44 zastosować uszczelkę
-                                ramki
-                            </td>
-                        </tr>
-                    </table>
+                <div id="poka7">
+                    <div class="general-table">
+                        <table>
+                            <tr>
+                                <th class="left-header-table">PARAMETR</th>
+                                <th class="right-header-table">WARTOŚĆ</th>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Seria</td>
+                                <td class="left-text-table">Simon 10</td>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Nazwa produktu/Rodzaj</td>
+                                <td class="left-text-table">łącznik jednobiegunowy</td>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Typ produktu</td>
+                                <td class="left-text-table">moduł</td>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Prąd znamionowy świetlówkowy</td>
+                                <td class="left-text-table">10 AX</td>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Napięcie znamionowe</td>
+                                <td class="left-text-table">250V</td>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Rodzaj podłączenia/Typ zacisku</td>
+                                <td class="left-text-table">zaciski śrubowe</td>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Stopień ochrony IP</td>
+                                <td class="left-text-table">IP20/IP44</td>
+                            </tr>
+                            <tr>
+                                <td class="right-text-table">Uwagi</td>
+                                <td class="left-text-table">Do uzyskania klasy bryzgoszczelności IP44 zastosować
+                                    uszczelkę
+                                    ramki
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </section>
-            
+
             <section>
                 <div class="section_related" id="section6">
-                    <h2>Powiązane</h2>
+                    <div class="section_rel_hide">
+                        <h2>Powiązane</h2>
+                        <a class="hide" onClick="op('#poka8');">
+                            <span class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
                 </div>
 
-                <div class="choice-products">
-                    <divv class="lights-row">
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX - kontener 2</b>
+                <div id="poka8">
+                    <div class="choice-products">
+                        <div class="lights-row">
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX - kontener 2</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="available material-symbols-outlined">event_available</span>
+                                            <span>1 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 190,24zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>189,43 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="available" class="material-symbols-outlined">event_available</span>
-                                        <span>1 szt.</span>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 190,24zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>189,43 zł</b></span>
-                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
                                 </div>
                             </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
 
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX 13</b>
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX 13</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: cross1</p>
+                                        <div class="productParam-icon">
+                                            <span class="available material-symbols-outlined">event_available</span>
+                                            <span>1 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 367,01 zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>365,85 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: cross1</p>
-                                    <div class="productParam-icon">
-                                        <span id="available" class="material-symbols-outlined">event_available</span>
-                                        <span>1 szt.</span>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 367,01 zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>365,85 zł</b></span>
-                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
                                 </div>
                             </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
 
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX 4</b>
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX 4</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="available material-symbols-outlined">event_available</span>
+                                            <span>1 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 223,12 zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>221,67 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="available" class="material-symbols-outlined">event_available</span>
-                                        <span>1 szt.</span>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 223,12 zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>221,67 zł</b></span>
-                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
                                 </div>
                             </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
 
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX 5</b>
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX 5</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="available material-symbols-outlined">event_available</span>
+                                            <span>1 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 367,01 zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>365,85 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="available" class="material-symbols-outlined">event_available</span>
-                                        <span>1 szt.</span>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 367,01 zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>365,85 zł</b></span>
-                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
                                 </div>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="other-items" id="section7">
-                    <h2>Inne z kategorii</h2>
+                <div class="section_category" id="section7">
+                    <div class="section_cate_hide">
+                        <h2>Inne z kategorii</h2>
+                        <a class="hide" onClick="op('#poka9');">
+                            <span class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
                 </div>
 
-                <div class="choice-products">
-                    <div class="lights-row">
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX - kontener 2</b>
+                <div id="poka9">
+                    <div class="choice-products">
+                        <div class="lights-row">
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX - kontener 2</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="available material-symbols-outlined">event_available</span>
+                                            <span>1 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 190,24zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>189,43 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="available" class="material-symbols-outlined">event_available</span>
-                                        <span>1 szt.</span>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 190,24zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>189,43 zł</b></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX 4</b>
-                                </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="unavailable"class="material-symbols-outlined">event_busy</span>
-                                        <span>0 szt.</span>
-                                    </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 186,99 zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>179,89 zł</b></span>
-                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
                                 </div>
                             </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX 5</b>
-                                </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="available" class="material-symbols-outlined">event_available</span>
-                                        <span>1 szt.</span>
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX 4</b>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 370,21 zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>365,85 zł</b></span>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="unavailable material-symbols-outlined">event_busy</span>
+                                            <span>0 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 186,99 zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>179,89 zł</b></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX 6</b>
-                                </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="available" class="material-symbols-outlined">event_available</span>
-                                        <span>1 szt.</span>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 278,76 zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>276,42 zł</b></span>
-                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
                                 </div>
                             </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX 5</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="available material-symbols-outlined">event_available</span>
+                                            <span>1 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 370,21 zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>365,85 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <div class="productTileParam">
-                                    <span class="productParam">Philips</span>
-                                    <b>Łącznik jednobiegunowy (moduł) 10AX 7</b>
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX 6</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="available material-symbols-outlined">event_available</span>
+                                            <span>1 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 278,76 zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>276,42 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="product_information">
-                                    <p>Kod produktu: CW1.01/11</p>
-                                    <div class="productParam-icon">
-                                        <span id="unavailable"class="material-symbols-outlined">event_busy</span>
-                                        <span>0 szt.</span>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
                                     </div>
-                                    <div class="productParam-icon">
-                                        <span class="material-symbols-outlined">local_shipping</span>
-                                        <span>24H</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Cena netto: 221,34 zł</span>
-                                    </div>
-                                    <div class="product-pricen">
-                                        <span>Twoja cena netto: <b>220,43 zł</b></span>
-                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
                                 </div>
                             </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
+                            <div class="light">
+                                <img src="photos/img_06.jpg" alt="Żarówka">
+                                <div class="text-under-lights">
+                                    <div class="productTileParam">
+                                        <span class="productParam">Philips</span>
+                                        <b>Łącznik jednobiegunowy (moduł) 10AX 7</b>
+                                    </div>
+                                    <div class="product_information">
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <div class="productParam-icon">
+                                            <span class="unavailable material-symbols-outlined">event_busy</span>
+                                            <span>0 szt.</span>
+                                        </div>
+                                        <div class="productParam-icon">
+                                            <span class="material-symbols-outlined">local_shipping</span>
+                                            <span>24H</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Cena netto: 221,34 zł</span>
+                                        </div>
+                                        <div class="product-pricen">
+                                            <span>Twoja cena netto: <b>220,43 zł</b></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
+                                <div class="tile-product">
+                                    <div class="number">
+                                        <button class="minus">-</button>
+                                        <label>
+                                            <input type="number" value="1" disabled />
+                                        </label>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <div class="shoppingcart"><button class="button9"><img src="icons/Group807.png"
+                                                alt="Koszyk" /></button></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -868,8 +906,8 @@
                     <div class="footer-information">
                         <div class="hide-info">
                             <h3>O NAS</h3>
-                            <a id="hide1" onClick="op('#poka1');"><span id="arrow-down1"
-                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                            <a class="hide" onClick="op('#poka1');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                         </div>
                         <ul id="poka1">
                             <li><a href="#">Informacje o sklepie</a></li>
@@ -884,8 +922,8 @@
                     <div class="footer-information">
                         <div class="hide-info">
                             <h3>INFORMACJE</h3>
-                            <a id="hide2" onClick="op('#poka2');"><span id="arrow-down2"
-                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                            <a class="hide" onClick="op('#poka2');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                         </div>
                         <ul id="poka2">
                             <li><a href="#">Czas realizacji</a></li>
@@ -900,8 +938,8 @@
                     <div class="footer-information">
                         <div class="hide-info">
                             <h3>MOJE KONTO</h3>
-                            <a id="hide3" onClick="op('#poka3');"><span id="arrow-down3"
-                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                            <a class="hide" onClick="op('#poka3');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                         </div>
                         <ul id="poka3">
                             <li><a href="#">Logowanie</a></li>
@@ -921,21 +959,21 @@
                                     <i class="fa-solid fa-phone-volume"></i> +48 12 373 10 50
                                 </a>
                             </div>
-        
+
                             <p class="module_information">
                                 Pon.-pt. 7.00-19.00, Sob. 8.00 - 14.00
                             </p>
-        
+
                             <p class="module_information">
                                 <a href="mailto:info@elhurtplus.pl">info@elhurtplus.pl</a>
                             </p>
-        
+
                             <p class="module_information">
                                 ul. Osieczany 585
                                 <br>
                                 32-400 Myslenice
                             </p>
-    
+
                             <a href="#" class="formularz">FORMULARZ KONTAKTOWY</a>
                         </div>
                     </div>
@@ -988,15 +1026,15 @@
                         </div>
 
                         <div class="footerSocialMedia__content">
-                            <a href="#" target="_blank" alt="facebook">
+                            <a href="#" target="_blank">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
 
-                            <a href="#" target="_blank" alt="instagram">
+                            <a href="#" target="_blank">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
 
-                            <a href="#" target="_blank" alt="youtube">
+                            <a href="#" target="_blank">
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
                         </div>
@@ -1009,9 +1047,7 @@
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
         </footer>
     </div>
-    </div>
-    </div>
-    <script type="text/javascript" src="./scriptsJS/third-index.js"></script>
+    <script src="./scriptsJS/third-index.js"></script>
 </body>
 
 </html>
