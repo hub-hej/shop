@@ -1462,6 +1462,11 @@ ul li {
     .form{
         padding: 15px 10px;
     }
+    .galleryFooter, .galleryFooterDelivery{
+        display: grid;
+        justify-items: center;
+        gap: 20px;
+    }
 }
 
 /* Czcionka z wykorzystaniem rem: 1 rem = 16px */

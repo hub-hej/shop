@@ -507,7 +507,7 @@ html {
 .column_product{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .overlay {
     height: 100%;
@@ -523,7 +523,7 @@ html {
     position: relative;
     top: 15%;
     width: 55.125rem;
-    height: 60%;
+    height: 70%;
     text-align: center;
     margin: 0 auto;
     background-color: white;
@@ -546,7 +546,7 @@ html {
     right: 0;
     font-size: 25px;
     background-color: #f2f3f4;
-    padding: 10px 10px;
+    padding: 10px 15px;
 }
 .button_overlay{
     background-color: #f8f8f8;
@@ -556,7 +556,7 @@ html {
     align-items: center;
     gap: 5px;
     font-size: 15px;
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-primary);
 }
 .button_overlay:hover{
     background-color: #e4e4e4;
@@ -590,7 +590,6 @@ html {
 .checkbox-button {
     display: flex;
     align-items: flex-start;
-    cursor: pointer;
     margin-top: 15px;
     margin-left: 15px;
     gap: 5px;
@@ -603,12 +602,13 @@ html {
 .checkbox-button__label{
     font-size: 15px;
     text-align: justify;
+    cursor: pointer;
 }
 .checkbox-button__input:checked+.checkbox-button__control:after {
     content: "";
     display: block;
     position: absolute;
-    width: 20px;
+    width: 16px;
     height: 20px;
     background-color: #F74137;
     margin: 4px;
@@ -620,6 +620,7 @@ html {
     height: 1.875rem;
     vertical-align: middle;
     border: var(--border-primary);
+    cursor: pointer;
 }
 .checkbox_agree{
     display: flex;
@@ -1666,7 +1667,7 @@ ul, ul li {
         padding: 15px;
     }
     .checkbox-button__label{
-        font-size: 10px;
+        font-size: 11px;
     }
     .value_number{
         height: 6.894737vw;
