@@ -143,3 +143,11 @@ $(".star").on('click', function(){
       document.getElementById(i).querySelector('.fa-star').style.color = "orange";
     }
   });
+
+//Function which allow on open and close overlay
+function openNav() {
+    document.getElementById("myNav").style.display = "block";
+}
+function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+}
