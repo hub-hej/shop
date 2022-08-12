@@ -159,7 +159,7 @@ html {
     list-style: none;
     display: block;
 }
-.hamburger, .image-back {
+.hamburger, .image-back, .hide {
     display: none;
 }
 .bar {
@@ -861,16 +861,19 @@ ul li {
 .productTileTileV1BasketButton__icon:before {
     content: "\f109";
 }
-#hide1, #hide2, #hide3{
-    display: none;
-}
-#arrow-down1, #arrow-down2, #arrow-down3{
+.arrow-down.material-symbols-outlined{
     font-size: 40px;
 }
 .hide-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.recomm_produc_hide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
 }
 @media screen and (max-width:1450px) {
     .searchTop__textfield {
@@ -923,7 +926,7 @@ ul li {
     }
 }
 @media screen and (min-width: 886px) {
-    #poka1, #poka2, #poka3{
+    #poka1, #poka2, #poka3, #poka4{
         display: block!important;
     }
 }
@@ -934,10 +937,10 @@ ul li {
     .footer-information ul{
         margin-top: 0px;
     }
-    #hide1, #hide2, #hide3{
+    .hide{
         display: block;
     }
-    #poka1, #poka2, #poka3{
+    #poka1, #poka2, #poka3, #poka4{
         display: none;
     }
     .lights-row,
@@ -1063,6 +1066,21 @@ ul li {
     .module_body, .fa-phone-volume{
         font-size: 30px;
     }
+    .recomm_produc_hide h2{
+        text-align: left;
+        font-size: 20px;
+        padding: 12px 3px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .recomm_produc_hide{
+        border-top: var(--border-primary);
+        justify-content: space-between;
+    }
+    .recommend-products::after{
+        display: none;
+    }
 }
 @media screen and (max-width: 700px) {
     .content-area h3 {
@@ -1098,9 +1116,14 @@ ul li {
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
 }
-@media screen and (min-width: 300px) and (max-width: 500px){
+@media screen and (min-width: 200px) and (max-width: 500px){
     .galleryRecommended{
         grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+    .galleryFooter, .galleryFooterDelivery{
+        display: grid;
+        gap: 20px;
+        justify-items: center;
     }
     .form{
         padding: 15px 10px;
