@@ -92,74 +92,152 @@
         </div>
 
         <?php
-    require('db.php');
-    // When form submitted, insert values into the database.
-    if (isset($_REQUEST['username'])) {
-        // removes backslashes
-        $username = stripslashes($_REQUEST['username']);
-        //escapes special characters in a string
-        $username = mysqli_real_escape_string($pdo, $username);
-        $email    = stripslashes($_REQUEST['email']);
-        $email    = mysqli_real_escape_string($pdo, $email);
-        $password = stripslashes($_REQUEST['password']);
-        $password = mysqli_real_escape_string($pdo, $password);
-        $create_datetime = date("Y-m-d H:i:s");
-        $query    = "INSERT into `users` (username, password, email, create_datetime)
-                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
-        $result   = mysqli_query($pdo, $query);
-        if ($result) {
-            echo "<div class='form'>
-                  <h3>Rejestracja sie powiodła.</h3><br/>
-                  <p class='link'>Kliknij tu aby się<a href='login.php'>zalogować</a></p>
-                  </div>";
-        } else {
-            echo "<div class='form'>
-                  <h3>Brakuje wypełnienia wymaganych pól.</h3><br/>
-                  <p class='link'>Kliknij tu aby się <a href='registration.php'>zarejestrować</a> ponownie.</p>
-                  </div>";
-        }
-    } else {
-?>
+session_start();
+require_once('db.php');
 
-        <div class="orderHeader">
-            <span class="orderHeader__text">Rejestracja</span>
-        </div>
-        <div class="information">
-            <div class="register">
-                <form class="form" action="" method="post" autocomplete="off">
-                    <input type="text" class="login-input" name="username" placeholder="Nazwa użytkownika*" maxlength="50" required />
-                    <input type="text" class="login-input" name="email" placeholder="Email*" maxlenght="50">
-                    <input type="password" class="login-input" name="password" placeholder="Hasło*" maxlength="50">
-                    <div class="regulations">
-                    <ul>
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Zapoznałem się z regulaminem oraz moim prawem do odstąpienia od umowy i rękojmi*</span>
-                                </label>
-                                <br />
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie informacji na temat nowości oraz zmian w ofercie sklepu</span>
-                                </label>
-                    </ul>
-                    </div>
-                    <br>
-
-                    <div class="orderButtonRow">
-                        <p class="left-text">*Pola wymagane</p>
-                        <input type="submit" name="submit" value="Załóż konto" class="login-button">
-                    </div>
-                    <p class="link"><a href="login.php">Kliknij aby się zalogować</a></p>
-                 </form>
-            </div>
-        </div>
+if(isset($_POST['submit']))
+{
+    if(isset($_POST['first_name'],$_POST['last_name'],$_POST['email'],$_POST['password']) && !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['password']))
+    {
+        $firstName = trim($_POST['first_name']);
+        $lastName = trim($_POST['last_name']);
+        $email = trim($_POST['email']);
+        $password = trim($_POST['password']);
         
-        <?php
-            }
-?>
+        $options = array("cost"=>4);
+        $hashPassword = password_hash($password,PASSWORD_BCRYPT,$options);
+        $date = date('Y-m-d H:i:s');
 
+        if(filter_var($email, FILTER_VALIDATE_EMAIL))
+		{
+            $sql = 'select * from members where email = :email';
+            $stmt = $pdo->prepare($sql);
+            $p = ['email'=>$email];
+            $stmt->execute($p);
+            
+            if($stmt->rowCount() == 0)
+            {
+                $sql = "insert into members (first_name, last_name, email, `password`) values(:fname,:lname,:email,:pass)";
+            
+                try{
+                    $handle = $pdo->prepare($sql);
+                    $params = [
+                        ':fname'=>$firstName,
+                        ':lname'=>$lastName,
+                        ':email'=>$email,
+                        ':pass'=>$hashPassword,
+                    ];
+                    
+                    $handle->execute($params);
+                    
+                    $success = 'User has been created successfully';
+                    
+                }
+                catch(PDOException $e){
+                    $errors[] = $e->getMessage();
+                }
+            }
+            else
+            {
+                $valFirstName = $firstName;
+                $valLastName = $lastName;
+                $valEmail = '';
+                $valPassword = $password;
+
+                $errors[] = 'Email address already registered';
+            }
+        }
+        else
+        {
+            $errors[] = "Email address is not valid";
+        }
+    }
+    else
+    {
+        if(!isset($_POST['first_name']) || empty($_POST['first_name']))
+        {
+            $errors[] = 'First name is required';
+        }
+        else
+        {
+            $valFirstName = $_POST['first_name'];
+        }
+        if(!isset($_POST['last_name']) || empty($_POST['last_name']))
+        {
+            $errors[] = 'Last name is required';
+        }
+        else
+        {
+            $valLastName = $_POST['last_name'];
+        }
+
+        if(!isset($_POST['email']) || empty($_POST['email']))
+        {
+            $errors[] = 'Email is required';
+        }
+        else
+        {
+            $valEmail = $_POST['email'];
+        }
+
+        if(!isset($_POST['password']) || empty($_POST['password']))
+        {
+            $errors[] = 'Password is required';
+        }
+        else
+        {
+            $valPassword = $_POST['password'];
+        }
+        
+    }
+
+}
+?>
+<div class="container h-100">
+	<div class="row h-100 mt-5 justify-content-center align-items-center">
+		<div class="col-md-5 mt-3 pt-2 pb-5 align-self-center border bg-light">
+			<h1 class="mx-auto w-25" >Register</h1>
+			<?php 
+				if(isset($errors) && count($errors) > 0)
+				{
+					foreach($errors as $error_msg)
+					{
+						echo '<div class="alert alert-danger">'.$error_msg.'</div>';
+					}
+                }
+                
+                if(isset($success))
+                {
+                    
+                    echo '<div class="alert alert-success">'.$success.'</div>';
+                }
+			?>
+			<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                <div class="form-group">
+					<label for="email">Imie:</label>
+					<input type="text" name="first_name" placeholder="Enter First Name" class="form-control" value="<?php echo ($valFirstName??'')?>">
+				</div>
+                <div class="form-group">
+					<label for="email">Nazwisko:</label>
+					<input type="text" name="last_name" placeholder="Enter Last Name" class="form-control" value="<?php echo ($valLastName??'')?>">
+				</div>
+
+                <div class="form-group">
+					<label for="email">Email:</label>
+					<input type="text" name="email" placeholder="Enter Email" class="form-control" value="<?php echo ($valEmail??'')?>">
+				</div>
+				<div class="form-group">
+				<label for="email">Hasło:</label>
+					<input type="password" name="password" placeholder="Enter Password" class="form-control" value="<?php echo ($valPassword??'')?>">
+				</div>
+
+				<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+				<p class="pt-2"> Przejdź do <a href="login.php">Zalogowania się</a></p>
+				
+			</form>
+		</div>
+	</div>
+</div>
         <div class="under-footer">
 
             <div class="footer-information">
