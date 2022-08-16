@@ -151,3 +151,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.display = "none";
 }
+
+//Function which allow on open and close overlay
+function openNavs() {
+    document.getElementById("myNavs").style.display = "block";
+}
+function closeNavs() {
+    document.getElementById("myNavs").style.display = "none";
+}

@@ -148,14 +148,16 @@
                             <img src="photos/Photo–1.png" alt="Duża żarówka" id="image-back" />
                             <div class="left-small-lights">
                                 <button class="button-up" aria-label="Przycisk górny"><i
-                                        class="fa-solid fa-angle-up"></i></button>
+                                        class="fa-solid fa-angle-up"></i>
+                                        <i class="fa-solid fa-angle-left"></i></button>
                                 <img src="photos/Image149@2x.png" alt="Żarówki" />
                                 <img src="photos/Image149@2x.png" alt="Żarówki" />
                                 <img src="photos/Image149@2x.png" alt="Żarówki" />
                                 <img src="photos/Image149@2x.png" alt="Żarówki" />
                                 <img src="photos/product-1.png" class="outlet" alt="Żarówki" />
                                 <button class="button-down" aria-label="Przycisk dolny"><i
-                                        class="fa-solid fa-angle-down"></i></button>
+                                        class="fa-solid fa-angle-down"></i>
+                                        <i class="fa-solid fa-angle-right"></i></button>
                             </div>
                             <div class="text-offer">
                                 <p class="one">PROMOCJA</p>
@@ -240,7 +242,7 @@
                                                 </div>
                                             </div>
                                             <div class="productInputNumber">
-                                                <input type="text" class="value_number"
+                                                <input type="text" name="phone" class="value_number"
                                                     placeholder="Wpisz swój numer telefonu" required>
                                             </div>
                                             <label class="checkbox-button">
@@ -249,10 +251,54 @@
                                                 <span class="checkbox-button__control"></span>
                                                 <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie numer telefonu informacji dotyczących świadczonych przez Administratora. Zgoda może zostać cofnięta w każdym czasie.</span>
                                             </label>
+                                            
+                                            <div class="product_footer">
+                                                <label class="btn_primary_call">
+                                                    <input type="submit" class="order_call" value="ZAMÓW ROZMOWĘ">
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <a class="button_overlay" onclick="openNav()"><img src="./icons/icon_01.png" class="icon_phone" alt=""/>ZAMÓW TELEFONICZNIE</a>
+                                <a class="button_overlay" onclick="openNavs()"><span class="material-symbols-outlined">mail</span>ZAPYTAJ O PRODUKT</a>
+                                <div id="myNavs" class="overlay">
+                                    <div class="overlay-content">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNavs()">&times;</a>
+                                        <img src="./photos/banner-big-3-pl.jpg" alt="">
+                                        <div class="column_product">
+                                            <div class="productIconTitle">
+                                                <div class="icon_phone_span">
+                                                    <span class="icon-inside material-symbols-outlined">mail</span>
+                                                </div>
+                                                <div class="title_text">
+                                                    ZAMÓWIENIA E-MAIL
+                                                    <p>Zapytaj naszego konsultanta o szczegóły dotyczące produktu 
+                                                        lub złóż zamowienie przez e-mail.</p>
+                                                </div>
+                                            </div>
+                                            <div class="productInputNumber">
+                                                <input type="text" name="phone" class="value_number"
+                                                    placeholder="Wpisz swój adres e-mail" required>
+                                            </div>
+                                            <textarea name="desc" class="system_textarea" placeholder="Wpisz wiadomość" required></textarea>
+                                            <label class="checkbox-button">
+                                                <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                                name="choice1">
+                                                <span class="checkbox-button__control"></span>
+                                                <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą elektroniczną 
+                                                    na wskazany przeze mnie numer telefonu informacji dotyczących świadczonych przez Administratora. 
+                                                    Zgoda może zostać cofnięta w każdym czasie.*</span>
+                                            </label>
+                                            
+                                            <div class="product_footer">
+                                                <label class="btn_primary_call">
+                                                    <input type="submit" class="order_call" value="POPROŚ O KONTAKT">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
