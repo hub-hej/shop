@@ -242,19 +242,22 @@
                                                 </div>
                                             </div>
                                             <div class="productInputNumber">
-                                                <input type="text" name="phone" class="value_number"
-                                                    placeholder="Wpisz swój numer telefonu" required>
+                                                <form method="POST" action="phone.php" autocomplete="off">
+                                                    <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                    type = "number"
+                                                    maxlength = "9" class="value_number" name="phone" placeholder="Wpisz swój numer telefonu" required>
                                             </div>
-                                            <label class="checkbox-button">
+                                            <label class="checkbox-button" required>
                                                 <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                                    name="choice1">
-                                                <span class="checkbox-button__control"></span>
-                                                <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie numer telefonu informacji dotyczących świadczonych przez Administratora. Zgoda może zostać cofnięta w każdym czasie.</span>
+                                                    name="choice1" required>
+                                                <span class="checkbox-button__control" required></span>
+                                                <span class="checkbox-button__label" required>Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie numer telefonu informacji dotyczących świadczonych przez Administratora. Zgoda może zostać cofnięta w każdym czasie.</span>
                                             </label>
                                             
                                             <div class="product_footer">
                                                 <label class="btn_primary_call">
                                                     <input type="submit" class="order_call" value="ZAMÓW ROZMOWĘ">
+                                                </form>
                                                 </label>
                                             </div>
                                         </div>
@@ -1034,7 +1037,7 @@
                         <div class="general_module">
                             <div class="module_body">
                                 <a href="tel:+48123731050">
-                                    <i class="fa-solid fa-phone-volume"></i> +48 12 373 10 50
+                                    <i class="fa-solid fa-phone-volume"></i> +48 18 737 21 67
                                 </a>
                             </div>
 

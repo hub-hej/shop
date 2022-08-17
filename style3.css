@@ -500,7 +500,7 @@ html {
     width: 100%;
     border: var(--border-primary);
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     gap: 10px;
@@ -584,7 +584,7 @@ html {
     margin-left: 20px;
     margin-top: 30px;
 }
-.value_number{
+input[type="number"].value_number, input[type="text"].value_number{
     padding: 0 1.25rem; 
     border: 1px solid #e1e2e8;
     width: 95%;
@@ -614,7 +614,7 @@ html {
     content: "";
     display: block;
     position: absolute;
-    width: 16px;
+    width: 20px;
     height: 20px;
     background-color: #F74137;
     margin: 4px;
@@ -657,6 +657,10 @@ html {
     color: white;
     border: none;
     font-family: var(--font-family-primary);
+    cursor: pointer;
+}
+.order_call:hover{
+    background-color: #f51c10;
 }
 .system_textarea{
     resize: none;
