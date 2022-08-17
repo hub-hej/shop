@@ -1,8 +1,18 @@
-$('#open-modal').click(function() {
-    $('.your-modal').show();
-    $('.your-modal').removeClass('animated zoomOut').addClass('animated zoomIn');
-  });
-  
-  $('.close-button').click(function() {
-    $('.your-modal').removeClass('animated zoomIn').addClass('animated zoomOut').delay(800).fadeOut(400);
-  });
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+ autoplay:true,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:4
+      }
+  }
+})
