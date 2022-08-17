@@ -134,6 +134,7 @@ jQuery(document).ready(function ($) {
     };
 });
 
+
 //Function which allows the opinion to be marked stars
 $(".star").on('click', function(){
     for(let i=0; i<= 4;i++){

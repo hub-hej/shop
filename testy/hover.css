@@ -1,12 +1,7 @@
-
-  h4 {
-    height: 10rem;
-    background: #009688;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
-    color: #fff;
-    margin: 10px;
-    border-radius: 10px;
-}
+h2 a{
+  text-align: start !important;
+  }
+  .click.collapsed .icon {
+  transform: rotate(180deg);
+  transition: .3s ease-in-out;
+  }
