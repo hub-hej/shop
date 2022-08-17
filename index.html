@@ -14,7 +14,10 @@
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    </head>
 
 <body>
     <div class="full-page">
@@ -197,123 +200,137 @@
             <div id="poka4">
                 <div class="choice-products">
                     <div class="lights-row">
-                        <button class="w3-button w3-black w3-display-left-lights">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right-lights">&#10095;</button>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
-                                <p>Kod produktu: CW1.01/11</p>
-                                <br />
-                                <s>656,65 zł</s>
-                                <br />
-                                <b>442,85 zł</b>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
-                                <br />
-                                <p>Kod produktu: CW1.01/11</p>
-                                <br />
-                                <s>656,65 zł</s>
-                                <br />
-                                <b>442,85 zł</b>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
-                                <br />
-                                <p>Kod produktu: CW1.01/11</p>
-                                <br />
-                                <s>656,65 zł</s>
-                                <br />
-                                <b>442,85 zł</b>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
-                                <br />
-                                <p>Kod produktu: CW1.01/11</p>
-                                <br />
-                                <s>656,65 zł</s>
-                                <br />
-                                <b>442,85 zł</b>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
-                        </div>
-                        <div class="light">
-                            <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-under-lights">
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
-                                <br />
-                                <p>Kod produktu: CW1.01/11</p>
-                                <br />
-                                <s>656,65 zł</s>
-                                <br />
-                                <b>442,85 zł</b>
-                            </div>
-                            <div class="tile-product">
-                                <div class="number">
-                                    <button class="minus">-</button>
-                                    <label>
-                                        <input type="number" value="1" disabled />
-                                    </label>
-                                    <button class="plus">+</button>
-                                </div>
-                                <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
-                                            alt="Koszyk" /></button></div>
-                            </div>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">      
+                                <div class="light">
+                                    <img src="photos/img_06.jpg" alt="Żarówka">
+                                    <div class="text-under-lights">
+                                        <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                                        <br />
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <br />
+                                        <s>656,65 zł</s>
+                                        <br />
+                                        <b>442,85 zł</b>
+                                    </div>
+                                    <div class="tile-product">
+                                        <div class="number">
+                                            <button class="minus">-</button>
+                                            <label>
+                                                <input type="number" value="1" disabled />
+                                            </label>
+                                            <button class="plus">+</button>
+                                        </div>
+                                        <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                                    alt="Koszyk" /></button></div>
+                                    </div>
+                                </div>     
+                              </div>
+                          
+                              <div class="item">      
+                                <div class="light">
+                                    <img src="photos/img_06.jpg" alt="Żarówka">
+                                    <div class="text-under-lights">
+                                        <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                                        <br />
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <br />
+                                        <s>656,65 zł</s>
+                                        <br />
+                                        <b>442,85 zł</b>
+                                    </div>
+                                    <div class="tile-product">
+                                        <div class="number">
+                                            <button class="minus">-</button>
+                                            <label>
+                                                <input type="number" value="1" disabled />
+                                            </label>
+                                            <button class="plus">+</button>
+                                        </div>
+                                        <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                                    alt="Koszyk" /></button></div>
+                                    </div>
+                                </div>         
+                              </div>
+                              <div class="item">      
+                                <div class="light">
+                                    <img src="photos/img_06.jpg" alt="Żarówka">
+                                    <div class="text-under-lights">
+                                        <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                                        <br />
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <br />
+                                        <s>656,65 zł</s>
+                                        <br />
+                                        <b>442,85 zł</b>
+                                    </div>
+                                    <div class="tile-product">
+                                        <div class="number">
+                                            <button class="minus">-</button>
+                                            <label>
+                                                <input type="number" value="1" disabled />
+                                            </label>
+                                            <button class="plus">+</button>
+                                        </div>
+                                        <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                                    alt="Koszyk" /></button></div>
+                                    </div>
+                                </div>         
+                              </div>
+                              <div class="item">      
+                                <div class="light">
+                                    <img src="photos/img_06.jpg" alt="Żarówka">
+                                    <div class="text-under-lights">
+                                        <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                                        <br />
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <br />
+                                        <s>656,65 zł</s>
+                                        <br />
+                                        <b>442,85 zł</b>
+                                    </div>
+                                    <div class="tile-product">
+                                        <div class="number">
+                                            <button class="minus">-</button>
+                                            <label>
+                                                <input type="number" value="1" disabled />
+                                            </label>
+                                            <button class="plus">+</button>
+                                        </div>
+                                        <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                                    alt="Koszyk" /></button></div>
+                                    </div>
+                                </div>       
+                              </div>
+                          
+                              <div class="item">      
+                                <div class="light">
+                                    <img src="photos/img_06.jpg" alt="Żarówka">
+                                    <div class="text-under-lights">
+                                        <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                                        <br />
+                                        <p>Kod produktu: CW1.01/11</p>
+                                        <br />
+                                        <s>656,65 zł</s>
+                                        <br />
+                                        <b>442,85 zł</b>
+                                    </div>
+                                    <div class="tile-product">
+                                        <div class="number">
+                                            <button class="minus">-</button>
+                                            <label>
+                                                <input type="number" value="1" disabled />
+                                            </label>
+                                            <button class="plus">+</button>
+                                        </div>
+                                        <div class="shoppingcart"><button class="button5"><img src="icons/Group807.png"
+                                                    alt="Koszyk" /></button></div>
+                                    </div>
+                                </div>         
+                              </div>
                         </div>
                     </div>
+
                     <div class="only-button">
                         <a href="#" class="button button3">ZOBACZ WSZYSTKIE INSPIRACJE</a>
                     </div>
@@ -454,7 +471,7 @@
                 <div class="general_module">
                     <div class="module_body">
                         <a href="tel:+48123731050">
-                            <i class="fa-solid fa-phone-volume"></i> +48 12 373 10 50
+                            <i class="fa-solid fa-phone-volume"></i> +48 18 737 21 67
                         </a>
                     </div>
 
