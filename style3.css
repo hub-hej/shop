@@ -554,11 +554,12 @@ html {
     background-color: #f8f8f8;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 5px;
     font-size: 15px;
     font-family: var(--font-family-primary);
+    width: 100%;
 }
 .button_overlay:hover{
     background-color: #e4e4e4;
@@ -593,6 +594,7 @@ input[type="number"].value_number, input[type="text"].value_number{
     font-size: 15px;
     outline: none;
     font-family: var(--font-family-secondary);
+    text-align: left;
 }
 .checkbox-button {
     display: flex;
@@ -1470,8 +1472,6 @@ ul, ul li {
     i.fa-angle-left, i.fa-angle-right{
         display: block;
     }
-}
-@media screen and (max-width: 1000px) {
     .minus-light, .plus-light {
         padding: 5px;
         width: 100%;
@@ -1479,17 +1479,17 @@ ul, ul li {
     .number-light input{
         width: 100%;
     }
+    .overlay-content{
+        width: 95%;
+    }
+    
 }
 @media screen and (max-width: 900px) {
     .lights-wrapper img{
         width:100%;
-        height: 100%;
     }
     .left-small-lights{
         display: none;
-    }
-    .overlay-content{
-        width: 95%;
     }
 }
 @media screen and (min-width: 851px) {
@@ -1515,7 +1515,12 @@ ul, ul li {
     #poka3, #poka4, 
     #poka-all, #poka6, 
     #poka7, #poka8,
-    #poka9{
+    #poka9, .nav-items, .dropdown:hover .dropdown-content, .header img, .fileAddItem-name,     .section_header_container h2::after, 
+    .section_header_opinion h2::after, 
+    .section_header_down_hide h2:after, 
+    .basic-information h2::after,
+    .section_rel_hide h2::after, 
+    .section_cate_hide h2::after{
         display: none;
     }
     .header, .headers{
@@ -1571,9 +1576,6 @@ ul, ul li {
         width: 100%;
         padding: 5px;
     }
-    .nav-items, .dropdown:hover .dropdown-content, .header img{
-        display: none;
-    }
     .nav-items.active{
         display: block!important;
         flex: 1 0 auto;
@@ -1616,9 +1618,6 @@ ul, ul li {
     .product-description h2{
         font-size: 30px;
     }
-    .fileAddItem-name{
-        display: none;
-    }
     .lights-offer{
         flex-direction: column;
     }
@@ -1640,14 +1639,6 @@ ul, ul li {
         margin-left: 20px;
         margin-bottom: 0px;
     }
-    .section_header_container h2::after, 
-    .section_header_opinion h2::after, 
-    .section_header_down_hide h2:after, 
-    .basic-information h2::after,
-    .section_rel_hide h2::after, 
-    .section_cate_hide h2::after{
-        display: none;
-    }
     .section_header_container p{
         margin-top: 20px;
         font-size: 15px;
@@ -1660,12 +1651,17 @@ ul, ul li {
         padding: 0;
     }
 }
+@media screen and (min-width: 450px) and (max-width: 849px) {
+    .productInfoBlock{
+        flex-direction: unset;
+    }
+}
 @media screen and (max-width: 720px) {
     .overlay-content img{
         display: none;
     }
 }
-@media screen and (max-width: 585px) {
+@media screen and (min-width: 100px) and (max-width: 585px) {
     .lights-wrapper, .arrow-cart img{
         width:100%;
     }
@@ -1678,10 +1674,7 @@ ul, ul li {
     .left-arrow-lights, .right-arrow-lights{
         opacity: 0;
     }
-    .bottom-light-info b{
-        font-size: 25px;
-    }
-    .text-cart{
+    .text-cart, .buttondownload{
         display: none;
     }
     .shopping-button img{
@@ -1708,19 +1701,11 @@ ul, ul li {
     .lights-row{
         grid-template-columns: repeat(1, minmax(0,1fr));
     }
-}
-@media screen and (max-width: 550px) {
-    .buttondownload{
-        display: none;
-    }
-    .fileAddItem_name{
+    .fileAddItem_name, input[type="number"].value_number, input[type="text"].value_number{
         padding: 15px;
     }
     .checkbox-button__label{
-        font-size: 11px;
-    }
-    .value_number{
-        height: 6.894737vw;
+        font-size: 13px;
     }
     .checkbox-button{
         margin-left: 5px;
@@ -1733,7 +1718,7 @@ ul, ul li {
         font-size: 40px;
     }
 }
-@media screen and (max-width: 435px) {
+@media screen and (min-width: 100px) and (max-width: 435px) {
     .shopping-button img{
         width: 20px;
         height: 20px;
@@ -1744,7 +1729,7 @@ ul, ul li {
     .two-text-variant{
         font-size: 10px;
     }
-    .w3-display-left, .w3-display-right, .upper-headers p, .text-offer{
+    .w3-display-left, .w3-display-right, .upper-headers p, .text-offer, .tile-light p, .philips{
         display: none;
     }
     .user-login, .email-login{
@@ -1756,30 +1741,12 @@ ul, ul li {
     .formularz{
         padding: 15px 10px;
     }
-}
-@media screen and (max-width: 400px) {
-    .general-table{
-        width: 100%;
-    }
     .third-header{
         width: 100%;
         flex-direction: column;
     }
-    .bottom-light-info b{
-        font-size: 20px;
-    }
-    .two-variant{
-        width: 90px;
-    }
-    .two-text-variant, .text-under-first-variant{
-        padding-left: 2px;
-        gap: 17px;
-    }
     .searchTop__textfield{
         padding: 10px 40px;
-    }
-    .tile-light p, .philips{
-        display: none;
     }
     .galleryFooter, .galleryFooterDelivery{
         display: grid;
