@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
-    <title>Rejestracja</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Rejestracja</title>
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 <?php
 session_start();
 require_once('db.php');
@@ -174,30 +182,41 @@ if(isset($_POST['submit']))
             </div>
         </div>
         <div class="header">
-            <div class="headers"><a href="index2.html">
-                    <p>ŹRÓDŁA ŚWIATŁA</p>
-                </a></div>
-            <div class="headers"><a href="#">
-                    <p>OŚWIETLENIE WEWNĘTRZNE</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>GNIAZDKA, WYŁACZNIKI</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>AUTOMATYKA, STEROWANIE</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>ROZDZIELANIE I APARATURA</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>MATERIALY INSTALACYJNE</p>
-                </a>
-            </div>
+        <button type="button" class="button-menu" aria-label="Przycisk na menu">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </button>
+                <div class="nav-items">
+                    <div class="headers">
+                        <a class="ex1" href="index2.html" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
+                            ŚWIATŁA</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank"><img src="photos/category-5.png" alt="">OŚWIETLENIE WEWNĘTRZNE</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank"><img src="photos/category-6.png" alt="">GNIAZDKA, WYŁACZNIKI</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank"><img src="photos/category-7.png" alt="">AUTOMATYKA, STEROWANIE</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank"><img src="photos/category-8.png" alt="">ROZDZIELANIE I APARATURA</a>
+                    </div>
+
+                    <div class="headers">
+                        <a href="#" target="_blank"><img src="photos/category-10.png" alt="">MATERIALY INSTALACYJNE</a>
+                    </div>
+                </div>
         </div>
+        
 <div class="container">
     <div class="registration">
 	    <div class="row">
@@ -254,63 +273,147 @@ if(isset($_POST['submit']))
 				</div>
 			</form>
             </div>
-</div>
+    </div>
         <div class="under-footer">
 
-            <div class="footer-information">
-                <h3>INFORMACJE</h3>
-                <ul>
-                    <li>Informacje o sklepie</li>
-                    <li>Porady</li>
-                    <li>Blog</li>
-                    <li>Galeria inspiracji</li>
-                    <li>Kontakt</li>
-                    <li>Informacje o sklepie</li>
-                </ul>
+        <div class="footer-information">
+                        <div class="hide-info">
+                            <h3>O NAS</h3>
+                            <a class="hide" onClick="op('#poka1');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka1">
+                            <li><a href="#">Informacje o sklepie</a></li>
+                            <li><a href="#">Porady</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Galeria inspiracji</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Informacje o sklepie</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-information">
+                        <div class="hide-info">
+                            <h3>INFORMACJE</h3>
+                            <a class="hide" onClick="op('#poka2');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka2">
+                            <li><a href="#">Czas realizacji</a></li>
+                            <li><a href="#">Koszty przesyłki</a></li>
+                            <li><a href="#">Zamów próbkę</a></li>
+                            <li><a href="#">Szycie na wymiar</a></li>
+                            <li><a href="#">Czas realizacji</a></li>
+                            <li><a href="#">Koszty przesyłki</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-information">
+                        <div class="hide-info">
+                            <h3>MOJE KONTO</h3>
+                            <a class="hide" onClick="op('#poka3');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka3">
+                            <li><a href="#">Logowanie</a></li>
+                            <li><a href="#">Rejestracja</a></li>
+                            <li><a href="#">Zamowienia</a></li>
+                            <li><a href="#">Ustawienia konta</a></li>
+                            <li><a href="#">Zmiana hasla</a></li>
+                            <li><a href="#">Schowek</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-information">
+                        <h3>MASZ PYTANIE?</h3>
+                        <div class="general_module">
+                            <div class="module_body">
+                                <a href="tel:+48123731050">
+                                    <i class="fa-solid fa-phone-volume"></i> +48 18 737 21 67
+                                </a>
+                            </div>
+
+                            <p class="module_information">
+                                Pon.-pt. 7.00-19.00, Sob. 8.00 - 14.00
+                            </p>
+
+                            <p class="module_information">
+                                <a href="mailto:info@elhurtplus.pl">info@elhurtplus.pl</a>
+                            </p>
+
+                            <p class="module_information">
+                                ul. Osieczany 585
+                                <br>
+                                32-400 Myslenice
+                            </p>
+
+                            <a href="#" class="formularz">FORMULARZ KONTAKTOWY</a>
+                        </div>
+                    </div>
             </div>
 
-            <div class="footer-information">
-                <h3>INFORMACJE</h3>
-                <ul>
-                    <li>Czas realizacji</li>
-                    <li>Koszty przesyłki</li>
-                    <li>Zamów próbkę</li>
-                    <li>Szycie na wymiar</li>
-                    <li>Czas realizacji</li>
-                    <li>Koszty przesyłki</li>
-                </ul>
+            <div class="footerDetails">
+                <div class="row-up">
+                    <div class="galleryTextListFooterPayment">
+                        BEZPIECZNE PŁATNOŚCI
+                    </div>
+                    <div class="galleryFooter">
+                        <div class="galleryListFooterPayment">
+                            <img src="./photos/fotos-54.png" alt="" />
+                        </div>
+                        <div class="galleryListFooterPayment">
+                            <img src="./photos/fotos-53.png" alt="" />
+                        </div>
+                        <div class="galleryListFooterPayment">
+                            <img src="./photos/fotos-14.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="galleryTextListFooterDelivery">
+                        SZYBKA DOSTAWA
+                    </div>
+
+                    <div class="galleryFooterDelivery">
+                        <div class="galleryListFooterDelivery">
+                            <img src="./photos/fotos-41.png" alt="" />
+                        </div>
+                        <div class="galleryListFooterDelivery">
+                            <img src="./photos/fotos-12.png" alt="" />
+                        </div>
+                        <div class="galleryListFooterDelivery">
+                            <img src="./photos/fotos-13.png" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footerSocialMedia">
+                    <div class="textSocialMedia">
+                        DOŁĄCZ DO NAS
+                    </div>
+                    <div class="footerSocialMedia__content">
+                        <a href="#" target="_blank" alt="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#" target="_blank" alt="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" target="_blank" alt="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="footer-information">
-                <h3>MOJE KONTO</h3>
-                <ul>
-                    <li>Logowanie</li>
-                    <li>Rejestracja</li>
-                    <li>Zamowienia</li>
-                    <li>Ustawienia konta</li>
-                    <li>Zmiana hasla</li>
-                    <li>Schowek</li>
-                </ul>
-            </div>
-
-            <div class="footer-information">
-                <h3>INFORMACJE</h3>
-                <ul>
-                    <li>Informacje o sklepie</li>
-                    <li>Porady</li>
-                    <li>Blog</li>
-                    <li>Galeria inspiracji</li>
-                    <li>Kontakt</li>
-                    <li>Informacje o sklepie</li>
-                </ul>
-            </div>
-            </div>
-
-        <div class="footer">
-            <div class="left-part">Coppyright 2022. Wszystkie prawa zastrzeżone</div>
-            <div class="right-part">Agencja Interaktywna [ti] Powered By 2ClickShop</div>
-        </div>
+        <footer>
+            <div>Coppyright 2022. Wszystkie prawa zastrzeżone</div>
+            <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
+        </footer>
     </div>
+    <script src="register.js"></script>
     <!-- // $data = $pdo->query("SELECT * FROM users")->fetchAll();
     // // and somewhere later:
     // foreach ($data as $row) {
