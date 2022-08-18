@@ -84,6 +84,16 @@ html {
     gap: 10px;
     align-items: center;
 }
+.logo-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.responsive-image {
+    height: auto;
+    width: 100%;
+}
 .searchTop{
     display: flex;
     width: 100%;

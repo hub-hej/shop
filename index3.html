@@ -24,18 +24,21 @@
             <div class="main">
                 <div class="menu">
                     <div class="upper-menu">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="logos/logo.png" alt="Logo ElHurtPlus" />
-                            </a>
-                        </div>
-                        <div class="search-menu">
-                            <form class="searchTop">
-                                <input type="text" class="searchTop__textfield" placeholder="Wpisz nazwę produktu"
-                                    name="search" autocomplete="off">
-                                <button type="submit" class="searchTop__submit"
-                                    aria-label="Przycisk do wyszukiwania frazesów"><i class="fa fa-search"></i></button>
-                            </form>
+                        <div class="logo-search">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="logos/logo.png" alt="Logo ElHurtPlus" class="responsive-image" />
+                                </a>
+                            </div>
+                            <div class="search-menu">
+                                <form class="searchTop">
+                                    <input type="text" class="searchTop__textfield" placeholder="Wpisz nazwę produktu"
+                                        name="search" autocomplete="off">
+                                    <button type="submit" class="searchTop__submit"
+                                        aria-label="Przycisk do wyszukiwania frazesów"><i
+                                            class="fa fa-search"></i></button>
+                                </form>
+                            </div>
                         </div>
                         <div class="three-information">
                             <div class="upper-headers">
@@ -165,7 +168,7 @@
                             <div class="left-small-lights">
                                 <button class="button-up" aria-label="Przycisk górny"><i
                                         class="fa-solid fa-angle-up"></i>
-                                        <i class="fa-solid fa-angle-left"></i></button>
+                                    <i class="fa-solid fa-angle-left"></i></button>
                                 <img src="photos/Image149@2x.png" alt="Żarówki" />
                                 <img src="photos/Image149@2x.png" alt="Żarówki" />
                                 <img src="photos/Image149@2x.png" alt="Żarówki" />
@@ -173,7 +176,7 @@
                                 <img src="photos/product-1.png" class="outlet" alt="Żarówki" />
                                 <button class="button-down" aria-label="Przycisk dolny"><i
                                         class="fa-solid fa-angle-down"></i>
-                                        <i class="fa-solid fa-angle-right"></i></button>
+                                    <i class="fa-solid fa-angle-right"></i></button>
                             </div>
                             <div class="text-offer">
                                 <p class="one">PROMOCJA</p>
@@ -259,28 +262,34 @@
                                             </div>
                                             <div class="productInputNumber">
                                                 <form method="post" action="phone.php" autocomplete="off">
-                                                    <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                    type = "number"
-                                                    maxlength = "9" class="value_number" name="phone" placeholder="Wpisz swój numer telefonu" required>
-                                                </div>
+                                                    <input
+                                                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                        type="number" maxlength="9" class="value_number" name="phone"
+                                                        placeholder="Wpisz swój numer telefonu" required>
+                                            </div>
                                             <label class="checkbox-button">
                                                 <input type="checkbox" class="checkbox-button__input" class="choice1-1"
                                                     name="choice1" required>
                                                 <span class="checkbox-button__control"></span>
-                                                <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie numer telefonu informacji dotyczących świadczonych przez Administratora. Zgoda może zostać cofnięta w każdym czasie.</span>
+                                                <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą
+                                                    elektroniczną na wskazany przeze mnie numer telefonu informacji
+                                                    dotyczących świadczonych przez Administratora. Zgoda może zostać
+                                                    cofnięta w każdym czasie.</span>
                                             </label>
-                                            
+
                                             <div class="product_footer">
                                                 <label class="btn_primary_call">
                                                     <input type="submit" class="order_call" value="ZAMÓW ROZMOWĘ">
-                                                </form>
+                                                    </form>
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a class="button_overlay" onclick="openNav()"><img src="./icons/icon_01.png" class="icon_phone" alt=""/>ZAMÓW TELEFONICZNIE</a>
-                                <a class="button_overlay" onclick="openNavs()"><span class="material-symbols-outlined">mail</span>ZAPYTAJ O PRODUKT</a>
+                                <a class="button_overlay" onclick="openNav()"><img src="./icons/icon_01.png"
+                                        class="icon_phone" alt="" />ZAMÓW TELEFONICZNIE</a>
+                                <a class="button_overlay" onclick="openNavs()"><span
+                                        class="material-symbols-outlined">mail</span>ZAPYTAJ O PRODUKT</a>
                                 <div id="myNavs" class="overlay">
                                     <div class="overlay-content">
                                         <a href="javascript:void(0)" class="closebtn" onclick="closeNavs()">&times;</a>
@@ -292,29 +301,32 @@
                                                 </div>
                                                 <div class="title_text">
                                                     ZAMÓWIENIA E-MAIL
-                                                    <p>Zapytaj naszego konsultanta o szczegóły dotyczące produktu 
+                                                    <p>Zapytaj naszego konsultanta o szczegóły dotyczące produktu
                                                         lub złóż zamowienie przez e-mail.</p>
                                                 </div>
                                             </div>
                                             <div class="productInputNumber">
                                                 <form method="post" action="email.php" autocomplete="off">
-                                                <input type="email" name="email" class="value_number" maxlength="50"
-                                                    placeholder="Wpisz swój adres e-mail" required>
+                                                    <input type="email" name="email" class="value_number" maxlength="50"
+                                                        placeholder="Wpisz swój adres e-mail" required>
                                             </div>
-                                            <textarea name="desc" class="system_textarea" placeholder="Wpisz wiadomość" required></textarea>
+                                            <textarea name="desc" class="system_textarea" placeholder="Wpisz wiadomość"
+                                                required></textarea>
                                             <label class="checkbox-button">
                                                 <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                                name="choice1" required>
+                                                    name="choice1" required>
                                                 <span class="checkbox-button__control"></span>
-                                                <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą elektroniczną 
-                                                    na wskazany przeze mnie numer telefonu informacji dotyczących świadczonych przez Administratora. 
+                                                <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą
+                                                    elektroniczną
+                                                    na wskazany przeze mnie numer telefonu informacji dotyczących
+                                                    świadczonych przez Administratora.
                                                     Zgoda może zostać cofnięta w każdym czasie.*</span>
                                             </label>
-                                            
+
                                             <div class="product_footer">
                                                 <label class="btn_primary_call">
                                                     <input type="submit" class="order_call" value="POPROŚ O KONTAKT">
-                                                </form>
+                                                    </form>
                                                 </label>
                                             </div>
                                         </div>
@@ -373,7 +385,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="three-button">
                     <form action="#section1" class="forms"><button class="button button1">OPIS PRODUKTU</button></form>
                     <form action="#section2" class="forms"><button class="button button2">SZCZEGÓŁY</button></form>

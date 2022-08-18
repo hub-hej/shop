@@ -78,8 +78,18 @@ header{
     gap: 10px;
     align-items: center;
 }
+.logo-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 .logo img:hover {
     transform: scale(1.05);
+}
+.responsive-image {
+    height: auto;
+    width: 100%;
 }
 .searchTop{
     display: flex;
