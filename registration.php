@@ -8,90 +8,7 @@
     <title>Rejestracja</title>
 </head>
 <body>
-<div class="full-page">
-        <div class="main">
-            <div class="menu">
-                <div class="upper-menu">
-                    <div class="logo">
-                        <img src="logos/logo.png" alt="Logo ElHurtPlus" />
-                    </div>
-                    <div class="three-information">
-                        <div class="upper-headers">
-                            <a href="#">
-                                <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                <p>KONTAKT</p>
-                            </a>
-                        </div>
-                        <div class="upper-headers">
-                            <a href="#">
-                                <img src="icons/icon_02.png" alt="Gwiazda - Ulubione" />
-                                <p>ULUBIONE</p>
-                            </a>
-                        </div>
-                        <div class="upper-headers">
-                            <div class="dropdown">
-                                <a href="login.php">
-                                       <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
-                                   <p>MOJE KONTO</p>
-                                       <div class="dropdown-content">
-                                             <p>Zaloguj się</p>
-                                      </div>
-                                  </a>
-                            </div>
-                        </div>
-
-                        <div class="cart-family">
-                            <div class="cart">
-                                <div class="cart-brother">
-                                    <div class="text-on-cart">
-                                        <p class="number-orders">342</p>
-                                    </div>
-                                    <img src="icons/icon_06.png" alt="Koszyk" />
-                                </div>
-
-                                <div class="text-cart">
-                                    <p class="first-text-cart">TWÓJ KOSZYK</p>
-                                    <p class="second-text-cart">3456,00zł</p>
-                                </div>
-                            </div>
-                            <div class="arrow-cart">
-                                <a href="#" class="activity">
-                                    <img src="icons/prawa-strzalka.png" alt="Strzałka" />
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header">
-            <div class="headers"><a href="index2.html">
-                    <p>ŹRÓDŁA ŚWIATŁA</p>
-                </a></div>
-            <div class="headers"><a href="#">
-                    <p>OŚWIETLENIE WEWNĘTRZNE</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>GNIAZDKA, WYŁACZNIKI</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>AUTOMATYKA, STEROWANIE</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>ROZDZIELANIE I APARATURA</p>
-                </a>
-            </div>
-            <div class="headers"><a href="#">
-                    <p>MATERIALY INSTALACYJNE</p>
-                </a>
-            </div>
-        </div>
-
-        <?php
+<?php
 session_start();
 require_once('db.php');
 
@@ -193,10 +110,99 @@ if(isset($_POST['submit']))
 
 }
 ?>
-<div class="container h-100">
-	<div class="row h-100 mt-5 justify-content-center align-items-center">
-		<div class="col-md-5 mt-3 pt-2 pb-5 align-self-center border bg-light">
-			<h1 class="mx-auto w-25" >Register</h1>
+<div class="full-page">
+        <div class="main">
+            <div class="menu">
+                <div class="upper-menu">
+                    <div class="logo">
+                        <img src="logos/logo.png" alt="Logo ElHurtPlus" />
+                    </div>
+                    <div class="three-information">
+                        <div class="upper-headers">
+                            <a href="#">
+                                <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
+                                <p>KONTAKT</p>
+                            </a>
+                        </div>
+                        <div class="upper-headers">
+                            <a href="#">
+                                <img src="icons/icon_02.png" alt="Gwiazda - Ulubione" />
+                                <p>ULUBIONE</p>
+                            </a>
+                        </div>
+                        <div class="upper-headers">
+                                <div class="dropdown">
+                                    <a href="login.php">
+                                        <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
+                                        <p>MOJE KONTO</p>
+                                        <div class="dropdown-content">
+                                            <div class="log-reg-user">
+                                                <div class="login-user">
+                                                    <a href="login.php" class="login login-user">
+                                                        <p>Zaloguj się</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        <div class="cart-family">
+                            <div class="cart">
+                                <div class="cart-brother">
+                                    <div class="text-on-cart">
+                                        <p class="number-orders">342</p>
+                                    </div>
+                                    <img src="icons/icon_06.png" alt="Koszyk" />
+                                </div>
+
+                                <div class="text-cart">
+                                    <p class="first-text-cart">TWÓJ KOSZYK</p>
+                                    <p class="second-text-cart">3456,00zł</p>
+                                </div>
+                            </div>
+                            <div class="arrow-cart">
+                                <a href="#" class="activity">
+                                    <img src="icons/prawa-strzalka.png" alt="Strzałka" />
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="headers"><a href="index2.html">
+                    <p>ŹRÓDŁA ŚWIATŁA</p>
+                </a></div>
+            <div class="headers"><a href="#">
+                    <p>OŚWIETLENIE WEWNĘTRZNE</p>
+                </a>
+            </div>
+            <div class="headers"><a href="#">
+                    <p>GNIAZDKA, WYŁACZNIKI</p>
+                </a>
+            </div>
+            <div class="headers"><a href="#">
+                    <p>AUTOMATYKA, STEROWANIE</p>
+                </a>
+            </div>
+            <div class="headers"><a href="#">
+                    <p>ROZDZIELANIE I APARATURA</p>
+                </a>
+            </div>
+            <div class="headers"><a href="#">
+                    <p>MATERIALY INSTALACYJNE</p>
+                </a>
+            </div>
+        </div>
+<div class="container">
+    <div class="registration">
+	    <div class="row">
+			<h1>Rejestracja</h1>
+        </div>
 			<?php 
 				if(isset($errors) && count($errors) > 0)
 				{
@@ -212,31 +218,42 @@ if(isset($_POST['submit']))
                     echo '<div class="alert alert-success">'.$success.'</div>';
                 }
 			?>
-			<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+			<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off" class="formsy">
                 <div class="form-group">
-					<label for="email">Imie:</label>
-					<input type="text" name="first_name" placeholder="Enter First Name" class="form-control" value="<?php echo ($valFirstName??'')?>">
+					<input type="text" name="first_name" placeholder="Wpisz swoje imie*" class="form-control" value="<?php echo ($valFirstName??'')?>" required>
 				</div>
                 <div class="form-group">
-					<label for="email">Nazwisko:</label>
-					<input type="text" name="last_name" placeholder="Enter Last Name" class="form-control" value="<?php echo ($valLastName??'')?>">
+					<input type="text" name="last_name" placeholder="Wpisz swoje nazwisko*" class="form-control" value="<?php echo ($valLastName??'')?>" required>
 				</div>
 
                 <div class="form-group">
-					<label for="email">Email:</label>
-					<input type="text" name="email" placeholder="Enter Email" class="form-control" value="<?php echo ($valEmail??'')?>">
+					<input type="text" name="email" placeholder="Wpisz adres email*" class="form-control" value="<?php echo ($valEmail??'')?>" required>
 				</div>
 				<div class="form-group">
-				<label for="email">Hasło:</label>
-					<input type="password" name="password" placeholder="Enter Password" class="form-control" value="<?php echo ($valPassword??'')?>">
+					<input type="password" name="password" placeholder="Wpisz hasło*" class="form-control" value="<?php echo ($valPassword??'')?>" required>
 				</div>
 
-				<button type="submit" name="submit" class="btn btn-primary">Submit</button>
-				<p class="pt-2"> Przejdź do <a href="login.php">Zalogowania się</a></p>
-				
+                <div class="regulations">
+                <label class="checkbox-button">
+                        <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                name="choice1" required>
+                        <span class="checkbox-button__control"></span>
+                        <span class="checkbox-button__label">Zapoznałem się z regulaminem oraz moim prawem do odstąpienia od umowy i rękojmi*</span>
+                </label>
+                <label class="checkbox-button">
+                        <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                name="choice1" required>
+                        <span class="checkbox-button__control"></span>
+                        <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie informacji na temat nowości oraz zmian w ofercie sklepu</span>
+                </label>
+                </div>
+
+                <div class="submit-login">
+				<button type="submit" name="submit" class="btn btn-primary">ZAŁÓŻ KONTO</button>
+				<p>*Pola wymagane</p>
+				</div>
 			</form>
-		</div>
-	</div>
+            </div>
 </div>
         <div class="under-footer">
 

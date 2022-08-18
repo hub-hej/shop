@@ -173,69 +173,75 @@ html {
 .dropdown {
     position: relative;
     display: inline-block;
-} 
+}
 .dropdown-content {
-    display: none;
+    display: none;  
     position: absolute;
     min-width: 100%;
-    padding: 12px 20px;
+    padding: 10px 10px;
     z-index: 1;
-    margin-top: 70px;
-    text-align: center;
-} 
+    border: var(--border-primary);
+    line-height: 50px;
+    background-color: white;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.information{
-    border-top: var(--border-primary);
+.container{
     display: flex;
     justify-content: center;
 }
-.register{
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.registration{
+    width: 100%;
 }
-.form {
-    margin: 50px auto;
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.row h1{
+    font-size: 35px;
+    border-bottom: var(--border-primary);
+    font-family: var(--font-family-primary);
+    cursor: pointer;
     width: 100%;
     text-align: center;
-    padding: 30px 25px;
-    background: white;
+    margin-top: 15px;
 }
-.orderHeader__text {
-    margin: 0px auto 25px;
-    font-size: calc(1vw + 25px);
-    font-weight: 300;
-    text-align: center;
-    font-family: 'Metropolis-Bold';
-    display: flex;
-    justify-content: center;
-}
-.orderHeader::after{
+.row h1::after{
     content: '';
-    width: 80px;
+    width: 50px;
     border-bottom: 3px solid #F74137;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+.formsy{
+    width: 80%;
     margin: 0 auto;
 }
-.orderHeader{
-    margin-top: 150px;
+.submit-login{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 10px;
 }
-.login-input {
+.submit-login p{
+    font-family: var(--font-family-secondary);
+}
+.form-control {
     font-size: 15px;
     border: 1px solid #e1e2e8;
     padding: 0 1.25rem;
     margin-bottom: 25px;
     height: 2.8947368421vw;
     width: 100%;
-    font-family: 'Metropolis';
+    font-family: var(--font-family-secondary);
 }
-.login-input:focus {
-    border-color:#6e8095;
-    outline: none;
-}
-.login-button {
+.btn.btn-primary {
     color: #fff;
     background: #F74137;
     border: 0;
@@ -247,34 +253,13 @@ html {
     font-family: 'Metropolis-Bold';
     padding: 0 30px;
 }
-.login-button:hover{
+.btn.btn-primary:hover{
     background: #F6190A;
-}
-.link {
-    color: #666;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 15px;
-    font-family: 'Metropolis';
-}
-.link a {
-    color: black;
-    cursor: pointer;
-}
-.left-text{
-    text-align: left;
-    margin-bottom: 15px;
-    font-family: 'Metropolis';
 }
 .regulations{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.regulations ul{
-    font-family: var(--font-family-secondary);
-    font-size: .875rem;
     flex-direction: column;
+    gap: 10px;
 }
 .checkbox-button{
     display: flex;
@@ -288,13 +273,14 @@ html {
 .checkbox-button__control{
     position: relative;
     display: inline-block;
-    width: 30px;
+    width: 25px;
     height: 30px;
     vertical-align: middle;
     border: var(--border-primary);
 }
 .checkbox-button__label{
     margin-left: 10px;
+    font-family: var(--font-family-secondary);
 }
 .checkbox-button__input:checked+.checkbox-button__control:after {
     content: "\2714";
@@ -309,11 +295,6 @@ html {
 input[type="checkbox"]:checked + span::before
 {
     font-size: 12px;
-}
-.orderButtonRow{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 h3 {
     font-weight: normal;
@@ -361,4 +342,23 @@ ul, ul li {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.log-reg-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-user p, .register-user p{
+    width: 100px;
+}
+.login, .registrat{
+    margin: 4px 2px;
+}
+.login:hover, .registrat:hover{
+    color: white;
+    outline: 0;
+    transition-duration: 0.4s;
+}
+.login, .registrat{
+    background-color: #f74137;
 }
