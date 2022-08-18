@@ -51,10 +51,26 @@
                                 </a>
                             </div>
                             <div class="upper-headers">
-                                <a href="#">
-                                    <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
-                                    <p>MOJE KONTO</p>
-                                </a>
+                                <div class="dropdown">
+                                    <a href="login.php">
+                                        <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
+                                        <p>MOJE KONTO</p>
+                                        <div class="dropdown-content">
+                                            <div class="log-reg-user">
+                                                <div class="login-user">
+                                                    <a href="login.php" class="login login-user">
+                                                        <p>Zaloguj się</p>
+                                                    </a>
+                                                </div>
+                                                <div class="register-user">
+                                                    <a href="registration.php" class="registrat register-user">
+                                                        <p>Rejestracja</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="cart-family">
@@ -242,7 +258,7 @@
                                                 </div>
                                             </div>
                                             <div class="productInputNumber">
-                                                <form method="POST" action="phone.php" autocomplete="off">
+                                                <form method="post" action="phone.php" autocomplete="off">
                                                     <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                                     type = "number"
                                                     maxlength = "9" class="value_number" name="phone" placeholder="Wpisz swój numer telefonu" required>
@@ -281,13 +297,14 @@
                                                 </div>
                                             </div>
                                             <div class="productInputNumber">
-                                                <input type="text" name="phone" class="value_number"
+                                                <form method="post" action="email.php" autocomplete="off">
+                                                <input type="email" name="email" class="value_number" maxlength="50"
                                                     placeholder="Wpisz swój adres e-mail" required>
                                             </div>
                                             <textarea name="desc" class="system_textarea" placeholder="Wpisz wiadomość" required></textarea>
                                             <label class="checkbox-button">
                                                 <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                                name="choice1">
+                                                name="choice1" required>
                                                 <span class="checkbox-button__control"></span>
                                                 <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie drogą elektroniczną 
                                                     na wskazany przeze mnie numer telefonu informacji dotyczących świadczonych przez Administratora. 
@@ -297,6 +314,7 @@
                                             <div class="product_footer">
                                                 <label class="btn_primary_call">
                                                     <input type="submit" class="order_call" value="POPROŚ O KONTAKT">
+                                                </form>
                                                 </label>
                                             </div>
                                         </div>

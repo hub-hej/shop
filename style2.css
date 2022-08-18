@@ -103,7 +103,7 @@ header{
     border: none;
     cursor: pointer;
 }
-.searchTop__submit:hover, .button1{
+.searchTop__submit:hover, .button1, .login, .registrat{
     background-color: #F74137;
 }
 .three-information {
@@ -173,6 +173,34 @@ header{
 }
 .upper-headers p:hover::before {
     transform: scaleX(1);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;  
+    position: absolute;
+    min-width: 100%;
+    padding: 10px 10px;
+    z-index: 1;
+    border: var(--border-primary);
+    line-height: 50px;
+    background-color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.log-reg-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-user p, .register-user p{
+    width: 100px;
+}
+.login, .registrat{
+    margin: 4px 2px;
 }
 .cart-family, .main-page {
     display: flex;
@@ -547,6 +575,11 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
     font-size: 13px;
     font-family: var(--font-family-primary);
+}
+.login:hover, .registrat:hover{
+    color: white;
+    outline: 0;
+    transition-duration: 0.4s;
 }
 .button1:hover{
     background-color: #f51c10;

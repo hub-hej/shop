@@ -235,10 +235,10 @@ html {
     display: inline-block;
 }
 .dropdown-content {
-    display: none;
+    display: none;  
     position: absolute;
     min-width: 100%;
-    padding: 12px 20px;
+    padding: 10px 10px;
     z-index: 1;
     border: var(--border-primary);
     line-height: 50px;
@@ -719,7 +719,7 @@ footer {
     margin: 4px 2px;
     font-family: var(--font-family-primary);
 }
-.button1, .button3 {
+.button1, .button3, .login, .registrat {
     background-color: var(--background-color-button);
     cursor: pointer;
 }
@@ -732,7 +732,10 @@ footer {
     outline: 1px solid white;
     cursor: pointer;
 }
-.button2:hover {
+.login, .registrat{
+    margin: 4px 2px;
+}
+.button2:hover, .login:hover, .registrat:hover {
     background-color: var(--background-color-button);
     color: white;
     outline: 0;
@@ -916,6 +919,14 @@ ul li {
 .owl-carousel .owl-item img{
     display: unset!important;
     width: auto!important;
+}
+.log-reg-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-user p, .register-user p{
+    width: 100px;
 }
 @media screen and (max-width:1450px) {
     .searchTop__textfield {
