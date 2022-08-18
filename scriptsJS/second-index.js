@@ -126,3 +126,19 @@ function fillColor(){
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #f74137 ${percent1}% , #f74137 ${percent2}% , #dadae5 ${percent2}%`;
 }
+
+//Function which allows for search lights 
+function searchFunction() {
+  let input = document.getElementById('myInput').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('lights-row');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="grid";                 
+      }
+  }
+}
