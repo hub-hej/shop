@@ -1214,6 +1214,9 @@ ul li {
     .module_body, .fa-phone-volume{
         font-size: 35px;
     }
+    .three-information, .header{
+        padding: 0;
+    }
 }
 @media screen and (max-width: 1000px) {
     .range-size-filter {

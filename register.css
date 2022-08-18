@@ -58,7 +58,7 @@ html {
 .menu {
     text-align: center;
     font-size: 14px;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     justify-content: space-between;
     list-style: none;
@@ -534,6 +534,9 @@ ul, ul li {
     .footerSocialMedia{
         margin: 0 auto;
         margin-top: 15px;
+    }
+    .three-information, .header{
+        padding: 0;
     }
 }
 @media screen and (min-width: 100px) and (max-width: 1300px){

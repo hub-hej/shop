@@ -947,9 +947,6 @@ ul li {
         width: 100%;
         height: auto;
     }
-    .menu-elements{
-        padding: 0;
-    }
 }
 @media screen and (max-width: 1165px) {
     .footerDetails, .row-up {
@@ -973,6 +970,9 @@ ul li {
     }
     .module_body, .fa-phone-volume{
         font-size: 35px;
+    }
+    .menu-elements, .header{
+        padding: 0;
     }
 }
 @media screen and (max-width:1000px) {
