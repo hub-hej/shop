@@ -138,8 +138,8 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
             <section>
                 <div class="reviewFormContainer">
                     <div class="messageInfo">
-                        <p>Dziękujemy za przesłanie opinii</p>
-                        <p>Zapraszamy ponownie do odwiedzenia strony</p>
+                        <p>Dziękujemy <b><?php echo $username = $_POST['username']; ?></b> za przesłanie opinii</p>
+                        <p>Zapraszamy ponownie</p>
                     </div>
                 </div>
             </section>
@@ -306,12 +306,6 @@ if(isset($_POST['submit'])){
     VALUES ('$username', '$email', '$comment')";
     $stmt= $pdo->prepare($query);
     $stmt->execute(array($username, $email, $comment));
-    if($stmt){
-        echo "<script>alert('Comment added successfully.')</script>";
-    } else{
-        echo "<script>alert('Comment does not add.')</script>";
-    }
-
 }
 ?>
 </body>
