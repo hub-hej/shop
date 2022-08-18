@@ -2,6 +2,7 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Rejestracja">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
@@ -119,163 +120,171 @@ if(isset($_POST['submit']))
 }
 ?>
 <div class="full-page">
-        <div class="main">
-            <div class="menu">
-                <div class="upper-menu">
-                    <div class="logo">
-                        <img src="logos/logo.png" alt="Logo ElHurtPlus" />
-                    </div>
-                    <div class="three-information">
-                        <div class="upper-headers">
-                            <a href="#">
-                                <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                <p>KONTAKT</p>
-                            </a>
+        <section>
+            <div class="main">
+                <div class="menu">
+                    <div class="upper-menu">
+                        <div class="logo">
+                            <img src="logos/logo.png" alt="Logo ElHurtPlus" />
                         </div>
-                        <div class="upper-headers">
-                            <a href="#">
-                                <img src="icons/icon_02.png" alt="Gwiazda - Ulubione" />
-                                <p>ULUBIONE</p>
-                            </a>
-                        </div>
-                        <div class="upper-headers">
-                                <div class="dropdown">
-                                    <a href="login.php">
-                                        <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
-                                        <p>MOJE KONTO</p>
-                                        <div class="dropdown-content">
-                                            <div class="log-reg-user">
-                                                <div class="login-user">
-                                                    <a href="login.php" class="login login-user">
-                                                        <p>Zaloguj się</p>
-                                                    </a>
+                        <div class="three-information">
+                            <div class="upper-headers">
+                                <a href="#">
+                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
+                                    <p>KONTAKT</p>
+                                </a>
+                            </div>
+                            <div class="upper-headers">
+                                <a href="#">
+                                    <img src="icons/icon_02.png" alt="Gwiazda - Ulubione" />
+                                    <p>ULUBIONE</p>
+                                </a>
+                            </div>
+                            <div class="upper-headers">
+                                    <div class="dropdown">
+                                        <a href="login.php">
+                                            <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
+                                            <p>MOJE KONTO</p>
+                                            <div class="dropdown-content">
+                                                <div class="log-reg-user">
+                                                    <div class="login-user">
+                                                        <a href="login.php" class="login login-user">
+                                                            <p>Zaloguj się</p>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            <div class="cart-family">
+                                <div class="cart">
+                                    <div class="cart-brother">
+                                        <div class="text-on-cart">
+                                            <p class="number-orders">342</p>
                                         </div>
+                                        <img src="icons/icon_06.png" alt="Koszyk" />
+                                    </div>
+
+                                    <div class="text-cart">
+                                        <p class="first-text-cart">TWÓJ KOSZYK</p>
+                                        <p class="second-text-cart">3456,00zł</p>
+                                    </div>
+                                </div>
+                                <div class="arrow-cart">
+                                    <a href="#" class="activity">
+                                        <img src="icons/prawa-strzalka.png" alt="Strzałka" />
                                     </a>
                                 </div>
                             </div>
 
-                        <div class="cart-family">
-                            <div class="cart">
-                                <div class="cart-brother">
-                                    <div class="text-on-cart">
-                                        <p class="number-orders">342</p>
-                                    </div>
-                                    <img src="icons/icon_06.png" alt="Koszyk" />
-                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                <div class="text-cart">
-                                    <p class="first-text-cart">TWÓJ KOSZYK</p>
-                                    <p class="second-text-cart">3456,00zł</p>
-                                </div>
-                            </div>
-                            <div class="arrow-cart">
-                                <a href="#" class="activity">
-                                    <img src="icons/prawa-strzalka.png" alt="Strzałka" />
-                                </a>
-                            </div>
+        <section>
+            <div class="header">
+            <button type="button" class="button-menu" aria-label="Przycisk na menu">
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </button>
+                    <div class="nav-items">
+                        <div class="headers">
+                            <a class="ex1" href="index2.html" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
+                                ŚWIATŁA</a>
                         </div>
 
+                        <div class="headers">
+                            <a href="#" target="_blank"><img src="photos/category-5.png" alt="">OŚWIETLENIE WEWNĘTRZNE</a>
+                        </div>
+
+                        <div class="headers">
+                            <a href="#" target="_blank"><img src="photos/category-6.png" alt="">GNIAZDKA, WYŁACZNIKI</a>
+                        </div>
+
+                        <div class="headers">
+                            <a href="#" target="_blank"><img src="photos/category-7.png" alt="">AUTOMATYKA, STEROWANIE</a>
+                        </div>
+
+                        <div class="headers">
+                            <a href="#" target="_blank"><img src="photos/category-8.png" alt="">ROZDZIELANIE I APARATURA</a>
+                        </div>
+
+                        <div class="headers">
+                            <a href="#" target="_blank"><img src="photos/category-10.png" alt="">MATERIALY INSTALACYJNE</a>
+                        </div>
                     </div>
-                </div>
             </div>
-        </div>
-        <div class="header">
-        <button type="button" class="button-menu" aria-label="Przycisk na menu">
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </button>
-                <div class="nav-items">
-                    <div class="headers">
-                        <a class="ex1" href="index2.html" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
-                            ŚWIATŁA</a>
-                    </div>
-
-                    <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-5.png" alt="">OŚWIETLENIE WEWNĘTRZNE</a>
-                    </div>
-
-                    <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-6.png" alt="">GNIAZDKA, WYŁACZNIKI</a>
-                    </div>
-
-                    <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-7.png" alt="">AUTOMATYKA, STEROWANIE</a>
-                    </div>
-
-                    <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-8.png" alt="">ROZDZIELANIE I APARATURA</a>
-                    </div>
-
-                    <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-10.png" alt="">MATERIALY INSTALACYJNE</a>
-                    </div>
-                </div>
-        </div>
+        </section>
         
-<div class="container">
-    <div class="registration">
-	    <div class="row">
-			<h1>Rejestracja</h1>
-        </div>
-			<?php 
-				if(isset($errors) && count($errors) > 0)
-				{
-					foreach($errors as $error_msg)
-					{
-						echo '<div class="alert alert-danger">'.$error_msg.'</div>';
-					}
-                }
-                
-                if(isset($success))
-                {
-                    
-                    echo '<div class="alert alert-success">'.$success.'</div>';
-                }
-			?>
-			<form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off" class="formsy">
-                <div class="form-group">
-					<input type="text" name="first_name" placeholder="Wpisz swoje imie*" class="form-control" value="<?php echo ($valFirstName??'')?>" required>
-				</div>
-                <div class="form-group">
-					<input type="text" name="last_name" placeholder="Wpisz swoje nazwisko*" class="form-control" value="<?php echo ($valLastName??'')?>" required>
-				</div>
+        <main>
+            <div class="container">
+                <div class="registration">
+                    <div class="row">
+                        <h1>Rejestracja</h1>
+                    </div>
+                    <?php 
+                        if(isset($errors) && count($errors) > 0)
+                        {
+                            foreach($errors as $error_msg)
+                            {
+                                echo '<div class="alert alert-danger">'.$error_msg.'</div>';
+                            }
+                        }
+                        
+                        if(isset($success))
+                        {
+                            
+                            echo '<div class="alert alert-success">'.$success.'</div>';
+                        }
+                    ?>
+                    <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off" class="formsy">
+                        <div class="form-group">
+                            <input type="text" name="first_name" placeholder="Wpisz swoje imie*" class="form-control" value="<?php echo ($valFirstName??'')?>" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="last_name" placeholder="Wpisz swoje nazwisko*" class="form-control" value="<?php echo ($valLastName??'')?>" required>
+                        </div>
 
-                <div class="form-group">
-					<input type="text" name="email" placeholder="Wpisz adres email*" class="form-control" value="<?php echo ($valEmail??'')?>" required>
-				</div>
-				<div class="form-group">
-					<input type="password" name="password" placeholder="Wpisz hasło*" class="form-control" value="<?php echo ($valPassword??'')?>" required>
-				</div>
+                        <div class="form-group">
+                            <input type="text" name="email" placeholder="Wpisz adres email*" class="form-control" value="<?php echo ($valEmail??'')?>" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="Wpisz hasło*" class="form-control" value="<?php echo ($valPassword??'')?>" required>
+                        </div>
 
-                <div class="regulations">
-                <label class="checkbox-button">
-                        <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                name="choice1" required>
-                        <span class="checkbox-button__control"></span>
-                        <span class="checkbox-button__label">Zapoznałem się z regulaminem oraz moim prawem do odstąpienia od umowy i rękojmi*</span>
-                </label>
-                <label class="checkbox-button">
-                        <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                name="choice1" required>
-                        <span class="checkbox-button__control"></span>
-                        <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie informacji na temat nowości oraz zmian w ofercie sklepu</span>
-                </label>
+                        <div class="regulations">
+                        <label class="checkbox-button">
+                                <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" required>
+                                <span class="checkbox-button__control"></span>
+                                <span class="checkbox-button__label">Zapoznałem się z regulaminem oraz moim prawem do odstąpienia od umowy i rękojmi*</span>
+                        </label>
+                        <label class="checkbox-button">
+                                <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" required>
+                                <span class="checkbox-button__control"></span>
+                                <span class="checkbox-button__label">Wyrażam zgodę na otrzymywanie informacji na temat nowości oraz zmian w ofercie sklepu</span>
+                        </label>
+                        </div>
+
+                        <div class="submit-login">
+                        <button type="submit" name="submit" class="btn btn-primary">ZAŁÓŻ KONTO</button>
+                        <p>*Pola wymagane</p>
+                        </div>
+                    </form>
                 </div>
-
-                <div class="submit-login">
-				<button type="submit" name="submit" class="btn btn-primary">ZAŁÓŻ KONTO</button>
-				<p>*Pola wymagane</p>
-				</div>
-			</form>
             </div>
-    </div>
-        <div class="under-footer">
+        </main>
 
+    <section>
+        <div class="under-footer">
         <div class="footer-information">
                         <div class="hide-info">
                             <h3>O NAS</h3>
@@ -351,7 +360,9 @@ if(isset($_POST['submit']))
                         </div>
                     </div>
             </div>
-
+            </section>
+            
+            <section>
             <div class="footerDetails">
                 <div class="row-up">
                     <div class="galleryTextListFooterPayment">
@@ -407,6 +418,7 @@ if(isset($_POST['submit']))
 
                 </div>
             </div>
+            </section>
 
         <footer>
             <div>Coppyright 2022. Wszystkie prawa zastrzeżone</div>
