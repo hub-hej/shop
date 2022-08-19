@@ -414,6 +414,20 @@ html {
     font-family: var(--font-family-secondary);
     cursor: pointer;
 }
+.productOpinion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 15px auto;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-bottom: var(--border-primary);
+    font-size: 13px;
+}
+.productElementStars{
+    color: #fde4ae;
+}
 .variants{
     font-family: var(--font-family-primary);
     font-size: 15px;
@@ -1197,6 +1211,12 @@ ul, ul li {
     font-family: var(--font-family-secondary);
     cursor: context-menu;
 }
+.scroll{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-family: var(--font-family-secondary);
+}
 .button1, .button2, .button3, .button4, .button5, .button6, .button7{
     font-family: var(--font-family-primary);
     cursor: pointer;
@@ -1254,6 +1274,19 @@ ul, ul li {
     margin: 30px auto;
     font-size: 19px;
     text-align: left;
+}
+.product-description img{
+    width: 80%;
+    margin-top: 30px;
+}
+.benefits-section{
+    display: flex;
+}
+.image_product_description{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .image-description{
     width:100%;
