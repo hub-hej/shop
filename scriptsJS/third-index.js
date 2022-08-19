@@ -160,3 +160,35 @@ function openNavs() {
 function closeNavs() {
     document.getElementById("myNavs").style.display = "none";
 }
+
+(function (){
+//Moved btn text into variable so it can be changed more easily
+var btn_text = {
+    default: "Dodaj do ulubionych",
+    added: "Usuń z ulubionych"
+}
+$('.fav_btn')
+//set initial text and classes
+.removeClass('remove added')
+.html(btn_text.default)
+//The click toggles the 'default' and 'added' states
+.on('click', function(e) {
+
+    //Toogle the 'added' class
+    $(this).toggleClass('added');
+
+    //Swap the text
+    if ($(this).is('.added')) {
+        $(this).html(btn_text.added);
+    } else {
+        $(this)
+            .removeClass('remove added')
+            .html(btn_text.default)
+    }
+})
+})();
+
+//Function which changes color to another
+function getclick(elem) {
+    elem.style.color = '#f74137';
+}

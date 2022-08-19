@@ -415,31 +415,32 @@ html {
     border: var(--border-primary);
     height: 50%;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+}
+.productInformationBlock, .paragraph-code{
+    font-size: 15px;
+    border-bottom: var(--border-primary);
+    width: 100%;
+    margin: 15px auto;
+    padding-left: 15px;
+    padding-bottom: 15px;
 }
 .paragraph-code{
     font-family: var(--font-family-secondary);
-    font-size: 15px;
     color: #A1A4A7;
-    border-bottom: var(--border-primary);
-    margin-right: 20px;
-    padding-bottom: 15px;
 }
 .add-information-light{
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: var(--border-primary);
-    margin-right: 20px;
-    padding-top: 10px;
     padding-bottom: 10px;
     font-family: var(--font-family-secondary);
+    line-height: 35px;
 }
-.option1{
+.option1, .option2{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-size: 17px;
     width: 100%;
@@ -448,19 +449,25 @@ html {
     width: 20px;
 }
 .option2{
+    border-left: var(--border-primary);
+}
+.icon_fav_btn{
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 17px;
-    padding-left: 15px;
+    margin: 15px auto;
+    border-bottom: var(--border-primary);
     width: 100%;
-    border-left: var(--border-primary);
-    line-height: 35px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    gap: 10px;
+}
+.fav_btn {
+    font-family: var(--font-family-secondary);
 }
 .variants{
     font-family: var(--font-family-primary);
     font-size: 15px;
-    padding-top: 30px;
+    margin: 15px;
 }
 .two-variant{
     display: flex;
@@ -496,15 +503,16 @@ html {
     border: var(--border-primary);
     height: 50%;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 30px;
 }
-.bottom-light-info s{
+.productParam_value{
+    margin: 15px;
+}
+.productParam_value s{
     color: #A3A3A3;
     font-family: var(--font-family-secondary);
     font-size: 18px;
 }
-.bottom-light-info b{
+.productParam_value b{
     font-family: var(--font-family-primary);
     font-size: 32px;
 }
@@ -512,8 +520,7 @@ html {
     display: flex;
     justify-content: flex-start;
     gap: 5px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 15px;
     align-items: stretch;
 }
 .tile-light a{
@@ -1163,7 +1170,7 @@ tbody tr:nth-child(even)
     color: #A3A3A3;
     font-family: var(--font-family-secondary);
 }
-.text-under-lights b, p.title-paragraph{
+.text-under-lights b, p.title-paragraph, .productInformationBlock{
     font-family: var(--font-family-primary);
 }
 .text-under-lights p{
