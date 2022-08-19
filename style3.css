@@ -78,11 +78,8 @@ html {
 .logo img:hover{
     transform: scale(1.05);
 }
-.upper-menu, .footerSocialMedia__content{
+.upper-menu, .footerSocialMedia__content, .logo-search{
     gap: 10px;
-}
-.logo-search{
-    gap: 20px;
 }
 .responsive-image, .lights-offer {
     width: 100%;
