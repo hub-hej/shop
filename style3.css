@@ -78,26 +78,17 @@ html {
 .logo img:hover{
     transform: scale(1.05);
 }
-.upper-menu{
-    display: flex;
-    justify-content: space-between;
+.upper-menu, .footerSocialMedia__content{
     gap: 10px;
-    align-items: center;
 }
 .logo-search{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 20px;
 }
-.responsive-image {
-    height: auto;
+.responsive-image, .lights-offer {
     width: 100%;
 }
-.searchTop{
+.searchTop, .three-information, .header, .cart, .arrow-cart, .cart-family, .two-variant, .two-text-variant{
     display: flex;
-    width: 100%;
-    height: 100%;
 }
 .searchTop__textfield{
     padding: 15px 150px;
@@ -123,25 +114,22 @@ html {
     text-align: center;
     padding: 10px;
     font-family: var(--font-family-primary);
-    display: flex;
     gap: 30px;
-    justify-content: space-between;
 }
 .header {
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     background-color: var(--background-color-primary);
     height: 100%;
     font-family: var(--font-family-primary);
     padding: 10px;
 }
-.header a{
-    text-decoration: none;
-    color: black;
+.header a, .left-small-lights, .add-information-light, .option1, .option2, .minus-light, .plus-light, .galleryFeatures{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.header a, .left-small-lights, .galleryFeatures{
     gap: 5px;
 }
 .headers {
@@ -149,17 +137,14 @@ html {
     text-align: left;
     padding: 15px;
 }
-.upper-headers {
+.upper-headers, .upper-headers a{
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.upper-headers a{
+.upper-headers a, .header-information a, .header a{
     text-decoration: none;
     color: black;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 .upper-headers img:hover{
     transition: 2s;
@@ -201,7 +186,8 @@ html {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.log-reg-user{
+.log-reg-user, .upper-menu, .logo-search, .lights-offer, .footerSocialMedia, .footerSocialMedia__content, .hide-info, .section_header_hide, 
+.section_header_opi_hide, .section_header_down_hide, .basic_hide, .section_rel_hide, .section_cate_hide{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,7 +207,6 @@ html {
     background-color: #f74137;
 }
 .cart{
-    display: flex;
     align-items: center;
     gap: 5px;
     border: var(--border-primary);
@@ -235,7 +220,6 @@ html {
     margin-left: 5px;
 }
 .arrow-cart{
-    display: flex;
     background-color: var(--background-color-secondary);
 }
 .arrow-cart img{
@@ -259,9 +243,6 @@ html {
     display: block;
     padding-right: 5px;
 }
-.cart-family{
-    display: flex;
-}
 .number-orders{
     border: 1px solid #9BCB3B;
     color: white;
@@ -280,10 +261,6 @@ html {
 }
 .header-information{
     text-align: center;
-}
-.header-information a{
-    text-decoration: none;
-    color: black;
 }
 .wrapper{
     width: 100%;
@@ -305,10 +282,6 @@ html {
     position: absolute;
     top: 5%;
     left: 3%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
 }
 .left-small-lights img:hover{
     border-color: #F74137;
@@ -320,11 +293,13 @@ html {
     transition: border-color .3s ease-out;
 }
 .w3-display-right {
+    right: 5%;
+    background-color: #C1C2C6;
+}
+.w3-display-left, .w3-display-right{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 5%;
-    background-color: #C1C2C6;
     width: 50px;
     height: 48px;
     cursor: pointer;
@@ -336,20 +311,8 @@ html {
     color: white;
 }
 .w3-display-left {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     left: 15%;
     background-color: #F2F3F4;
-    width: 50px;
-    height: 48px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    font-size: 18px;
-    color: white;
 }
 .w3-display-left:hover, .w3-display-right:hover{
     background-color: #f74137;
@@ -357,12 +320,6 @@ html {
 .fa-angle-right, .fa-angle-left{
     color: white;
     font-size: 18px;
-}
-.lights-offer{
-    display:flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
 }
 .title-offer{
     height: 100%;
@@ -390,19 +347,17 @@ html {
 }
 .one{
     border: 1px solid #EE5C61;
-    color: white; 
     background-color: #EE5C61;
+}
+.one, .two{
     font-family: var(--font-family-secondary);
     padding: 6px;
     margin: 2px;
+    color: white; 
 }
 .two{
     border: 1px solid #80B61A;
-    color: white; 
     background-color: var(--background-color-secondary);
-    font-family: var(--font-family-secondary);
-    padding: 6px;
-    margin: 2px;
 }
 .lights-information{
     width: 35%;
@@ -429,18 +384,12 @@ html {
     color: #A1A4A7;
 }
 .add-information-light{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-bottom: var(--border-primary);
     padding-bottom: 10px;
     font-family: var(--font-family-secondary);
     line-height: 35px;
 }
 .option1, .option2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     font-size: 17px;
     width: 100%;
@@ -463,6 +412,7 @@ html {
 }
 .fav_btn {
     font-family: var(--font-family-secondary);
+    cursor: pointer;
 }
 .variants{
     font-family: var(--font-family-primary);
@@ -470,7 +420,6 @@ html {
     margin: 15px;
 }
 .two-variant{
-    display: flex;
     gap: 15px;
     padding-top: 15px;
 }
@@ -486,7 +435,6 @@ html {
     height: 65px;
 }
 .two-text-variant{
-    display: flex;
     gap: 30px;
     font-family: var(--font-family-secondary);
 }
@@ -537,10 +485,6 @@ html {
 .minus-light, .plus-light{
     padding: 9px 10px 13px 10px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     font-family: var(--font-family-primary);
     cursor: pointer;
     background-color: var(--background-color-primary);
@@ -578,7 +522,6 @@ html {
     position: relative;
     top: 20%;
     width: 55.125rem;
-    height: 40%;
     text-align: center;
     margin: 0 auto;
     background-color: white;
@@ -669,7 +612,7 @@ input[type="number"].value_number, input[type="email"].value_number{
     content: "";
     display: block;
     position: absolute;
-    width: 20px;
+    width: 70%;
     height: 20px;
     background-color: #F74137;
     margin: 4px;
@@ -677,7 +620,7 @@ input[type="number"].value_number, input[type="email"].value_number{
 .checkbox-button__control{
     position: relative;
     display: inline-block;
-    width: 3.875rem;
+    width: 15%;
     height: 1.875rem;
     vertical-align: middle;
     border: var(--border-primary);
@@ -841,9 +784,6 @@ input[type="number"].value_number, input[type="email"].value_number{
     margin-right: 25px;
 }
 .footerSocialMedia{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 15px;
 }
 .textSocialMedia{
@@ -857,12 +797,6 @@ input[type="number"].value_number, input[type="email"].value_number{
     border: 1px solid hsla(0,0%,100%,.3);
     transition: border-color .3s ease-out;
     padding: 20px;
-}
-.footerSocialMedia__content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
 }
 .footerSocialMedia a:hover{
     border-color: white;
@@ -897,54 +831,24 @@ tbody tr:nth-child(even)
 {
   background: #F8F8F8;
 }
-.left-header-table{
-    font-family: var(--font-family-primary);
-    font-size: 14px;
+.left-header-table, .right-text-table{
     text-align: right;
     padding-right: 45px;
+}
+.left-header-table, .right-header-table{
     padding-bottom: 15px;
     border-bottom: 2px solid #6b6f71;
-}
-.right-header-table{
     font-family: var(--font-family-primary);
     font-size: 14px;
+}
+.right-header-table, .left-text-table{
     text-align: left;
     padding-left: 45px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #6b6f71;
-}
-.right-text-table{
-    font-family: var(--font-family-secondary);
-    text-align: right;
-    padding-right: 45px;
-}
-.left-text-table{
-    text-align: left;
-    padding-left: 35px;
-}
-.table{
-    margin-left: auto;
-    margin-right: auto;
 }
 .section_header_container{
     text-align: center;
     background-color: var(--background-color-primary);
     padding-top: 25px;
-}
-.section_header_container h2{
-    cursor: pointer;
-    font-size: 35px;
-    font-family: var(--font-family-primary);
-    width: 100%;
-}
-.section_header_container h2::after{
-    content: '';
-    width: 50px;
-    border-bottom: 3px solid #F74137;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
 }
 .section_header_container p{
     max-width: 1550px;
@@ -973,13 +877,13 @@ tbody tr:nth-child(even)
     background-color: #F2F3F4;
     padding-top: 25px;
 }
-.section_header_opinion h2, .section_header_download h2, .section_related h2, .section_category h2{
+.section_header_opinion h2, .section_header_download h2, .section_related h2, .section_category h2, .section_header_container h2, .basic-information h2{
     cursor: pointer;
     font-size: 35px;
     font-family: var(--font-family-primary);
     width: 100%;
 }
-.section_header_opinion h2::after, .section_header_download h2::after, .section_related h2::after, .section_category h2::after{
+.section_header_opinion h2::after, .section_header_download h2::after, .section_related h2::after, .section_category h2::after, .section_header_container h2::after, .product-description h2::after, .basic-information h2::after{
     content: '';
     width: 50px;
     border-bottom: 3px solid #F74137;
@@ -1106,23 +1010,7 @@ tbody tr:nth-child(even)
 }
 .basic-information{
     text-align: center;
-    background-color: var(--background-color-primary);
-    font-family: var(--font-family-primary);
     scroll-behavior: smooth;
-}
-.basic-information h2{
-    font-size: 35px;
-    cursor: pointer;
-    width: 100%;
-}
-.basic-information h2::after {
-    content: '';
-    width: 50px;
-    border-bottom: 3px solid #F74137;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
 }
 .choice-products {
     background-color: #F2F3F4;
@@ -1278,12 +1166,6 @@ ul, ul li {
     white-space: nowrap;
     overflow: auto;
 }
-.galleryFeatures{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
 .galleryFeatures:not(:last-child){
     border-right: 1px solid #E1E2E8;
     padding-right: 50px;
@@ -1373,20 +1255,6 @@ ul, ul li {
     font-size: 19px;
     text-align: left;
 }
-.product-description h3{
-    font-size: 25px;
-    font-family: var(--font-family-primary);
-    text-align: left;
-}
-.product-description h2::after{
-    content: '';
-    width: 50px;
-    border-bottom: 3px solid #F74137;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-}
 .image-description{
     width:100%;
     height:100%;
@@ -1450,20 +1318,11 @@ ul, ul li {
 .basic_hide, 
 .section_rel_hide,
 .section_cate_hide{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border-bottom: var(--border-primary);
-}
-.hide-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 @media screen and (min-width: 100px) and (max-width: 1880px) {
     .overlay-content{
         top: 15%;
-        height: 55%;
     }
 }
 @media screen and (max-width: 1450px) {
@@ -1539,7 +1398,7 @@ ul, ul li {
         width: 95%;
     }
     .checkbox-button__input:checked+.checkbox-button__control:after{
-        width: 18px;
+        width: 65%;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1573,7 +1432,7 @@ ul, ul li {
     #poka3, #poka4, 
     #poka-all, #poka6, 
     #poka7, #poka8,
-    #poka9, .nav-items, .dropdown:hover .dropdown-content, .header img, .fileAddItem-name,     .section_header_container h2::after, 
+    #poka9, .nav-items, .dropdown:hover .dropdown-content, .header img, .fileAddItem-name, .section_header_container h2::after, 
     .section_header_opinion h2::after, 
     .section_header_down_hide h2:after, 
     .basic-information h2::after,
@@ -1718,6 +1577,12 @@ ul, ul li {
     .overlay-content img{
         display: none;
     }
+    .column_product{
+        gap: 10px;
+    }
+    #myNav .checkbox-button__control, #myNavs .checkbox-button__control{
+        width: 10%;
+    }
 }
 @media screen and (min-width: 100px) and (max-width: 585px) {
     .lights-wrapper, .arrow-cart img{
@@ -1776,7 +1641,7 @@ ul, ul li {
         font-size: 40px;
     }
     .checkbox-button__input:checked+.checkbox-button__control:after{
-        width: 16px;
+        width: 60%;
     }
 }
 @media screen and (min-width: 100px) and (max-width: 435px) {
