@@ -1,6 +1,11 @@
-.grandchild {
-  float: left;
+.fav_btn {
+  padding: 5px;
+  background-color:blue;
+  color: white;
 }
-.clearboth {
-  clear: both;
+.fav_btn:hover {
+  background-color: lightblue;
+}
+.fav_btn.remove:hover {
+  background-color: pink;
 }
