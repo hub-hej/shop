@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="hover.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-  <title>rotate icon for bootstrap accordion</title>
+    <meta charset="UTF8">
+    <title>Title</title>
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
 </head>
-
 <body>
-    <div class="fav_btn">Add To Favs</div>
-  <script src="hover.js"></script>
-</body>
+<div id="img-container" style="width: 400px">
+    <img src="https://github.com/malaman/js-image-zoom/blob/master/example/1.jpg?raw=true" />
+</div>
+<script>
+// If the width and height of the image are not known or to adjust the image to the container of it
+var options2 = {
+    fillContainer: true,
+    offset: {vertical: 0, horizontal: 150}
+};
 
+new ImageZoom(document.getElementById("img-container"), options2);
+
+</script>
+</body>
 </html>
