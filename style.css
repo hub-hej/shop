@@ -49,8 +49,6 @@ span {
     padding: 9px 5px 13px 5px;
     height: 100%;
     font-family: var(--font-family-primary);
-    display: flex;
-    align-items: center;
     border: none;
     cursor: pointer;
 }
@@ -199,7 +197,7 @@ html {
 .menu-paragraph, .menu-paragraph a, .cart {
     gap: 5px;
 }
-.menu-paragraph, .menu-paragraph a, .cart{
+.menu-paragraph, .menu-paragraph a, .cart, .minus, .plus{
     display: flex;
     align-items: center;
 }
@@ -478,12 +476,11 @@ html {
 }
 .text-under-lights s {
     color: #A3A3A3;
-    font-family: var(--font-family-secondary);
 }
 .text-under-lights b {
     font-family: var(--font-family-primary);
 }
-.text-under-lights p {
+.text-under-lights p, .text-under-lights s {
     font-family: var(--font-family-secondary);
 }
 .lights-row .w3-display-left-lights, .fa-search {
