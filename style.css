@@ -497,6 +497,9 @@ html {
 .shoppingcart:hover{
     background-color: #84af2e;;
 }
+.shoppingcart img{
+    width: 100%!important;
+}
 .tile-product {
     display: flex;
     padding-top: 35px;
@@ -815,7 +818,6 @@ ul li {
 }
 .owl-carousel .owl-item img{
     display: unset!important;
-    width: auto!important;
 }
 .login-user p, .register-user p{
     width: 100px;
