@@ -1106,6 +1106,11 @@ ul li {
         width: 100%;
         border-bottom: 1px solid hsla(0,0%,100%,.3)
     }
+    .footerSocialMedia, .footerSocialMedia__content {
+        margin: 0;
+        margin-top: 5px;
+        justify-content: flex-start;
+    }
     .footer-information{
         margin-bottom: 0px;
     }
