@@ -278,6 +278,10 @@ if(isset($_POST['submit']))
                         <button type="submit" name="submit" class="btn btn-primary">ZAŁÓŻ KONTO</button>
                         <p>*Pola wymagane</p>
                         </div>
+
+                        <div class="back_login">
+                            <a href="login.php" class="button button1">ZALOGUJ SIĘ</a>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -367,32 +371,40 @@ if(isset($_POST['submit']))
                 <div class="row-up">
                     <div class="galleryTextListFooterPayment">
                         BEZPIECZNE PŁATNOŚCI
+                        <a class="hide" onClick="op('#image-poka1');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
-                    <div class="galleryFooter">
-                        <div class="galleryListFooterPayment">
-                            <img src="./photos/fotos-54.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterPayment">
-                            <img src="./photos/fotos-53.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterPayment">
-                            <img src="./photos/fotos-14.png" alt="" />
+                    <div class="galleryFooter" id="image-poka1">
+                        <div class="gallery_flex">
+                            <div class="galleryListFooterPayment">
+                                <img src="./photos/fotos-54.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterPayment">
+                                <img src="./photos/fotos-53.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterPayment">
+                                <img src="./photos/fotos-14.png" alt="" />
+                            </div>
                         </div>
                     </div>
 
                     <div class="galleryTextListFooterDelivery">
                         SZYBKA DOSTAWA
+                        <a class="hide" onClick="op('#image-poka2');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
 
-                    <div class="galleryFooterDelivery">
-                        <div class="galleryListFooterDelivery">
-                            <img src="./photos/fotos-41.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterDelivery">
-                            <img src="./photos/fotos-12.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterDelivery">
-                            <img src="./photos/fotos-13.png" alt="" />
+                    <div class="galleryFooterDelivery" id="image-poka2">
+                        <div class="gallery_flex">
+                            <div class="galleryListFooterDelivery">
+                                <img src="./photos/fotos-41.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterDelivery">
+                                 <img src="./photos/fotos-12.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterDelivery">
+                                <img src="./photos/fotos-13.png" alt="" />
+                            </div>
                         </div>
                     </div>
 
