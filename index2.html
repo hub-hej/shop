@@ -12,6 +12,8 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,700,0,0" />
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -28,7 +30,7 @@
                         <div class="logo-search">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="logos/logo.png" alt="Logo ElHurtPlus" class="responsive-image"/>
+                                    <img src="logos/logo.png" alt="Logo ElHurtPlus" class="responsive-image" />
                                 </a>
                             </div>
                             <div class="search-menu">
@@ -897,8 +899,8 @@
                 <div class="footer-information">
                     <div class="hide-info">
                         <h3>O NAS</h3>
-                        <a id="hide1" onClick="op('#poka1');"><span id="arrow-down1"
-                                class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                        <a class="hide" onClick="op('#poka1');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
                     <ul id="poka1">
                         <li><a href="#">Informacje o sklepie</a></li>
@@ -913,8 +915,8 @@
                 <div class="footer-information">
                     <div class="hide-info">
                         <h3>INFORMACJE</h3>
-                        <a id="hide2" onClick="op('#poka2');"><span id="arrow-down2"
-                                class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                        <a class="hide" onClick="op('#poka2');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
                     <ul id="poka2">
                         <li><a href="#">Czas realizacji</a></li>
@@ -929,8 +931,8 @@
                 <div class="footer-information">
                     <div class="hide-info">
                         <h3>MOJE KONTO</h3>
-                        <a id="hide3" onClick="op('#poka3');"><span id="arrow-down3"
-                                class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                        <a class="hide" onClick="op('#poka3');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
                     <ul id="poka3">
                         <li><a href="#">Logowanie</a></li>
@@ -974,32 +976,40 @@
                 <div class="row-up">
                     <div class="galleryTextListFooterPayment">
                         BEZPIECZNE PŁATNOŚCI
+                        <a class="hide" onClick="op('#image-poka1');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
-                    <div class="galleryFooter">
-                        <div class="galleryListFooterPayment">
-                            <img src="./photos/fotos-54.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterPayment">
-                            <img src="./photos/fotos-53.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterPayment">
-                            <img src="./photos/fotos-14.png" alt="" />
+                    <div class="galleryFooter" id="image-poka1">
+                        <div class="gallery_flex">
+                            <div class="galleryListFooterPayment">
+                                <img src="./photos/fotos-54.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterPayment">
+                                <img src="./photos/fotos-53.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterPayment">
+                                <img src="./photos/fotos-14.png" alt="" />
+                            </div>
                         </div>
                     </div>
 
                     <div class="galleryTextListFooterDelivery">
                         SZYBKA DOSTAWA
+                        <a class="hide" onClick="op('#image-poka2');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
 
-                    <div class="galleryFooterDelivery">
-                        <div class="galleryListFooterDelivery">
-                            <img src="./photos/fotos-41.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterDelivery">
-                            <img src="./photos/fotos-12.png" alt="" />
-                        </div>
-                        <div class="galleryListFooterDelivery">
-                            <img src="./photos/fotos-13.png" alt="" />
+                    <div class="galleryFooterDelivery" id="image-poka2">
+                        <div class="gallery_flex">
+                            <div class="galleryListFooterDelivery">
+                                <img src="./photos/fotos-41.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterDelivery">
+                                <img src="./photos/fotos-12.png" alt="" />
+                            </div>
+                            <div class="galleryListFooterDelivery">
+                                <img src="./photos/fotos-13.png" alt="" />
+                            </div>
                         </div>
                     </div>
 

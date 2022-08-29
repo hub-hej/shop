@@ -27,7 +27,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.full-page, .cart {
+.cart {
     border: var(--border-primary);
 }
 header {
@@ -99,7 +99,6 @@ html {
 .menu {
     text-align: center;
     font-size: 14px;
-    padding: 10px;
     background-color: white;
     justify-content: space-between;
     list-style: none;
@@ -129,7 +128,6 @@ html {
     background-color: white;
     height: 100%;
     font-family: var(--font-family-primary);
-    padding: 10px;
 }
 .header a, .menu-paragraph a {
     text-decoration: none;
@@ -143,7 +141,7 @@ html {
 }
 .headers {
     text-align: left;
-    padding: 15px;
+    padding: 10px;
     width: fit-content;
 }
 .nav-items {
@@ -174,30 +172,13 @@ html {
     border: none;
     background-color: white;
 }
-.searchTop, .arrow-cart, .cart-family, .header {
+.arrow-cart, .cart-family, .header {
     display: flex;
-}
-.searchTop__textfield {
-    padding: 15px 150px;
-    border-bottom: 1px solid #E1E2E8;
-    border-left: 1px solid #E1E2E8;
-    border-top: 1px solid #E1E2E8;
-    border-right: none;
-    outline: none;
-}
-.searchTop__submit {
-    background-color: #6b6f71;
-    width: 3.4375rem;
-    border: none;
-    cursor: pointer;
-}
-.searchTop__submit:hover {
-    background-color: #F74137;
 }
 .menu-paragraph, .menu-paragraph a, .cart {
     gap: 5px;
 }
-.menu-paragraph, .menu-paragraph a, .cart, .minus, .plus{
+.menu-paragraph, .menu-paragraph a, .cart, .minus, .plus, .add-information{
     display: flex;
     align-items: center;
 }
@@ -278,15 +259,6 @@ html {
     background-color: #9BCB3B;
     font-family: var(--font-family-secondary);
 }
-.container {
-    background-color: #F2F3F4;
-    width: 100%;
-    padding-top: 5px;
-    height: auto;
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
 .main-image {
     max-width: 100%;
     width: 100%;
@@ -301,16 +273,14 @@ html {
     display: block;
 }
 .text-main-image {
-    position: absolute;
     top: 47%;
-    left: 0;
     margin-left: 100px;
     transform: translateY(-50%);
-    font-size: 35px;
-    text-align: left;
-    letter-spacing: 0px;
-    opacity: 1;
+}
+.text-main-image, .text-on-sub-image{
+    position: absolute;
     color: white;
+    font-size: 35px;
 }
 .text-main-image p {
     font-size: 20px;
@@ -355,18 +325,17 @@ html {
     background-color: #b3b3b3;
 }
 .add-information {
+    gap: 20px;
+    font-size: 0;
+}
+.container, .add-information {
+    padding-top: 5px;
+}
+.add-information, .choice-products, .container{
     background-color: #F2F3F4;
     width: 100%;
-    padding-top: 5px;
-    height: auto;
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    font-size: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .three-sub-images {
     width: 100%;
@@ -384,17 +353,10 @@ html {
     height: 100%;
 }
 .text-on-sub-image {
-    position: absolute;
     top: 35%;
-    left: 0;
     padding-left: 40px;
     transform: translateY(-20%);
-    font-size: 32px;
-    text-align: left;
-    letter-spacing: 0px;
-    opacity: 1;
     margin: 0 auto;
-    color: white;
 }
 .text-on-sub-image h4 {
     font-weight: 800;
@@ -411,8 +373,6 @@ html {
 .recommend-products {
     text-align: center;
     background-color: #F2F3F4;
-    letter-spacing: 0px;
-    opacity: 1;
     font-family: var(--font-family-primary);
     padding-top: 25px;
     font-size: 35px;
@@ -427,13 +387,7 @@ html {
     text-align: center;
 }
 .choice-products {
-    background-color: #F2F3F4;
-    width: 100%;
     padding-top: 20px;
-    height: auto;
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
     border-top: var(--border-primary);
 }
 .lights-row {
@@ -576,10 +530,10 @@ html {
     font-family: var(--font-family-primary);
     gap: 20px;
 }
-.galleryFooter,
-.galleryFooterDelivery {
+.galleryFooter, .galleryFooterDelivery, .footerSocialMedia__content{
     gap: 15px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .galleryTextListFooterPayment, .galleryTextListFooterDelivery {
     color: white;
@@ -595,10 +549,6 @@ html {
 .textSocialMedia {
     color: white;
     margin-right: 20px;
-}
-.footerSocialMedia__content {
-    margin: 0 auto;
-    gap: 10px;
 }
 .footerSocialMedia a {
     text-decoration: none;
@@ -817,15 +767,10 @@ ul li {
 .distributor{
     display: none;
 }
-@media screen and (max-width:1450px) {
-    .searchTop__textfield {
-        padding: 15px 90px;
-    }
+.hide{
+    margin: 0!important;
 }
 @media screen and (max-width: 1300px) {
-    .upper-menu {
-        flex-direction: column;
-    }
     .logo img {
         width: 100%;
     }
@@ -843,7 +788,7 @@ ul li {
         margin: 0 auto;
         margin-top: 15px;
     }
-    .searchTop, .logo img{
+    .logo img{
         height: 40px;
     }
     .galleryRecommended{
@@ -866,7 +811,8 @@ ul li {
     }
 }
 @media screen and (min-width: 886px) {
-    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors{
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, 
+    #socialMedia{
         display: block!important;
     }
     .gallery_flex{
@@ -912,7 +858,7 @@ ul li {
     .hide{
         display: block;
     }
-    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, .w3-display-left, 
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, #socialMedia, .w3-display-left,
     .w3-display-right, .w3-display-left-lights, .w3-display-right-lights,
     .nav-items, .dropdown:hover .dropdown-content, .header img, .recommend-products::after, .distributor::after{
         display: none;
@@ -1054,6 +1000,9 @@ ul li {
         margin: 0;
         margin-top: 5px;
     }
+    .upper-menu{
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 600px) {
     .about-section {
@@ -1064,9 +1013,6 @@ ul li {
     }
     .arrow-cart img {
         width: 100%;
-    }
-    .searchTop__textfield {
-        padding: 15px 30px;
     }
     .menu-paragraph p, .text-cart{
         display: none;

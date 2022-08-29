@@ -888,7 +888,8 @@ tbody tr:nth-child(even)
     background-color: #F2F3F4;
     padding-top: 25px;
 }
-.section_header_opinion h2, .section_header_download h2, .section_related h2, .section_category h2, .section_header_container h2, .basic-information h2{
+.section_header_opinion h2, .section_header_download h2, .section_related h2, .section_category h2, 
+.section_header_container h2, .basic-information h2, .product-description h2{
     cursor: pointer;
     font-size: 35px;
     font-family: var(--font-family-primary);
@@ -1259,12 +1260,6 @@ ul, ul li {
     background-color: var(--background-color-primary);
     padding-top: 50px;
     font-family: var(--font-family-secondary);
-}
-.product-description h2{
-    font-size: 35px;
-    border-bottom: var(--border-primary);
-    font-family: var(--font-family-primary);
-    cursor: pointer;
 }
 .product-description p{
     max-width: 1550px;

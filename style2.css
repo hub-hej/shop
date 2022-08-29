@@ -28,7 +28,7 @@
     border: var(--border-primary);
 }
 .text-under-lights b, .text-under-lights s, .tile-minus, .tile-plus, .three-information, .header,
-.nav-h1, .text-expand a, .text-main-image h4, .text-offer, .button, .first-left-menu h3, .filters h3
+.nav-h1, .text-expand a, .text-main-image h4, .text-offer, .button, .first-left-menu h3, .filters h3,
 .producer h3, .range-filter h3, .choose-colors h3, .size-filter h3, .price h3, .footer-information h3,
 .form, .galleryTextListFooterPayment, .textSocialMedia, .galleryTextListFooterDelivery {
     font-family: var(--font-family-primary);
@@ -122,7 +122,6 @@ header{
 }
 .three-information {
     text-align: center;
-    padding: 10px;
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -133,7 +132,6 @@ header{
     flex-wrap: wrap;
     background-color: white;
     height: 100%;
-    padding: 10px;
 }
 .header a, .upper-headers, .upper-headers a, .cart, .light-text-image-menu, .pagination{
     gap: 5px;
@@ -147,7 +145,7 @@ header{
 .headers {
     width: fit-content;
     text-align: left;
-    padding: 15px;
+    padding: 10px;
 }
 .headers a.ex1:visited, .checkbox-button:hover{
     color: #F74137;
@@ -866,6 +864,8 @@ input[type="range"]{
 .galleryTextListFooterPayment, .textSocialMedia, .galleryTextListFooterDelivery{
     color: white;
     font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 .galleryTextListFooterDelivery{
     margin-left: 25px;
@@ -944,11 +944,18 @@ ul li {
     border: none;
     cursor: pointer;
 }
-#hide1, #hide2, #hide3, .hamburger{
+.hide, .hamburger{
     display: none;
 }
-#arrow-down1, #arrow-down2, #arrow-down3{
+.hide{
+    margin: 0!important;
+}
+.arrow-down.material-symbols-outlined{
     font-size: 40px;
+}
+.footerSocialMedia__content{
+    flex-wrap: wrap;
+    justify-content: center;
 }
 @media screen and (max-width: 1800px) {
     .different-color {
@@ -1027,9 +1034,6 @@ ul li {
     .module_body, .fa-phone-volume{
         font-size: 35px;
     }
-    .three-information, .header{
-        padding: 0;
-    }
 }
 @media screen and (max-width: 1000px) {
     .range-size-filter {
@@ -1081,21 +1085,37 @@ ul li {
     }
 }
 @media screen and (min-width: 886px) {
-    #poka1, #poka2, #poka3{
+    #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
         display: block!important;
+    }
+    .gallery_flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
     }
 }
 @media screen and (max-width: 885px) {
+    .gallery_flex{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 45px;
+    }
+    .galleryTextListFooterDelivery, .galleryTextListFooterPayment{
+        width: 100%;
+        border-bottom: 1px solid hsla(0,0%,100%,.3)
+    }
     .footer-information{
         margin-bottom: 0px;
     }
     .footer-information ul{
         margin-top: 0px;
     }
-    #hide1, #hide2, #hide3{
+    .hide{
         display: block;
     }
-    #poka1, #poka2, #poka3{
+    #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
         display: none;
     }
     .under-footer {
@@ -1169,6 +1189,7 @@ ul li {
         background-color: white;
         width: 100%;
         border: 1px solid #e1e2e8;
+        padding: 10px;
     }
     #myBtn{
         bottom: 95px;
@@ -1199,6 +1220,12 @@ ul li {
     .text-main-image {
         font-size: 20px;
         top: 20%;
+    }
+    .galleryFooter, .galleryFooterDelivery{
+        border: none;
+    }
+    .row-up{
+        gap: 20px;
     }
 }
 @media screen and (max-width: 750px) {
