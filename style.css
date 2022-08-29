@@ -814,6 +814,9 @@ ul li {
 .login-user p, .register-user p{
     width: 100px;
 }
+.distributor{
+    display: none;
+}
 @media screen and (max-width:1450px) {
     .searchTop__textfield {
         padding: 15px 90px;
@@ -863,7 +866,7 @@ ul li {
     }
 }
 @media screen and (min-width: 886px) {
-    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2{
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors{
         display: block!important;
     }
     .gallery_flex{
@@ -874,6 +877,26 @@ ul li {
     }
 }
 @media screen and (max-width: 885px) {
+    .distributor{
+        text-align: center;
+        background-color: #F2F3F4;
+        font-family: var(--font-family-primary);
+        font-size: 35px;
+        display: block;
+    }
+    .title_distributor{
+        justify-content: space-between;
+        border-top: var(--border-primary);
+        display: flex;
+    }
+    .title_distributor h2{
+        text-align: left;
+        font-size: 20px;
+        padding: 12px 3px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
     .gallery_flex{
         display: flex;
         align-items: center;
@@ -889,9 +912,9 @@ ul li {
     .hide{
         display: block;
     }
-    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, .w3-display-left, 
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, .w3-display-left, 
     .w3-display-right, .w3-display-left-lights, .w3-display-right-lights,
-    .nav-items, .dropdown:hover .dropdown-content, .header img, .recommend-products::after{
+    .nav-items, .dropdown:hover .dropdown-content, .header img, .recommend-products::after, .distributor::after{
         display: none;
     }
     .lights-row,
@@ -1032,20 +1055,6 @@ ul li {
         margin-top: 5px;
     }
 }
-@media screen and (max-width: 700px) {
-    .content-area h3 {
-        font-size: 20px;
-    }
-    .content-area p {
-        font-size: 15px;
-    }
-    .cart img {
-        border: none;
-    }
-    .recommend-products h3{
-        font-size: 30px;
-    }
-}
 @media screen and (max-width: 600px) {
     .about-section {
         height: 700px;
@@ -1064,6 +1073,15 @@ ul li {
     }
     .galleryRecommended{
         grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .cart img {
+        border: none;
+    }
+    .content-area h3 {
+        font-size: 20px;
+    }
+    .content-area p {
+        font-size: 15px;
     }
 }
 @media screen and (min-width: 200px) and (max-width: 500px){
