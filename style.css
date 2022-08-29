@@ -581,16 +581,11 @@ html {
     gap: 15px;
     margin: 0 auto;
 }
-.galleryTextListFooterPayment {
+.galleryTextListFooterPayment, .galleryTextListFooterDelivery {
     color: white;
-    margin-right: 20px;
     font-size: 16px;
-}
-.galleryTextListFooterDelivery {
-    color: white;
-    margin-left: 45px;
-    margin-right: 30px;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 .footerSocialMedia {
     display: flex;
@@ -836,8 +831,7 @@ ul li {
     .footerDetails, .row-up {
         flex-direction: column;
     }
-    .galleryFooter,
-    .galleryFooterDelivery {
+    .galleryFooter, .galleryFooterDelivery {
         border-bottom: 1px solid hsla(0, 0%, 100%, .3);
         width: 100%;
         gap: 45px;
@@ -869,11 +863,23 @@ ul li {
     }
 }
 @media screen and (min-width: 886px) {
-    #poka1, #poka2, #poka3, #poka4{
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2{
         display: block!important;
+    }
+    .gallery_flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
     }
 }
 @media screen and (max-width: 885px) {
+    .gallery_flex{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 45px;
+    }
     .footer-information{
         margin-bottom: 0px;
     }
@@ -883,7 +889,9 @@ ul li {
     .hide{
         display: block;
     }
-    #poka1, #poka2, #poka3, #poka4{
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, .w3-display-left, 
+    .w3-display-right, .w3-display-left-lights, .w3-display-right-lights,
+    .nav-items, .dropdown:hover .dropdown-content, .header img, .recommend-products::after{
         display: none;
     }
     .lights-row,
@@ -929,15 +937,6 @@ ul li {
     }
     .text-cart {
         width: 100%;
-    }
-    .w3-display-left,
-    .w3-display-right,
-    .w3-display-left-lights,
-    .w3-display-right-lights,
-    .nav-items,
-    .dropdown:hover .dropdown-content,
-    .header img {
-        display: none;
     }
     .hamburger {
         display: block;
@@ -1021,8 +1020,16 @@ ul li {
         border-top: var(--border-primary);
         justify-content: space-between;
     }
-    .recommend-products::after{
-        display: none;
+    .galleryTextListFooterPayment, .galleryTextListFooterDelivery{
+        width: 100%;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .3);
+    }
+    .galleryFooter, .galleryFooterDelivery{
+        border: none;
+    }
+    .footerSocialMedia, .footerSocialMedia__content{
+        margin: 0;
+        margin-top: 5px;
     }
 }
 @media screen and (max-width: 700px) {
