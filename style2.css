@@ -23,7 +23,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.full-page, .number, .first-left-menu, .producer, .choose-colors, .range-filter, .size-filter,
+.number, .first-left-menu, .producer, .choose-colors, .range-filter, .size-filter,
 .price, .size-65 {
     border: var(--border-primary);
 }
@@ -123,8 +123,9 @@ header{
 .three-information {
     text-align: center;
     display: flex;
-    gap: 30px;
+    gap: 50px;
     justify-content: space-between;
+    padding: 10px;
 }
 .header {
     width: 100%;
@@ -271,7 +272,7 @@ header{
     font-size: 20px;
 }
 .under-h1-paragraph {
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--font-family-secondary);
     padding-bottom: 30px;
     display: none;
@@ -343,6 +344,7 @@ header{
     gap: 15px;
     justify-content: space-between;
     height: auto;
+    padding: 10px;
 }
 .view {
     font-size: 12px;
@@ -355,14 +357,14 @@ header{
     font-size: 12px;
 }
 .options {
-    padding: 9px 20px;
+    padding: 15px 20px;
     border: none;
     direction: ltr;
     font-family: var(--font-family-secondary);
 }
 .quantities {
     border: none;
-    padding: 8px 10px;
+    padding: 15px 10px;
     font-family: var(--font-family-secondary);
 }
 .pagination {
@@ -370,7 +372,7 @@ header{
 }
 .pagination a {
     color: black;
-    padding: 8px 16px;
+    padding: 15px 20px;
     text-decoration: none;
     transition: background-color .3s;
     background-color: white;
@@ -867,6 +869,9 @@ input[type="range"]{
     display: flex;
     align-items: center;
 }
+.textSocialMedia{
+    margin-left: 10px;
+}
 .galleryTextListFooterDelivery{
     margin-left: 25px;
     margin-right: 25px;
@@ -974,6 +979,9 @@ ul li {
     .searchTop__textfield{
         padding: 15px 90px;
     }
+    .three-information{
+        gap: 40px;
+    }
 }
 @media screen and (max-width: 1300px) {
     .text-main-image {
@@ -990,6 +998,10 @@ ul li {
     }
     .upper-menu {
         flex-direction: column;
+    }
+    .gallery_flex{
+        flex-wrap: wrap;
+        gap: 10px!important;
     }
 }
 @media screen and (max-width: 1100px) {
@@ -1196,6 +1208,9 @@ ul li {
         border: 1px solid #e1e2e8;
         padding: 10px;
     }
+    .upper-headers p{
+        display: block;
+    }
     #myBtn{
         bottom: 95px;
     }
@@ -1231,6 +1246,10 @@ ul li {
     }
     .row-up{
         gap: 20px;
+    }
+    .textSocialMedia{
+        margin-left: 0;
+        margin-right: 5px;
     }
 }
 @media screen and (max-width: 750px) {

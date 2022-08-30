@@ -120,7 +120,7 @@ html {
 .menu-elements {
     padding: 20px;
     font-family: var(--font-family-primary);
-    gap: 30px;
+    gap: 60px;
 }
 .header {
     width: 100%;
@@ -363,12 +363,13 @@ html {
     font-family: var(--font-family-primary);
 }
 .text-on-sub-image b {
-    font-size: 27px;
+    font-size: 45px;
     font-family: var(--font-family-primary);
 }
 .text-on-sub-image p {
     font-family: var(--font-family-tertiary);
-    font-size: 28px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 .recommend-products {
     text-align: center;
@@ -548,7 +549,7 @@ html {
 }
 .textSocialMedia {
     color: white;
-    margin-right: 20px;
+    margin-left: 10px;
 }
 .footerSocialMedia a {
     text-decoration: none;
@@ -715,7 +716,7 @@ footer {
 }
 .about-section .icon {
     border: 1px solid hsla(0, 0%, 100%, .3);
-    padding: 60px;
+    padding: 50px 70px;
 }
 .about-section .icon-text {
     margin-top: 20px;
@@ -774,6 +775,16 @@ ul li {
     .logo img {
         width: 100%;
     }
+    .text-on-sub-image b{
+        font-size: 35px;
+    }
+    .text-on-sub-image p{
+        font-size: 30px;
+    }
+    .gallery_flex{
+    gap: 10px!important;
+    flex-wrap: wrap;
+    }
 }
 @media screen and (max-width: 1165px) {
     .footerDetails, .row-up {
@@ -809,6 +820,12 @@ ul li {
     .text-main-image, .text-main-image h3 {
         font-size: 20px;
     }
+    .text-on-sub-image b{
+        font-size: 25px;
+    }
+    .text-on-sub-image p{
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 886px) {
     #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, 
@@ -823,6 +840,12 @@ ul li {
     }
 }
 @media screen and (max-width: 885px) {
+    .text-on-sub-image b, .text-main-image h3{
+        font-size: 40px;
+    }
+    .text-on-sub-image p, .text-main-image h4{
+        font-size: 35px;
+    }
     .distributor{
         text-align: center;
         background-color: #F2F3F4;
@@ -866,6 +889,7 @@ ul li {
     .lights-row,
     .about-section .icons {
         flex-wrap: wrap;
+        margin: 0 auto;
     }
     .main-image {
         height: 350px;
@@ -897,12 +921,9 @@ ul li {
         margin-left: 50px;
         top: 55%
     }
-    .add-information .text-on-sub-image p {
+    .add-information{
         font-size: 25px;
         padding-bottom: 15px;
-    }
-    .text-on-sub-image b {
-        font-size: 23px;
     }
     .text-cart {
         width: 100%;
@@ -956,6 +977,7 @@ ul li {
         width: 100%;
         padding: 10px;
         border: 1px solid #e1e2e8;
+        gap: 25px;
     }
     #myBtn{
         bottom: 95px;
@@ -1003,6 +1025,10 @@ ul li {
     .upper-menu{
         justify-content: center;
     }
+    .textSocialMedia{
+        margin-left: 0;
+        margin-right: 5px;
+    }
 }
 @media screen and (max-width: 600px) {
     .about-section {
@@ -1026,8 +1052,14 @@ ul li {
     .content-area h3 {
         font-size: 20px;
     }
-    .content-area p {
+    .content-area p, .text-main-image p {
         font-size: 15px;
+    }
+    .text-on-sub-image b, .text-main-image h4{
+        font-size: 30px;
+    }
+    .text-on-sub-image p, .text-main-image h3{
+        font-size: 25px;
     }
 }
 @media screen and (min-width: 200px) and (max-width: 500px){
@@ -1041,6 +1073,23 @@ ul li {
     }
     .form{
         padding: 15px 10px;
+    }
+    .text-on-sub-image b{
+        font-size: 25px;
+    }
+    .text-on-sub-image p{
+        font-size: 20px;
+    }
+    .button2, .button1, .button4{
+        padding: 15px 20px;
+    }
+    .about-section .icons {
+        width: 50%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .about-section p{
+        margin: 15px auto;
     }
 }
 
