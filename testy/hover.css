@@ -1,11 +1,58 @@
-.fav_btn {
-  padding: 5px;
-  background-color:blue;
-  color: white;
+.pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-flex;
+    position: relative;
 }
-.fav_btn:hover {
-  background-color: lightblue;
+.pagination li a.page-link{
+    color: #f1f1f1;
+    background: linear-gradient(#3C373D,#21262A);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 41px;
+    height: 42px;
+    width: 42px;
+    padding: 0;
+    margin: 0 1px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
 }
-.fav_btn.remove:hover {
-  background-color: pink;
+.pagination li a.page-link:hover,
+.pagination li a.page-link:focus,
+.pagination li.active a.page-link:hover,
+.pagination li.active a.page-link{
+    color: #fff;
+    background: linear-gradient(#FA5100,#BC1F00);
+}
+.pagination li a.page-link:before{
+    content: '';
+    background: #bbb;
+    height: 4px;
+    width: 70%;
+    border-radius: 50%;
+    transform: translateX(-50%) scale(0);
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 3px);
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:hover:before,
+.pagination li a.page-link:focus:before,
+.pagination li.active a.page-link:before{
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+@media only screen and (max-width: 480px){
+    .pagination{
+        font-size: 0;
+        display: inline-block;
+    }
+    .pagination li{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 20px;
+    }
 }
