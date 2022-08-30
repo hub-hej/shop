@@ -37,12 +37,10 @@
                             </div>
                             <div class="menu-elements">
                                 <div class="menu-paragraph">
-                                    <a href="#">
+                                    <form action="#section1">
                                         <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                        <span class="hovertext" data-hover="Hello, this is the tolltip">
-                                            <p>KONTAKT</p>
-                                        </span>
-                                    </a>
+                                        <form action="#section1" class="forms"><button class="contact">KONTAKT</button></form>
+                                </form>
                                 </div>
                                 <div class="menu-paragraph">
                                     <a href="#">
@@ -100,7 +98,6 @@
                 </div>
             </section>
 
-            <section>
                 <nav class="header">
                     <button type="button" class="button-menu" aria-label="Przycisk na menu">
                         <div class="hamburger">
@@ -383,7 +380,15 @@
                 </div>
             </div>
 
-            <div class="about-section">
+            <div class="description_why_us">
+                <div class="title_description">
+                    <h2>Dlaczego my?</h2>
+                    <a class="hide" onClick="op('#description_us');">
+                        <span class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                </div>
+            </div>
+
+            <div class="about-section" id="description_us">
                 <img src="photos/img_07.jpg" alt="Dlaczego my" />
 
                 <div class="content-area">
@@ -473,7 +478,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-information">
+                <div class="footer-information" id="section1">
                     <h3>MASZ PYTANIE?</h3>
                     <div class="general_module">
                         <div class="module_body">
