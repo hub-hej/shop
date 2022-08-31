@@ -18,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -351,9 +352,9 @@
                         <h3>FILTR - ZAKRES</h3>
 
                         <div class="range-size">
-                            <input class="inpColumnSize" type="text" value placeholder="min. 5" min="5">
+                            <input class="inpColumnSize" type="number" value placeholder="min. 5" min="5">
                             <span class="minus">&dash;</span>
-                            <input class="inpColumnSize" type="text" value placeholder="max. 25" max="25">
+                            <input class="inpColumnSize" type="number" value placeholder="max. 25" max="25">
                         </div>
                     </div>
 
@@ -477,11 +478,12 @@
                                 <p>Ilość</p>
                             </div>
                             <div class="sort-quantity">
-                                <select class="quantities">
-                                    <option>20</option>
-                                    <option>40</option>
-                                    <option>80</option>
-                                    <option>100</option>
+                                <select class="quantities choice">
+                                    <option>Brak</option>
+                                    <option>1</option>
+                                    <option>5</option>
+                                    <option>7</option>
+                                    <option selected>12</option>
                                 </select>
                             </div>
 
@@ -497,7 +499,7 @@
                         </div>
                     </div>
 
-                    <div class="lights-row" id="myElements">
+                    <div class="lights-row">
                         <div class="light">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/product-1.png" alt="Żarówka">
@@ -629,6 +631,9 @@
                         <div class="light">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
+                            <div class="text-offer">
+                                <p class="three">POLECAMY</p>
+                            </div>
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
@@ -757,8 +762,8 @@
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
-                                <p class="one">NOWOŚĆ</p>
                                 <p class="two">PROMOCJA</p>
+                                <p class="three">POLECAMY</p>
                             </div>
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
@@ -838,8 +843,7 @@
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
-                                <p class="one">NOWOŚĆ</p>
-                                <p class="two">PROMOCJA</p>
+                                <p class="three">POLECAMY</p>
                             </div>
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
@@ -967,7 +971,7 @@
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
-                                <p class="two">PROMOCJA</p>
+                                <p class="three">POLECAMY</p>
                             </div>
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
@@ -1039,11 +1043,12 @@
                                 <p>Ilość</p>
                             </div>
                             <div class="sort-quantity">
-                                <select class="quantities">
-                                    <option>20</option>
-                                    <option>40</option>
-                                    <option>80</option>
-                                    <option>100</option>
+                                <select class="quantities choice">
+                                    <option>Brak</option>
+                                    <option>1</option>
+                                    <option>5</option>
+                                    <option>7</option>
+                                    <option selected>12</option>
                                 </select>
                             </div>
 
