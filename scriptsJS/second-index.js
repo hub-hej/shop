@@ -142,3 +142,15 @@ function searchFunction() {
       }
   }
 }
+
+//Function which allow for choose as many things as we want to display
+$('.choice').on('change', function() {
+  var currentVal = $(this).val();
+
+  if (currentVal == 0) {
+    $('.light').show();
+  } else {
+    $('.light').hide().slice(0, currentVal).show();
+  }
+})
+
