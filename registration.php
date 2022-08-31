@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
                     
                     $handle->execute($params);
                     
-                    $success = 'User has been created successfully';
+                    $success = "<script>alert('Użytkownik został pomyślnie utworzony');</script>";
                     
                 }
                 catch(PDOException $e){
