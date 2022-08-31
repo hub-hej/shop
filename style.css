@@ -175,7 +175,7 @@ html {
 .arrow-cart, .cart-family, .header {
     display: flex;
 }
-.menu-paragraph, .menu-paragraph a, .cart {
+.menu-paragraph, .menu-paragraph a, .cart, form {
     gap: 5px;
 }
 .menu-paragraph, .menu-paragraph a, .cart, .minus, .plus, .add-information{
@@ -544,9 +544,12 @@ html {
     align-items: center;
 }
 .footerSocialMedia {
+    font-family: var(--font-family-primary);
+    gap: 10px;
+}
+.footerSocialMedia, form{
     display: flex;
     align-items: center;
-    font-family: var(--font-family-primary);
 }
 .textSocialMedia {
     color: white;
@@ -771,11 +774,6 @@ ul li {
 }
 .hide{
     margin: 0!important;
-}
-form{
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 .contact{
     border: none;
