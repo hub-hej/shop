@@ -104,6 +104,7 @@ html {
     list-style: none;
     display: block;
     margin: 0;
+    padding: 10px;
 }
 .logo img:hover {
     transform: scale(1.05);
@@ -118,7 +119,7 @@ html {
     align-items: center;
 }
 .menu-elements {
-    padding: 20px;
+    padding: 10px;
     font-family: var(--font-family-primary);
     gap: 60px;
 }
@@ -244,7 +245,6 @@ html {
 }
 .second-text-cart {
     font-family: var(--font-family-secondary);
-    text-align: left;
 }
 .text-on-cart {
     position: absolute;
