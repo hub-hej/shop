@@ -19,6 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
 </head>
 
 <body>
@@ -37,8 +41,7 @@
                             <div class="search-menu">
                                 <form class="searchTop">
                                     <input type="text" class="searchTop__textfield" id="myInput"
-                                        onkeyup="searchFunction()" placeholder="Wpisz nazwę produktu" name="search"
-                                        autocomplete="off">
+                                        onkeyup="searchFunction()" placeholder="Wpisz nazwę produktu">
                                     <button type="submit" class="searchTop__submit"
                                         aria-label="Przycisk do wyszukiwania frazesów"><i
                                             class="fa fa-search"></i></button>
@@ -241,49 +244,88 @@
                             <ul>
                                 <label class="checkbox-button">
                                     <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1">
+                                        name="choice1" value="Parametr1">
                                     <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr</span>
+                                    <span class="checkbox-button__label">Parametr 1</span>
                                 </label>
-                                <br /><br />
                                 <label class="checkbox-button">
                                     <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1">
+                                        name="choice1" value="Parametr2">
                                     <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr</span>
+                                    <span class="checkbox-button__label">Parametr 2</span>
                                 </label>
-                                <br /><br />
                                 <label class="checkbox-button">
                                     <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1">
+                                        name="choice1" value="Parametr3">
                                     <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr</span>
+                                    <span class="checkbox-button__label">Parametr 3</span>
                                 </label>
-                                <br /><br />
                                 <label class="checkbox-button">
                                     <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1">
+                                        name="choice1" value="Parametr4">
                                     <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr</span>
+                                    <span class="checkbox-button__label">Parametr 4</span>
                                 </label>
-                                <br /><br />
                                 <label class="checkbox-button">
                                     <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1">
+                                        name="choice1" value="Parametr5">
                                     <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr</span>
+                                    <span class="checkbox-button__label">Parametr 5</span>
                                 </label>
-                                <br /><br />
                                 <label class="checkbox-button">
                                     <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1">
+                                        name="choice1" value="Parametr6">
                                     <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr</span>
+                                    <span class="checkbox-button__label">Parametr 6</span>
+                                </label>
+                                <div id="poka_checkbox">
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" value="Parametr7">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Parametr 7</span>
                                 </label>
 
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" value="Parametr8">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Parametr 8</span>
+                                </label>
+
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" value="Parametr9">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Parametr 9</span>
+                                </label>
+
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" value="Parametr10">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Parametr 10</span>
+                                </label>
+
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" value="Parametr11">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Parametr 11</span>
+                                </label>
+
+                                <label class="checkbox-button">
+                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
+                                        name="choice1" value="Parametr12">
+                                    <span class="checkbox-button__control"></span>
+                                    <span class="checkbox-button__label">Parametr 12</span>
+                                </label>
+                            </div>
                             </ul>
                         </div>
-                        <p>wiecej (10)</p>
+                        <div class="text-expands">
+                            <a onClick="op('#poka_checkbox');">ROZWIŃ (6)</a>
+                        </div>
                     </div>
 
                     <div class="choose-colors">
@@ -465,10 +507,10 @@
                             </div>
 
                             <div class="sort-option">
-                                <select class="options">
-                                    <option>Domyślne</option>
-                                    <option>Cena rosnąco</option>
-                                    <option>Cena malejąco</option>
+                                <select class="options" id="mSelect">
+                                    <option value="Default">Domyślne</option>
+                                    <option value="LowToHigh">Cena rosnąco</option>
+                                    <option value="HighToLow">Cena malejąco</option>
                                     <option>Nazwa rosnąco</option>
                                     <option>Nazwa malejąco</option>
                                 </select>
@@ -499,8 +541,8 @@
                         </div>
                     </div>
 
-                    <div class="lights-row">
-                        <div class="light">
+                    <div class="lights-row" id="product-list">
+                        <div class="light" data-category="Parametr1">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/product-1.png" alt="Żarówka">
                             <div class="text-offer">
@@ -509,7 +551,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -543,7 +585,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr2">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -553,7 +595,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -572,7 +614,7 @@
                                     <span>Cena netto: </span>
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <span>Twoja cena netto: </span><b>447,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -585,9 +627,10 @@
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
                             </div>
+                        </li>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr3">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -597,7 +640,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -628,7 +671,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr4">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -637,7 +680,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -671,7 +714,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr5">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -680,7 +723,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -714,7 +757,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr6">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -724,7 +767,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -758,7 +801,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr7">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -768,7 +811,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -798,7 +841,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr8">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -808,7 +851,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -839,7 +882,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr9">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -848,7 +891,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -882,7 +925,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr10">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -892,7 +935,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -926,7 +969,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr11">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -936,7 +979,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -966,7 +1009,7 @@
                             </div>
                         </div>
 
-                        <div class="light">
+                        <div class="light" data-category="Parametr12">
                             <a href="index3.html" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
                             <div class="text-offer">
@@ -976,7 +1019,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                                <b>ŁĄCZNIK JEDNOBIEGUNOWY</b>
+                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>

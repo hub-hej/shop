@@ -127,22 +127,6 @@ function fillColor(){
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #f74137 ${percent1}% , #f74137 ${percent2}% , #dadae5 ${percent2}%`;
 }
 
-//Function which allows for search lights 
-function searchFunction() {
-  let input = document.getElementById('myInput').value
-  input=input.toLowerCase();
-  let x = document.getElementsByClassName('lights-row');
-    
-  for (i = 0; i < x.length; i++) { 
-      if (!x[i].innerHTML.toLowerCase().includes(input)) {
-          x[i].style.display="none";
-      }
-      else {
-          x[i].style.display="grid";                 
-      }
-  }
-}
-
 //Function which allow for choose as many things as we want to display
 $('.choice').on('change', function() {
   var currentVal = $(this).val();
@@ -154,3 +138,54 @@ $('.choice').on('change', function() {
   }
 })
 
+//Function which allows for search lights 
+function searchFunction() {
+  const searchbox = document.getElementById("myInput").value.toUpperCase();
+  const storeitems = document.getElementById("product-list");
+  const product = document.querySelectorAll(".light");
+  const pname = storeitems.getElementsByTagName("h2");
+
+  for (var i = 0; i < pname.length; i++) {
+    let match = product[i].getElementsByTagName('h2')[0];
+
+    if (match) {
+      let textvalue = match.textContent || match.innerHTML; 
+
+      if (textvalue.toUpperCase().indexOf(searchbox) > -1){
+        product[i].style.display = "";
+      } else {
+        product[i].style.display = "none";
+      }
+    }
+  }
+}
+
+//Function related to checkbox Producent with Parametr 1, Parametr 2, Parametr 3, ...
+jQuery(function(){ // document ready to process
+  jQuery('ul').find("input").on('change',function(){ // when the input changes
+    let selected = []; // init a selected array
+    jQuery('ul').find("input").each(function(){ // on every input 
+      if(jQuery(this).is(":checked")){ // check if the input is checked
+        selected.push(jQuery(this).val()); // push the selected value to selected array
+      }
+    })
+    if(!selected.length){ // if no items selected
+    jQuery("div.light").show(); // show all
+    return; // stop code execution
+    
+    }
+    jQuery("div.light").hide(); // hide all divs
+    jQuery("div.light").each(function(){ // take each div
+      const category = jQuery(this).attr('data-category'); // capture the attribute category
+      const categorySplitted = category.split(' '); // split each category by space
+      categorySplitted.forEach((cat)=>{ // foreach category array
+        if(selected.indexOf(cat) !== -1){ // cross check with selected categories; if selected
+        jQuery(this).show(); // show the div
+        }
+      });
+      
+    });
+  });
+  });
+
+  

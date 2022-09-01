@@ -27,7 +27,7 @@
 .price, .size-65 {
     border: var(--border-primary);
 }
-.text-under-lights b, .text-under-lights s, .tile-minus, .tile-plus, .three-information, .header,
+.text-under-lights h2, .text-under-lights s, .tile-minus, .tile-plus, .three-information, .header,
 .nav-h1, .text-expand a, .text-main-image h4, .text-offer, .button, .first-left-menu h3, .filters h3,
 .producer h3, .range-filter h3, .choose-colors h3, .size-filter h3, .price h3, .footer-information h3,
 .form, .galleryTextListFooterPayment, .textSocialMedia, .galleryTextListFooterDelivery {
@@ -94,11 +94,6 @@ header{
 }
 .logo img:hover {
     transform: scale(1.05);
-}
-.searchTop{
-    display: flex;
-    width: 100%;
-    height: 100%;
 }
 .searchTop__textfield{
     padding: 15px 150px;
@@ -202,7 +197,7 @@ header{
 .login, .registrat{
     margin: 4px 2px;
 }
-.cart-family, .main-page, .arrow-cart, .text-expand a, .third-header, .tile-page{
+.cart-family, .main-page, .arrow-cart, .text-expand a, .third-header, .tile-page, .searchTop{
     display: flex;
 }
 .cart {
@@ -600,11 +595,12 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: left;
     margin: 25px;
 }
-.producer p {
+.text-expands a{
     color: #F74137;
     padding: 0 15px;
     font-size: 19px;
     margin-bottom: 25px;
+    text-decoration: none;
 }
 .option-producer {
     margin: 20px;
@@ -905,6 +901,7 @@ ul li {
 }
 .checkbox-button {
     cursor: pointer;
+    margin-bottom: 25px;
 }
 .checkbox-button__input {
     opacity: 0;
@@ -970,8 +967,8 @@ ul li {
     text-align: center;
     font-size: 14px;
 }
-.text-under-lights b{
-    text-align: left;
+.text-under-lights h2{
+    font-size: 15px;
 }
 .product_information{
     font-family: var(--font-family-secondary);
@@ -988,6 +985,10 @@ ul li {
 .unavailable.material-symbols-outlined{
     color: #ee5c61;
 }
+#poka_checkbox{
+    display: none;
+}
+
 @media screen and (max-width: 1800px) {
     .different-color {
         grid-template-columns: repeat(3, minmax(0, 1fr));
