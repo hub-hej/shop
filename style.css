@@ -1002,7 +1002,7 @@ ul li {
         border-right: 1px solid #e1e2e8;
         border-left: 1px solid #e1e2e8;
     }
-    .menu-paragraph a {
+    .menu-paragraph a, form {
         flex-direction: column;
         width: 100%;
     }
@@ -1050,7 +1050,7 @@ ul li {
     .arrow-cart img {
         width: 100%;
     }
-    .menu-paragraph p, .text-cart{
+    .menu-paragraph p, .text-cart, .contact{
         display: none;
     }
     .galleryRecommended{
