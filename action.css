@@ -27,9 +27,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-.full-page{
-    border: var(--border-primary);
-}
 #myBtn {
     display: none;
     position: fixed;
@@ -75,30 +72,8 @@
 .logo img:hover{
     transform: scale(1.05);
 }
-.searchTop{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-.searchTop__textfield{
-    padding: 15px 150px;
-    border-bottom: 1px solid #E1E2E8;
-    border-left: 1px solid #E1E2E8;
-    border-top: 1px solid #E1E2E8;
-    border-right: none;
-    outline: none;
-}
 .fa-search{
     color: white;
-}
-.searchTop__submit{
-    background-color: #6b6f71;
-    width: 3.4375rem;
-    border: none;
-    cursor: pointer;
-}
-.searchTop__submit:hover{
-    background-color: #F74137;
 }
 .three-information{
     text-align: center;
@@ -115,20 +90,19 @@
     background-color: var(--background-color-primary);
     height: 100%;
     font-family: var(--font-family-primary);
-    padding: 10px;
 }
 .header a{
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 5px;
 }
 .headers {
     width: fit-content;
     text-align: left;
-    padding: 15px;
+    padding: 10px;
 }
 .upper-headers {
     display: flex;
@@ -243,6 +217,7 @@
     height: 100%;
     font-family: var(--font-family-secondary);
     display: flex;
+    align-items: center;
     padding: 20px;
     gap: 40px;
     padding-left: 30px;
@@ -294,7 +269,7 @@
     display: block;
     text-align: left;
 }
-#hide1, #hide2, #hide3{
+.hide{
     display: none;
 }
 #arrow-down1, #arrow-down2, #arrow-down3{
@@ -363,16 +338,24 @@
     align-items: center;
     gap: 15px;
 }
+.galleryTextListFooterPayment, .galleryTextListFooterDelivery{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .galleryTextListFooterDelivery{
     color: white;
     font-family: var(--font-family-primary);
     font-size: 16px;
-    margin-left: 25px;
-    margin-right: 25px;
+}
+.gallery_flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 45px;
 }
 .footerSocialMedia{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 15px;
 }
@@ -390,9 +373,12 @@
 }
 .footerSocialMedia__content{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+.footerSocialMedia__content{
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .footerSocialMedia a:hover{
     border-color: white;
@@ -424,19 +410,6 @@ ul, ul li {
     color: #a1a4a7;
     text-align: center;
 }
-@media screen and (max-width: 1450px) {
-    .searchTop__textfield{
-        padding: 15px 90px;
-    }
-}
-@media screen and (max-width: 1300px){
-    .upper-menu{
-        flex-direction: column;
-    }
-    .three-information{
-        padding: 0;
-    }
-}
 @media screen and (max-width: 1100px) {
     .footerDetails, .row-up{
         flex-direction: column;
@@ -450,7 +423,7 @@ ul, ul li {
         gap: 45px;
         width: 100%;
     }
-    .searchTop, .logo img{
+    .logo img{
         height: 40px;
     }
     .module_body, .fa-phone-volume{
@@ -458,8 +431,14 @@ ul, ul li {
     }
 }
 @media screen and (min-width: 851px) {
-    #poka1, #poka2, #poka3{
+    #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
         display: block!important;
+    }
+    .gallery_flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
     }
 }
 @media screen and (max-width: 850px) {
@@ -469,10 +448,10 @@ ul, ul li {
     .footer-information ul{
         margin-top: 0px;
     }
-    #hide1, #hide2, #hide3{
+    .hide{
         display: block;
     }
-    #poka1, #poka2, #poka3{
+    #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
         display: none;
     }
     .header, .headers{
@@ -509,19 +488,14 @@ ul, ul li {
     .headers:hover{
         background: #E1E2E8;
     }
-    .header a{
-        display: inline-block;
-        width: 100%;
-        padding: 5px;
-    }
-    .nav-items, .dropdown:hover .dropdown-content, .header img{
+    .nav-items, .dropdown:hover .dropdown-content{
         display: none;
     }
     .nav-items.active{
         display: block!important;
         flex: 1 0 auto;
     }
-    .header{
+    .header, .header a{
         padding: 5px
     }
     .three-information{
@@ -530,8 +504,10 @@ ul, ul li {
         left: 0;
         background-color: white;
         width: 100%;
+        height: 15%;
         border: 1px solid #e1e2e8;
         z-index: 1;
+        padding: 10px;
     }
     #myBtn{
         bottom: 95px;
@@ -550,18 +526,42 @@ ul, ul li {
         flex-direction: column;
         width: 100%;
     }
-    .searchTop, .logo img{
+    .logo img{
         height: 40px;
-    }
-    .searchTop__textfield{
-        padding: 15px 60px;
     }
     .formularz{
         padding: 15px 15px;
     }
+    .upper-menu{
+        justify-content: center;
+    }
+    .galleryTextListFooterPayment, .galleryTextListFooterDelivery{
+        width: 100%;
+        border-bottom: 1px solid hsla(0,0%,100%,.3);
+    }
+    .galleryFooter, .galleryFooterDelivery{
+        border: none;
+    }
+    .footerSocialMedia{
+        margin: 0;
+        margin-top: 10px
+    }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 100px) and (max-width: 600px) {
     .upper-headers p, .text-cart{
         display: none;
+    }
+    .cart img{
+        border: none;
+    }
+    .third-header{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .footerSocialMedia a{
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 }

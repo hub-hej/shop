@@ -28,14 +28,6 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                                 <img src="logos/logo.png" alt="Logo ElHurtPlus" />
                             </a>
                         </div>
-                        <div class="search-menu">
-                            <form class="searchTop">
-                                <input type="text" class="searchTop__textfield" placeholder="Wpisz nazwę produktu"
-                                    name="search" autocomplete="off">
-                                <button type="submit" class="searchTop__submit"
-                                    aria-label="Przycisk do wyszukiwania frazesów"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
                         <div class="three-information">
                             <div class="upper-headers">
                                 <a href="#">
@@ -149,7 +141,7 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                     <div class="footer-information">
                         <div class="hide-info">
                             <h3>O NAS</h3>
-                            <a id="hide1" onClick="op('#poka1');"><span id="arrow-down1"
+                            <a class="hide" onClick="op('#poka1');"><span id="arrow-down1"
                                     class="material-symbols-outlined">keyboard_arrow_down</span></a>
                         </div>
                         <ul id="poka1">
@@ -165,7 +157,7 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                     <div class="footer-information">
                         <div class="hide-info">
                             <h3>INFORMACJE</h3>
-                            <a id="hide2" onClick="op('#poka2');"><span id="arrow-down2"
+                            <a class="hide" onClick="op('#poka2');"><span id="arrow-down2"
                                     class="material-symbols-outlined">keyboard_arrow_down</span></a>
                         </div>
                         <ul id="poka2">
@@ -181,7 +173,7 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                     <div class="footer-information">
                         <div class="hide-info">
                             <h3>MOJE KONTO</h3>
-                            <a id="hide3" onClick="op('#poka3');"><span id="arrow-down3"
+                            <a class="hide" onClick="op('#poka3');"><span id="arrow-down3"
                                     class="material-symbols-outlined">keyboard_arrow_down</span></a>
                         </div>
                         <ul id="poka3">
@@ -226,39 +218,45 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
             <section>
                 <div class="footerDetails">
                     <div class="row-up">
-                        <div class="galleryTextListFooterPayment">
-                            BEZPIECZNE PŁATNOŚCI
-                        </div>
+                    <div class="galleryTextListFooterPayment">
+                        BEZPIECZNE PŁATNOŚCI
+                        <a class="hide" onClick="op('#image-poka1');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
 
-                        <div class="galleryFooter">
-                            <div class="galleryListFoooterPayment">
-                                <img src="./photos/fotos-54.png" alt="" />
-                            </div>
+                        <div class="galleryFooter" id="image-poka1">
+                            <div class="gallery_flex">
+                                <div class="galleryListFoooterPayment">
+                                    <img src="./photos/fotos-54.png" alt="" />
+                                </div>
 
-                            <div class="galleryListFoooterPayment">
-                                <img src="./photos/fotos-53.png" alt="" />
-                            </div>
+                                <div class="galleryListFoooterPayment">
+                                    <img src="./photos/fotos-53.png" alt="" />
+                                </div>
 
-                            <div class="galleryListFoooterPayment">
-                                <img src="./photos/fotos-14.png" alt="" />
+                                <div class="galleryListFoooterPayment">
+                                    <img src="./photos/fotos-14.png" alt="" />
+                                </div>
                             </div>
                         </div>
 
                         <div class="galleryTextListFooterDelivery">
                             SZYBKA DOSTAWA
+                            <a class="hide" onClick="op('#image-poka2');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                         </div>
 
-                        <div class="galleryFooterDelivery">
-                            <div class="galleryListFooterDelivery">
-                                <img src="./photos/fotos-41.png" alt="" />
-                            </div>
-
-                            <div class="galleryListFooterDelivery">
-                                <img src="./photos/fotos-12.png" alt="" />
-                            </div>
-
-                            <div class="galleryListFooterDelivery">
-                                <img src="./photos/fotos-13.png" alt="" />
+                        <div class="galleryFooterDelivery" id="image-poka2">
+                            <div class="gallery_flex">
+                                <div class="galleryListFooterDelivery">
+                                    <img src="./photos/fotos-41.png" alt="" />
+                                </div>
+                                <div class="galleryListFooterDelivery">
+                                    <img src="./photos/fotos-12.png" alt="" />
+                                </div>
+                                <div class="galleryListFooterDelivery">
+                                    <img src="./photos/fotos-13.png" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
