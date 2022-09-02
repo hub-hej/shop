@@ -134,11 +134,17 @@ html {
     text-decoration: none;
     color: black;
 }
-.header a, .galleryFooter, .galleryItem,
+ .galleryFooter, .galleryItem,
 .galleryFooterDelivery, .footerSocialMedia__content, .recomm_produc_hide{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.header a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
 }
 .headers {
     text-align: left;
@@ -781,6 +787,16 @@ ul li {
     font-family: var(--font-family-primary);
     cursor: pointer;
 }
+.progress-container {
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+} 
+.progress-bar {
+    height: 2px;
+    background: #f74137;
+    width: 0%;
+}
 @media screen and (max-width: 1300px) {
     .logo img {
         width: 100%;
@@ -893,7 +909,7 @@ ul li {
     }
     #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, #socialMedia, #description_us,.w3-display-left,
     .w3-display-right, .w3-display-left-lights, .w3-display-right-lights,
-    .nav-items, .dropdown:hover .dropdown-content, .header img, .recommend-products::after, .distributor::after{
+    .nav-items, .dropdown:hover .dropdown-content, .recommend-products::after, .distributor::after{
         display: none;
     }
     .lights-row,
@@ -959,8 +975,6 @@ ul li {
         background: #E1E2E8;
     }
     .header a {
-        display: inline-block;
-        width: 100%;
         padding: 5px;
     }
     .nav-items.active {
@@ -985,6 +999,7 @@ ul li {
         left: 0;
         background-color: white;
         width: 100%;
+        height: 15%;
         padding: 10px;
         border: 1px solid #e1e2e8;
         gap: 25px;
