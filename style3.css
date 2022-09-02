@@ -108,7 +108,7 @@ header{
     align-items: center;
     justify-content: center;
 }
-.header a, .left-small-lights, .galleryFeatures{
+ .left-small-lights, .galleryFeatures{
     gap: 5px;
 }
 .headers {
@@ -124,6 +124,12 @@ header{
 .upper-headers a, .header-information a, .header a{
     text-decoration: none;
     color: black;
+}
+.header a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
 }
 .upper-headers img:hover{
     transition: 2s;
@@ -1326,6 +1332,16 @@ ul, ul li {
 .section_cate_hide{
     border-bottom: var(--border-primary);
 }
+.progress-container {
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+} 
+.progress-bar {
+    height: 2px;
+    background: #f74137;
+    width: 0%;
+}
 @media screen and (min-width: 100px) and (max-width: 1880px) {
     .overlay-content{
         top: 15%;
@@ -1454,7 +1470,7 @@ ul, ul li {
     }
     #poka1, #poka2, #poka3, #poka4, #poka-all, #poka6, #poka7, #poka8, #poka9, 
     #image-poka1, #image-poka2,
-    .nav-items, .dropdown:hover .dropdown-content, .header img, .fileAddItem-name, .section_header_container h2::after, 
+    .nav-items, .dropdown:hover .dropdown-content, .fileAddItem-name, .section_header_container h2::after, 
     .section_header_opinion h2::after, 
     .section_header_down_hide h2:after, 
     .basic-information h2::after,
@@ -1510,16 +1526,11 @@ ul, ul li {
     .headers:hover{
         background: #E1E2E8;
     }
-    .header a{
-        display: inline-block;
-        width: 100%;
-        padding: 5px;
-    }
     .nav-items.active{
         display: block!important;
         flex: 1 0 auto;
     }
-    .header{
+    .header, .header a{
         padding: 5px
     }
     .three-information{
@@ -1528,9 +1539,11 @@ ul, ul li {
         left: 0;
         background-color: white;
         width: 100%;
+        height: 15%;
         border: 1px solid #e1e2e8;
         z-index: 1;
         padding: 10px;
+        gap: 25px;
     }
     #myBtn{
         bottom: 95px;
@@ -1594,6 +1607,9 @@ ul, ul li {
     .lights-wrapper{
         width: 100%;
     }
+    .upper-menu{
+        justify-content: center;
+    }
 }
 @media screen and (min-width: 450px) and (max-width: 849px) {
     .productInfoBlock{
@@ -1624,7 +1640,7 @@ ul, ul li {
     .left-arrow-lights, .right-arrow-lights{
         opacity: 0;
     }
-    .text-cart, .buttondownload{
+    .text-cart, .buttondownload, .upper-headers p{
         display: none;
     }
     .shopping-button img{
@@ -1682,7 +1698,7 @@ ul, ul li {
     .two-text-variant{
         font-size: 10px;
     }
-    .w3-display-left, .w3-display-right, .upper-headers p, .text-offer, .tile-light p, .philips{
+    .w3-display-left, .w3-display-right, .text-offer, .tile-light p, .philips{
         display: none;
     }
     .user-login, .email-login{
@@ -1702,5 +1718,10 @@ ul, ul li {
         display: grid;
         justify-items: center;
         gap: 20px;
+    }
+    .footerSocialMedia a{
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 }
