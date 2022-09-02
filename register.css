@@ -271,6 +271,7 @@ html {
     margin-bottom: 20px;
     width: 100%;
     font-family: var(--font-family-secondary);
+    outline: none;
 }
 .btn.btn-primary {
     color: #fff;

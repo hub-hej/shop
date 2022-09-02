@@ -201,6 +201,7 @@ jQuery(function(){ // document ready to process
       text.style.display = "none";
     }
   }
+
   function myFunction2() {
     // Get the checkbox
     var checkBox = document.getElementById("myCheck2");
@@ -356,9 +357,9 @@ jQuery(function(){ // document ready to process
   }
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrollLoad()};
 
-function myFunction() {
+function scrollLoad() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
