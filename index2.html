@@ -21,7 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
 </head>
 
@@ -108,6 +108,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
             </div>
             <div class="header">
                 <button type="button" class="button-menu" aria-label="Przycisk na menu">
@@ -124,7 +127,8 @@
                     </div>
 
                     <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-5.png" alt="">OŚWIETLENIE WEWNĘTRZNE</a>
+                        <a href="#" target="_blank"><img src="photos/category-5.png" alt="">OŚWIETLENIE
+                            WEWNĘTRZNE</a>
                     </div>
 
                     <div class="headers">
@@ -132,19 +136,24 @@
                     </div>
 
                     <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-7.png" alt="">AUTOMATYKA, STEROWANIE</a>
+                        <a href="#" target="_blank"><img src="photos/category-7.png" alt="">AUTOMATYKA,
+                            STEROWANIE</a>
                     </div>
 
                     <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-8.png" alt="">ROZDZIELANIE I APARATURA</a>
+                        <a href="#" target="_blank"><img src="photos/category-8.png" alt="">ROZDZIELANIE I
+                            APARATURA</a>
                     </div>
 
                     <div class="headers">
-                        <a href="#" target="_blank"><img src="photos/category-10.png" alt="">MATERIALY INSTALACYJNE</a>
+                        <a href="#" target="_blank"><img src="photos/category-10.png" alt="">MATERIALY
+                            INSTALACYJNE</a>
                     </div>
                 </div>
             </div>
+
         </header>
+
         <main>
             <div class="third-header">
                 <div class="header-information"><a href="index.html" target="_blank">Strona główna</a></div>
@@ -216,20 +225,74 @@
 
                         <div class="option-filter">
                             <ul>
-                                <div class="li-filter">
-                                    <li class="removes">Filtr1 (parametr)</li>
+                                <div class="li-filter" id="text">
+                                    <li class="removes">Filtr 1 (parametr)</li>
                                     <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 1"><i
                                             class="fa-solid fa-xmark"></i></button>
                                 </div>
 
-                                <div class="li-filter">
-                                    <li class="removes">Filtr2 (parametr)</li>
+                                <div class="li-filter" id="text2">
+                                    <li class="removes">Filtr 2 (parametr)</li>
                                     <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 2"><i
                                             class="fa-solid fa-xmark"></i></button>
                                 </div>
 
-                                <div class="li-filter">
-                                    <li class="removes">Filtr3 (parametr)</li>
+                                <div class="li-filter" id="text3">
+                                    <li class="removes">Filtr 3 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text4">
+                                    <li class="removes">Filtr 4 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text5">
+                                    <li class="removes">Filtr 5 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text6">
+                                    <li class="removes">Filtr 6 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text7">
+                                    <li class="removes">Filtr 7 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text8">
+                                    <li class="removes">Filtr 8 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text9">
+                                    <li class="removes">Filtr 9 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text10">
+                                    <li class="removes">Filtr 10 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text11">
+                                    <li class="removes">Filtr 11 (parametr)</li>
+                                    <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="li-filter" id="text12">
+                                    <li class="removes">Filtr 12(parametr)</li>
                                     <button class="btn" onclick="removeFilter(this)" aria-label="usuń filtr 3"><i
                                             class="fa-solid fa-xmark"></i></button>
                                 </div>
@@ -243,88 +306,101 @@
                         <div class="option-producer">
                             <ul>
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr1">
+                                    <input type="checkbox" id="myCheck" onclick="myFunction()"
+                                        class="checkbox-button__input" class="choice1-1" name="choice1"
+                                        value="Parametr1">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr 1</span>
                                 </label>
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr2">
+                                    <input type="checkbox" id="myCheck2" onclick="myFunction2()"
+                                        class="checkbox-button__input" class="choice1-1" name="choice1"
+                                        value="Parametr2">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr 2</span>
                                 </label>
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr3">
+                                    <input type="checkbox" id="myCheck3" onclick="myFunction3()"
+                                        class="checkbox-button__input" class="choice1-1" name="choice1"
+                                        value="Parametr3">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr 3</span>
                                 </label>
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr4">
+                                    <input type="checkbox" id="myCheck4" onclick="myFunction4()"
+                                        class="checkbox-button__input" class="choice1-1" name="choice1"
+                                        value="Parametr4">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr 4</span>
                                 </label>
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr5">
+                                    <input type="checkbox" id="myCheck5" onclick="myFunction5()"
+                                        class="checkbox-button__input" class="choice1-1" name="choice1"
+                                        value="Parametr5">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr 5</span>
                                 </label>
                                 <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr6">
+                                    <input type="checkbox" id="myCheck6" onclick="myFunction6()"
+                                        class="checkbox-button__input" class="choice1-1" name="choice1"
+                                        value="Parametr6">
                                     <span class="checkbox-button__control"></span>
                                     <span class="checkbox-button__label">Parametr 6</span>
                                 </label>
                                 <div id="poka_checkbox">
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr7">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr 7</span>
-                                </label>
+                                    <label class="checkbox-button">
+                                        <input type="checkbox" id="myCheck7" onclick="myFunction7()"
+                                            class="checkbox-button__input" class="choice1-1" name="choice1"
+                                            value="Parametr7">
+                                        <span class="checkbox-button__control"></span>
+                                        <span class="checkbox-button__label">Parametr 7</span>
+                                    </label>
 
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr8">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr 8</span>
-                                </label>
+                                    <label class="checkbox-button">
+                                        <input type="checkbox" id="myCheck8" onclick="myFunction8()"
+                                            class="checkbox-button__input" class="choice1-1" name="choice1"
+                                            value="Parametr8">
+                                        <span class="checkbox-button__control"></span>
+                                        <span class="checkbox-button__label">Parametr 8</span>
+                                    </label>
 
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr9">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr 9</span>
-                                </label>
+                                    <label class="checkbox-button">
+                                        <input type="checkbox" id="myCheck9" onclick="myFunction9()"
+                                            class="checkbox-button__input" class="choice1-1" name="choice1"
+                                            value="Parametr9">
+                                        <span class="checkbox-button__control"></span>
+                                        <span class="checkbox-button__label">Parametr 9</span>
+                                    </label>
 
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr10">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr 10</span>
-                                </label>
+                                    <label class="checkbox-button">
+                                        <input type="checkbox" id="myCheck10" onclick="myFunction10()"
+                                            class="checkbox-button__input" class="choice1-1" name="choice1"
+                                            value="Parametr10">
+                                        <span class="checkbox-button__control"></span>
+                                        <span class="checkbox-button__label">Parametr 10</span>
+                                    </label>
 
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr11">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr 11</span>
-                                </label>
+                                    <label class="checkbox-button">
+                                        <input type="checkbox" id="myCheck11" onclick="myFunction11()"
+                                            class="checkbox-button__input" class="choice1-1" name="choice1"
+                                            value="Parametr11">
+                                        <span class="checkbox-button__control"></span>
+                                        <span class="checkbox-button__label">Parametr 11</span>
+                                    </label>
 
-                                <label class="checkbox-button">
-                                    <input type="checkbox" class="checkbox-button__input" class="choice1-1"
-                                        name="choice1" value="Parametr12">
-                                    <span class="checkbox-button__control"></span>
-                                    <span class="checkbox-button__label">Parametr 12</span>
-                                </label>
-                            </div>
+                                    <label class="checkbox-button">
+                                        <input type="checkbox" id="myCheck12" onclick="myFunction12()"
+                                            class="checkbox-button__input" class="choice1-1" name="choice1"
+                                            value="Parametr12">
+                                        <span class="checkbox-button__control"></span>
+                                        <span class="checkbox-button__label">Parametr 12</span>
+                                    </label>
+
+                                </div>
                             </ul>
                         </div>
                         <div class="text-expands">
-                            <a onClick="op('#poka_checkbox');">ROZWIŃ (6)</a>
+                            <a onClick="op('#poka_checkbox');">Więcej (6)</a>
                         </div>
                     </div>
 
@@ -595,7 +671,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -627,7 +703,7 @@
                                 </div>
                                 <div class="shoppingcart"><img src="icons/Group807.png" alt="Koszyk" /></div>
                             </div>
-                        </li>
+                            </li>
                         </div>
 
                         <div class="light" data-category="Parametr3">
@@ -640,7 +716,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -680,7 +756,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -723,7 +799,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -767,7 +843,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -811,7 +887,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -851,7 +927,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -891,7 +967,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -935,7 +1011,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -979,7 +1055,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
@@ -1019,7 +1095,7 @@
                             <div class="text-under-lights">
                                 <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
-                            <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
+                                <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>

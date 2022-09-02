@@ -188,4 +188,179 @@ jQuery(function(){ // document ready to process
   });
   });
 
+  function myFunction() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck");
+    // Get the output text
+    var text = document.getElementById("text");
   
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+  function myFunction2() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck2");
+    // Get the output text
+    var text = document.getElementById("text2");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction3() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck3");
+    // Get the output text
+    var text = document.getElementById("text3");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction4() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck4");
+    // Get the output text
+    var text = document.getElementById("text4");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction5() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck5");
+    // Get the output text
+    var text = document.getElementById("text5");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction6() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck6");
+    // Get the output text
+    var text = document.getElementById("text6");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction7() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck7");
+    // Get the output text
+    var text = document.getElementById("text7");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction8() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck8");
+    // Get the output text
+    var text = document.getElementById("text8");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction9() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck9");
+    // Get the output text
+    var text = document.getElementById("text9");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction10() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck10");
+    // Get the output text
+    var text = document.getElementById("text10");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction11() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck11");
+    // Get the output text
+    var text = document.getElementById("text11");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  function myFunction12() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck12");
+    // Get the output text
+    var text = document.getElementById("text12");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "flex";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
