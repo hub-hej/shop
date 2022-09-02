@@ -76,7 +76,7 @@ html {
     padding: 10px;
     font-family: var(--font-family-primary);
     display: flex;
-    gap: 35px;
+    gap: 60px;
     justify-content: space-between;
 }
 .upper-headers {
@@ -156,7 +156,6 @@ html {
 }
 .second-text-cart{
     font-family: 'Metropolis';
-    text-align: left;
 }
 .arrow-cart{
     display: flex;
@@ -268,9 +267,8 @@ html {
 .form-control {
     font-size: 15px;
     border: 1px solid #e1e2e8;
-    padding: 0 1.25rem;
-    margin-bottom: 25px;
-    height: 2.8947368421vw;
+    padding: 10px;
+    margin-bottom: 20px;
     width: 100%;
     font-family: var(--font-family-secondary);
 }
@@ -499,6 +497,60 @@ ul, ul li {
 .footerSocialMedia__content a:hover{
     border-color: white;
 }
+.footerSocialMedia__content{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.password{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-family-secondary);
+}
+.password-element{
+    width: 15px;
+    height: 20px;
+}
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    font-family: var(--font-family-primary);
+    margin-bottom: 10px;
+} 
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+} 
+.valid {
+    color: green;
+}
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+.invalid {
+    color: #f74137;
+    font-family: var(--font-family-secondary);
+} 
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+.form-group{
+    display: flex;
+    height: 100%;
+}
+.icon-register .icon {
+    padding: 10px;
+    background: #F74137;
+    color: white;
+    text-align: center;
+}
 @media screen and (max-width:1450px) {
     .searchTop__textfield {
         padding: 15px 90px;
@@ -541,11 +593,6 @@ ul, ul li {
         width: 100%;
     }
 }
-@media screen and (min-width: 100px) and (max-width: 1300px){
-    .upper-menu {
-        flex-direction: column;
-    }
-}
 @media screen and (min-width: 886px) {
     #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
         display: block!important;
@@ -568,7 +615,7 @@ ul, ul li {
         width: 100%;
         border-bottom: 1px solid hsla(0,0%,100%,.3);
     }
-    .galleryFooter{
+    .galleryFooter, .galleryFooterDelivery{
         border: none;
     }
     .footer-information{
@@ -636,9 +683,11 @@ ul, ul li {
         left: 0;
         background-color: white;
         width: 100%;
+        height: 15%;
         border: 1px solid #e1e2e8;
         z-index: 1;
         padding: 10px;
+        gap: 25px;
     }
     #myBtn{
         bottom: 95px;
@@ -664,6 +713,9 @@ ul, ul li {
         margin: 0;
         margin-top: 10px;
     }
+    .upper-menu{
+        justify-content: center;
+    }
 }
 @media screen and (min-width: 100px) and (max-width: 500px) {
     .upper-headers p, .text-cart{
@@ -676,9 +728,6 @@ ul, ul li {
         height: 35px;
         font-size: 14px;
         padding: 0 20px;
-    }
-    .form-control{
-        height: 5.894737vw;
     }
     .galleryFooter, .galleryFooterDelivery{
         display: grid;
@@ -694,5 +743,10 @@ ul, ul li {
     }
     .cart img{
         border: none;
+    }
+    .footerSocialMedia a{
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 }

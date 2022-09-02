@@ -125,7 +125,9 @@ if(isset($_POST['submit']))
                 <div class="menu">
                     <div class="upper-menu">
                         <div class="logo">
-                            <img src="logos/logo.png" alt="Logo ElHurtPlus" />
+                            <a href="index.html">
+                                <img src="logos/logo.png" alt="Logo ElHurtPlus" />
+                            </a>
                         </div>
                         <div class="three-information">
                             <div class="upper-headers">
@@ -246,17 +248,44 @@ if(isset($_POST['submit']))
                     ?>
                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off" class="formsy">
                         <div class="form-group">
+                            <div class="icon-register">
+                                <i class="fa fa-user icon"></i>
+                            </div>
                             <input type="text" name="first_name" placeholder="Wpisz swoje imie*" class="form-control" value="<?php echo ($valFirstName??'')?>" required>
                         </div>
+
                         <div class="form-group">
+                            <div class="icon-register">
+                                <i class="fa fa-user icon"></i>
+                            </div>
                             <input type="text" name="last_name" placeholder="Wpisz swoje nazwisko*" class="form-control" value="<?php echo ($valLastName??'')?>" required>
                         </div>
 
                         <div class="form-group">
+                            <div class="icon-register">
+                                <i class="fa fa-envelope icon"></i>
+                            </div>
                             <input type="text" name="email" placeholder="Wpisz adres email*" class="form-control" value="<?php echo ($valEmail??'')?>" required>
                         </div>
+
                         <div class="form-group">
-                            <input type="password" name="password" placeholder="Wpisz hasło*" class="form-control" value="<?php echo ($valPassword??'')?>" required>
+                            <div class="icon-register">
+                                <i class="fa fa-key icon"></i>
+                            </div>
+                            <input type="password" id="myPassword" name="password" placeholder="Wpisz hasło*" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" value="<?php echo ($valPassword??'')?>" required>
+                        </div>
+
+                        <label class="password">
+                            <input type="checkbox" class="password-element" onclick="myFunction()">Pokaż hasło
+                        </label>
+                        <br />
+
+                        <div id="message">
+                            <h3>Hasło musi zawierać następujące elementy:</h3>
+                            <p id="letter" class="invalid">Musi zawierać <b>małe</b> litery</p>
+                            <p id="capital" class="invalid">Musi zawierać <b>duże</b> litery</p>
+                            <p id="number" class="invalid">Musi zawierać <b>cyfre</b></p>
+                            <p id="length" class="invalid">Minimum <b>8 znaków</b></b></p>
                         </div>
 
                         <div class="regulations">
