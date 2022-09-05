@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
         $(obj).stop().slideToggle();
     };
 });
+
 //Button scroll
 var mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
@@ -20,6 +21,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
 // menu hamburger
 const hamburger = document.querySelector(".button-menu .hamburger");
 const header = document.querySelector(".nav-items");
@@ -98,21 +100,3 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-
-
-/* Przyda się to podczas logowania sie na swoje konto
-<input id="myInput" value="Some text..">
-<p id="text">WARNING! Caps lock is ON.</p>
-
-<script>
-var input = document.getElementById("myInput");
-var text = document.getElementById("text");
-input.addEventListener("keyup", function(event) {
-
-if (event.getModifierState("CapsLock")) {
-    text.style.display = "block";
-  } else {
-    text.style.display = "none"
-  }
-});
-</script> */
