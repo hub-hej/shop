@@ -361,6 +361,6 @@ if(isset($_POST['submit']))
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
         </footer>
 </div>
-<script src="login.js"></script>
+<script src="./scriptsJS/login.js"></script>
 </body>
 </html>

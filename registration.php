@@ -466,7 +466,7 @@ if(isset($_POST['submit']))
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
         </footer>
     </div>
-    <script src="register.js"></script>
+    <script src="./scriptsJS/register.js"></script>
     <!-- // $data = $pdo->query("SELECT * FROM users")->fetchAll();
     // // and somewhere later:
     // foreach ($data as $row) {

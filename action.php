@@ -291,7 +291,7 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
     </div>
     </div>
 </div>
-<script type="text/javascript" src="action.js"></script>
+<script type="text/javascript" src="./scriptsJS/action.js"></script>
 <?php
 require ('db.php');
 
