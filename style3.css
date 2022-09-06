@@ -1343,6 +1343,9 @@ ul, ul li {
     background: #f74137;
     width: 0%;
 }
+.dropdown_flex{
+    display: flex;
+}
 @media screen and (min-width: 100px) and (max-width: 1880px) {
     .overlay-content{
         top: 15%;

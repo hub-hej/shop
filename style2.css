@@ -66,6 +66,9 @@ header{
 #myBtn:hover {
     background-color: #f51c10;
 }
+.dropdown_flex{
+    display: flex;
+}
 .main {
     width: 100%;
     max-width: 100%;

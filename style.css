@@ -22,7 +22,10 @@
     --font-family-tertiary: 'Metropolis-Light';
     --background-color-button: #F74137;
 }
-* {
+.dropdown_flex{
+    display: flex;
+}
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
