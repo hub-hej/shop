@@ -1,45 +1,47 @@
-var $pagination = $('#pagination'),
-totalRecords = 0,
-records = [],
-displayRecords = [],
-recPerPage = 10,
-page = 1,
-totalPages = 0;
-$.ajax({
-      url: "http://dummy.restapiexample.com/api/v1/employees",
-      async: true,
-      dataType: 'json',
-      success: function (data) {
-                  records = data;
-                  console.log(records);
-                  totalRecords = records.length;
-                  totalPages = Math.ceil(totalRecords / recPerPage);
-                  //apply_pagination();
-      }
-});
-
-function generate_table() {
-    var tr;
-    $('#emp_body').html('');
-    for (var i = 0; i < displayRecords.length; i++) {
-          tr = $('');
-          tr.append("" + displayRecords[i].employee_name + "");
-          tr.append("" + displayRecords[i].employee_salary + "");
-          tr.append("" + displayRecords[i].employee_age + "");
-          $('#emp_body').append(tr);
-    }
-}
-
-function apply_pagination() {
-    $pagination.twbsPagination({
-          totalPages: totalPages,
-          visiblePages: 6,
-          onPageClick: function (event, page) {
-                displayRecordsIndex = Math.max(page - 1, 0) * recPerPage;
-                endRec = (displayRecordsIndex) + recPerPage;
-               
-                displayRecords = records.slice(displayRecordsIndex, endRec);
-                generate_table();
-          }
+const products = [
+    { name: "Macbook Air", price: "180000", ram: 16 },
+    { name: "Samsung Galaxy M21", price: "13999", ram: 4 },
+    { name: "Redmi Note 9", price: "11999", ram: 4 },
+    { name: "OnePlus 8T 5G", price: "45999", ram: 12 }
+  ];
+  
+  const sortByDropdown = document.querySelector(".sort-by");
+  const sortOrderDropdown = document.querySelector(".sort-order");
+  const container = document.querySelector(".products");
+  
+  const displayProducts = (products) => {
+    let result = "";
+  
+    products.forEach(({ name, price, ram }) => {
+      result += `
+     <div class="product">
+      <div><strong>Name:</strong><span>${name}</span></div>
+      <div><strong>Price:</strong><span>${price}</div>
+      <div><strong>Ram:</strong><span>${ram} GB</div>
+     </div>
+    `;
     });
-}
+  
+    container.innerHTML = result;
+  };
+  
+  sortByDropdown.addEventListener("change", () => {
+    const sortByValue = sortByDropdown.value; // price or ram value
+    const sortOrderValue = sortOrderDropdown.value; // asc or desc value
+  
+    const sorted = _.orderBy(products, [sortByValue], sortOrderValue);
+  
+    displayProducts(sorted);
+  });
+  
+  sortOrderDropdown.addEventListener("change", () => {
+    const event = new Event("change");
+    const sortByValue = sortByDropdown.value;
+  
+    if (sortByValue) {
+      sortByDropdown.dispatchEvent(event);
+    }
+  });
+  
+  displayProducts(products);
+  

@@ -200,7 +200,7 @@ if(isset($_POST['submit']))
 						
 						<div class="loginBox__links">
 							<a href="registration.php">Zarejestruj się</a>
-							<a href="">Zapomniałeś(aś) hasła?</a>
+							<a href="password-reminder.html">Zapomniałeś(aś) hasła?</a>
 						</div>
 
 						<div class="back_login">

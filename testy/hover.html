@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
+
 <head>
-    <meta charset="UTF8">
-    <title>Title</title>
-    <link rel="stylesheet" href="hover.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="jquery.twbsPagination.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Generics</title>
+   <meta name="description" content="This is the description">
+   <link rel="stylesheet" href="hover.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
+
 <body>
-  <table id="employee" class="table table-bordered table table-hover" width="100%" cellspacing="0"><colgroup><col /><col /><col /></colgroup>
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Salary</th>
-    <th>Age</th>
-    </tr>
-    </thead>
-    <tbody id="emp_body"></tbody>
-    </table>
-    <div id="pager"></div>
-    <script src="hover.js"></script>
-  </body>
+   <div class="filters">
+      <div>
+        Sort By:
+        <select class="sort-by">
+          <option value="">Select one</option>
+          <option value="price">Price</option>
+          <option value="ram">Ram</option>
+        </select>
+      </div>
+      <div>
+        Sort Order:
+        <select class="sort-order">
+          <option value="">Select one</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="products"></div>
+   <script src="hover.js"></script>
+</body>
 </html>

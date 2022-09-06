@@ -20,6 +20,9 @@
 </head>
 
 <body>
+    <?php
+    error_reporting(E_ALL ^ E_NOTICE);
+    ?>
     <div class="full-page">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
         <header>
@@ -50,14 +53,16 @@
                                 </div>
                                 <div class="menu-paragraph">
                                     <div class="dropdown">
+                                        <div class="dropdown_flex">
                                         <a href="login.php">
                                             <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
                                             <?php session_start();
                                                 if($_SESSION['first_name'] == true){ 
                                                     echo $_SESSION["first_name"];
                                                     echo '<a href="logout.php">';
-                                                } else {
-                                                    echo '<a href="index.html"><span>Login/Register</span></a></li>';
+                                                }else
+                                                { 
+                                                    echo '<a href="index.html"><p>MOJE KONTO</p>';
                                                 }
                                             ?>
                                             <div class="dropdown-content">
@@ -70,6 +75,7 @@
                                                 </div>
                                             </div>
                                         </a>
+                                            </div>
                                     </div>
                                 </div>
 
@@ -113,7 +119,7 @@
                     </button>
                     <div class="nav-items">
                         <div class="headers">
-                            <a href="index2.html" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
+                            <a href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
                                 ŚWIATŁA</a>
                         </div>
 
