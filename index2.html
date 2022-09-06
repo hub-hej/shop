@@ -301,7 +301,12 @@
 
                     <div class="producer">
                         <h3>PRODUCENT</h3>
-
+                        <input class="productSubmitInput" name="AddToCart_Submit" type="submit" value="Purchase Now" onclick="AddToCart(150613,5623468,'',4,'','',true);return false;" />
+                        <script type="text/javascript">
+                            function AddToCart(){
+                            document.location.reload(true);
+                            }
+                            </script>
                         <div class="option-producer">
                             <ul>
                                 <label class="checkbox-button">
@@ -596,7 +601,6 @@
                             </div>
 
                             <div class="sort-quantity">
-                            <div class="sort-quantity">
                                 <select class="quantities choice">
                                     <option>Brak</option>
                                     <option>1</option>
@@ -617,7 +621,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
                     <div class="lights-row" id="product-list">
                         <div class="light" data-category="Parametr1">
