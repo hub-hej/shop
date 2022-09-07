@@ -19,7 +19,12 @@
 
 <body>
 <?php
-    error_reporting(E_ALL ^ E_NOTICE);
+    session_start();
+    if (!isset($_SESSION['id']))
+    {
+        header("Location: login.php");
+        die();
+    }
     ?>
     <div class="full-page">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
@@ -52,7 +57,7 @@
                                 <div class="dropdown_flex">
                                     <a href="login.php">
                                         <img src="icons/icon_03.png" alt="Telefon - Moje Konto" />
-                                        <?php session_start();
+                                        <?php
                                                 if($_SESSION['first_name'] == true){ 
                                                     echo $_SESSION["first_name"];
                                                     echo '<a href="logout.php">';
