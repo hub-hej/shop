@@ -290,3 +290,32 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+function calc(n) {
+  var price = document.getElementsByClassName("ticket_price")[n].innerHTML;
+  var noTickets = document.getElementsByClassName("num")[n].value;
+  var total = parseFloat(price) * noTickets;
+  if (!isNaN(total))
+    document.getElementsByClassName("total")[n].innerHTML = total;
+}
+
+/*For total*/
+$(document).ready(function() {
+  $(".tile-light").on("input", ".quantity", function() {
+    var price = +$(".price").data("price");
+    var quantity = +$(this).val();
+    $("#total").text( price * quantity + "zł" );
+  })
+
+  var $buttonPlus = $('.plus-light');
+  var $buttonMin = $('.minus-light');
+  var $quantity = $('.quantity');
+  
+  /*For plus and minus buttons*/
+  $buttonPlus.click(function() {
+    $quantity.val(parseInt($quantity.val())).trigger('input');
+  });
+  
+  $buttonMin.click(function() {
+    $quantity.val(Math.max(parseInt($quantity.val()))).trigger('input');
+  });
+})

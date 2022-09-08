@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -267,15 +268,16 @@
                                 <div class="productParam_value">
                                     <s>656,65 zł</s>
                                     <br />
-                                    <b>442,85zł</b>
+                                    <b><span id="total">442.50zł</span></b>
+                                    <p class="price" data-price="442.50"></p>
                                 </div>
                                 <div class="tile-light">
                                     <div class="number-light">
-                                        <button class="minus-light">-</button>
+                                        <button type="button" class="minus-light">-</button>
                                         <label>
-                                            <input type="number" value="1" disabled />
+                                            <input type="number" class="quantity" value="1" />
                                         </label>
-                                        <button class="plus-light">+</button>
+                                        <button type="button" class="plus-light">+</button>
                                     </div>
                                     <div class="shopping-button">
                                         <a href=""><button class="button button8"><img src="icons/Group807.png"

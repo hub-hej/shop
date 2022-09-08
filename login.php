@@ -194,7 +194,7 @@ if(isset($_POST['submit']))
 
 							<div class="warning_capslock">
 								<input type="password" name="password" placeholder="Wpisz hasło" class="form-control" id="capsLock">
-								<p id="text">UWAGA! CapsLock jest włączony.</p>
+								<p id="text">UWAGA! Masz włączony CapsLock.</p>
 							</div>
 						</div>
 						
