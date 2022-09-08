@@ -165,7 +165,7 @@ html {
     list-style: none;
     display: block;
 }
-.hamburger, .image-back, .hide {
+.hamburger, .image-back, .hide, .none, .search-button, .distributor, .description_why_us {
     display: none;
 }
 .bar {
@@ -182,13 +182,13 @@ html {
     border: none;
     background-color: white;
 }
-.arrow-cart, .cart-family, .header {
+.arrow-cart, .cart-family, .header, .icon_text_newsletter, .email-group {
     display: flex;
 }
 .menu-paragraph, .menu-paragraph a, .cart, form {
     gap: 5px;
 }
-.menu-paragraph, .menu-paragraph a, .cart, .minus, .plus, .add-information{
+.menu-paragraph, .menu-paragraph a, .cart, .minus, .plus, .add-information, .newsletter_container, .checkbox-button{
     display: flex;
     align-items: center;
 }
@@ -227,7 +227,7 @@ html {
     line-height: 50px;
     background-color: white;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .block-first, .formul {
     display: block;
 }
 .menu-paragraph p:hover::before {
@@ -789,9 +789,6 @@ ul li {
 .login-user p, .register-user p{
     width: 100px;
 }
-.distributor, .description_why_us{
-    display: none;
-}
 .hide{
     margin: 0!important;
 }
@@ -817,11 +814,8 @@ ul li {
     align-items: center;
     justify-content: space-around;
 }
-.newsletter img{
+.newsletter img, .email-group{
     width: 100%;
-}
-.icon_text_newsletter{
-    display: flex;
 }
 .icon_newsletter{
     position: relative;
@@ -847,13 +841,7 @@ ul li {
     width: 100%;
     margin-right: 15px;
 }
-.email-group{
-    display: flex;
-    width: 100%;
-}
 .newsletter_container{
-    display: flex;
-    align-items: center;
     position: absolute;
     width: 100%;
 }
@@ -879,15 +867,7 @@ ul li {
     font-family: var(--font-family-secondary);
     outline: none;
 }
-.none, .search-button{
-    display: none;
-}
-.block-first{
-    display: block;
-}
 .checkbox-button{
-    display: flex;
-    align-items: center;
     cursor: pointer;
     margin-top: 5px;
 }
@@ -918,9 +898,6 @@ ul li {
     color: #F74137;
     margin: 4px;
     font-size: 15px;
-}
-.formul{
-    display: block;
 }
 @media screen and (max-width: 1300px) {
     .logo img {
