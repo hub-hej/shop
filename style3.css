@@ -1302,7 +1302,7 @@ ul, ul li {
     border: none;
     background-color: white;
 }
-.hamburger, .hide, i.fa-angle-right, i.fa-angle-left {
+.hamburger, .hide, i.fa-angle-right, i.fa-angle-left, .price {
     display: none;
 }
 .bar {
