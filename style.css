@@ -165,7 +165,7 @@ html {
     list-style: none;
     display: block;
 }
-.hamburger, .image-back, .hide, .none, .search-button, .distributor, .description_why_us {
+.hamburger, .image-back, .hide, .search-button, .distributor, .description_why_us {
     display: none;
 }
 .bar {
@@ -188,9 +188,14 @@ html {
 .menu-paragraph, .menu-paragraph a, .cart, form {
     gap: 5px;
 }
-.menu-paragraph, .menu-paragraph a, .cart, .minus, .plus, .add-information, .newsletter_container, .checkbox-button{
+.menu-paragraph, .menu-paragraph a, .cart, .minus, .plus, .add-information, .checkbox-button{
     display: flex;
     align-items: center;
+}
+.newsletter_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .menu-paragraph img:hover {
     transition: 2s;
@@ -217,7 +222,7 @@ html {
     position: relative;
     display: inline-block;
 }
-.dropdown-content {
+.dropdown-content, .dropdown-content1{
     display: none;  
     position: absolute;
     min-width: 100%;
@@ -227,7 +232,11 @@ html {
     line-height: 50px;
     background-color: white;
 }
-.dropdown:hover .dropdown-content, .block-first, .formul {
+
+.dropdown-content1{
+    margin-top: 32px;
+}
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content1, .block-first, .formul {
     display: block;
 }
 .menu-paragraph p:hover::before {
@@ -614,9 +623,13 @@ footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
+    font-size: 20px;
     width: 20%;
     font-family: var(--font-family-primary);
+    cursor: pointer;
+}
+.sign-up span{
+    cursor: pointer;
 }
 .button1, .button3, .login, .registrat, .button6 {
     background-color: var(--background-color-button);
@@ -899,6 +912,12 @@ ul li {
     margin: 4px;
     font-size: 15px;
 }
+.none{
+    display: none;
+}
+.block-first{
+    display: block;
+}
 @media screen and (max-width: 1300px) {
     .logo img {
         width: 100%;
@@ -913,37 +932,18 @@ ul li {
     gap: 10px!important;
     flex-wrap: wrap;
     }
-    .newsletterBar_header{
-        font-size: calc(1.38889vw + 7.33333px);
-    }
-    .icon_newsletter{
-        border: none;
-        font-size: 8.421053vw;
-    }
     .newsletterBar_form{
         width: 80%;
         margin: 0 auto;
         line-height: 1.3;
     }
-    .newsletter_container{
-        flex-direction: column;
-        gap: 15px;
-    }
     .newsletterBar_header{
-        text-align: center;
-        font-size: calc(3.38889vw + 15.33333px);
+        text-align: left;
         width: auto;
         line-height: 1.3;
     }
-    .block-first, .button6 p{
-        display: none;
-    }
     .search-button{
         display: block;
-    }
-    .none{
-        display: block;
-        height: 375px;
     }
 }
 @media screen and (max-width: 1165px) {
@@ -968,8 +968,11 @@ ul li {
     .module_body, .fa-phone-volume{
         font-size: 35px;
     }
-    .header, .sign-up{
+    .header{
         padding: 0;
+    }
+    .sign-up{
+        padding: 10px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -1046,7 +1049,7 @@ ul li {
     }
     #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, #socialMedia, #description_us,.w3-display-left,
     .w3-display-right, .w3-display-left-lights, .w3-display-right-lights,
-    .nav-items, .dropdown:hover .dropdown-content, .recommend-products::after, .distributor::after{
+    .nav-items, .dropdown:hover .dropdown-content, .dropdown-content1, .recommend-products::after, .distributor::after{
         display: none;
     }
     .lights-row,
@@ -1127,7 +1130,7 @@ ul li {
     .icons img{
         width: 40px;
     }
-    .icon-text{
+    .icon-text, .sign-up{
         font-size: 13px;
     }
     .menu-elements{
@@ -1191,28 +1194,25 @@ ul li {
         margin-left: 0;
         margin-right: 5px;
     }
-    .icon_newsletter{
-        border: none;
-        font-size: 8.421053vw;
-    }
     .newsletterBar_form{
         width: 80%;
         margin: 0 auto;
     }
-    .newsletter_container{
-        flex-direction: column;
-        gap: 10px;
-    }
     .newsletterBar_header{
-        text-align: center;
-        font-size: calc(3.38889vw + 15.33333px);
-        width: auto;
+        text-align: left;
+        font-size: calc(1.3vw + 11.33333px);;
     }
     .checkbox-button__control{
         width: 60px;
     }
-    .none{
-        height: 100%;
+    .sign-up{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletterBar_desc{
+        font-size: .675rem;
     }
 }
 @media screen and (max-width: 600px) {
@@ -1225,7 +1225,7 @@ ul li {
     .arrow-cart img {
         width: 100%;
     }
-    .menu-paragraph p, .text-cart, .contact{
+    .menu-paragraph p, .text-cart, .contact, .icon_text_newsletter, .block-first, .sign-up span{
         display: none;
     }
     .galleryRecommended{
@@ -1254,6 +1254,22 @@ ul li {
     }
     .checkbox-button__label{
         font-size: 12px;
+    }
+    .newsletter_container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .none{
+        display: block;
+    }
+    .newsletterBar_header{
+        text-align: center;
+    }
+    .newsletterBar_header{
+        font-size: calc(1.38889vw + 25.33333px);
+    }
+    .newsletterBar_desc{
+        font-size: .875rem;
     }
 }
 @media screen and (min-width: 100px) and (max-width: 500px){
@@ -1285,7 +1301,7 @@ ul li {
     .about-section p{
         margin: 15px auto;
     }
-    .icon_text_newsletter, .checkbox-button{
+    .checkbox-button{
         display: none;
     }
     .newsletterBar_header{
