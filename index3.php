@@ -67,16 +67,11 @@
                                                     echo '<a href="index.html"><p>MOJE KONTO</p>';
                                                 }
                                             ?>
-                                        <div class="dropdown-content">
+                                        <div class="dropdown-content1">
                                             <div class="log-reg-user">
                                                 <div class="login-user">
                                                     <a href="login.php" class="login login-user">
-                                                        <p>Zaloguj się</p>
-                                                    </a>
-                                                </div>
-                                                <div class="register-user">
-                                                    <a href="registration.php" class="registrat register-user">
-                                                        <p>Rejestracja</p>
+                                                        <p>Wyloguj się</p>
                                                     </a>
                                                 </div>
                                             </div>

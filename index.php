@@ -70,7 +70,7 @@
                                                     echo '<a href="index.html"><p>MOJE KONTO</p>';
                                                 }
                                             ?>
-                                            <div class="dropdown-content">
+                                            <div class="dropdown-content1">
                                                 <div class="log-reg-user">
                                                     <div class="login-user">
                                                         <a href="logout.php" class="login login-user">
@@ -442,6 +442,31 @@
                 </div>
             </div>
         </main>
+
+        <section>
+            <div class="newsletter" id="newsletter_elements">
+                <img src="./photos/banner-big-8-pl.jpg" alt="banner" class="block-first"/> 
+                <img src="./photos/banner-small-8-pl.jpg" alt="banner-2" class="none"/>
+
+                <div class="newsletter_container">
+                    <div class="icon_text_newsletter">
+                        <div class="icon_newsletter">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                    </div>
+
+                    <div class="newsletterBar_header">
+                        <span>Zapisz się do newslettera</span>
+                        <div class="newsletterBar_desc">
+                            <span>Zapisz się do newslettera na naszym sklepie internetowym
+                                i odbierz rabat w wysokości <b>20 zł na pierwsze zamówienie</b></span>
+                        </div>
+                    </div>
+
+                    <a href="newsletter.php" class="sign-up button6"></i><span>Przejdź dalej </span><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
 
         <section>
             <div class="under-footer">

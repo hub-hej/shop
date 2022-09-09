@@ -83,7 +83,7 @@
                                                     echo '<a href="index.html"><p>MOJE KONTO</p>';
                                                 }
                                             ?>
-                                        <div class="dropdown-content">
+                                        <div class="dropdown-content1">
                                             <div class="log-reg-user">
                                                 <div class="login-user">
                                                     <a href="login.php" class="login login-user">
