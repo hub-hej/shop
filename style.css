@@ -201,11 +201,11 @@ html {
     transition: 2s;
     transform: rotate(360deg);
 }
-.menu-paragraph p, .cart-brother {
+.menu-paragraph p,  .cart-brother {
     position: relative;
     cursor: pointer;
 }
-.menu-paragraph p::before {
+.menu-paragraph p::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -222,7 +222,7 @@ html {
     position: relative;
     display: inline-block;
 }
-.dropdown-content, .dropdown-content1{
+.dropdown-content, .dropdown-content1, .dropdown_contact{
     display: none;  
     position: absolute;
     min-width: 100%;
@@ -232,11 +232,14 @@ html {
     line-height: 50px;
     background-color: white;
 }
-
+.dropdown_contact{
+    width: 330px;
+    top: 100%;
+}
 .dropdown-content1{
     margin-top: 32px;
 }
-.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content1, .block-first, .formul {
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content1, .dropdown:hover .dropdown_contact, .block-first, .formul {
     display: block;
 }
 .menu-paragraph p:hover::before {
@@ -518,6 +521,11 @@ html {
 .general_module{
     font-family: var(--font-family-secondary);
 }
+.general_module_dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .module_body{
     margin-top: 30px;
     font-size: 2.75rem;
@@ -525,12 +533,21 @@ html {
     padding-bottom: 1.25rem;
     cursor: pointer;
 }
-.module_body a:hover, .fa-phone-volume{
+.module_body_dropdown{
+    font-size: 2.75rem;
+    font-family: var(--font-family-secondary);
+    cursor: pointer;
+}
+.module_body a:hover, .module_body_dropdown a:hover, .fa-phone-volume{
     color: #f74137;
 }
 .module_information{
     font-size: .875rem;
     padding-bottom: 1.25rem;
+}
+.module_information_dropdown{
+    font-size: .875rem;
+    font-family: var(--font-family-primary);
 }
 .fa-phone-volume{
     transform: rotate(-45deg);
@@ -880,38 +897,6 @@ ul li {
     font-family: var(--font-family-secondary);
     outline: none;
 }
-.checkbox-button{
-    cursor: pointer;
-    margin-top: 5px;
-}
-.checkbox-button__input{
-    opacity: 0;
-    position: absolute;
-}
-.checkbox-button__control{
-    position: relative;
-    display: inline-block;
-    width: 35px;
-    height: 30px;
-    vertical-align: middle;
-    border: var(--border-primary);
-}
-.checkbox-button__label{
-    margin-left: 10px;
-    font-family: var(--font-family-secondary);
-    color: white;
-    font-size: 15px;
-}
-.checkbox-button__input:checked+.checkbox-button__control:after {
-    content: "\2714";
-    display: block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    color: #F74137;
-    margin: 4px;
-    font-size: 15px;
-}
 .none{
     display: none;
 }
@@ -967,6 +952,9 @@ ul li {
     }
     .module_body, .fa-phone-volume{
         font-size: 35px;
+    }
+    .module_body_dropdown{
+        font-size: 25px;
     }
     .header{
         padding: 0;
@@ -1051,6 +1039,9 @@ ul li {
     .w3-display-right, .w3-display-left-lights, .w3-display-right-lights,
     .nav-items, .dropdown:hover .dropdown-content, .dropdown-content1, .recommend-products::after, .distributor::after{
         display: none;
+    }
+    .dropdown_contact{
+        display: none!important;
     }
     .lights-row,
     .about-section .icons {
@@ -1163,6 +1154,9 @@ ul li {
     }
     .module_body, .fa-phone-volume{
         font-size: 30px;
+    }
+    .module_body_dropdown{
+        font-size: 20px;
     }
     .recomm_produc_hide h2{
         text-align: left;

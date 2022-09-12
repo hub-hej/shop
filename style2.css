@@ -34,7 +34,7 @@
     font-family: var(--font-family-primary);
 }
 .left-side, .right-side, .sort, .quantity, .text-under-lights p, .first-left-menu ul, 
-.general_module{
+.general_module, .module_body_dropdown{
     font-family: var(--font-family-secondary);
 }
 html {
@@ -142,7 +142,7 @@ header{
     gap: 5px;
 }
 .header a, .sort-option, .sort-quantity, .minus, .galleryFooter, .galleryFooterDelivery,
-.footerSocialMedia, .tile-minus, .tile-plus {
+.footerSocialMedia, .tile-minus, .tile-plus, .upper-headers a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +155,7 @@ header{
 .headers a.ex1:visited, .checkbox-button:hover{
     color: #F74137;
 }
-.upper-headers, .upper-headers a, .cart, .light-text-image-menu, .left-side, .right-side,
+.upper-headers, .cart, .light-text-image-menu, .left-side, .right-side,
 .sort, .quantity, .pagination, .number, .option-producer, .checkbox-button{
     display: flex;
     align-items: center;
@@ -193,7 +193,7 @@ header{
     position: relative;
     display: inline-block;
 }
-.dropdown-content {
+.dropdown-content, .dropdown_contact {
     display: none;  
     position: absolute;
     min-width: 100%;
@@ -203,8 +203,23 @@ header{
     line-height: 50px;
     background-color: white;
 }
-.dropdown:hover .dropdown-content {
+.dropdown_contact{
+    width: 330px;
+}
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown_contact {
     display: block;
+}
+.contact{
+    border: none;
+    background-color: white;
+    font-family: var(--font-family-primary);
+    cursor: pointer;
+}
+.general_module_dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family-primary);
 }
 .login-user p, .register-user p{
     width: 100px;
@@ -212,7 +227,8 @@ header{
 .login, .registrat{
     margin: 4px 2px;
 }
-.cart-family, .main-page, .arrow-cart, .text-expand a, .third-header, .tile-page, .searchTop{
+.cart-family, .main-page, .arrow-cart, .text-expand a, .third-header, .tile-page, .searchTop,
+.forms{
     display: flex;
 }
 .cart {
@@ -1137,6 +1153,9 @@ input[type=text]:focus {
     .module_body, .fa-phone-volume{
         font-size: 35px;
     }
+    .module_body_dropdown{
+        font-size: 25px;
+    }
 }
 @media screen and (max-width: 1000px) {
     .range-size-filter {
@@ -1225,6 +1244,9 @@ input[type=text]:focus {
     }
     #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
         display: none;
+    }
+    .dropdown_contact{
+        display: none!important;
     }
     .under-footer {
         grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1337,6 +1359,15 @@ input[type=text]:focus {
         margin-left: 0;
         margin-right: 5px;
     }
+    .forms img{
+        height: 32px;
+        width: 32px;
+    }
+    .forms{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
 }
 @media screen and (max-width: 750px) {
     .first-left-menu h3,
@@ -1437,7 +1468,7 @@ input[type=text]:focus {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 450px) {
-    .pagination, .text-cart, .upper-headers p {
+    .pagination, .text-cart, .upper-headers p, .contact {
         display: none;
     }
     .text-main-image {
