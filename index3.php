@@ -35,17 +35,47 @@
                     <div class="upper-menu">
                         <div class="logo-search">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="logos/logo.png" alt="Logo ElHurtPlus" class="responsive-image" />
                                 </a>
                             </div>
                         </div>
                         <div class="three-information">
                             <div class="upper-headers">
-                                <a href="#">
-                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                    <p>KONTAKT</p>
-                                </a>
+                            <div class="dropdown">
+                                <form action="#section1" class="forms">
+                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />    
+                                        <button class="contact">KONTAKT</button>
+                                            <div class="dropdown_contact">
+                                                <div class="info_contact">
+                                                    <h3>MASZ PYTANIE?</h3>
+                                                    <div class="general_module_dropdown">
+                                                        <div class="module_body_dropdown">
+                                                            <a href="tel:+48123731050">
+                                                                <i class="fa-solid fa-phone-volume"></i> +48 18 737
+                                                                21 67
+                                                            </a>
+                                                        </div>
+
+                                                        <span class="module_information_dropdown">
+                                                            Pon.-pt. 7.00-19.00, Sob. 8.00 - 14.00
+                                                        </span>
+
+                                                        <span class="module_information_dropdown">
+                                                            <a
+                                                                href="mailto:info@elhurtplus.pl">info@elhurtplus.pl</a>
+                                                        </span>
+
+                                                        <span class="module_information_dropdown">
+                                                            ul. Osieczany 585
+                                                            <br>
+                                                            32-400 Myslenice
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                </div>
                             </div>
                             <div class="upper-headers">
                                 <a href="#">
@@ -120,7 +150,7 @@
                 </button>
                 <div class="nav-items">
                     <div class="headers">
-                        <a href="index2.html" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA ŚWIATŁA</a>
+                        <a href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA ŚWIATŁA</a>
                     </div>
 
                     <div class="headers">
@@ -150,7 +180,7 @@
         <main>
             <div class="third-header">
                 <div class="header-information">
-                    <a href="index.html" target="_blank">
+                    <a href="index.php" target="_blank">
                         <p>Strona główna</p>
                     </a>
                 </div>
@@ -1055,6 +1085,32 @@
                     </div>
                 </div>
             </section>
+
+            <section>
+                <div class="newsletter">
+                    <img src="./photos/banner-big-8-pl.jpg" alt="banner" class="block-first"/> 
+                    <img src="./photos/banner-small-8-pl.jpg" alt="banner-2" class="none"/>
+
+                    <div class="newsletter_container">
+                        <div class="icon_text_newsletter">
+                            <div class="icon_newsletter">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                        </div>
+
+                        <div class="newsletterBar_header">
+                            <span>Zapisz się do newslettera</span>
+                            <div class="newsletterBar_desc">
+                                <span>Zapisz się do newslettera na naszym sklepie internetowym
+                                    i odbierz rabat w wysokości <b>20 zł na pierwsze zamówienie</b></span>
+                            </div>
+                        </div>
+
+                        <a href="newsletter.php" class="sign-up button10"></i><span>Przejdź dalej </span><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <div class="under-footer">
                     <div class="footer-information">

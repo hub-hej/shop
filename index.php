@@ -45,10 +45,42 @@
                             </div>
                             <div class="menu-elements">
                                 <div class="menu-paragraph">
-                                    <form action="#section1">
-                                        <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                        <form action="#section1" class="forms"><button class="contact">KONTAKT</button></form>
-                                </form>
+                                <div class="dropdown">
+                                        <form action="#section1">
+                                            <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
+                                            <form action="#section1" class="forms"><button
+                                                    class="contact">KONTAKT</button>
+                                                <div class="dropdown_contact">
+                                                    <div class="info_contact">
+                                                        <h3>MASZ PYTANIE?</h3>
+                                                        <div class="general_module_dropdown">
+                                                            <div class="module_body_dropdown">
+                                                                <a href="tel:+48123731050">
+                                                                    <i class="fa-solid fa-phone-volume"></i> +48 18 737
+                                                                    21 67
+                                                                </a>
+                                                            </div>
+
+                                                            <span class="module_information_dropdown">
+                                                                Pon.-pt. 7.00-19.00, Sob. 8.00 - 14.00
+                                                            </span>
+
+                                                            <span class="module_information_dropdown">
+                                                                <a
+                                                                    href="mailto:info@elhurtplus.pl">info@elhurtplus.pl</a>
+                                                            </span>
+
+                                                            <span class="module_information_dropdown">
+                                                                ul. Osieczany 585
+                                                                <br>
+                                                                32-400 Myslenice
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </form>
+                                    </div>
                                 </div>
                                 <div class="menu-paragraph">
                                     <a href="#">
@@ -359,37 +391,37 @@
             <div class="section-body" id="distributors">
                 <div class="galleryRecommended">
                     <div class="galleryItem">
-                        <a href="index.html" target="_blank">
+                        <a href="index.php" target="_blank">
                             <img src="./photos/fotos-46.png" alt="" />
                         </a>
                     </div>
 
                     <div class="galleryItem">
-                        <a href="index.html" target="_blank">
+                        <a href="index.php" target="_blank">
                             <img src="./photos/fotos-47.png" alt="" />
                         </a>
                     </div>
 
                     <div class="galleryItem">
-                        <a href="index.html" target="_blank">
+                        <a href="index.php" target="_blank">
                             <img src="./photos/fotos-48.png" alt="" />
                         </a>
                     </div>
 
                     <div class="galleryItem">
-                        <a href="index.html" target="_blank">
+                        <a href="index.php" target="_blank">
                             <img src="./photos/fotos-49.png" alt="" />
                         </a>
                     </div>
 
                     <div class="galleryItem">
-                        <a href="index.html" target="_blank">
+                        <a href="index.php" target="_blank">
                             <img src="./photos/fotos-50.png" alt="" />
                         </a>
                     </div>
 
                     <div class="galleryItem">
-                        <a href="index.html" target="_blank">
+                        <a href="index.php" target="_blank">
                             <img src="./photos/fotos-51.png" alt="" />
                         </a>
                     </div>

@@ -33,10 +33,39 @@
                         </div>
                         <div class="three-information">
                             <div class="upper-headers">
-                                <a href="#">
-                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                    <p>KONTAKT</p>
-                                </a>
+                                <div class="dropdown">
+                                    <form action="#section8" class="forms">
+                                        <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
+                                        <button class="contact">KONTAKT</button>
+                                    </form>
+                                    <div class="dropdown_contact">
+                                        <div class="info_contact">
+                                            <h3>MASZ PYTANIE?</h3>
+                                            <div class="general_module_dropdown">
+                                                <div class="module_body_dropdown">
+                                                    <a href="tel:+48123731050">
+                                                        <i class="fa-solid fa-phone-volume"></i> +48 18 737
+                                                        21 67
+                                                    </a>
+                                                </div>
+
+                                                <span class="module_information_dropdown">
+                                                    Pon.-pt. 7.00-19.00, Sob. 8.00 - 14.00
+                                                </span>
+
+                                                <span class="module_information_dropdown">
+                                                    <a href="mailto:info@elhurtplus.pl">info@elhurtplus.pl</a>
+                                                </span>
+
+                                                <span class="module_information_dropdown">
+                                                    ul. Osieczany 585
+                                                    <br>
+                                                    32-400 Myslenice
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="upper-headers">
                                 <a href="#">
@@ -512,14 +541,31 @@
                         <div class="systemForm_text_input">
                             <form class="form" action="action.php" method="POST" autocomplete="off">
                                 <p>Nazwa użytkownika*</p>
-                                <input type="text" class="user-login" name="username" maxlength="50"
-                                    placeholder="Wpisz nazwę użytkownika" required>
+                                <div class="icon_input">
+                                    <div class="icon-register">
+                                        <i class="fa fa-user icon"></i>
+                                    </div>
+                                    <input type="text" class="user-login" name="username" maxlength="50"
+                                        placeholder="Wpisz nazwę użytkownika" required>
+                                </div>
+
                                 <p>Adres e-mail*</p>
-                                <input type="email" class="email-login" name="email" maxlength="50"
-                                    placeholder="Wpisz adres e-mail" required>
+                                <div class="icon_input">
+                                    <div class="icon-register">
+                                        <i class="fa fa-envelope icon"></i>
+                                    </div>
+                                    <input type="email" class="email-login" name="email" maxlength="50"
+                                        placeholder="Wpisz adres e-mail" required>
+                                </div>
+
                                 <p>Komentarz*</p>
-                                <textarea name="comment" class="form_textarea" placeholder="Napisz komentarz" required
-                                    rows="2" cols="1"></textarea>
+                                <div class="icon_input">
+                                    <div class="icon-comment">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+                                    <textarea name="comment" class="form_textarea" placeholder="Napisz komentarz"
+                                        required rows="2" cols="1"></textarea>
+                                </div>
                                 <button name="submit" class="button send_opinion">DODAJ OPINIĘ</button>
                             </form>
                         </div>
@@ -556,7 +602,8 @@
                                         Format: pdf
                                     </div>
                                     <div class="buttondownload">
-                                        <a href="./testy/testowyplik.pdf" class="button download" download><i class="fa fa-download"></i> POBIERZ</a>
+                                        <a href="./testy/testowyplik.pdf" class="button download" download><i
+                                                class="fa fa-download"></i> POBIERZ</a>
                                     </div>
                                 </div>
                             </div>
@@ -580,8 +627,8 @@
                                         Format: pdf
                                     </div>
                                     <div class="buttondownload">
-                                        <a href="./testy/przykladowyplik.pdf" class="button download"
-                                            download><i class="fa fa-download"></i> POBIERZ</a>
+                                        <a href="./testy/przykladowyplik.pdf" class="button download" download><i
+                                                class="fa fa-download"></i> POBIERZ</a>
                                     </div>
                                 </div>
                             </div>
@@ -605,8 +652,8 @@
                                         Format: pdf
                                     </div>
                                     <div class="buttondownload">
-                                        <a href="./testy/przykladowypdf.pdf" class="button download"
-                                            download><i class="fa fa-download"></i> POBIERZ</a>
+                                        <a href="./testy/przykladowypdf.pdf" class="button download" download><i
+                                                class="fa fa-download"></i> POBIERZ</a>
                                     </div>
                                 </div>
                             </div>
@@ -1090,7 +1137,7 @@
                         </ul>
                     </div>
 
-                    <div class="footer-information">
+                    <div class="footer-information" id="section8">
                         <h3>MASZ PYTANIE?</h3>
                         <div class="general_module">
                             <div class="module_body">

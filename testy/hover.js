@@ -1,47 +1,99 @@
-const products = [
-    { name: "Macbook Air", price: "180000", ram: 16 },
-    { name: "Samsung Galaxy M21", price: "13999", ram: 4 },
-    { name: "Redmi Note 9", price: "11999", ram: 4 },
-    { name: "OnePlus 8T 5G", price: "45999", ram: 12 }
-  ];
-  
-  const sortByDropdown = document.querySelector(".sort-by");
-  const sortOrderDropdown = document.querySelector(".sort-order");
-  const container = document.querySelector(".products");
-  
-  const displayProducts = (products) => {
-    let result = "";
-  
-    products.forEach(({ name, price, ram }) => {
-      result += `
-     <div class="product">
-      <div><strong>Name:</strong><span>${name}</span></div>
-      <div><strong>Price:</strong><span>${price}</div>
-      <div><strong>Ram:</strong><span>${ram} GB</div>
-     </div>
-    `;
-    });
-  
-    container.innerHTML = result;
-  };
-  
-  sortByDropdown.addEventListener("change", () => {
-    const sortByValue = sortByDropdown.value; // price or ram value
-    const sortOrderValue = sortOrderDropdown.value; // asc or desc value
-  
-    const sorted = _.orderBy(products, [sortByValue], sortOrderValue);
-  
-    displayProducts(sorted);
-  });
-  
-  sortOrderDropdown.addEventListener("change", () => {
-    const event = new Event("change");
-    const sortByValue = sortByDropdown.value;
-  
-    if (sortByValue) {
-      sortByDropdown.dispatchEvent(event);
+const paginationNumbers = document.getElementById("pagination-numbers");
+const paginatedList = document.getElementById("paginated-list");
+const listItems = paginatedList.querySelectorAll("li");
+const nextButton = document.getElementById("next-button");
+const prevButton = document.getElementById("prev-button");
+
+const paginationLimit = 10;
+const pageCount = Math.ceil(listItems.length / paginationLimit);
+let currentPage = 1;
+
+const disableButton = (button) => {
+  button.classList.add("disabled");
+  button.setAttribute("disabled", true);
+};
+
+const enableButton = (button) => {
+  button.classList.remove("disabled");
+  button.removeAttribute("disabled");
+};
+
+const handlePageButtonsStatus = () => {
+  if (currentPage === 1) {
+    disableButton(prevButton);
+  } else {
+    enableButton(prevButton);
+  }
+
+  if (pageCount === currentPage) {
+    disableButton(nextButton);
+  } else {
+    enableButton(nextButton);
+  }
+};
+
+const handleActivePageNumber = () => {
+  document.querySelectorAll(".pagination-number").forEach((button) => {
+    button.classList.remove("active");
+    const pageIndex = Number(button.getAttribute("page-index"));
+    if (pageIndex == currentPage) {
+      button.classList.add("active");
     }
   });
+};
+
+const appendPageNumber = (index) => {
+  const pageNumber = document.createElement("button");
+  pageNumber.className = "pagination-number";
+  pageNumber.innerHTML = index;
+  pageNumber.setAttribute("page-index", index);
+  pageNumber.setAttribute("aria-label", "Page " + index);
+
+  paginationNumbers.appendChild(pageNumber);
+};
+
+const getPaginationNumbers = () => {
+  for (let i = 1; i <= pageCount; i++) {
+    appendPageNumber(i);
+  }
+};
+
+const setCurrentPage = (pageNum) => {
+  currentPage = pageNum;
+
+  handleActivePageNumber();
+  handlePageButtonsStatus();
   
-  displayProducts(products);
-  
+  const prevRange = (pageNum - 1) * paginationLimit;
+  const currRange = pageNum * paginationLimit;
+
+  listItems.forEach((item, index) => {
+    item.classList.add("hidden");
+    if (index >= prevRange && index < currRange) {
+      item.classList.remove("hidden");
+    }
+  });
+};
+
+window.addEventListener("load", () => {
+  getPaginationNumbers();
+  setCurrentPage(1);
+
+  prevButton.addEventListener("click", () => {
+    setCurrentPage(currentPage - 1);
+  });
+
+  nextButton.addEventListener("click", () => {
+    setCurrentPage(currentPage + 1);
+  });
+
+  document.querySelectorAll(".pagination-number").forEach((button) => {
+    const pageIndex = Number(button.getAttribute("page-index"));
+
+    if (pageIndex) {
+      button.addEventListener("click", () => {
+        setCurrentPage(pageIndex);
+      });
+    }
+  });
+});

@@ -15,12 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,700,0,0" />
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -43,7 +41,7 @@
                     <div class="upper-menu">
                         <div class="logo-search">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="logos/logo.png" alt="Logo ElHurtPlus" class="responsive-image" />
                                 </a>
                             </div>
@@ -59,10 +57,40 @@
                         </div>
                         <div class="three-information">
                             <div class="upper-headers">
-                                <a href="#">
-                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                    <p>KONTAKT</p>
-                                </a>
+                            <div class="dropdown">
+                                <form action="#section1" class="forms">
+                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />    
+                                        <button class="contact">KONTAKT</button>
+                                            <div class="dropdown_contact">
+                                                <div class="info_contact">
+                                                    <h3>MASZ PYTANIE?</h3>
+                                                    <div class="general_module_dropdown">
+                                                        <div class="module_body_dropdown">
+                                                            <a href="tel:+48123731050">
+                                                                <i class="fa-solid fa-phone-volume"></i> +48 18 737
+                                                                21 67
+                                                            </a>
+                                                        </div>
+
+                                                        <span class="module_information_dropdown">
+                                                            Pon.-pt. 7.00-19.00, Sob. 8.00 - 14.00
+                                                        </span>
+
+                                                        <span class="module_information_dropdown">
+                                                            <a
+                                                                href="mailto:info@elhurtplus.pl">info@elhurtplus.pl</a>
+                                                        </span>
+
+                                                        <span class="module_information_dropdown">
+                                                            ul. Osieczany 585
+                                                            <br>
+                                                            32-400 Myslenice
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                </div>
                             </div>
                             <div class="upper-headers">
                                 <a href="#">
@@ -135,7 +163,7 @@
                 </button>
                 <div class="nav-items">
                     <div class="headers">
-                        <a class="ex1" href="index2.html" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
+                        <a class="ex1" href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
                             ŚWIATŁA</a>
                     </div>
 
@@ -168,7 +196,7 @@
         </header>
         <main>
             <div class="third-header">
-                <div class="header-information"><a href="index.html" target="_blank">Strona główna</a></div>
+                <div class="header-information"><a href="index.php" target="_blank">Strona główna</a></div>
                 <div class="header-information">Kategoria</div>
                 <div class="header-information">Kategoria</div>
             </div>
@@ -638,7 +666,7 @@
                                 <p class="two">PROMOCJA</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -682,7 +710,7 @@
                                 <p class="two">PROMOCJA</p>
                             </div>
                               <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -727,7 +755,7 @@
                                 <p class="two">PROMOCJA</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -767,7 +795,7 @@
                                 <p class="three">POLECAMY</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -810,7 +838,7 @@
                                 <p class="one">NOWOŚĆ</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -854,7 +882,7 @@
                                 <p class="two">PROMOCJA</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -898,7 +926,7 @@
                                 <p class="three">POLECAMY</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -938,7 +966,7 @@
                                 <p class="two">PROMOCJA</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -978,7 +1006,7 @@
                                 <p class="three">POLECAMY</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -1022,7 +1050,7 @@
                                 <p class="two">PROMOCJA</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -1066,7 +1094,7 @@
                                 <p class="two">PROMOCJA</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -1106,7 +1134,7 @@
                                 <p class="three">POLECAMY</p>
                             </div>
                             <div class="text-under-lights">
-                                <a href="index3.html" class="link-tag" aria-label="tekst o żarówce"></a>
+                                <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
                                 <div class="little_title">Philips</div>
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
@@ -1213,6 +1241,29 @@
                             konkretnego producenta, wówczas poszczególne oprawy nie będą się od siebie różnić.
                         </p>
                     </div>
+                </div>
+            </div>
+                
+            <div class="newsletter">
+                <img src="./photos/banner-big-8-pl.jpg" alt="banner" class="block-first"/> 
+                <img src="./photos/banner-small-8-pl.jpg" alt="banner-2" class="none"/>
+
+                <div class="newsletter_container">
+                    <div class="icon_text_newsletter">
+                        <div class="icon_newsletter">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                    </div>
+
+                    <div class="newsletterBar_header">
+                        <span>Zapisz się do newslettera</span>
+                        <div class="newsletterBar_desc">
+                            <span>Zapisz się do newslettera na naszym sklepie internetowym
+                                i odbierz rabat w wysokości <b>20 zł na pierwsze zamówienie</b></span>
+                        </div>
+                    </div>
+
+                    <a href="newsletter.php" class="sign-up button6"></i><span>Przejdź dalej </span><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
