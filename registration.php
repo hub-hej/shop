@@ -262,7 +262,7 @@ if(isset($_POST['submit']))
                         </div>
 
                         <div class="form-group">
-                            <div class="icon-register">
+                            <div class="icon-register"> 
                                 <i class="fa fa-envelope icon"></i>
                             </div>
                             <input type="text" name="email" placeholder="Wpisz adres email*" class="form-control" value="<?php echo ($valEmail??'')?>" required>
