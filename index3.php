@@ -42,9 +42,17 @@
                         </div>
                         <div class="three-information">
                             <div class="upper-headers">
+                            <button type="button" class="button-menu" aria-label="Przycisk na menu">
+                                    <div class="hamburger">
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                    </div>
+                                    <span class="text_menu">MENU</span>
+                                </button>
                             <div class="dropdown">
                                 <form action="#section1" class="forms">
-                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />    
+                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" class="pionek"/>    
                                         <button class="contact">KONTAKT</button>
                                             <div class="dropdown_contact">
                                                 <div class="info_contact">
@@ -140,14 +148,6 @@
             </div>
 
             <div class="header">
-
-                <button type="button" class="button-menu" aria-label="Przycisk na menu">
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </button>
                 <div class="nav-items">
                     <div class="headers">
                         <a href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA ŚWIATŁA</a>
@@ -557,14 +557,32 @@
                         <div class="systemForm_text_input">
                             <form class="form" action="action.php" method="POST" autocomplete="off">
                                 <p>Nazwa użytkownika*</p>
-                                <input type="text" class="user-login" name="username" maxlength="50"
-                                    placeholder="Wpisz nazwę użytkownika" required>
+                                <div class="icon_input">
+                                    <div class="icon-register">
+                                        <i class="fa fa-user icon"></i>
+                                    </div>
+                                    <input type="text" class="user-login" name="username" maxlength="50"
+                                        placeholder="Wpisz nazwę użytkownika" required>
+                                </div>
+
                                 <p>Adres e-mail*</p>
-                                <input type="email" class="email-login" name="email" maxlength="50"
-                                    placeholder="Wpisz adres e-mail" required>
+                                <div class="icon_input">
+                                    <div class="icon-register">
+                                        <i class="fa fa-envelope icon"></i>
+                                    </div>
+                                    <input type="email" class="email-login" name="email" maxlength="50"
+                                        placeholder="Wpisz adres e-mail" required>
+                                </div>
+
                                 <p>Komentarz*</p>
-                                <textarea name="comment" class="form_textarea" placeholder="Napisz komentarz" required
-                                    rows="2" cols="1"></textarea>
+                                <div class="icon_input">
+                                    <div class="icon-comment">
+                                        <i class="fa-solid fa-comment"></i>
+                                    </div>
+                                    <textarea name="comment" class="form_textarea" placeholder="Napisz komentarz"
+                                        required rows="2" cols="1"></textarea>
+                                </div>
+
                                 <button name="submit" class="button send_opinion">DODAJ OPINIĘ</button>
                             </form>
                         </div>

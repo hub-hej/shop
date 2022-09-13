@@ -752,6 +752,11 @@ input[type="number"].value_number, input[type="email"].value_number{
     font-size: .875rem;
     padding-bottom: 1.25rem;
 }
+.module_body_dropdown{
+    font-size: 2.75rem;
+    font-family: var(--font-family-secondary);
+    cursor: pointer;
+}
 .fa-phone-volume{
     transform: rotate(-45deg);
     font-size: 2.75rem;
@@ -1093,7 +1098,7 @@ tbody tr:nth-child(even)
     color: #A3A3A3;
     font-family: var(--font-family-secondary);
 }
-.text-under-lights b, p.title-paragraph, .productInformationBlock{
+.text-under-lights b, p.title-paragraph, .productInformationBlock, .text_menu{
     font-family: var(--font-family-primary);
 }
 .text-under-lights p{
@@ -1340,7 +1345,7 @@ ul, ul li {
     border: none;
     background-color: white;
 }
-.hamburger, .hide, i.fa-angle-right, i.fa-angle-left, .price {
+.hamburger, .hide, i.fa-angle-right, i.fa-angle-left, .price, .text_menu {
     display: none;
 }
 .bar {
@@ -1598,11 +1603,11 @@ ul, ul li {
     .footer-information ul{
         margin-top: 0px;
     }
-    .hide, .none{
+    .hide, .none, .text_menu{
         display: block;
     }
     #poka1, #poka2, #poka3, #poka4, #poka-all, #poka6, #poka7, #poka8, #poka9, 
-    #image-poka1, #image-poka2, .block-first,
+    #image-poka1, #image-poka2, .block-first, .contact, .pionek,
     .nav-items, .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content1, .fileAddItem-name, .section_header_container h2::after, 
     .section_header_opinion h2::after, 
     .section_header_down_hide h2:after, 
@@ -1807,7 +1812,8 @@ ul, ul li {
     .left-arrow-lights, .right-arrow-lights{
         opacity: 0;
     }
-    .text-cart, .buttondownload, .upper-headers p, .icon_newsletter, .sign-up span, .contact{
+    .text-cart, .buttondownload, .upper-headers p, .icon_newsletter, .sign-up span, .contact,
+    .text_menu{
         display: none;
     }
     .shopping-button img{
