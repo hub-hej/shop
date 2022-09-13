@@ -65,11 +65,13 @@ html {
     display: block;
     margin: 0;
 }
-.upper-menu, .row-up, .footerSocialMedia__content{
+.upper-menu, .row-up, .footerSocialMedia__content, .hide-info{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
     align-items: center;
+}
+.upper-menu, .row-up, .footerSocialMedia__content{
+    gap: 10px;
 }
 .three-information{
     text-align: center;
@@ -79,7 +81,7 @@ html {
     gap: 60px;
     justify-content: space-between;
 }
-.upper-headers {
+.upper-headers, .cart {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -138,15 +140,11 @@ html {
 .login{
     background-color: #F74137;
 }
-.cart-family{
+.cart-family, .form-group{
     display: flex;
 }
 .cart{
-    display: flex;
-    align-items: center;
-    gap: 5px;
     border: var(--border-primary);
-    height:100%;
 }
 .cart-brother{
     position: relative;
@@ -205,7 +203,7 @@ html {
     border: none;
     background-color: white;
 }
-.hamburger {
+.hamburger, #text, .hide {
     display: none;
 }
 .bar {
@@ -268,10 +266,6 @@ html {
     margin-bottom: 20px;
     margin-top: 30px;
 }
-.form-group{
-    display: flex;
-    height: 100%;
-}
 .form-control {
     font-size: 15px;
     border: 1px solid #e1e2e8;
@@ -296,7 +290,7 @@ html {
 .btn.btn-primary:hover{
     background: #F6190A;
 }
-.send_submit{
+.send_submit, .loginBox__links{
     display: flex;
     justify-content: flex-end;
 }
@@ -330,11 +324,11 @@ html {
     margin: 4px;
     font-size: 15px;
 }
-.loginBox__links{
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
+.loginBox__links, .under-footer{
     gap: 20px;
+}
+.loginBox__links, #text{
+    margin-bottom: 10px;
 }
 .loginBox__links a{
     color: black;
@@ -348,15 +342,12 @@ html {
 .under-footer {
     display: grid;
     justify-content: space-between;
-    gap: 20px;
     background: #323940;
     padding: 25px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 #text{
-    display: none;
     color: red;
-    margin-bottom: 10px;
 }
 .warning_capslock{
     flex-direction: column;
@@ -408,16 +399,8 @@ ul, ul li {
     display: block;
     text-align: left;
 }
-.hide {
-    display: none;
-}
 .arrow-down.material-symbols-outlined{
     font-size: 40px;
-}
-.hide-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .general_module{
     font-family: var(--font-family-secondary);
@@ -483,12 +466,6 @@ ul, ul li {
 .footerSocialMedia__content{
     flex-wrap: wrap;
     justify-content: center;
-}
-.row-up{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
 }
 .alert_alert-danger{
     color: white;
