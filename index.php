@@ -45,9 +45,17 @@
                             </div>
                             <div class="menu-elements">
                                 <div class="menu-paragraph">
+                                <button type="button" class="button-menu" aria-label="Przycisk na menu">
+                                        <div class="hamburger">
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                        </div>
+                                        <span class="text_menu">MENU</span>
+                                    </button>
                                 <div class="dropdown">
                                         <form action="#section1">
-                                            <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
+                                            <img src="icons/icon_01.png" alt="Pionek - Kontakt" class="pionek"/>
                                             <form action="#section1" class="forms"><button
                                                     class="contact">KONTAKT</button>
                                                 <div class="dropdown_contact">
@@ -147,13 +155,6 @@
             </section>
 
                 <nav class="header">
-                    <button type="button" class="button-menu" aria-label="Przycisk na menu">
-                        <div class="hamburger">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </button>
                     <div class="nav-items">
                         <div class="headers">
                             <a href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
