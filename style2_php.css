@@ -36,7 +36,8 @@ h3{
 .text-under-lights h2, .text-under-lights s, .tile-minus, .tile-plus, .three-information, .header,
 .nav-h1, .text-expand a, .text-main-image h4, .text-offer, .button, .first-left-menu h3, .filters h3,
 .producer h3, .range-filter h3, .choose-colors h3, .size-filter h3, .price h3, .footer-information h3,
-.form, .galleryTextListFooterPayment, .textSocialMedia, .galleryTextListFooterDelivery {
+.form, .galleryTextListFooterPayment, .textSocialMedia, .galleryTextListFooterDelivery, 
+.text_menu {
     font-family: var(--font-family-primary);
 }
 .left-side, .right-side, .sort, .quantity, .text-under-lights p, .first-left-menu ul, .size-65,
@@ -877,6 +878,11 @@ input[type="range"]{
 .module_body a:hover{
     color: #f74137;
 }
+.module_body_dropdown{
+    font-size: 2.75rem;
+    font-family: var(--font-family-secondary);
+    cursor: pointer;
+}
 .module_information{
     font-size: .875rem;
     padding-bottom: 1.25rem;
@@ -970,6 +976,7 @@ ul li {
 .button-menu {
     border: none;
     background-color: white;
+    outline: none!important;
 }
 .bar {
     display: block;
@@ -992,7 +999,7 @@ ul li {
     border: none;
     cursor: pointer;
 }
-.hide, .hamburger{
+.hide, .hamburger, .text_menu{
     display: none;
 }
 .hide{
@@ -1302,7 +1309,7 @@ input[type=text]:focus {
     .footer-information ul{
         margin-top: 0px;
     }
-    .hide, .none{
+    .hide, .none, .text_menu{
         display: block;
     }
     #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .block-first{
@@ -1360,7 +1367,7 @@ input[type=text]:focus {
         padding: 5px;
     }
     .nav-items,
-    .dropdown:hover .dropdown-content1 {
+    .dropdown:hover .dropdown-content1, .contact, .pionek {
         display: none;
     }
     .nav-items.active {
@@ -1552,7 +1559,7 @@ input[type=text]:focus {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 450px) {
-    .pagination, .text-cart, .upper-headers p, .contact  {
+    .pagination, .text-cart, .upper-headers p, .contact, .text_menu {
         display: none!important;
     }
     .text-main-image {

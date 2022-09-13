@@ -48,7 +48,7 @@
                             <div class="search-menu">
                                 <form class="searchTop">
                                     <input type="text" class="searchTop__textfield" id="myInput"
-                                        onkeyup="searchFunction()" placeholder="Wpisz nazwę produktu">
+                                        onkeyup="searchFunction()" placeholder="Wpisz nazwę produktu" autocomplete="off">
                                     <button type="submit" class="searchTop__submit"
                                         aria-label="Przycisk do wyszukiwania frazesów"><i
                                             class="fa fa-search"></i></button>
@@ -57,9 +57,17 @@
                         </div>
                         <div class="three-information">
                             <div class="upper-headers">
+                                    <button type="button" class="button-menu" aria-label="Przycisk na menu">
+                                        <div class="hamburger">
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                        </div>
+                                        <span class="text_menu">MENU</span>
+                                    </button>
                             <div class="dropdown">
                                 <form action="#section1" class="forms">
-                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />    
+                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" class="pionek"/>    
                                         <button class="contact">KONTAKT</button>
                                             <div class="dropdown_contact">
                                                 <div class="info_contact">
@@ -154,13 +162,6 @@
                 </div>
             </div>
             <div class="header">
-                <button type="button" class="button-menu" aria-label="Przycisk na menu">
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </button>
                 <div class="nav-items">
                     <div class="headers">
                         <a class="ex1" href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
