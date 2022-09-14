@@ -139,7 +139,7 @@ $('.choice').on('change', function() {
 })
 
 //Function which allows for search lights 
-function searchFunction() {
+function searchFunction1() {
   const searchbox = document.getElementById("myInput").value.toUpperCase();
   const storeitems = document.getElementById("product-list");
   const product = document.querySelectorAll(".light");
@@ -159,7 +159,26 @@ function searchFunction() {
     }
   }
 }
+function searchFunction2() {
+  const searchbox = document.getElementById("myInputs").value.toUpperCase();
+  const storeitems = document.getElementById("product-list");
+  const product = document.querySelectorAll(".light");
+  const pname = storeitems.getElementsByTagName("h2");
 
+  for (var i = 0; i < pname.length; i++) {
+    let match = product[i].getElementsByTagName('h2')[0];
+
+    if (match) {
+      let textvalue = match.textContent || match.innerHTML; 
+
+      if (textvalue.toUpperCase().indexOf(searchbox) > -1){
+        product[i].style.display = "";
+      } else {
+        product[i].style.display = "none";
+      }
+    }
+  }
+}
 //Function related to checkbox Producent with Parametr 1, Parametr 2, Parametr 3, ...
 jQuery(function(){ // document ready to process
   jQuery('ul').find("input").on('change',function(){ // when the input changes
@@ -364,4 +383,68 @@ function scrollLoad() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+}
+//Open whole overlay
+function openNav() {
+  document.getElementById("myNav").style.width = "70%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+//Open category "Produkty"
+function openProducts() {
+  document.getElementById("myProducts").style.width = "70%";
+}
+function closeProducts() {
+  document.getElementById("myProducts").style.width = "0%";
+}
+
+//Open category "Producenci"
+function openManufacturers() {
+  document.getElementById("myManufacturers").style.width = "70%";
+}
+function closeManufacturers() {
+  document.getElementById("myManufacturers").style.width = "0%";
+}
+
+//Open category "Źródła Światła"
+function openElements() {
+  document.getElementById("myElementsLights").style.width = "70%";
+}
+function closeElements() {
+  document.getElementById("myElementsLights").style.width = "0%";
+}
+
+//Open category "Spark" from "Źródła Światła"
+function openSpark(){
+  document.getElementById("myCategorySpark").style.width = "70%";
+}
+function closeSpark() {
+  document.getElementById("myCategorySpark").style.width = "0%";
+}
+
+//Open category "Automatyka, sterowanie"
+function openAutomatic(){
+  document.getElementById("myAutomatic").style.width = "70%";
+}
+function closeAutomatic() {
+  document.getElementById("myAutomatic").style.width = "0%";
+}
+
+//Open category "Oświetlenie wewnętrzne"
+function openInteriorLighting(){
+  document.getElementById("myInterior").style.width = "70%";
+}
+function closeInteriorLighting() {
+  document.getElementById("myInterior").style.width = "0%";
+}
+
+//Open overlay on whole page related to settings regional
+function openWholeNav() {
+  document.getElementById("myWholeNav").style.display = "block";
+}
+
+function closeWholeNav() {
+  document.getElementById("myWholeNav").style.display = "none";
 }

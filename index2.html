@@ -41,7 +41,7 @@
                             <div class="search-menu">
                                 <form class="searchTop">
                                     <input type="text" class="searchTop__textfield" id="myInput"
-                                        onkeyup="searchFunction()" placeholder="Wpisz nazwę produktu">
+                                        onkeyup="searchFunction1()" placeholder="Wpisz nazwę produktu">
                                     <button type="submit" class="searchTop__submit"
                                         aria-label="Przycisk do wyszukiwania frazesów"><i
                                             class="fa fa-search"></i></button>
@@ -60,7 +60,7 @@
                                 </button>
                                 <div class="dropdown">
                                     <form action="#section1" class="forms">
-                                        <img src="icons/icon_01.png" alt="Pionek - Kontakt" class="pionek"/>
+                                        <img src="icons/icon_01.png" alt="Pionek - Kontakt" class="pionek" />
                                         <button class="contact">KONTAKT</button>
                                     </form>
                                     <div class="dropdown_contact">
@@ -92,6 +92,285 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="upper_headers_search">
+                                <div id="myNav" class="overlay">
+                                    <div class="text_close_icon">
+                                        <div class="text_category">
+                                            <i class="fa-solid fa-angle-left" onclick="closeNav()"></i>
+                                            <p>KATEGORIE</p>
+                                        </div>
+                                        <div class="close_overlay">
+                                            <a href="javascript:void(0)" class="closebtn"
+                                                onclick="closeNav()">&times;</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="search-menu">
+                                        <form class="search_Top">
+                                            <input type="text" class="searchTop__textfield" id="myInputs"
+                                                onkeyup="searchFunction2()" placeholder="Wpisz nazwę produktu">
+                                            <button type="submit" class="searchTop__submit"
+                                                aria-label="Przycisk do wyszukiwania frazesów"><i
+                                                    class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+
+                                    <div class="scrollBar_menu">
+                                        <ul class="level1">
+
+                                            <li class="menu_level1" onclick="openProducts()">PRODUKTY
+                                                <i class="fa-solid overlay_arrow fa-angle-right"
+                                                    onclick="openProducts()"></i>
+                                            </li>
+                                            <div id="myProducts" class="overlay">
+                                                <div class="text_close_icon">
+                                                    <div class="text_category">
+                                                        <i class="fa-solid fa-angle-left" onclick="closeProducts()"></i>
+                                                        <p>PRODUKTY</p>
+                                                    </div>
+                                                    <div class="close_overlay">
+                                                        <a href="javascript:void(0)" class="closebtn"
+                                                            onclick="closeProducts()">&times;</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="menu_products">
+                                                    <ul class="level1">
+
+                                                        <li class="menu_level2" onclick="openElements()">ŹRÓDŁA ŚWIATŁA
+                                                            <i class="fa-solid overlay_arrow1 fa-angle-right"></i>
+                                                        </li>
+                                                        <div id="myElementsLights" class="overlay">
+                                                            <div class="text_close_icon">
+                                                                <div class="text_category">
+                                                                    <i class="fa-solid fa-angle-left"
+                                                                        onclick="closeElements()"></i>
+                                                                    <p>ŹRÓDŁA ŚWIATŁA</p>
+                                                                </div>
+                                                                <div class="close_overlay">
+                                                                    <a href="javascript:void(0)" class="closebtn"
+                                                                        onclick="closeElements()">&times;</a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="menu_products">
+                                                                <ul class="level1">
+                                                                    <li class="menu_level2" onclick="openSpark()">SPARK
+                                                                        <i
+                                                                            class="fa-solid overlay_arrow1 fa-angle-right"></i>
+                                                                    </li>
+                                                                    <div id="myCategorySpark" class="overlay">
+                                                                        <div class="text_close_icon">
+                                                                            <div class="text_category">
+                                                                                <i class="fa-solid fa-angle-left"
+                                                                                    onclick="closeSpark()"></i>
+                                                                                <p>SPARK</p>
+                                                                            </div>
+                                                                            <div class="close_overlay">
+                                                                                <a href="javascript:void(0)"
+                                                                                    class="closebtn"
+                                                                                    onclick="closeSpark()">&times;</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="menu_products">
+                                                                            <ul class="level1">
+                                                                                <li class="menu_level2"><a href="#"
+                                                                                        class="menu_a_level1">PODKATEGORIA
+                                                                                        1</a>
+                                                                                </li>
+                                                                                <li class="menu_level2"><a href="#"
+                                                                                        class="menu_a_level1">PODKATEGORIA
+                                                                                        2</a>
+                                                                                </li>
+                                                                                <li class="menu_level2"><a href="#"
+                                                                                        class="menu_a_level1">PODKATEGORIA
+                                                                                        3</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">PHANTOM</a>
+                                                                    </li>
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">INSPIRE</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <li class="menu_level2"><a href="#"
+                                                                class="menu_a_level1">OŚWIETLENIE WEWNETRZNE</a></li>
+                                                        <li class="menu_level2"><a href="#"
+                                                                class="menu_a_level1">GNIAZKA, WYŁĄCZNIKI</a></li>
+
+                                                        <li class="menu_level2" onclick="openAutomatic()">AUTOMATYKA,
+                                                            STEROWANIE
+                                                            <i class="fa-solid overlay_arrow1 fa-angle-right"></i>
+                                                        </li>
+                                                        <div id="myAutomatic" class="overlay">
+                                                            <div class="text_close_icon">
+                                                                <div class="text_category">
+                                                                    <i class="fa-solid fa-angle-left"
+                                                                        onclick="closeAutomatic()"></i>
+                                                                    <p>AUTOMATYKA, STEROWANIE</p>
+                                                                </div>
+                                                                <div class="close_overlay">
+                                                                    <a href="javascript:void(0)" class="closebtn"
+                                                                        onclick="closeAutomatic()">&times;</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu_products">
+                                                                <ul class="level1">
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">PODKATEGORIA</a>
+                                                                    </li>
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">PODKATEGORIA</a>
+                                                                    </li>
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">PODKATEGORIA</a>
+                                                                    </li>
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">PODKATEGORIA</a>
+                                                                    </li>
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">PODKATEGORIA</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <li class="menu_level2"><a href="#"
+                                                                class="menu_a_level1">ROZDZIELENIE I APARATURA</a></li>
+                                                        <li class="menu_level2"><a href="#" class="menu_a_level1">TAŚMY,
+                                                                PASKI LED</a></li>
+                                                        <li class="menu_level2"><a href="#"
+                                                                class="menu_a_level1">MATERIAŁY INSTALACYJNE I INNE</a>
+                                                        </li>
+
+                                                        <li class="menu_level2" onclick="openInteriorLighting()">
+                                                            OŚWIETLENIE WEWNĘTRZNE
+                                                            <i class="fa-solid overlay_arrow1 fa-angle-right"></i>
+                                                        </li>
+                                                        <div id="myInterior" class="overlay">
+                                                            <div class="text_close_icon">
+                                                                <div class="text_category">
+                                                                    <i class="fa-solid fa-angle-left"
+                                                                        onclick="closeInteriorLighting()"></i>
+                                                                    <p>OŚWIETLENIE WEWNĘTRZNE</p>
+                                                                </div>
+                                                                <div class="close_overlay">
+                                                                    <a href="javascript:void(0)" class="closebtn"
+                                                                        onclick="closeInteriorLighting()">&times;</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu_products">
+                                                                <ul class="level1">
+                                                                    <li class="menu_level2"><a href="#"
+                                                                            class="menu_a_level1">LAMPY WISZĄCE,
+                                                                            ŻYRANDOLE</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <li class="menu_level1" onclick="openManufacturers()">PRODUCENCI
+                                                <i class="fa-solid overlay_arrow fa-angle-right"
+                                                    onclick="openManufacturers()"></i>
+                                            </li>
+                                            <div id="myManufacturers" class="overlay">
+                                                <div class="text_close_icon">
+                                                    <div class="text_category">
+                                                        <i class="fa-solid fa-angle-left"
+                                                            onclick="closeManufacturers()"></i>
+                                                        <p>PRODUCENCI</p>
+                                                    </div>
+                                                    <div class="close_overlay">
+                                                        <a href="javascript:void(0)" class="closebtn"
+                                                            onclick="closeManufacturers()">&times;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="menu_products">
+                                                    <ul class="level1">
+                                                        <li class="menu_level2">PHILIPS</li>
+                                                        <li class="menu_level2">PRODUCENT 1</li>
+                                                        <li class="menu_level2">PRODUCENT 2 </li>
+                                                        <li class="menu_level2">PRODUCENT 3</li>
+                                                        <li class="menu_level2">PRODUCENT 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <li class="menu_level1"><a href="#" class="menu_a_level1">NOWOŚCI</a></li>
+                                            <li class="menu_level1"><a href="#" class="menu_a_level1">PROMOCJE</a></li>
+                                            <li class="menu_level1"><a href="#" class="menu_a_level1">POLECAMY</a></li>
+                                            <li class="menu_level1"><a href="#" class="menu_a_level1">O NAS</a></li>
+                                            <li class="menu_level1"><a href="#" class="menu_a_level1">INSPIRACJE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menuDeliveryPicker">
+                                        <div id="myWholeNav" class="whole_overlay">
+                                            <div class="settings_icon">
+                                                <div class="text_settings">
+                                                    <p>USTAWIENIA REGIONALNE</p>
+                                                </div>
+                                                <a href="javascript:void(0)" class="closebtn"
+                                                    onclick="closeWholeNav()">&times;</a>
+                                            </div>
+                                            <div class="column_section">
+                                                <div class="select_option_localization">
+                                                    <div class="general_description">
+                                                        <p class="localization">Lokalizacja</p>
+                                                        <div class="select_poland_local">
+                                                            <p>Polska</p>
+                                                            <i class="fa-solid arrow_down fa-angle-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="select_option_localization">
+                                                    <div class="general_description">
+                                                        <p class="localization">Język</p>
+                                                        <div class="select_poland_local">
+                                                            <p>polski</p>
+                                                            <i class="fa-solid arrow_down fa-angle-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="select_option_localization">
+                                                    <div class="general_description">
+                                                        <p class="localization">Waluta</p>
+                                                        <div class="select_poland_local">
+                                                            <p>Polski złoty (PLN)</p>
+                                                            <i class="fa-solid arrow_down fa-angle-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="button_settings">ZAPISZ</button>
+                                            </div>
+                                        </div>
+                                        <img src="./photos/delivery-country-4.png" alt="Polska"
+                                            onclick="openWholeNav()">
+
+                                        <div class="menuDelivery_text">
+                                            <p onclick="openWholeNav()">PLN</p>
+                                        </div>
+
+                                        <div class="menuDelivery_country">
+                                            <p onclick="openWholeNav()">POLSKI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass" onclick="openNav()"></i>
+                                <span onclick="openNav()">SZUKAJ</span>
+                            </div>
+
                             <div class="upper-headers">
                                 <a href="#">
                                     <img src="icons/icon_02.png" alt="Gwiazda - Ulubione" />
