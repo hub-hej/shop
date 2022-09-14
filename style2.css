@@ -1249,7 +1249,7 @@ input[type=text]:focus {
         display: block;
     }
     #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .contact, .pionek, .nav-items,
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content, .searchTop {
         display: none;
     }
     .dropdown_contact{
