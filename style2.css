@@ -1371,7 +1371,7 @@ input[type=text]:focus {
     .upper_headers_search{
         cursor: pointer;
     }
-    .fa-solid{
+    .fa-solid.search_overlay{
         font-size: 25px;
     }
     .overlay_arrow1{
@@ -1387,7 +1387,7 @@ input[type=text]:focus {
         background-color: rgba(255, 255, 255, 0.99); 
         overflow-x: hidden;
         transition: 0.5s;
-      }
+    }
     .overlay .closebtn {
         top: 3%;
         right: 6%;
@@ -1522,6 +1522,10 @@ input[type=text]:focus {
     }
     .button_settings:hover{
         background-color: #f51c10;
+    }
+    .menu_level1 a{
+        text-decoration: none;
+        color: black;
     }
 }
 @media screen and (max-width: 750px) {
