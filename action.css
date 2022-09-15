@@ -102,10 +102,11 @@
     text-align: left;
     padding: 10px;
 }
-.upper-headers, .header a, .upper-headers a, .cart {
+.upper-headers, .header a, .upper-headers a, .cart, .forms {
     gap: 5px;
 }
-.upper-headers a, .upper-headers, .cart, .footerSocialMedia, .footerSocialMedia__content{
+.upper-headers a, .upper-headers, .cart, .footerSocialMedia, .footerSocialMedia__content,
+.forms{
     display: flex;
     align-items: center;
 }
@@ -132,6 +133,39 @@
 .upper-headers p:hover::before{
     transform: scaleX(1);
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content1, .dropdown_contact {
+    display: none;  
+    position: absolute;
+    min-width: 100%;
+    padding: 10px 10px;
+    z-index: 1;
+    border: var(--border-primary);
+    line-height: 50px;
+    background-color: white;
+    top: 100%;
+}
+.dropdown_contact{
+    width: 330px;
+}
+.dropdown:hover .dropdown-content1, .dropdown:hover .dropdown_contact {
+    display: block;
+}
+.contact{
+    border: none;
+    background-color: white;
+    font-family: var(--font-family-primary);
+    cursor: pointer;
+}
+.general_module_dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family-primary);
+}
 .cart{
     border: var(--border-primary);
     height:100%;
@@ -152,7 +186,7 @@
 .text-cart{
     padding: 12px;
 }
-.text-cart > .first-text-cart{
+.text-cart > .first-text-cart, .text_menu {
     font-family: var(--font-family-primary);
 }
 .second-text-cart{
@@ -180,7 +214,7 @@
     border: none;
     background-color: white;
 }
-.hamburger, .hide{
+.hamburger, .hide, .text_menu {
     display: none;
 }
 .bar {
@@ -410,10 +444,10 @@ ul, ul li {
     .footer-information ul{
         margin-top: 0px;
     }
-    .hide{
+    .hide, .text_menu {
         display: block;
     }
-    #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
+    #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .contact, .pionek{
         display: none;
     }
     .header, .headers{
@@ -510,7 +544,7 @@ ul, ul li {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 600px) {
-    .upper-headers p, .text-cart{
+    .upper-headers p, .text-cart, .text_menu {
         display: none;
     }
     .cart img{

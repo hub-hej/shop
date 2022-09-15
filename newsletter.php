@@ -32,16 +32,55 @@
                 <div class="menu">
                     <div class="upper-menu">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="logos/logo.png" alt="Logo ElHurtPlus" />
                             </a>
                         </div>
                         <div class="three-information">
+
                             <div class="upper-headers">
-                                <a href="#">
-                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" />
-                                    <p>KONTAKT</p>
-                                </a>
+                                    <button type="button" class="button-menu" aria-label="Przycisk na menu">
+                                        <div class="hamburger">
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                        </div>
+                                        <span class="text_menu">MENU</span>
+                                    </button>
+                            <div class="dropdown">
+                                <form action="#section1" class="forms">
+                                    <img src="icons/icon_01.png" alt="Pionek - Kontakt" class="pionek"/>    
+                                        <button class="contact">KONTAKT</button>
+                                            <div class="dropdown_contact">
+                                                <div class="info_contact">
+                                                    <h3>MASZ PYTANIE?</h3>
+                                                    <div class="general_module_dropdown">
+                                                        <div class="module_body_dropdown">
+                                                            <a href="tel:+48123731050">
+                                                                <i class="fa-solid fa-phone-volume"></i> +48 18 737
+                                                                21 67
+                                                            </a>
+                                                        </div>
+
+                                                        <span class="module_information_dropdown">
+                                                            Pon.-pt. 7.00-19.00, Sob. 8.00 - 14.00
+                                                        </span>
+
+                                                        <span class="module_information_dropdown">
+                                                            <a
+                                                                href="mailto:info@elhurtplus.pl">info@elhurtplus.pl</a>
+                                                        </span>
+
+                                                        <span class="module_information_dropdown">
+                                                            ul. Osieczany 585
+                                                            <br>
+                                                            32-400 Myslenice
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                </div>
                             </div>
                             <div class="upper-headers">
                                 <a href="#">
@@ -106,16 +145,9 @@
 
         <section>
             <div class="header">
-                <button type="button" class="button-menu" aria-label="Przycisk na menu">
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </button>
                 <div class="nav-items">
                     <div class="headers">
-                        <a class="ex1" href="index2.html" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
+                        <a class="ex1" href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
                             ŚWIATŁA</a>
                     </div>
 
