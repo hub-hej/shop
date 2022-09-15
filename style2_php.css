@@ -145,7 +145,8 @@ header{
     background-color: white;
     height: 100%;
 }
-.header a, .upper-headers, .upper-headers a, .cart, .light-text-image-menu, .pagination, .upper-menu{
+.header a, .upper-headers, .upper-headers a, .cart, .light-text-image-menu, .pagination, .upper-menu,
+.upper_headers_search{
     gap: 5px;
 }
 .header a, .sort-option, .sort-quantity, .size-65, .minus, .galleryFooter, .galleryFooterDelivery,
@@ -163,7 +164,8 @@ header{
     color: #F74137;
 }
 .upper-headers, .upper-headers a, .cart, .light-text-image-menu, .left-side, .right-side,
-.sort, .quantity, .pagination, .number, .option-producer, .checkbox-button{
+.sort, .quantity, .pagination, .number, .option-producer, .checkbox-button,
+.upper_headers_search{
     display: flex;
     align-items: center;
 }
@@ -999,7 +1001,7 @@ ul li {
     border: none;
     cursor: pointer;
 }
-.hide, .hamburger, .text_menu{
+.hide, .hamburger, .text_menu, .upper_headers_search{
     display: none;
 }
 .hide{
@@ -1309,7 +1311,7 @@ input[type=text]:focus {
     .footer-information ul{
         margin-top: 0px;
     }
-    .hide, .none, .text_menu{
+    .hide, .none, .text_menu, .upper_headers_search{
         display: block;
     }
     #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .block-first{
@@ -1392,7 +1394,7 @@ input[type=text]:focus {
     #myBtn{
         bottom: 95px;
     }
-    .upper-headers:not(:last-child)
+    .upper-headers:not(:last-child), .upper_headers_search:not(:last-child)
     {
         display: flex;
         justify-content: center;
@@ -1402,7 +1404,7 @@ input[type=text]:focus {
         border-right: 1px solid #e1e2e8;
         border-left: 1px solid #e1e2e8;
     }
-    .upper-headers a{
+    .upper-headers a, .upper_headers_search{
         flex-direction: column;
         width: 100%;
     }
@@ -1460,6 +1462,160 @@ input[type=text]:focus {
         flex-direction: column;
         align-items: center;
         gap: 5px;
+    }
+    .upper_headers_search{
+        cursor: pointer;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.99); 
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .overlay .closebtn {
+        top: 3%;
+        right: 6%;
+        font-size: 50px;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        color: #818181;
+        transition: 0.3s;
+    }
+    .text_close_icon, .settings_icon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 35px;
+        margin-right: 35px;
+        font-family: var(--font-family-primary);
+    }
+    .text_category, .text_settings{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .search_Top{
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #e1e2e8;
+        padding-top: 15px;
+        font-family: var(--font-family-secondary);
+    }
+    .scrollBar_menu{
+        flex-direction: column;
+    }
+    .level1{
+        padding: 0 4.3396226415vw;
+        font-family: var(--font-family-secondary);
+    }
+    .menu_level1, .menu_level2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e1e2e8;
+        padding-bottom: 5px;
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    .menu_level2{
+        padding-bottom: 25px;
+    }
+    .menu_a_level1{
+        text-decoration: none;
+        color: black;
+    }
+    .fa-solid.overlay_arrow, .fa-solid.overlay_arrow1{
+        border-left: 1px solid #e1e2e8;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .menuDeliveryPicker{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 4.3396226415vw;
+        background-color: #fcfcfc;
+    }
+    .menuDeliveryPicker img{
+        width: 35px;
+        height: 19px;
+    }
+    .menuDelivery_text, .menuDelivery_country{
+        font-family: var(--font-family-secondary);
+        border-left: 1px solid #e1e2e8;
+        padding-left: 10px;
+        margin-left: 15px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+    }
+    .menu_products{
+        flex-direction: column;
+        border-top: 1px solid #e1e2e8;
+    }
+    .whole_overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+    .select_option_localization{
+        width: 90%;
+        background-color: #f8f8f8;
+        margin: 0 auto;
+        color: rgba(34,38,44,.6);
+        font-family: var(--font-family-secondary);
+        border: 1px solid #e1e2e8;
+    }
+    .general_description{
+        padding: 10px;
+    }
+    .localization{
+        display: flex;
+    }
+    .select_poland_local{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding-left: 5px;
+    }
+    .arrow_down{
+        color: rgba(34,38,44,.6);
+    }
+    .column_section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button_settings{
+        width: 90%;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #f74137;
+        border: none;
+        outline: none;
+        font-family: var(--font-family-primary);
+        padding: 20px 0px;
+        cursor: pointer;
+        outline: none!important;
+    }
+    .button_settings:hover{
+        background-color: #f51c10;
+    }
+    .fa-solid.search_overlay{
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 750px) {
@@ -1559,7 +1715,8 @@ input[type=text]:focus {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 450px) {
-    .pagination, .text-cart, .upper-headers p, .contact, .text_menu {
+    .pagination, .text-cart, .upper-headers p, .contact, .text_menu,
+    .upper_headers_search span {
         display: none!important;
     }
     .text-main-image {
