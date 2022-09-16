@@ -2,7 +2,7 @@
 Twój adres to: <?php echo htmlspecialchars($_POST['email']); ?> <br />
 Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pl-pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -240,7 +240,7 @@ Twój komentarz to : <?php echo htmlspecialchars($_POST['desc']); ?>  -->
                                 32-400 Myslenice
                             </p>
     
-                            <a href="#" class="formularz">FORMULARZ KONTAKTOWY</a>
+                            <a href="formul_kontakt.php" class="formularz">FORMULARZ KONTAKTOWY</a>
                         </div>
                     </div>
                 </div>

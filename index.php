@@ -575,7 +575,7 @@
                             32-400 Myslenice
                         </p>
 
-                        <a href="#" class="form">FORMULARZ KONTAKTOWY</a>
+                        <a href="formul_kontakt.php" class="form">FORMULARZ KONTAKTOWY</a>
                     </div>
                 </div>
             </div>

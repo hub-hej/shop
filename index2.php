@@ -117,7 +117,7 @@
                                     <div class="search-menu">
                                         <form class="search_Top">
                                             <input type="text" class="searchTop__textfield" id="myInputs"
-                                                onkeyup="searchFunction2()" placeholder="Wpisz nazwę produktu">
+                                                onkeyup="search_level()" placeholder="Wpisz nazwę produktu">
                                             <button type="submit" class="searchTop__submit"
                                                 aria-label="Przycisk do wyszukiwania frazesów"><i
                                                     class="fa fa-search"></i></button>
@@ -1621,7 +1621,7 @@
                             32-400 Myslenice
                         </p>
 
-                        <a href="#" class="form">FORMULARZ KONTAKTOWY</a>
+                        <a href="formul_kontakt.php" class="form">FORMULARZ KONTAKTOWY</a>
                     </div>
                 </div>
             </div>
