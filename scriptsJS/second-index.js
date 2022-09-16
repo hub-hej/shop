@@ -159,24 +159,18 @@ function searchFunction1() {
     }
   }
 }
-function searchFunction2() {
-  const searchbox = document.getElementById("myInputs").value.toUpperCase();
-  const storeitems = document.getElementById("product-list");
-  const product = document.querySelectorAll(".light");
-  const pname = storeitems.getElementsByTagName("h2");
-
-  for (var i = 0; i < pname.length; i++) {
-    let match = product[i].getElementsByTagName('h2')[0];
-
-    if (match) {
-      let textvalue = match.textContent || match.innerHTML; 
-
-      if (textvalue.toUpperCase().indexOf(searchbox) > -1){
-        product[i].style.display = "";
-      } else {
-        product[i].style.display = "none";
+function search_level() {
+  let input = document.getElementById('myInputs').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('menu_level1');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
       }
-    }
+      else {
+          x[i].style.display="flex";                 
+      }
   }
 }
 //Function related to checkbox Producent with Parametr 1, Parametr 2, Parametr 3, ...
