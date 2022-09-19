@@ -852,7 +852,7 @@
                             32-400 Myslenice
                         </p>
 
-                        <a href="formul_kontakt.php" class="form">FORMULARZ KONTAKTOWY</a>
+                        <a href="formul_kontakt.html" class="form">FORMULARZ KONTAKTOWY</a>
                     </div>
                 </div>
             </div>

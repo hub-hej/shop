@@ -1368,9 +1368,6 @@ input[type=text]:focus {
         align-items: center;
         gap: 5px;
     }
-    .upper_headers_search{
-        cursor: pointer;
-    }
     .fa-solid.search_overlay{
         font-size: 25px;
     }
