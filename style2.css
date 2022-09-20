@@ -982,7 +982,7 @@ ul li {
     border: none;
     cursor: pointer;
 }
-.hide, .hamburger, .text_menu, .upper_headers_search{
+.hide, .hamburger, .text_menu, .upper_headers_search, .title_menu_responsive{
     display: none;
 }
 .hide{
@@ -1245,11 +1245,12 @@ input[type=text]:focus {
     .footer-information ul{
         margin-top: 0px;
     }
-    .hide, .text_menu, .upper-headers p, .upper_headers_search{
+    .hide, .text_menu, .upper-headers p, .upper_headers_search, 
+    .title_menu_responsive{
         display: block;
     }
     #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .contact, .pionek, .nav-items,
-    .dropdown:hover .dropdown-content, .searchTop {
+    .dropdown:hover .dropdown-content, .searchTop, .text-cart, .arrow-cart {
         display: none;
     }
     .dropdown_contact{
@@ -1349,7 +1350,7 @@ input[type=text]:focus {
         font-size: 20px;
         top: 20%;
     }
-    .galleryFooter, .galleryFooterDelivery{
+    .galleryFooter, .galleryFooterDeliverym, .cart img, .cart{
         border: none;
     }
     .row-up{
@@ -1624,7 +1625,8 @@ input[type=text]:focus {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 450px) {
-    .pagination, .text-cart, .upper-headers p, .contact, .text_menu, .upper_headers_search span {
+    .pagination, .text-cart, .upper-headers p, .contact, .text_menu, .upper_headers_search span,
+    .title_menu_responsive {
         display: none;
     }
     .text-main-image {
@@ -1633,8 +1635,8 @@ input[type=text]:focus {
     .button1 {
         padding: 5px 22px;
     }
-    .cart img {
-        border-right: none;
+    .upper-headers, .upper_headers_search {
+        border: none!important;
     }
     .form{
         padding: 15px 10px;

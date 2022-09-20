@@ -165,7 +165,8 @@ html {
     list-style: none;
     display: block;
 }
-.hamburger, .image-back, .hide, .search-button, .distributor, .description_why_us, .upper_headers_search {
+.hamburger, .image-back, .hide, .search-button, .distributor, .description_why_us, 
+.upper_headers_search, .title_menu_responsive {
     display: none;
 }
 .bar {
@@ -1033,12 +1034,13 @@ ul li {
     .footer-information ul{
         margin-top: 0px;
     }
-    .hide, .text_menu, .upper_headers_search{
+    .hide, .text_menu, .upper_headers_search, .title_menu_responsive{
         display: block;
     }
     #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, #socialMedia, #description_us,.w3-display-left,
     .w3-display-right, .w3-display-left-lights, .w3-display-right-lights, .contact, .pionek,
-    .nav-items, .dropdown:hover .dropdown-content, .dropdown-content1, .recommend-products::after, .distributor::after{
+    .nav-items, .dropdown:hover .dropdown-content, .dropdown-content1, .recommend-products::after, .distributor::after,
+    .text-cart, .arrow-cart{
         display: none;
     }
     .dropdown_contact{
@@ -1174,7 +1176,7 @@ ul li {
         width: 100%;
         border-bottom: 1px solid hsla(0, 0%, 100%, .3);
     }
-    .galleryFooter, .galleryFooterDelivery{
+    .galleryFooter, .galleryFooterDelivery, .cart img, .cart{
         border: none;
     }
     .footerSocialMedia, .footerSocialMedia__content{
@@ -1386,14 +1388,15 @@ ul li {
         width: 100%;
     }
     .menu-paragraph p, .text-cart, .contact, .icon_text_newsletter, .block-first, 
-    .sign-up span, .text_menu, .upper_headers_search span{
+    .sign-up span, .text_menu, .upper_headers_search span,
+    .title_menu_responsive{
         display: none;
     }
     .galleryRecommended{
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
-    .cart img {
-        border: none;
+    .menu-paragraph, .upper_headers_search {
+        border: none!important;
     }
     .content-area h3 {
         font-size: 20px;
