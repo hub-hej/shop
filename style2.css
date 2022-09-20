@@ -1056,7 +1056,7 @@ input[type=text]:focus {
     background-color: #f74137;
     color: white;
 }
- input[type="checkbox"] {
+.box_input {
     visibility: hidden;
 }
 .check_box {

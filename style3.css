@@ -960,7 +960,7 @@ tbody tr:nth-child(even)
     text-align: center;
 }
 .icon-comment{
-    padding: 1rem;
+    padding: 10px;
     background: #F74137;
     color: white;
     text-align: center;
