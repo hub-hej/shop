@@ -69,7 +69,7 @@ if(isset($_POST['submit']))
 <body>
 <div class="full-page">
 		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-			<section>
+			<header>
 				<div class="main">
 					<div class="menu">
 						<div class="upper-menu">
@@ -441,9 +441,7 @@ if(isset($_POST['submit']))
 						</div>
 					</div>
 				</div>
-			</section>
 
-			<section>
 				<div class="header">
 						<div class="nav-items">
 							<div class="headers">
@@ -472,7 +470,7 @@ if(isset($_POST['submit']))
 							</div>
 						</div>
 				</div>
-			</section>
+</header>
 
 	<main>
 		<div class="container">

@@ -27,7 +27,7 @@
     ?>
     <div class="full-page">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-        <section>
+        <header>
             <div class="main">
                 <div class="menu">
                     <div class="upper-menu">
@@ -420,9 +420,7 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section>
             <div class="header">
                 <div class="nav-items">
                     <div class="headers">
@@ -451,7 +449,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
 
         <section>
                     <div class="newsletter_row">

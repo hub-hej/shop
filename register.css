@@ -30,6 +30,11 @@ html {
     font-size: 100%;
     scroll-behavior: smooth;
 }
+header{
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+}
 #myBtn {
     position: fixed;
     bottom: 50px;
