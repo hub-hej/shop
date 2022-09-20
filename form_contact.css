@@ -30,6 +30,11 @@ html {
     font-size: 100%;
     scroll-behavior: smooth;
 }
+header{
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+}
 #myBtn {
     position: fixed;
     bottom: 50px;
@@ -498,7 +503,7 @@ ul, ul li {
     font-family: var(--font-family-secondary);
     overflow: hidden;
 }
-.contact_mail a:hover, .contact_phone a:hover{
+.contact_mail a:hover, .contact_phone a:hover, .department_info a:hover{
     color: #f74137;
 }
 .fa-regular.envelope{
@@ -521,6 +526,16 @@ ul, ul li {
     margin-bottom: 10px;
     font-family: var(--font-family-secondary);
     outline: none;
+    width: 100%;
+}
+.input_group{
+    display: flex;
+    align-items: baseline;
+}
+.icon_input{
+    background-color: #F74137;
+    padding: 8px;
+    color: white;
 }
 .text_area{
     font-size: 15px;
@@ -530,6 +545,7 @@ ul, ul li {
     border: 1px solid #e1e2e8;
     resize: none;
     outline: none;
+    width: 100%;
 }
 .checkbox-button {
     display: flex;
@@ -583,6 +599,56 @@ ul, ul li {
 .send_button:hover{
     background-color: #f51c10;
 }
+.department_list{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    align-items: center;
+    padding: 10px;
+    justify-items: center;
+}
+.deparment_elements img{
+    width: 6.75rem;
+}
+.deparment_elements{
+    display: flex;
+}
+.department_info{
+    border: 1px solid #e1e2e8;
+    padding: 0.625rem;
+}
+.department_info p{
+    font-family: var(--font-family-primary);
+    margin-bottom: 5px;
+}
+.department_info a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-family-secondary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.phone{
+    width: 25px!important;
+    height: 25px;
+}
+.googleMaps{
+    margin-bottom: 15px;
+}
+iframe{
+    width: 100%;
+}
+.input_group_comment{
+    display: flex;
+    align-items: center;
+}
+.icon_input_comment{
+    background-color: #f74137;
+    color: white;
+    padding: 17px 8px;
+}
 @media screen and (max-width: 1100px){
     .logo img {
     height: 40px;
@@ -604,6 +670,10 @@ ul, ul li {
     }
     .checkbox-button__input:checked+.checkbox-button__control:after{
         width: 10px;
+    }
+    .department_list{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 15px;
     }
 }
 @media screen and (min-width: 886px) {
@@ -754,7 +824,7 @@ ul, ul li {
         border: none;
         cursor: pointer;
     }
-    .fa-solid{
+    .fa-solid.search_overlay{
         font-size: 25px;
     }
     .overlay_arrow1{
@@ -913,5 +983,8 @@ ul, ul li {
     }
     .cart img{
         border: none;
+    }
+    .department_list{
+        grid-template-columns: repeat(1, minmax(0,1fr));
     }
 }

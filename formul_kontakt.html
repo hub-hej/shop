@@ -20,7 +20,7 @@
 <body>
 	<div class="full-page">
 		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-		<section>
+		<header>
 			<div class="main">
 				<div class="menu">
 					<div class="upper-menu">
@@ -75,282 +75,283 @@
 							</div>
 
 							<div class="upper_headers_search">
-                                <div id="myNav" class="overlay">
-                                    <div class="text_close_icon">
-                                        <div class="text_category">
-                                            <i class="fa-solid fa-angle-left" onclick="closeNav()"></i>
-                                            <p>KATEGORIE</p>
-                                        </div>
-                                        <div class="close_overlay">
-                                            <a href="javascript:void(0)" class="closebtn"
-                                                onclick="closeNav()">&times;</a>
-                                        </div>
-                                    </div>
+								<div id="myNav" class="overlay">
+									<div class="text_close_icon">
+										<div class="text_category">
+											<i class="fa-solid fa-angle-left" onclick="closeNav()"></i>
+											<p>KATEGORIE</p>
+										</div>
+										<div class="close_overlay">
+											<a href="javascript:void(0)" class="closebtn"
+												onclick="closeNav()">&times;</a>
+										</div>
+									</div>
 
-                                    <div class="search-menu">
-                                        <form class="search_Top">
-                                            <input type="text" class="searchTop__textfield" id="myInputs"
-                                                onkeyup="search_level()" placeholder="Wpisz nazwę produktu">
-                                            <button type="submit" class="searchTop__submit"
-                                                aria-label="Przycisk do wyszukiwania frazesów"><i
-                                                    class="fa fa-search"></i></button>
-                                        </form>
-                                    </div>
+									<div class="search-menu">
+										<form class="search_Top">
+											<input type="text" class="searchTop__textfield" id="myInputs"
+												onkeyup="search_level()" placeholder="Wpisz nazwę produktu">
+											<button type="submit" class="searchTop__submit"
+												aria-label="Przycisk do wyszukiwania frazesów"><i
+													class="fa fa-search"></i></button>
+										</form>
+									</div>
 
-                                    <div class="scrollBar_menu">
-                                        <ul class="level1">
+									<div class="scrollBar_menu">
+										<ul class="level1">
 
-                                            <li class="menu_level1" onclick="openProducts()">PRODUKTY
-                                                <i class="fa-solid overlay_arrow fa-angle-right"
-                                                    onclick="openProducts()"></i>
-                                            </li>
-                                            <div id="myProducts" class="overlay">
-                                                <div class="text_close_icon">
-                                                    <div class="text_category">
-                                                        <i class="fa-solid fa-angle-left" onclick="closeProducts()"></i>
-                                                        <p>PRODUKTY</p>
-                                                    </div>
-                                                    <div class="close_overlay">
-                                                        <a href="javascript:void(0)" class="closebtn"
-                                                            onclick="closeProducts()">&times;</a>
-                                                    </div>
-                                                </div>
+											<li class="menu_level1" onclick="openProducts()">PRODUKTY
+												<i class="fa-solid overlay_arrow fa-angle-right"
+													onclick="openProducts()"></i>
+											</li>
+											<div id="myProducts" class="overlay">
+												<div class="text_close_icon">
+													<div class="text_category">
+														<i class="fa-solid fa-angle-left" onclick="closeProducts()"></i>
+														<p>PRODUKTY</p>
+													</div>
+													<div class="close_overlay">
+														<a href="javascript:void(0)" class="closebtn"
+															onclick="closeProducts()">&times;</a>
+													</div>
+												</div>
 
-                                                <div class="menu_products">
-                                                    <ul class="level1">
+												<div class="menu_products">
+													<ul class="level1">
 
-                                                        <li class="menu_level2" onclick="openElements()">ŹRÓDŁA ŚWIATŁA
-                                                            <i class="fa-solid overlay_arrow1 fa-angle-right"></i>
-                                                        </li>
-                                                        <div id="myElementsLights" class="overlay">
-                                                            <div class="text_close_icon">
-                                                                <div class="text_category">
-                                                                    <i class="fa-solid fa-angle-left"
-                                                                        onclick="closeElements()"></i>
-                                                                    <p>ŹRÓDŁA ŚWIATŁA</p>
-                                                                </div>
-                                                                <div class="close_overlay">
-                                                                    <a href="javascript:void(0)" class="closebtn"
-                                                                        onclick="closeElements()">&times;</a>
-                                                                </div>
-                                                            </div>
+														<li class="menu_level2" onclick="openElements()">ŹRÓDŁA ŚWIATŁA
+															<i class="fa-solid overlay_arrow1 fa-angle-right"></i>
+														</li>
+														<div id="myElementsLights" class="overlay">
+															<div class="text_close_icon">
+																<div class="text_category">
+																	<i class="fa-solid fa-angle-left"
+																		onclick="closeElements()"></i>
+																	<p>ŹRÓDŁA ŚWIATŁA</p>
+																</div>
+																<div class="close_overlay">
+																	<a href="javascript:void(0)" class="closebtn"
+																		onclick="closeElements()">&times;</a>
+																</div>
+															</div>
 
-                                                            <div class="menu_products">
-                                                                <ul class="level1">
-                                                                    <li class="menu_level2" onclick="openSpark()">SPARK
-                                                                        <i
-                                                                            class="fa-solid overlay_arrow1 fa-angle-right"></i>
-                                                                    </li>
-                                                                    <div id="myCategorySpark" class="overlay">
-                                                                        <div class="text_close_icon">
-                                                                            <div class="text_category">
-                                                                                <i class="fa-solid fa-angle-left"
-                                                                                    onclick="closeSpark()"></i>
-                                                                                <p>SPARK</p>
-                                                                            </div>
-                                                                            <div class="close_overlay">
-                                                                                <a href="javascript:void(0)"
-                                                                                    class="closebtn"
-                                                                                    onclick="closeSpark()">&times;</a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="menu_products">
-                                                                            <ul class="level1">
-                                                                                <li class="menu_level2"><a href="#"
-                                                                                        class="menu_a_level1">PODKATEGORIA
-                                                                                        1</a>
-                                                                                </li>
-                                                                                <li class="menu_level2"><a href="#"
-                                                                                        class="menu_a_level1">PODKATEGORIA
-                                                                                        2</a>
-                                                                                </li>
-                                                                                <li class="menu_level2"><a href="#"
-                                                                                        class="menu_a_level1">PODKATEGORIA
-                                                                                        3</a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">PHANTOM</a>
-                                                                    </li>
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">INSPIRE</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <li class="menu_level2"><a href="#"
-                                                                class="menu_a_level1">OŚWIETLENIE WEWNETRZNE</a></li>
-                                                        <li class="menu_level2"><a href="#"
-                                                                class="menu_a_level1">GNIAZKA, WYŁĄCZNIKI</a></li>
+															<div class="menu_products">
+																<ul class="level1">
+																	<li class="menu_level2" onclick="openSpark()">SPARK
+																		<i
+																			class="fa-solid overlay_arrow1 fa-angle-right"></i>
+																	</li>
+																	<div id="myCategorySpark" class="overlay">
+																		<div class="text_close_icon">
+																			<div class="text_category">
+																				<i class="fa-solid fa-angle-left"
+																					onclick="closeSpark()"></i>
+																				<p>SPARK</p>
+																			</div>
+																			<div class="close_overlay">
+																				<a href="javascript:void(0)"
+																					class="closebtn"
+																					onclick="closeSpark()">&times;</a>
+																			</div>
+																		</div>
+																		<div class="menu_products">
+																			<ul class="level1">
+																				<li class="menu_level2"><a href="#"
+																						class="menu_a_level1">PODKATEGORIA
+																						1</a>
+																				</li>
+																				<li class="menu_level2"><a href="#"
+																						class="menu_a_level1">PODKATEGORIA
+																						2</a>
+																				</li>
+																				<li class="menu_level2"><a href="#"
+																						class="menu_a_level1">PODKATEGORIA
+																						3</a>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">PHANTOM</a>
+																	</li>
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">INSPIRE</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<li class="menu_level2"><a href="#"
+																class="menu_a_level1">OŚWIETLENIE WEWNETRZNE</a></li>
+														<li class="menu_level2"><a href="#"
+																class="menu_a_level1">GNIAZKA, WYŁĄCZNIKI</a></li>
 
-                                                        <li class="menu_level2" onclick="openAutomatic()">AUTOMATYKA,
-                                                            STEROWANIE
-                                                            <i class="fa-solid overlay_arrow1 fa-angle-right"></i>
-                                                        </li>
-                                                        <div id="myAutomatic" class="overlay">
-                                                            <div class="text_close_icon">
-                                                                <div class="text_category">
-                                                                    <i class="fa-solid fa-angle-left"
-                                                                        onclick="closeAutomatic()"></i>
-                                                                    <p>AUTOMATYKA, STEROWANIE</p>
-                                                                </div>
-                                                                <div class="close_overlay">
-                                                                    <a href="javascript:void(0)" class="closebtn"
-                                                                        onclick="closeAutomatic()">&times;</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="menu_products">
-                                                                <ul class="level1">
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">PODKATEGORIA</a>
-                                                                    </li>
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">PODKATEGORIA</a>
-                                                                    </li>
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">PODKATEGORIA</a>
-                                                                    </li>
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">PODKATEGORIA</a>
-                                                                    </li>
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">PODKATEGORIA</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+														<li class="menu_level2" onclick="openAutomatic()">AUTOMATYKA,
+															STEROWANIE
+															<i class="fa-solid overlay_arrow1 fa-angle-right"></i>
+														</li>
+														<div id="myAutomatic" class="overlay">
+															<div class="text_close_icon">
+																<div class="text_category">
+																	<i class="fa-solid fa-angle-left"
+																		onclick="closeAutomatic()"></i>
+																	<p>AUTOMATYKA, STEROWANIE</p>
+																</div>
+																<div class="close_overlay">
+																	<a href="javascript:void(0)" class="closebtn"
+																		onclick="closeAutomatic()">&times;</a>
+																</div>
+															</div>
+															<div class="menu_products">
+																<ul class="level1">
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">PODKATEGORIA</a>
+																	</li>
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">PODKATEGORIA</a>
+																	</li>
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">PODKATEGORIA</a>
+																	</li>
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">PODKATEGORIA</a>
+																	</li>
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">PODKATEGORIA</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
 
-                                                        <li class="menu_level2"><a href="#"
-                                                                class="menu_a_level1">ROZDZIELENIE I APARATURA</a></li>
-                                                        <li class="menu_level2"><a href="#" class="menu_a_level1">TAŚMY,
-                                                                PASKI LED</a></li>
-                                                        <li class="menu_level2"><a href="#"
-                                                                class="menu_a_level1">MATERIAŁY INSTALACYJNE I INNE</a>
-                                                        </li>
+														<li class="menu_level2"><a href="#"
+																class="menu_a_level1">ROZDZIELENIE I APARATURA</a></li>
+														<li class="menu_level2"><a href="#" class="menu_a_level1">TAŚMY,
+																PASKI LED</a></li>
+														<li class="menu_level2"><a href="#"
+																class="menu_a_level1">MATERIAŁY INSTALACYJNE I INNE</a>
+														</li>
 
-                                                        <li class="menu_level2" onclick="openInteriorLighting()">
-                                                            OŚWIETLENIE WEWNĘTRZNE
-                                                            <i class="fa-solid overlay_arrow1 fa-angle-right"></i>
-                                                        </li>
-                                                        <div id="myInterior" class="overlay">
-                                                            <div class="text_close_icon">
-                                                                <div class="text_category">
-                                                                    <i class="fa-solid fa-angle-left"
-                                                                        onclick="closeInteriorLighting()"></i>
-                                                                    <p>OŚWIETLENIE WEWNĘTRZNE</p>
-                                                                </div>
-                                                                <div class="close_overlay">
-                                                                    <a href="javascript:void(0)" class="closebtn"
-                                                                        onclick="closeInteriorLighting()">&times;</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="menu_products">
-                                                                <ul class="level1">
-                                                                    <li class="menu_level2"><a href="#"
-                                                                            class="menu_a_level1">LAMPY WISZĄCE,
-                                                                            ŻYRANDOLE</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </ul>
-                                                </div>
-                                            </div>
+														<li class="menu_level2" onclick="openInteriorLighting()">
+															OŚWIETLENIE WEWNĘTRZNE
+															<i class="fa-solid overlay_arrow1 fa-angle-right"></i>
+														</li>
+														<div id="myInterior" class="overlay">
+															<div class="text_close_icon">
+																<div class="text_category">
+																	<i class="fa-solid fa-angle-left"
+																		onclick="closeInteriorLighting()"></i>
+																	<p>OŚWIETLENIE WEWNĘTRZNE</p>
+																</div>
+																<div class="close_overlay">
+																	<a href="javascript:void(0)" class="closebtn"
+																		onclick="closeInteriorLighting()">&times;</a>
+																</div>
+															</div>
+															<div class="menu_products">
+																<ul class="level1">
+																	<li class="menu_level2"><a href="#"
+																			class="menu_a_level1">LAMPY WISZĄCE,
+																			ŻYRANDOLE</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</ul>
+												</div>
+											</div>
 
-                                            <li class="menu_level1" onclick="openManufacturers()">PRODUCENCI
-                                                <i class="fa-solid overlay_arrow fa-angle-right"
-                                                    onclick="openManufacturers()"></i>
-                                            </li>
-                                            <div id="myManufacturers" class="overlay">
-                                                <div class="text_close_icon">
-                                                    <div class="text_category">
-                                                        <i class="fa-solid fa-angle-left"
-                                                            onclick="closeManufacturers()"></i>
-                                                        <p>PRODUCENCI</p>
-                                                    </div>
-                                                    <div class="close_overlay">
-                                                        <a href="javascript:void(0)" class="closebtn"
-                                                            onclick="closeManufacturers()">&times;</a>
-                                                    </div>
-                                                </div>
-                                                <div class="menu_products">
-                                                    <ul class="level1">
-                                                        <li class="menu_level2">PHILIPS</li>
-                                                        <li class="menu_level2">PRODUCENT 1</li>
-                                                        <li class="menu_level2">PRODUCENT 2 </li>
-                                                        <li class="menu_level2">PRODUCENT 3</li>
-                                                        <li class="menu_level2">PRODUCENT 4</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+											<li class="menu_level1" onclick="openManufacturers()">PRODUCENCI
+												<i class="fa-solid overlay_arrow fa-angle-right"
+													onclick="openManufacturers()"></i>
+											</li>
+											<div id="myManufacturers" class="overlay">
+												<div class="text_close_icon">
+													<div class="text_category">
+														<i class="fa-solid fa-angle-left"
+															onclick="closeManufacturers()"></i>
+														<p>PRODUCENCI</p>
+													</div>
+													<div class="close_overlay">
+														<a href="javascript:void(0)" class="closebtn"
+															onclick="closeManufacturers()">&times;</a>
+													</div>
+												</div>
+												<div class="menu_products">
+													<ul class="level1">
+														<li class="menu_level2">PHILIPS</li>
+														<li class="menu_level2">PRODUCENT 1</li>
+														<li class="menu_level2">PRODUCENT 2 </li>
+														<li class="menu_level2">PRODUCENT 3</li>
+														<li class="menu_level2">PRODUCENT 4</li>
+													</ul>
+												</div>
+											</div>
 
-                                            <li class="menu_level1"><a href="#" class="menu_a_level1">NOWOŚCI</a></li>
-                                            <li class="menu_level1"><a href="#" class="menu_a_level1">PROMOCJE</a></li>
-                                            <li class="menu_level1"><a href="#" class="menu_a_level1">POLECAMY</a></li>
-                                            <li class="menu_level1"><a href="#" class="menu_a_level1">O NAS</a></li>
-                                            <li class="menu_level1"><a href="#" class="menu_a_level1">INSPIRACJE</a></li>
-                                        </ul>
-                                    </div>
+											<li class="menu_level1"><a href="#" class="menu_a_level1">NOWOŚCI</a></li>
+											<li class="menu_level1"><a href="#" class="menu_a_level1">PROMOCJE</a></li>
+											<li class="menu_level1"><a href="#" class="menu_a_level1">POLECAMY</a></li>
+											<li class="menu_level1"><a href="#" class="menu_a_level1">O NAS</a></li>
+											<li class="menu_level1"><a href="#" class="menu_a_level1">INSPIRACJE</a>
+											</li>
+										</ul>
+									</div>
 
-                                    <div class="menuDeliveryPicker">
-                                        <div id="myWholeNav" class="whole_overlay">
-                                            <div class="settings_icon">
-                                                <div class="text_settings">
-                                                    <p>USTAWIENIA REGIONALNE</p>
-                                                </div>
-                                                <a href="javascript:void(0)" class="closebtn"
-                                                    onclick="closeWholeNav()">&times;</a>
-                                            </div>
-                                            <div class="column_section">
-                                                <div class="select_option_localization">
-                                                    <div class="general_description">
-                                                        <p class="localization">Lokalizacja</p>
-                                                        <div class="select_poland_local">
-                                                            <p>Polska</p>
-                                                            <i class="fa-solid arrow_down fa-angle-down"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
+									<div class="menuDeliveryPicker">
+										<div id="myWholeNav" class="whole_overlay">
+											<div class="settings_icon">
+												<div class="text_settings">
+													<p>USTAWIENIA REGIONALNE</p>
+												</div>
+												<a href="javascript:void(0)" class="closebtn"
+													onclick="closeWholeNav()">&times;</a>
+											</div>
+											<div class="column_section">
+												<div class="select_option_localization">
+													<div class="general_description">
+														<p class="localization">Lokalizacja</p>
+														<div class="select_poland_local">
+															<p>Polska</p>
+															<i class="fa-solid arrow_down fa-angle-down"></i>
+														</div>
+													</div>
+												</div>
 
-                                                <div class="select_option_localization">
-                                                    <div class="general_description">
-                                                        <p class="localization">Język</p>
-                                                        <div class="select_poland_local">
-                                                            <p>polski</p>
-                                                            <i class="fa-solid arrow_down fa-angle-down"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
+												<div class="select_option_localization">
+													<div class="general_description">
+														<p class="localization">Język</p>
+														<div class="select_poland_local">
+															<p>polski</p>
+															<i class="fa-solid arrow_down fa-angle-down"></i>
+														</div>
+													</div>
+												</div>
 
-                                                <div class="select_option_localization">
-                                                    <div class="general_description">
-                                                        <p class="localization">Waluta</p>
-                                                        <div class="select_poland_local">
-                                                            <p>Polski złoty (PLN)</p>
-                                                            <i class="fa-solid arrow_down fa-angle-down"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="button_settings">ZAPISZ</button>
-                                            </div>
-                                        </div>
-                                        <img src="./photos/delivery-country-4.png" alt="Polska"
-                                            onclick="openWholeNav()">
+												<div class="select_option_localization">
+													<div class="general_description">
+														<p class="localization">Waluta</p>
+														<div class="select_poland_local">
+															<p>Polski złoty (PLN)</p>
+															<i class="fa-solid arrow_down fa-angle-down"></i>
+														</div>
+													</div>
+												</div>
+												<button class="button_settings">ZAPISZ</button>
+											</div>
+										</div>
+										<img src="./photos/delivery-country-4.png" alt="Polska"
+											onclick="openWholeNav()">
 
-                                        <div class="menuDelivery_text">
-                                            <p onclick="openWholeNav()">PLN</p>
-                                        </div>
+										<div class="menuDelivery_text">
+											<p onclick="openWholeNav()">PLN</p>
+										</div>
 
-                                        <div class="menuDelivery_country">
-                                            <p onclick="openWholeNav()">POLSKI</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <i class="fa-solid search_overlay fa-magnifying-glass" onclick="openNav()"></i>
-                                <span onclick="openNav()">SZUKAJ</span>
-                            </div>
+										<div class="menuDelivery_country">
+											<p onclick="openWholeNav()">POLSKI</p>
+										</div>
+									</div>
+								</div>
+								<i class="fa-solid search_overlay fa-magnifying-glass" onclick="openNav()"></i>
+								<span onclick="openNav()">SZUKAJ</span>
+							</div>
 
 							<div class="upper-headers">
 								<a href="#">
@@ -406,9 +407,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
 
-		<section>
 			<div class="header">
 				<div class="nav-items">
 					<div class="headers">
@@ -437,7 +436,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</header>
 
 		<main>
 			<div class="up_container">
@@ -512,13 +511,36 @@
 
 			<div class="contactForm">
 				<form method="POST" action="form.php" class="form" autocomplete="off">
-					<input type="text" class="input_username" name="username" placeholder="Imie i nazwisko*" required>
-					<input type="email" class="input_email" name="email" placeholder="Adres e-mail*" required>
-					<input type="tel" class="input_phone" placeholder="Telefon*"
-						oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-						maxlength="9" required>
-					<textarea name="text_comment" class="text_area" placeholder="Wiadomość*" required></textarea>
+					<div class="input_group">
+						<div class="icon_input">
+							<i class="fa fa-user icon"></i>
+						</div>
+						<input type="text" class="input_username" name="name" placeholder="Imie i nazwisko*"
+							required>
+					</div>
 
+					<div class="input_group">
+						<div class="icon_input">
+							<i class="fa fa-envelope icon"></i>
+						</div>
+						<input type="email" class="input_email" name="email" placeholder="Adres e-mail*" required>
+					</div>
+
+					<div class="input_group">
+						<div class="icon_input">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<input type="tel" class="input_phone" placeholder="Telefon*" name="phone"
+							oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+							maxlength="9" required>
+					</div>
+
+					<div class="input_group_comment">
+						<div class="icon_input_comment">
+							<i class="fa-solid fa-comment"></i>
+						</div>
+						<textarea name="comment" class="text_area" placeholder="Wiadomość*" required></textarea>
+					</div>
 					<label class="checkbox-button">
 						<input type="checkbox" class="checkbox-button__input" class="choice1-1" name="choice1" required>
 						<span class="checkbox-button__control"></span>
@@ -530,8 +552,9 @@
 
 					<div class="field_button">
 						<span>*Pola wymagane</span>
-						<button class="send_button">WYŚLIJ</button>
+						<button name="submit" class="send_button">WYŚLIJ</button>
 					</div>
+					
 				</form>
 			</div>
 
@@ -541,6 +564,153 @@
 						<h1>Dział handlowy</h1>
 					</div>
 				</div>
+			</div>
+
+			<div class="department_list">
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="contact_data">
+					<div class="row">
+						<h1>Dział eksportu</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="department_list">
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+
+				<div class="deparment_elements">
+					<img src="./photos/fotos-39.png" alt="dział" />
+
+					<div class="department_info">
+						<p>Wiktor Kowalski</p>
+						<a href="tel:+48 215 924 058">
+							<img src="./photos/phone.png" alt="Ikona telefonu" class="phone">+48 215 924 058
+						</a>
+
+						<a href="mailto:sales@2click.pl">
+							<i class="fa-regular envelope fa-envelope"></i>sales@2click.pl
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="contact_data">
+					<div class="row">
+						<h1>Jak dojechać</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="googleMaps">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4065.237647266775!2d16.383180761312655!3d52.71044919386529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47041c49177d3fd5%3A0x7e2802899f9269cb!2sAmica!5e0!3m2!1spl!2spl!4v1663653663869!5m2!1spl!2spl"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</main>
 
