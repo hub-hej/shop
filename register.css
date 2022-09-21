@@ -217,7 +217,7 @@ header{
     border: none;
     background-color: white;
 }
-.hamburger, .text_menu {
+.hamburger, .text_menu, .title_menu_responsive {
     display: none;
 }
 .bar {
@@ -610,7 +610,7 @@ ul, ul li {
     }
 }
 @media screen and (min-width: 886px) {
-    #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2{
         display: block!important;
     }
     .gallery_flex{
@@ -621,6 +621,12 @@ ul, ul li {
     }
 }
 @media screen and (max-width: 885px) {
+    .cart-family{
+        border-left: 1px solid #e1e2e8;
+        border-right: 1px solid #e1e2e8;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .gallery_flex{
         display: flex;
         align-items: center;
@@ -631,7 +637,7 @@ ul, ul li {
         width: 100%;
         border-bottom: 1px solid hsla(0,0%,100%,.3);
     }
-    .galleryFooter, .galleryFooterDelivery{
+    .galleryFooter, .galleryFooterDelivery, .cart, .cart img{
         border: none;
     }
     .footer-information{
@@ -643,10 +649,11 @@ ul, ul li {
     .under-footer {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    .hide, .text_menu, .upper_headers_search{
+    .hide, .text_menu, .upper_headers_search, .title_menu_responsive{
         display: block;
     }
-    #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .contact, .pionek{
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, .contact, .pionek,
+    .arrow-cart, .text-cart{
         display: none;
     }
     .module_body, .fa-phone-volume{
@@ -902,7 +909,8 @@ ul, ul li {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 500px) {
-    .upper-headers p, .text-cart, .text_menu, .upper_headers_search span{
+    .upper-headers p, .text-cart, .text_menu, .upper_headers_search span,
+    .title_menu_responsive{
         display: none;
     }
     .checkbox-button__label, .submit-login p {
@@ -925,8 +933,11 @@ ul, ul li {
     .button{
         padding: 10px 22px;
     }
-    .cart img{
-        border: none;
+    .upper-headers, .upper_headers_search, .cart-family{
+        border: none!important;
+    }
+    .cart-family{
+        padding: 0;
     }
     .footerSocialMedia a{
         width: 50%;

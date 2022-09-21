@@ -483,6 +483,7 @@ if(isset($_POST['submit']))
                                             <p class="number-orders">342</p>
                                         </div>
                                         <img src="icons/icon_06.png" alt="Koszyk" />
+                                        <p class="title_menu_responsive">KOSZYK</p>
                                     </div>
 
                                     <div class="text-cart">
@@ -624,7 +625,7 @@ if(isset($_POST['submit']))
 
     <section>
         <div class="under-footer">
-        <div class="footer-information">
+                    <div class="footer-information">
                         <div class="hide-info">
                             <h3>O NAS</h3>
                             <a class="hide" onClick="op('#poka1');"><span
@@ -673,6 +674,21 @@ if(isset($_POST['submit']))
                     </div>
 
                     <div class="footer-information">
+                        <div class="hide-info">
+                            <h3>INFORMACJE</h3>
+                            <a class="hide" onClick="op('#poka4');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka4">
+                            <li><a href="#">Informacje o sklepie</a></li>
+                            <li><a href="#">Porady</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Galeria inspiracji</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Informacje o sklepie</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="footer-information">
                         <h3>MASZ PYTANIE?</h3>
                         <div class="general_module">
                             <div class="module_body">
@@ -697,11 +713,11 @@ if(isset($_POST['submit']))
 
                             <a href="formul_kontakt.php" class="formularz">FORMULARZ KONTAKTOWY</a>
                         </div>
-                    </div>
+                    </div>-->
             </div>
             </section>
             
-            <section>
+            <!--<section>
             <div class="footerDetails">
                 <div class="row-up">
                     <div class="galleryTextListFooterPayment">
@@ -765,7 +781,7 @@ if(isset($_POST['submit']))
 
                 </div>
             </div>
-            </section>
+            </section>-->
 
         <footer>
             <div>Coppyright 2022. Wszystkie prawa zastrzeżone</div>

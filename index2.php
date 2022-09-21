@@ -421,6 +421,7 @@
                                             <p class="number-orders">342</p>
                                         </div>
                                         <img src="icons/icon_06.png" alt="Koszyk" />
+                                        <p class="title_menu_responsive">KOSZYK</p>
                                     </div>
 
                                     <div class="text-cart">
@@ -479,7 +480,9 @@
         <main>
             <div class="third-header">
                 <div class="header-information"><a href="index.php" target="_blank">Strona główna</a></div>
+                <p>-</p>
                 <div class="header-information">Kategoria</div>
+                <p>-</p>
                 <div class="header-information">Kategoria</div>
             </div>
 
@@ -878,7 +881,6 @@
                         <div class="text-main-image">
                             <h4>DJI Mavic Air 2</h4>
                             <h3>Fly More Combo</h3>
-                            <br />
                             <a href="#" class="button button1">ZOBACZ WIĘCEJ</a>
                         </div>
                     </div>
@@ -1013,7 +1015,7 @@
                                     <span>Cena netto: </span>
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>447,85 zł</b>
+                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1526,7 +1528,7 @@
                 </div>
             </div>
                 
-            <div class="newsletter">
+            <!--<div class="newsletter">
                 <img src="./photos/banner-big-8-pl.jpg" alt="banner" class="block-first"/> 
                 <img src="./photos/banner-small-8-pl.jpg" alt="banner-2" class="none"/>
 
@@ -1547,7 +1549,7 @@
 
                     <a href="newsletter.php" class="sign-up button6"></i><span>Przejdź dalej </span><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
+            </div>-->
 
             <div class="under-footer">
                 <div class="footer-information">
@@ -1599,6 +1601,21 @@
                 </div>
 
                 <div class="footer-information">
+                    <div class="hide-info">
+                        <h3>INFORMACJE</h3>
+                        <a class="hide" onClick="op('#poka4');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
+                    <ul id="poka4">
+                        <li><a href="#">Informacje o sklepie</a></li>
+                        <li><a href="#">Porady</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Galeria inspiracji</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Informacje o sklepie</a></li>
+                    </ul>
+                </div>
+                <!--<div class="footer-information">
                     <h3>MASZ PYTANIE?</h3>
                     <div class="general_module">
                         <div class="module_body">
@@ -1623,10 +1640,10 @@
 
                         <a href="formul_kontakt.php" class="form">FORMULARZ KONTAKTOWY</a>
                     </div>
-                </div>
+                </div>-->
             </div>
 
-            <div class="footerDetails">
+            <!--<div class="footerDetails">
                 <div class="row-up">
                     <div class="galleryTextListFooterPayment">
                         BEZPIECZNE PŁATNOŚCI
@@ -1688,7 +1705,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div>-->
         </main>
         <footer>
             <div>Copyright 2022. Wszystkie prawa zastrzeżone</div>

@@ -278,8 +278,11 @@ header{
     height: 100%;
     font-family: var(--font-family-secondary);
     padding: 20px;
-    gap: 40px;
+    gap: 10px;
     padding-left: 30px;
+}
+.third-header p{
+    color: #E1E2E8;
 }
 .header-information, .range-size p {
     text-align: center;
@@ -1213,7 +1216,7 @@ input[type=text]:focus {
     }
 }
 @media screen and (min-width: 886px) {
-    #poka1, #poka2, #poka3, #image-poka1, #image-poka2{
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2{
         display: block!important;
     }
     .gallery_flex{
@@ -1224,6 +1227,12 @@ input[type=text]:focus {
     }
 }
 @media screen and (max-width: 885px) {
+    .cart-family{
+        border-left: 1px solid #e1e2e8;
+        border-right: 1px solid #e1e2e8;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .gallery_flex{
         display: flex;
         align-items: center;
@@ -1249,7 +1258,7 @@ input[type=text]:focus {
     .title_menu_responsive{
         display: block;
     }
-    #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .contact, .pionek, .nav-items,
+    #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, .contact, .pionek, .nav-items,
     .dropdown:hover .dropdown-content, .searchTop, .text-cart, .arrow-cart {
         display: none;
     }
@@ -1635,8 +1644,11 @@ input[type=text]:focus {
     .button1 {
         padding: 5px 22px;
     }
-    .upper-headers, .upper_headers_search {
+    .upper-headers, .upper_headers_search, .cart-family {
         border: none!important;
+    }
+    .cart-family{
+        padding: 0;
     }
     .form{
         padding: 15px 10px;

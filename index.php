@@ -408,6 +408,7 @@
                                                 <p class="number-orders">0</p>
                                             </div>
                                             <img src="icons/icon_06.png" alt="Koszyk" />
+                                            <p class="title_menu_responsive">KOSZYK</p>
                                         </div>
 
                                         <div class="text-cart">
@@ -658,7 +659,7 @@
                 </div>
             </div>
 
-            <div class="distributor">
+            <!--<div class="distributor">
                 <div class="title_distributor">
                     <h2>Dystrybutorzy</h2>
                     <a class="hide" onClick="op('#distributors');">
@@ -704,7 +705,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <div class="description_why_us">
                 <div class="title_description">
@@ -753,7 +754,7 @@
             </div>
         </main>
 
-        <section>
+        <!--<section>
             <div class="newsletter" id="newsletter_elements">
                 <img src="./photos/banner-big-8-pl.jpg" alt="banner" class="block-first"/> 
                 <img src="./photos/banner-small-8-pl.jpg" alt="banner-2" class="none"/>
@@ -776,7 +777,7 @@
                     <a href="newsletter.php" class="sign-up button6"></i><span>Przejdź dalej </span><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section>
             <div class="under-footer">
@@ -828,8 +829,23 @@
                         <li><a href="#">Schowek</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-information" id="section1">
+                
+                <div class="footer-information">
+                    <div class="hide-info">
+                        <h3>INFORMACJE</h3>
+                        <a class="hide" onClick="op('#poka5');"><span
+                                class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                    </div>
+                    <ul id="poka5">
+                        <li><a href="#">Informacje o sklepie</a></li>
+                        <li><a href="#">Porady</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Galeria inspiracji</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Informacje o sklepie</a></li>
+                    </ul>
+                </div>
+                <!--<div class="footer-information" id="section1">
                     <h3>MASZ PYTANIE?</h3>
                     <div class="general_module">
                         <div class="module_body">
@@ -854,11 +870,11 @@
 
                         <a href="formul_kontakt.html" class="form">FORMULARZ KONTAKTOWY</a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </section>
 
-        <section>
+        <!--<section>
             <div class="footerDetails">
 
                 <div class="row-up">
@@ -914,7 +930,7 @@
                 </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <footer>
             <div>Copyright 2022. Wszystkie prawa zastrzeżone</div>

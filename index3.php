@@ -405,6 +405,7 @@
                                             <p class="number-orders">0</p>
                                         </div>
                                         <img src="icons/icon_06.png" alt="Koszyk" />
+                                        <p class="title_menu_responsive">KOSZYK</p>
                                     </div>
 
                                     <div class="text-cart">
@@ -418,6 +419,7 @@
                                     </a>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -463,9 +465,11 @@
                         <p>Strona główna</p>
                     </a>
                 </div>
+                <span>-</span>
                 <div class="header-information">
                     <p>Kategoria</p>
                 </div>
+                <span>-</span>
                 <div class="header-information">
                     <p>Kategoria</p>
                 </div>
@@ -521,13 +525,13 @@
                                     </div>
                                 </div>
 
-                                <div class="icon_fav_btn" onclick="getclick(this);">
+                                <!--<div class="icon_fav_btn" onclick="getclick(this);">
                                     <i class="fa-regular fa-star"></i>
                                     <div class="fav_btn">
                                     </div>
-                                </div>
+                                </div>-->
 
-                                <div class="productOpinion">
+                                <!--<div class="productOpinion">
                                     <div class="productElementStars">
                                         <i class="fas fa-star stars"></i>
                                         <i class="fas fa-star stars"></i>
@@ -544,7 +548,7 @@
                                         <form action="#section3" class="forms"><button class="scroll">Dodaj
                                                 opinie</button></form>
                                     </div>
-                                </div>
+                                </div>-->
 
                                 <div class="variants">
                                     <p>WARIANTY</p>
@@ -592,7 +596,7 @@
                                 </div>
                             </div>
 
-                            <div class="productInfoBlock">
+                            <!--<div class="productInfoBlock">
                                 <div id="myNav" class="overlay">
                                     <div class="overlay-content">
                                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -634,6 +638,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <a class="button_overlay" onclick="openNav()"><img src="./icons/icon_01.png"
                                         class="icon_phone" alt="" />ZAMÓW TELEFONICZNIE</a>
                                 <a class="button_overlay" onclick="openNavs()"><span
@@ -680,13 +685,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
 
                     </div>
                 </div>
 
-                <div class="gallleryFeaturesFullWrapper">
+                <!--<div class="gallleryFeaturesFullWrapper">
 
                     <div class="galleryFeatures">
                         <div class="galleryFeaturesFullItem">
@@ -732,17 +737,17 @@
                             DOGODNE FORMY PŁATNOŚCI
                         </div>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="three-button">
                     <form action="#section1" class="forms"><button class="button button1">OPIS PRODUKTU</button></form>
-                    <form action="#section2" class="forms"><button class="button button2">SZCZEGÓŁY</button></form>
+                    <!--<form action="#section2" class="forms"><button class="button button2">SZCZEGÓŁY</button></form>
                     <form action="#section3" class="forms"><button class="button button3">OPINIE</button></form>
-                    <form action="#section4" class="forms"><button class="button button4">PLIKI DO POBRANIA</button>
+                    <form action="#section4" class="forms"><button class="button button4">PLIKI DO POBRANIA</button>-->
                     </form>
                     <form action="#section5" class="forms"><button class="button button5">DANE TECHNICZNE</button>
                     </form>
-                    <form action="#section6" class="forms"><button class="button button6">POWIĄZANE</button></form>
+                    <!--<form action="#section6" class="forms"><button class="button button6">POWIĄZANE</button></form>-->
                     <form action="#section7"><button class="button button7">INNE Z KATEGORII</button></form>
                 </div>
             </section>
@@ -753,10 +758,9 @@
                         <h2>Opis produktu</h2>
                     </div>
 
-                    <img src="./photos/baner_gowny_simon10.jpg" alt="Główny baner" />
+                    <!--<img src="./photos/baner_gowny_simon10.jpg" alt="Główny baner" />-->
 
-                    <p class="title-paragraph">GNIAZDKA I ŁĄCZNIKI KONTAKT SIMON 10</p>
-                    <p>Simon 10 to ekonomiczna seria modułowa dla inwestycji, na których zróżnicowana kolorystyka nie
+                    <p class="main_product_description">Simon 10 to ekonomiczna seria modułowa dla inwestycji, na których zróżnicowana kolorystyka nie
                         jest
                         wymagana.
                         Dwa podstawowe kolory: biały i kremowy oraz pełen przekrój asortymentu łączników i gniazd
@@ -766,7 +770,8 @@
                         tworzywa
                         zapewniającego trwałość i elastyczność
                         oraz bezpieczeństwo podczas prac montażowych</p>
-
+                                            
+                    <p class="title-paragraph">GNIAZDKA I ŁĄCZNIKI KONTAKT SIMON 10</p>
                     <p>Dron Mavic Air 2 oferuje wyższy poziom mocy i mobilności – tak zaawansowane funkcje jeszcze nigdy
                         nie
                         były dostępne w tak kompaktowej konstrukcji.
@@ -801,7 +806,7 @@
                 </div>
             </section>
 
-            <section>
+            <!--<section>
                 <div class="section_header_container" id="section2">
                     <div class="section_header_hide">
                         <h2>Szczegóły</h2>
@@ -812,9 +817,9 @@
                         <p>Łącznik jednobiegunowy (moduł) 10AX, 250V~, zaciski śrubowe</p>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
-            <section>
+            <!--<section>
                 <div class="section_header_opinion" id="section3">
                     <div class="section_header_hide">
                         <h2>Opinie</h2>
@@ -867,9 +872,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
-            <section>
+            <!--<section>
                 <div class="section_header_download" id="section4">
                     <div class="section_header_down_hide">
                         <h2>Pliki do pobrania</h2>
@@ -956,12 +961,13 @@
 
                     </div>
                 </div>
-            </section>
+            </section>-->
 
             <section>
+            <br /> <br />
                 <div class="basic-information" id="section5">
                     <div class="basic_hide">
-                        <h2>Dane techniczne</h2>
+                        <h2>Dane podstawowe</h2>
                         <a class="hide" onClick="op('#poka7');">
                             <span class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
                     </div>
@@ -970,10 +976,10 @@
                 <div id="poka7">
                     <div class="general-table">
                         <table>
-                            <tr>
+                            <!--<tr>
                                 <th class="left-header-table">PARAMETR</th>
                                 <th class="right-header-table">WARTOŚĆ</th>
-                            </tr>
+                            </tr>-->
                             <tr>
                                 <td class="right-text-table">Seria</td>
                                 <td class="left-text-table">Simon 10</td>
@@ -1014,7 +1020,7 @@
                 </div>
             </section>
 
-            <section>
+            <!--<section>
                 <div class="section_related" id="section6">
                     <div class="section_rel_hide">
                         <h2>Powiązane</h2>
@@ -1180,7 +1186,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
+
             <section>
                 <div class="section_category" id="section7">
                     <div class="section_cate_hide">
@@ -1383,7 +1390,7 @@
                 </div>
             </section>
 
-            <section>
+            <!--<section>
                 <div class="newsletter">
                     <img src="./photos/banner-big-8-pl.jpg" alt="banner" class="block-first"/> 
                     <img src="./photos/banner-small-8-pl.jpg" alt="banner-2" class="none"/>
@@ -1406,7 +1413,7 @@
                         <a href="newsletter.php" class="sign-up button10"></i><span>Przejdź dalej </span><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
             <section>
                 <div class="under-footer">
@@ -1459,6 +1466,21 @@
                     </div>
 
                     <div class="footer-information">
+                        <div class="hide-info">
+                            <h3>INFORMACJE</h3>
+                            <a class="hide" onClick="op('#poka4');"><span
+                                    class="arrow-down material-symbols-outlined">keyboard_arrow_down</span></a>
+                        </div>
+                        <ul id="poka4">
+                            <li><a href="#">Informacje o sklepie</a></li>
+                            <li><a href="#">Porady</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Galeria inspiracji</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Informacje o sklepie</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="footer-information">
                         <h3>MASZ PYTANIE?</h3>
                         <div class="general_module">
                             <div class="module_body">
@@ -1483,11 +1505,11 @@
 
                             <a href="formul_kontakt.php" class="formularz">FORMULARZ KONTAKTOWY</a>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </section>
 
-            <section>
+            <!--<section>
                 <div class="footerDetails">
                     <div class="row-up">
                         <div class="galleryTextListFooterPayment">
@@ -1553,7 +1575,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
         </main>
         <footer>
             <div>Copyright 2022. Wszystkie prawa zastrzeżone</div>

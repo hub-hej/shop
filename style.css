@@ -187,7 +187,7 @@ html {
     display: flex;
 }
 .menu-paragraph, .menu-paragraph a, .cart{
-    gap: 5px;
+    gap: 10px;
 }
 .menu-paragraph, .menu-paragraph a, .cart, .minus, .plus, .add-information, .checkbox-button,
 .forms{
@@ -223,7 +223,7 @@ html {
 .dropdown {
     position: relative;
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 .dropdown-content, .dropdown-content1, .dropdown_contact{
     display: none;  
@@ -310,6 +310,7 @@ html {
     text-align: left;
     max-width: 345px;
     padding-top: 15px;
+    line-height: 1.3;
 }
 .text-main-image b, .text-main-image h4 {
     font-family: var(--font-family-secondary);
@@ -759,10 +760,11 @@ footer {
     padding-top: 10px;
 }
 .about-section p {
-    max-width: 900px;
+    max-width: 1050px;
     margin: 30px auto;
     font-size: 18px;
     font-family: var(--font-family-secondary);
+    line-height: 1.3;
 }
 .about-section .icons {
     display: flex;
@@ -985,7 +987,7 @@ ul li {
 }
 @media screen and (min-width: 886px) {
     #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, #description_us,
-    #socialMedia{
+    #socialMedia, #poka5{
         display: block!important;
     }
     .gallery_flex{
@@ -996,6 +998,12 @@ ul li {
     }
 }
 @media screen and (max-width: 885px) {
+    .cart-family{
+        border-left: 1px solid #E1E2E8;
+        border-right: 1px solid #e1e2e8;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .text-on-sub-image b, .text-main-image h3{
         font-size: 40px;
     }
@@ -1040,7 +1048,7 @@ ul li {
     #poka1, #poka2, #poka3, #poka4, #image-poka1, #image-poka2, #distributors, #socialMedia, #description_us,.w3-display-left,
     .w3-display-right, .w3-display-left-lights, .w3-display-right-lights, .contact, .pionek,
     .nav-items, .dropdown:hover .dropdown-content, .dropdown-content1, .recommend-products::after, .distributor::after,
-    .text-cart, .arrow-cart{
+    .text-cart, .arrow-cart, #poka5{
         display: none;
     }
     .dropdown_contact{
@@ -1376,6 +1384,12 @@ ul li {
     .button_settings:hover{
         background-color: #f51c10;
     }
+    .upper_headers_search{
+        gap: 10px;
+    }
+    .text_menu, .title_menu_responsive{
+        margin-top: 10px;
+    }
 }
 @media screen and (max-width: 600px) {
     .about-section {
@@ -1395,7 +1409,7 @@ ul li {
     .galleryRecommended{
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
-    .menu-paragraph, .upper_headers_search {
+    .menu-paragraph, .upper_headers_search, .cart-family {
         border: none!important;
     }
     .content-area h3 {
@@ -1434,6 +1448,9 @@ ul li {
     }
     .newsletterBar_desc{
         font-size: .875rem;
+    }
+    .cart-family{
+        padding: 0;
     }
 }
 @media screen and (min-width: 100px) and (max-width: 500px){

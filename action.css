@@ -219,7 +219,7 @@ header{
     border: none;
     background-color: white;
 }
-.hamburger, .hide, .text_menu, .upper_headers_search {
+.hamburger, .hide, .text_menu, .upper_headers_search, .title_menu_responsive {
     display: none;
 }
 .bar {
@@ -443,16 +443,23 @@ ul, ul li {
     }
 }
 @media screen and (max-width: 850px) {
+    .cart-family{
+        border-left: 1px solid #e1e2e8;
+        border-right: 1px solid #e1e2e8;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .footer-information{
         margin-bottom: 0px;
     }
     .footer-information ul{
         margin-top: 0px;
     }
-    .hide, .text_menu, .upper_headers_search {
+    .hide, .text_menu, .upper_headers_search, .title_menu_responsive {
         display: block;
     }
-    #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .contact, .pionek{
+    #poka1, #poka2, #poka3, #image-poka1, #image-poka2, .contact, .pionek,
+    .arrow-cart, .text-cart{
         display: none;
     }
     .header, .headers{
@@ -539,7 +546,7 @@ ul, ul li {
         width: 100%;
         border-bottom: 1px solid hsla(0,0%,100%,.3);
     }
-    .galleryFooter, .galleryFooterDelivery{
+    .galleryFooter, .galleryFooterDelivery, .cart, .cart img{
         border: none;
     }
     .footerSocialMedia{
@@ -714,14 +721,18 @@ ul, ul li {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 600px) {
-    .upper-headers p, .text-cart, .text_menu, .upper_headers_search span {
+    .upper-headers p, .text-cart, .text_menu, .upper_headers_search span,
+    .title_menu_responsive {
         display: none;
     }
-    .cart img{
-        border: none;
+    .cart-family, .upper-headers, .upper_headers_search{
+        border: none!important;
     }
     .third-header{
         flex-direction: column;
+    }
+    .cart-family{
+        padding: 0;
     }
 }
 @media screen and (max-width: 400px) {
