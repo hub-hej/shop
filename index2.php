@@ -494,7 +494,7 @@
                         <h3>GNIAZDKA, WYŁĄCZNIKI</h3>
 
                         <div class="text-menu">
-                            <ul>
+                            <ul class="menu_container">
                                 <button class="collapsible">SCHNEIDER ELECTRIC</button>
                                 <div class="content">
                                     <p>SPARK</p>

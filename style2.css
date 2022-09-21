@@ -733,12 +733,12 @@ input[type=number]::-webkit-outer-spin-button {
 .box-light-yellow {
     background-color: #F7DA50;
 }
-.one-size, .different-color {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+.one-size, .different-color{
     justify-content: space-between;
     gap: 10px;
     margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .range-size {
     display: flex;
@@ -1061,34 +1061,33 @@ input[type=text]:focus {
 }
 .box_input {
     visibility: hidden;
+    display: none;
 }
 .check_box {
     display: inline-block;
-    line-height: 38px;
+    line-height: 40px;
     border: 1px solid #e1e2e8;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 2px;
     font-family: var(--font-family-secondary);
+    width: 50px;
+    height: 45px;
+    text-align: center;
 }
 .check_box_number {
     display: inline-block;
-    line-height: 38px;
+    line-height: 40px;
     border: 1px solid #e1e2e8;
-    padding-left: 28px;
-    padding-right: 20px;
     padding-top: 2px;
     font-family: var(--font-family-secondary);
+    width: 50px;
+    height: 45px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1800px) {
     .different-color {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 10px;
-    }
-    .one-size {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        display: grid;
     }
     .light-left-menu {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1118,6 +1117,14 @@ input[type=text]:focus {
     .gallery_flex{
         flex-wrap: wrap;
         gap: 10px!important;
+    }
+    .one-size{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+@media screen and (max-width: 1200px) {
+    .one-size{
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
 }
 @media screen and (max-width: 1100px) {
@@ -1164,6 +1171,9 @@ input[type=text]:focus {
     }
     .module_body_dropdown{
         font-size: 25px;
+    }
+    .one-size{
+        grid-template-columns: repeat(3,minmax(0,1fr));
     }
 }
 @media screen and (max-width: 1000px) {
@@ -1281,8 +1291,8 @@ input[type=text]:focus {
         text-align: center;
         gap: 10px;
     }
-    .one-size {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .one-size{
+        grid-template-columns: repeat(3,minmax(0,1fr));
     }
     .left-main-menu {
         overflow: hidden;
@@ -1559,8 +1569,8 @@ input[type=text]:focus {
     .box-mud,
     .box-orange,
     .box-red {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
     .box {
         width: 20px;
@@ -1600,6 +1610,19 @@ input[type=text]:focus {
     .check_box{
         padding-left: 8px;
         padding-right: 8px;
+    }
+    .one-size{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .check_box, .check_box_number{
+        width: 40px;
+        height: 40px;
+    }
+    label{
+        text-align: center;
+    }
+    .different-color{
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
 }
 @media screen and (max-width: 590px) {

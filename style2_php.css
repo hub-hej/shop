@@ -1143,6 +1143,9 @@ input[type=text]:focus {
 .block-first{
     display: block;
 }
+.menu_container, .filters h3, .option-filter ul{
+    margin-bottom: 0!important;
+}
 @media screen and (max-width: 1800px) {
     .different-color {
         grid-template-columns: repeat(3, minmax(0, 1fr));
