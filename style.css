@@ -256,10 +256,12 @@ html {
     background-color: #9BCB3B;
 }
 .arrow-cart img {
-    padding: 25px 10px;
+    padding: 20px 10px;
 }
 .text-cart {
-    padding: 12px;
+    margin-right: 45px;
+    margin-left: 20px;
+    text-align: left;
 }
 .text-cart>.first-text-cart, .text_menu {
     font-family: var(--font-family-primary);
@@ -983,6 +985,9 @@ ul li {
     }
     .checkbox-button__control{
         width: 40px;
+    }
+    .text-main-image p{
+        font-size: 16px;
     }
 }
 @media screen and (min-width: 886px) {

@@ -196,7 +196,9 @@ header{
     margin-left: 5px;
 }
 .text-cart{
-    padding: 12px;
+    margin-right: 45px;
+    margin-left: 20px;
+    text-align: left;
 }
 .text-cart > .first-text-cart{
     font-family: 'Metropolis-Bold';
@@ -209,7 +211,7 @@ header{
     background-color: #9BCB3B;
 }
 .arrow-cart img{
-    padding: 25px 10px;
+    padding: 20px 10px;
 }
 .header {
     width: 100%;
