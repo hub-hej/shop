@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Czas generowania: 05 Wrz 2022, 14:16
+-- Czas generowania: 22 Wrz 2022, 13:33
 -- Wersja serwera: 10.4.21-MariaDB
 -- Wersja PHP: 7.4.25
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `loginsystem`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `adminlogin`
+--
+
+CREATE TABLE `adminlogin` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Zrzut danych tabeli `adminlogin`
+--
+
+INSERT INTO `adminlogin` (`id`, `email`, `password`) VALUES
+(1, 'hubert00@gmail.com', 'Hubercik1');
 
 -- --------------------------------------------------------
 
@@ -63,6 +82,32 @@ INSERT INTO `comments` (`id`, `name`, `email`, `comment`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struktura tabeli dla tabeli `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` int(10) NOT NULL,
+  `comment` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Zrzut danych tabeli `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `phone`, `comment`) VALUES
+(1, 'Hubert Hejnowicz', 'hubert@gmail.com', 492942995, 'Pomocy'),
+(2, 'Hubert Hejnowicz', 'hubert@gmail.com', 492942995, 'Pomocy'),
+(3, 'Damian Michałowski', 'Michalski@wp.pl', 402000310, 'Potrzebuje pomocy'),
+(4, 'Damian Michałowski', 'Michalski@wp.pl', 402000310, 'Potrzebuje pomocy'),
+(5, 'Witold Waszczykiewicz', 'Waszczu@interia.pl', 340324020, 'Mam jeden problem i potrzebuje kontaktu z kimś '),
+(6, 'Dawid Dawidziuk', 'Dawidowski@wp.pl', 402395205, 'Mam problem techniczny');
+
+-- --------------------------------------------------------
+
+--
 -- Struktura tabeli dla tabeli `emails`
 --
 
@@ -76,7 +121,10 @@ CREATE TABLE `emails` (
 --
 
 INSERT INTO `emails` (`id`, `email`) VALUES
-(1, 'lolowiec@wp.pl');
+(1, 'lolowiec@wp.pl'),
+(2, 'hubert00@gmail.com'),
+(3, 'hubert00@gmail.com'),
+(4, 'hubert00@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -100,15 +148,17 @@ INSERT INTO `members` (`id`, `first_name`, `last_name`, `email`, `password`) VAL
 (7, 'Hubert', 'Hubert', 'hubert@wp.pl', '$2y$04$H51UEiyHQ3kpR2KumyboAekQWhb6npMR.2.hJjwxt2qUTo.tYcrya'),
 (8, 'Patryk', 'Lolowiec', 'patrykowski@gmail.com', '$2y$04$6QBSKYUZ9alZsHh.GS.p9eQR8AmMJQchKRIDN3QFvCWkmSDQDY5x2'),
 (9, 'Dawid', 'Dawidowski', 'dawidzik@interia.pl', '$2y$04$U0mI4H0M3GRg1IlupEtDmOoXkM2s0bpFhPM19DBDfTh/kbemEpxFm'),
-(10, 'Dominik', 'Jaki', 'Jakikowiec@wp.pl', '$2y$04$i7nX1v4bY4IP8o0z0hI9duuijrVpx6ZWEZ13Xc3XDj8lN4Kh0LSGm'),
+(10, 'Dominik', 'Jakowski', 'Jakikowiec@wp.pl', '$2y$04$i7nX1v4bY4IP8o0z0hI9duuijrVpx6ZWEZ13Xc3XDj8lN4Kh0LSGm'),
 (11, 'Dominik', 'Jaki', 'jakikowiecki@wp.pl', '$2y$04$64pmFBB7ecBjdULIionyhOm/NgtKaCVNDA5jXe7l5lgZuLdLwJt5u'),
-(12, 'Piotr', 'Piotrowski', 'piotreczek01@gmail.com', '$2y$04$k0Ut3U7n7cxP56h0QoJiCeZGPJoEpoJQb2lteN612hPKGnSwh3uyq'),
-(13, 'Hubert', 'Hejnowicz', 'hubert.hejnowicz010101@gmail.com', '$2y$04$8WJElIcdyLsoj8oF.XNw0.5J.RuzAnnejk7Ud0mGqakpDs5S/NHy.'),
 (14, 'Patryk', 'Patrykowski', 'patryczek02@interia.pl', '$2y$04$y1b7fI1hqW8aDR/0eMh23eNZzkUE1mQqMd.E.8VuM/BEiRzepYhcK'),
-(15, 'Hubert', 'Hubertowski', 'hubert00@gmail.com', '$2y$04$qNytKPnnAndHJTRpXsytIOcBk5.tQopBz0SyIamaEinMVSW25eC4O'),
-(16, 'Pawe?', 'Lewandowski', 'pawelox@gmail.com', '$2y$04$HHkTGJByK/SNxE1a9Y2qiOGO/5oI8w90KXSgksKkE.TyZg4DvdzQy'),
 (17, 'Jarek', 'Jalewski', 'jarek21@wp.pl', '$2y$04$THOWRShZaMTtFc4hS2Ft5eUbVVkG7sd79p7eR9lyeKdzmn2n4bwOi'),
-(18, 'Jakub', 'Piotrowicz', 'Piotrewski@wp.pl', '$2y$04$hX.WQmC7RltfCjCXKw.fmOb1AIxeB1qiT/mJkQZKmwo4mgyMz9peq');
+(18, 'Jakub', 'Piotrowicz', 'Piotrewski@wp.pl', '$2y$04$hX.WQmC7RltfCjCXKw.fmOb1AIxeB1qiT/mJkQZKmwo4mgyMz9peq'),
+(19, 'Hubert', 'Hubertowski', 'hubert00@gmail.com', '$2y$04$bP9a9yGw64OXMcDvvI5HQOSr/dKJJjcZXrCel22i/nNcytB3GHaPa'),
+(21, 'Hubert', 'Hejnowicz', 'hub@wp.pl', '$2y$04$sdLt6uFccNZK0c0flQ5ts.wsdQo1MetdW2uoxtp6mn4iUvVpCoQby'),
+(22, 'Hubert', 'Lop', 'Lopowiec@gmail.com', '$2y$04$sufKpikE7j1ZWg0tnPIDSO2KUJIBrpun9RSLRBlTNOFDrYMBh9OQO'),
+(23, 'Jakub', 'Gasiorowski', 'Gasik@gmail.com', '$2y$04$rpwfxUEggRZ7U1nkNPnfV.HRJRM/3KTpTCCrtUhfs/ajjoTe6vhaC'),
+(24, 'Pawel', 'Lewandowski', 'Lewa@gmail.com', '$2y$04$9liyV6Xm2GOZZU/n6wrAjOH2S2c2m2sK0KIEMlC04kSjNR.2mqp4W'),
+(26, 'Testowy', 'Go??', 'Tester@wp.pl', '$2y$04$QMX0sJAxYBTkldwRNkP0huN7kCI7XxR5I8VxUNiibfiosb/G2sv0G');
 
 -- --------------------------------------------------------
 
@@ -140,25 +190,42 @@ INSERT INTO `phones` (`id`, `phone`) VALUES
 (12, '222222222'),
 (13, '333333333'),
 (14, '444444444'),
-(15, '455555555');
+(15, '455555555'),
+(16, '574000321');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `users`
+-- Struktura tabeli dla tabeli `subscribers`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `subscribers` (
   `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `create_datetime` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `email` varchar(255) NOT NULL,
+  `date_subbed` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Zrzut danych tabeli `subscribers`
+--
+
+INSERT INTO `subscribers` (`id`, `email`, `date_subbed`) VALUES
+(1, 'hubert00@gmail.com', '2022-09-09 10:35:10'),
+(2, 'Piotrewski@wp.pl', '2022-09-09 11:39:40'),
+(3, 'pawel.pawelowski05@interia.pl', '2022-09-09 11:42:25'),
+(4, 'drewndom@wp.pl', '2022-09-09 13:08:27'),
+(5, 'piotreczek01@onet.pl', '2022-09-09 13:25:11'),
+(6, 'Damianowski@wp.pl', '2022-09-09 13:47:09');
 
 --
 -- Indeksy dla zrzutów tabel
 --
+
+--
+-- Indeksy dla tabeli `adminlogin`
+--
+ALTER TABLE `adminlogin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeksy dla tabeli `comments`
@@ -167,6 +234,12 @@ ALTER TABLE `comments`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`,`email`,`comment`) USING HASH,
   ADD UNIQUE KEY `id` (`id`,`name`,`email`,`comment`) USING HASH;
+
+--
+-- Indeksy dla tabeli `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeksy dla tabeli `emails`
@@ -187,14 +260,20 @@ ALTER TABLE `phones`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeksy dla tabeli `users`
+-- Indeksy dla tabeli `subscribers`
 --
-ALTER TABLE `users`
+ALTER TABLE `subscribers`
   ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT dla zrzuconych tabel
 --
+
+--
+-- AUTO_INCREMENT dla tabeli `adminlogin`
+--
+ALTER TABLE `adminlogin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT dla tabeli `comments`
@@ -203,28 +282,34 @@ ALTER TABLE `comments`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
+-- AUTO_INCREMENT dla tabeli `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT dla tabeli `emails`
 --
 ALTER TABLE `emails`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT dla tabeli `phones`
 --
 ALTER TABLE `phones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT dla tabeli `users`
+-- AUTO_INCREMENT dla tabeli `subscribers`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `subscribers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
