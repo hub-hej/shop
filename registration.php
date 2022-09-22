@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
                     
                     $handle->execute($params);
                     
-                    $success = "<script>alert('Użytkownik został pomyślnie utworzony');</script>";
+                    $success = "<script>alert('Użytkownik został pomyślnie stworzony');</script>";
                     header("Location: login.php");
                 }
                 catch(PDOException $e){
