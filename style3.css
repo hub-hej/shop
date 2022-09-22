@@ -1373,6 +1373,7 @@ ul, ul li {
     width: 100%;
     white-space: nowrap;
     overflow: auto;
+    padding: 10px;
 }
 .arrow-down.material-symbols-outlined{
     font-size: 40px;

@@ -315,7 +315,7 @@ header{
     font-size: 16px;
     font-family: var(--font-family-secondary);
     padding-bottom: 30px;
-    display: none;
+    /* display: none; */
 }
 .background-height {
     height: 2px;
@@ -996,6 +996,7 @@ ul li {
     width: 100%;
     white-space: nowrap;
     overflow: auto;
+    padding: 10px;
 }
 .btn {
     border: none;

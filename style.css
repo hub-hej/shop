@@ -160,6 +160,7 @@ html {
     width: 100%;
     white-space: nowrap;
     overflow: auto;
+    padding: 10px;
 }
 .headers li {
     list-style: none;
@@ -411,6 +412,9 @@ html {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+.recomm_produc_hide h2{
+    padding-bottom: 15px;
 }
 .choice-products {
     padding-top: 20px;
