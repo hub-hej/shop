@@ -11,7 +11,7 @@
 }
 [class^="icon-"], [class*=" icon-"] {
     font-family: 'elhurt' !important;
-    speak: never;
+    speak-as: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
