@@ -1112,7 +1112,7 @@ input[type=text]:focus {
     }
     .different-color {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        margin: 10px;
+        margin-right: 10px;
     }
 }
 @media screen and (max-width: 1200px) {
