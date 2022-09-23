@@ -367,7 +367,7 @@ ul, ul li {
     margin-bottom: 15px;
 }
 .footer-information ul {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: left;
 }
 .footer-information h3 {
@@ -389,6 +389,7 @@ ul, ul li {
     margin-bottom: -2px;
     display: block;
     text-align: left;
+    margin-top: 10px;
 }
 .hide {
     display: none;
