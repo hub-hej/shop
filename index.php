@@ -471,8 +471,8 @@
             <div class="container">
                 <div class="main-image">
                     <img src="photos/MaskGroup40.png" alt="Informacje o Sedna" id="image-back" />
-                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)"><span class="icon-icon_05"></span></button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><span class="icon-icon_04"></span></button>
                     <div class="text-main-image">
                         <h3>POZNAJ SEDNA</h3>
                         <h4>Schneider Electric</h4>
@@ -730,21 +730,21 @@
 
                         <div class="icon">
                             <img src="icons/icon_07.png" alt="" />
-                            <div class="icon-text">
+                            <div class="about-text">
                                 SZYBKA WYSYŁKA
                             </div>
                         </div>
 
                         <div class="icon">
                             <img src="icons/icon_08.png" alt="" />
-                            <div class="icon-text">
+                            <div class="about-text">
                                 SZEROKI ASORTYMENT
                             </div>
                         </div>
 
                         <div class="icon">
                             <img src="icons/icon_09.png" alt="" />
-                            <div class=" icon-text">
+                            <div class="about-text">
                                 BEZPIECZNY ZWROT
                             </div>
                         </div>

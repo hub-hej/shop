@@ -720,7 +720,7 @@ input[type="number"].value_number, input[type="email"].value_number{
     color: white;
 }
 .footer-information ul{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: left;
 }
 .footer-information h3 {
@@ -742,6 +742,7 @@ input[type="number"].value_number, input[type="email"].value_number{
     margin-bottom: -2px;
     display: block;
     text-align: left;
+    margin-top: 10px;
 }
 .general_module, .module_body_dropdown{
     font-family: var(--font-family-secondary);

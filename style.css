@@ -1,4 +1,4 @@
-/* @font-face {
+ @font-face {
     font-family: 'elhurt';
     src:  url('../Projekt/fonts/elhurt.eot?aashx2');
     src:  url('../Projekt/fonts/elhurt.eot?aashx2#iefix') format('embedded-opentype'),
@@ -20,7 +20,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-*/
+.icon-icon_04:before {
+    content: "\e903";
+    cursor: pointer;
+}
+.icon-icon_05:before {
+    content: "\e904";
+    cursor: pointer;
+} 
 @font-face {
     font-family: 'Metropolis';
     font-weight: normal;
@@ -455,8 +462,8 @@ html {
 }
 .light {
     margin: 0 auto;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    padding-bottom: 25px;
+    padding-top: 20px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     max-width: 100%;
     height: 100%;
@@ -514,8 +521,8 @@ html {
 .only-button {
     text-align: center;
     background-color: #F2F3F4;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 .footer-information {
     background-color: #323940;
@@ -528,7 +535,7 @@ html {
     color: white;
 }
 .footer-information ul {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: left;
 }
 .footer-information h3 {
@@ -545,6 +552,7 @@ html {
     margin-bottom: -2px;
     display: block;
     text-align: left;
+    margin-top: 10px;
 }
 .footer-information li {
     padding-top: 15px;
@@ -809,7 +817,7 @@ html {
     border: 1px solid hsla(0, 0%, 100%, .3);
     padding: 50px 70px;
 }
-.about-section .icon-text {
+.about-section .about-text{
     margin-top: 20px;
     font-family: var(--font-family-primary);
 }
@@ -941,9 +949,20 @@ ul li {
     display: block;
 }
 .owl-next span, .owl-prev span{
-    font-size: 30px;
-    padding-bottom: 6px;
     cursor: pointer;
+    font-family: 'elhurt'!important;
+    font-size: 0;
+}
+.owl-next span:before, .owl-prev span:before{
+    cursor: pointer;
+    opacity: 1!important;
+    font-size: 15px!important;
+}
+.owl-next span:before{
+    content: "\e903"!important;
+}
+.owl-prev span:before{
+    content: "\e904"!important;
 }
 @media screen and (max-width: 1300px) {
     .logo img {
@@ -1173,7 +1192,7 @@ ul li {
     .icons img{
         width: 40px;
     }
-    .icon-text, .sign-up{
+    .about-text, .sign-up{
         font-size: 13px;
     }
     .menu-elements{
