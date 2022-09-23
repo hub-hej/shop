@@ -20,14 +20,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon-icon_04:before {
-    content: "\e903";
-    cursor: pointer;
-}
-.icon-icon_05:before {
-    content: "\e904";
-    cursor: pointer;
-} 
 @font-face {
     font-family: 'Metropolis';
     font-weight: normal;
@@ -380,6 +372,14 @@ html {
 .w3-display-left:hover, .w3-display-right:hover {
     background-color: #b3b3b3;
 }
+.icon-icon_04:before {
+    content: "\e903";
+    cursor: pointer;
+}
+.icon-icon_05:before {
+    content: "\e904";
+    cursor: pointer;
+} 
 .add-information {
     gap: 20px;
     font-size: 0;
@@ -861,6 +861,22 @@ ul li {
 .owl-carousel .owl-item img{
     display: unset!important;
 }
+.owl-next span, .owl-prev span{
+    cursor: pointer;
+    font-family: 'elhurt'!important;
+    font-size: 0;
+}
+.owl-next span:before, .owl-prev span:before{
+    cursor: pointer;
+    opacity: 1!important;
+    font-size: 15px!important;
+}
+.owl-next span:before{
+    content: "\e903"!important;
+}
+.owl-prev span:before{
+    content: "\e904"!important;
+}
 .login-user p, .register-user p{
     width: 100px;
 }
@@ -947,22 +963,6 @@ ul li {
 }
 .block-first{
     display: block;
-}
-.owl-next span, .owl-prev span{
-    cursor: pointer;
-    font-family: 'elhurt'!important;
-    font-size: 0;
-}
-.owl-next span:before, .owl-prev span:before{
-    cursor: pointer;
-    opacity: 1!important;
-    font-size: 15px!important;
-}
-.owl-next span:before{
-    content: "\e903"!important;
-}
-.owl-prev span:before{
-    content: "\e904"!important;
 }
 @media screen and (max-width: 1300px) {
     .logo img {
