@@ -267,6 +267,7 @@ header{
     color: white;
     background-color: #9BCB3B;
     font-family: var(--font-family-secondary);
+    padding: 1px;
 }
 .arrow-cart {
     background-color: #9BCB3B;
@@ -503,7 +504,12 @@ header{
 .shoppingcart {
     width: 40px;
     background-color: #9BCB3B;
-    padding: 7px;
+    padding: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+.number{
+    z-index: 1;
 }
 .tile-minus,
 .tile-plus {
@@ -712,6 +718,10 @@ input[type=number]::-webkit-outer-spin-button {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.different-color label{
+    width: 50px;
+    height: 50px;
+}
 .box-light-green:hover, .box-light-green:checked, .box-light-blue:hover, .box-light-blue:checked,
 .box-dark:hover, .box-dark:checked, .box-light-orange:hover, .box-light-orange:checked, .box-gray:hover, .box-gray:checked,
 .box-dark-blue:hover, .box-dark-blue:checked, .box-brown:hover, .box-brown:checked, .box-blue:hover, .box-blue:checked, .box-dark-blue:checked,
@@ -816,10 +826,12 @@ input[type="range"]{
 }
 .footer-information ul {
     margin-top: 30px;
+    text-align: left;
 }
 .footer-information h3 {
     border-bottom: 1px solid hsla(0,0%,100%,.3);
     width: 100%;
+    text-align: left;
 }
 .footer-information li {
     padding-top: 15px;
@@ -901,7 +913,7 @@ input[type="range"]{
 .footerSocialMedia__content a:hover{
     border-color: white;
 }
-footer {
+.foot_info {
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -1064,12 +1076,7 @@ input[type=text]:focus {
     height: 45px;
     text-align: center;
 }
-
 @media screen and (max-width: 1800px) {
-    .different-color {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
-    }
     .light-left-menu {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -1101,6 +1108,10 @@ input[type=text]:focus {
     }
     .one-size{
         grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+    .different-color {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 10px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -1267,7 +1278,7 @@ input[type=text]:focus {
         text-align: center;
         margin: 0 auto;
     }
-    footer {
+    .foot_info {
         flex-direction: column;
         text-align: center;
         gap: 10px;
@@ -1549,7 +1560,8 @@ input[type=text]:focus {
     .box-light-yellow,
     .box-mud,
     .box-orange,
-    .box-red {
+    .box-red, 
+    .different-color label {
         width: 35px;
         height: 35px;
     }
@@ -1603,7 +1615,7 @@ input[type=text]:focus {
         text-align: center;
     }
     .different-color{
-        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-template-columns: repeat(3,minmax(0,1fr));
     }
 }
 @media screen and (max-width: 590px) {

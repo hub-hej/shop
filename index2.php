@@ -733,23 +733,56 @@
                         <h3>KOLOR</h3>
 
                         <div class="different-color">
-                            <input type="checkbox" class="box-light-green" />
-                            <input type="checkbox" class="box-light-blue" />
-                            <input type="checkbox" class="box-dark" />
-                            <input type="checkbox" class="box-light-orange" />
-                            <input type="checkbox" class="box-gray" />
+                        <label>
+                                <input type="checkbox" class="box-light-green" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-light-blue" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-dark" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-light-orange" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-gray" />
+                            </label>
 
-                            <input type="checkbox" class="box-dark-blue" />
-                            <input type="checkbox" class="box-brown" />
-                            <input type="checkbox" class="box-blue" />
-                            <input type="checkbox" class="box-light-red" />
-                            <input type="checkbox" class="box-green" />
+                            <label>
+                                <input type="checkbox" class="box-dark-blue" />
+                            </label>
 
-                            <input type="checkbox" class="box-red" />
-                            <input type="checkbox" class="box-orange" />
-                            <input type="checkbox" class="box-dark" />
-                            <input type="checkbox" class="box-mud" />
-                            <input type="checkbox" class="box-light-yellow" />
+                            <label>
+                                <input type="checkbox" class="box-brown" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-blue" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-light-red" />
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="box-green" />
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="box-red" />
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="box-orange" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-dark" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-mud" />
+                            </label>
+                            <label>
+                                <input type="checkbox" class="box-light-yellow" />
+                            </label>
                         </div>
                     </div>
                     <div class="size-filter">
@@ -946,17 +979,17 @@
                         <div class="light" data-category="Parametr1">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/product-1.png" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="two">PROMOCJA</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="available material-symbols-outlined">event_available</span>
                                         <span>1 szt.</span>
                                     </div>
@@ -966,12 +999,12 @@
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -989,18 +1022,18 @@
                         <div class="light" data-category="Parametr2">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
                                 <p class="two">PROMOCJA</p>
-                            </div>
+                            </div>-->
                               <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="available material-symbols-outlined">event_available</span>
                                         <span>1 szt.</span>
                                     </div>
@@ -1010,12 +1043,12 @@
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1034,30 +1067,30 @@
                         <div class="light" data-category="Parametr3">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
                                 <p class="two">PROMOCJA</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="unavailable material-symbols-outlined">event_busy</span>
                                         <span>0 szt.</span>
                                     </div>
 
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1075,17 +1108,17 @@
                         <div class="light" data-category="Parametr4">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="three">POLECAMY</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="unavailable material-symbols-outlined">event_busy</span>
                                         <span>0 szt.</span>
                                     </div>
@@ -1095,12 +1128,12 @@
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1118,17 +1151,17 @@
                         <div class="light" data-category="Parametr5">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="available material-symbols-outlined">event_available</span>
                                         <span>1 szt.</span>
                                     </div>
@@ -1138,12 +1171,12 @@
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1161,18 +1194,18 @@
                         <div class="light" data-category="Parametr6">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
                                 <p class="two">PROMOCJA</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="unavailable material-symbols-outlined">event_busy</span>
                                         <span>0 szt.</span>
                                     </div>
@@ -1182,12 +1215,12 @@
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1205,29 +1238,29 @@
                         <div class="light" data-category="Parametr7">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="two">PROMOCJA</p>
                                 <p class="three">POLECAMY</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="available material-symbols-outlined">event_available</span>
                                         <span>1 szt.</span>
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1245,30 +1278,30 @@
                         <div class="light" data-category="Parametr8">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
                                 <p class="two">PROMOCJA</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="unavailable material-symbols-outlined">event_busy</span>
                                         <span>0 szt.</span>
                                     </div>
 
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1286,17 +1319,17 @@
                         <div class="light" data-category="Parametr9">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="three">POLECAMY</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="unavailable material-symbols-outlined">event_busy</span>
                                         <span>0 szt.</span>
                                     </div>
@@ -1306,12 +1339,12 @@
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1329,18 +1362,18 @@
                         <div class="light" data-category="Parametr10">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
                                 <p class="two">PROMOCJA</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="available material-symbols-outlined">event_available</span>
                                         <span>1 szt.</span>
                                     </div>
@@ -1350,12 +1383,12 @@
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1373,29 +1406,29 @@
                         <div class="light" data-category="Parametr11">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
                                 <p class="two">PROMOCJA</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="available material-symbols-outlined">event_available</span>
                                         <span>1 szt.</span>
                                     </div>
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1413,30 +1446,30 @@
                         <div class="light" data-category="Parametr12">
                             <a href="index3.php" class="link-tag" aria-label="żarówka"></a>
                             <img src="photos/img_06.jpg" alt="Żarówka">
-                            <div class="text-offer">
+                            <!--<div class="text-offer">
                                 <p class="one">NOWOŚĆ</p>
                                 <p class="three">POLECAMY</p>
-                            </div>
+                            </div>-->
                             <div class="text-under-lights">
                                 <a href="index3.php" class="link-tag" aria-label="tekst o żarówce"></a>
-                                <div class="little_title">Philips</div>
+                                <!--<div class="little_title">Philips</div>-->
                                 <h2>ŁĄCZNIK JEDNOBIEGUNOWY</h2>
 
                                 <div class="product_information">
                                     <p>Kod produktu: CW1.01/11</p>
-                                    <div class="icon_info">
+                                    <!--<div class="icon_info">
                                         <span class="unavailable material-symbols-outlined">event_busy</span>
                                         <span>0 szt.</span>
                                     </div>
 
                                     <div class="rabat">
                                         <span>Twój rabat: 32,56%</span>
-                                    </div>
+                                    </div>-->
                                     <br />
-                                    <span>Cena netto: </span>
+                                    <!--<span>Cena netto: </span>-->
                                     <s>656,65 zł</s>
                                     <br />
-                                    <span>Twoja cena netto: </span><b>442,85 zł</b>
+                                    <!--<span>Twoja cena netto: </span>--><b>442,85 zł</b>
                                 </div>
                             </div>
                             <div class="tile-product">
@@ -1550,7 +1583,9 @@
                     <a href="newsletter.php" class="sign-up button6"></i><span>Przejdź dalej </span><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>-->
+            </main>
 
+            <footer>
             <div class="under-footer">
                 <div class="footer-information">
                     <div class="hide-info">
@@ -1706,11 +1741,11 @@
 
                 </div>
             </div>-->
-        </main>
-        <footer>
+        <div class="foot_info">
             <div>Copyright 2022. Wszystkie prawa zastrzeżone</div>
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
-        </footer>
+        </div>
+    </footer>
     </div>
     <script type="text/javascript" src="./scriptsJS/second-index.js"></script>
 </body>

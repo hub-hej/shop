@@ -446,28 +446,28 @@ if(isset($_POST['submit']))
 				<div class="header">
 						<div class="nav-items">
 							<div class="headers">
-								<a class="ex1" href="index2.php" target="_blank"><img src="photos/category-1.png" alt="">ŹRÓDŁA
+								<a class="ex1" href="index2.php" target="_blank"><!--<img src="photos/category-1.png" alt="">-->ŹRÓDŁA
 									ŚWIATŁA</a>
 							</div>
 
 							<div class="headers">
-								<a href="#" target="_blank"><img src="photos/category-5.png" alt="">OŚWIETLENIE WEWNĘTRZNE</a>
+								<a href="#" target="_blank"><!--<img src="photos/category-5.png" alt="">-->OŚWIETLENIE WEWNĘTRZNE</a>
 							</div>
 
 							<div class="headers">
-								<a href="#" target="_blank"><img src="photos/category-6.png" alt="">GNIAZDKA, WYŁACZNIKI</a>
+								<a href="#" target="_blank"><!--<img src="photos/category-6.png" alt="">-->GNIAZDKA, WYŁACZNIKI</a>
 							</div>
 
 							<div class="headers">
-								<a href="#" target="_blank"><img src="photos/category-7.png" alt="">AUTOMATYKA, STEROWANIE</a>
+								<a href="#" target="_blank"><!--<img src="photos/category-7.png" alt="">-->AUTOMATYKA, STEROWANIE</a>
 							</div>
 
 							<div class="headers">
-								<a href="#" target="_blank"><img src="photos/category-8.png" alt="">ROZDZIELANIE I APARATURA</a>
+								<a href="#" target="_blank"><!--<img src="photos/category-8.png" alt="">-->ROZDZIELANIE I APARATURA</a>
 							</div>
 
 							<div class="headers">
-								<a href="#" target="_blank"><img src="photos/category-10.png" alt="">MATERIALY INSTALACYJNE</a>
+								<a href="#" target="_blank"><!--<img src="photos/category-10.png" alt="">-->MATERIALY INSTALACYJNE</a>
 							</div>
 						</div>
 				</div>
@@ -519,7 +519,7 @@ if(isset($_POST['submit']))
 		</div>
 	</main>
 
-		<section>
+		<footer>
 			<div class="under-footer">
 				<div class="footer-information">
 							<div class="hide-info">
@@ -611,7 +611,6 @@ if(isset($_POST['submit']))
 							</div>
 					</div>-->
 			</div>
-		</section>
 
 		<!--<section>
             <div class="footerDetails">
@@ -679,9 +678,10 @@ if(isset($_POST['submit']))
             </div>
             </section>-->
 
-			<footer>
+			<div class="foot_info">
             <div>Coppyright 2022. Wszystkie prawa zastrzeżone</div>
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
+            </div>
         </footer>
 </div>
 <script src="./scriptsJS/login.js"></script>

@@ -169,6 +169,7 @@ header{
     color: white;
     background-color: #9BCB3B;
     font-family: var(--font-family-secondary);
+    padding: 1px;
 }
 .text-on-cart{
     position: absolute;
@@ -209,6 +210,7 @@ header{
     background-color: white;
     height: 100%;
     font-family: var(--font-family-primary);
+    padding: 10px;
 }
 .headers {
     width: fit-content;
@@ -373,7 +375,7 @@ h3 {
     padding: 25px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-footer {
+.foot_info {
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -418,11 +420,13 @@ ul, ul li {
 }
 .footer-information ul {
     margin-top: 30px;
+    text-align: left;
 }
 .footer-information h3 {
     border-bottom: 1px solid hsla(0,0%,100%,.3);
     font-family: var(--font-family-primary);
     width: 100%;
+    text-align: left;
 }
 .footer-information li {
     padding-top: 15px;
@@ -661,7 +665,7 @@ ul, ul li {
     .module_body, .fa-phone-volume{
         font-size: 30px;
     }
-    footer{
+    .foot_info{
     flex-direction: column;
     text-align: center;
     gap: 10px;

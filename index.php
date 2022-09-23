@@ -779,7 +779,7 @@
             </div>
         </section>-->
 
-        <section>
+        <footer>
             <div class="under-footer">
 
                 <div class="footer-information">
@@ -872,7 +872,6 @@
                     </div>
                 </div>-->
             </div>
-        </section>
 
         <!--<section>
             <div class="footerDetails">
@@ -932,10 +931,11 @@
             </div>
         </section>-->
 
-        <footer>
+        <div class="foot_info">
             <div>Copyright 2022. Wszystkie prawa zastrzeżone</div>
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
-        </footer>
+        </div>
+    </footer>
         <script type="text/javascript" src="./scriptsJS/home-page.js"></script>
     </div>
 </body>

@@ -1204,24 +1204,24 @@
                                 <img src="photos/img_06.jpg" alt="Żarówka">
                                 <div class="text-under-lights">
                                     <div class="productTileParam">
-                                        <span class="productParam">Philips</span>
+                                        <!--<span class="productParam">Philips</span>-->
                                         <b>Łącznik jednobiegunowy (moduł) 10AX - kontener 2</b>
                                     </div>
                                     <div class="product_information">
                                         <p>Kod produktu: CW1.01/11</p>
-                                        <div class="productParam-icon">
+                                        <!--<div class="productParam-icon">
                                             <span class="available material-symbols-outlined">event_available</span>
                                             <span>1 szt.</span>
                                         </div>
                                         <div class="productParam-icon">
                                             <span class="material-symbols-outlined">local_shipping</span>
                                             <span>24H</span>
+                                        </div>-->
+                                        <div class="product-pricen">
+                                            <!--<span> Cena netto: 190,24zł</span>--><s>656,85 zł</s>
                                         </div>
                                         <div class="product-pricen">
-                                            <span>Cena netto: 190,24zł</span>
-                                        </div>
-                                        <div class="product-pricen">
-                                            <span>Twoja cena netto: <b>189,43 zł</b></span>
+                                            <!--<span>Twoja cena netto: <b>189,43 zł</b></span>--><b>442,85 zł</b>
                                         </div>
                                     </div>
                                 </div>
@@ -1241,24 +1241,24 @@
                                 <img src="photos/img_06.jpg" alt="Żarówka">
                                 <div class="text-under-lights">
                                     <div class="productTileParam">
-                                        <span class="productParam">Philips</span>
+                                        <!--<span class="productParam">Philips</span>-->
                                         <b>Łącznik jednobiegunowy (moduł) 10AX 4</b>
                                     </div>
                                     <div class="product_information">
                                         <p>Kod produktu: CW1.01/11</p>
-                                        <div class="productParam-icon">
+                                        <!--<div class="productParam-icon">
                                             <span class="unavailable material-symbols-outlined">event_busy</span>
                                             <span>0 szt.</span>
                                         </div>
                                         <div class="productParam-icon">
                                             <span class="material-symbols-outlined">local_shipping</span>
                                             <span>24H</span>
+                                        </div>-->
+                                        <div class="product-pricen">
+                                            <!--<span>Cena netto: 186,99 zł</span>--><s>656,85 zł</s>
                                         </div>
                                         <div class="product-pricen">
-                                            <span>Cena netto: 186,99 zł</span>
-                                        </div>
-                                        <div class="product-pricen">
-                                            <span>Twoja cena netto: <b>179,89 zł</b></span>
+                                            <!--<span>Twoja cena netto: <b>179,89 zł</b></span>--><b>442,85 zł</b>
                                         </div>
                                     </div>
                                 </div>
@@ -1278,24 +1278,24 @@
                                 <img src="photos/img_06.jpg" alt="Żarówka">
                                 <div class="text-under-lights">
                                     <div class="productTileParam">
-                                        <span class="productParam">Philips</span>
+                                        <!--<span class="productParam">Philips</span>-->
                                         <b>Łącznik jednobiegunowy (moduł) 10AX 5</b>
                                     </div>
                                     <div class="product_information">
                                         <p>Kod produktu: CW1.01/11</p>
-                                        <div class="productParam-icon">
+                                        <!--<div class="productParam-icon">
                                             <span class="available material-symbols-outlined">event_available</span>
                                             <span>1 szt.</span>
                                         </div>
                                         <div class="productParam-icon">
                                             <span class="material-symbols-outlined">local_shipping</span>
                                             <span>24H</span>
+                                        </div>-->
+                                        <div class="product-pricen">
+                                            <!--<span>Cena netto: 370,21 zł</span>--><s>656,85 zł</s>
                                         </div>
                                         <div class="product-pricen">
-                                            <span>Cena netto: 370,21 zł</span>
-                                        </div>
-                                        <div class="product-pricen">
-                                            <span>Twoja cena netto: <b>365,85 zł</b></span>
+                                            <!--<span>Twoja cena netto: <b>365,85 zł</b></span>--><b>442,85 zł</b>
                                         </div>
                                     </div>
                                 </div>
@@ -1315,24 +1315,24 @@
                                 <img src="photos/img_06.jpg" alt="Żarówka">
                                 <div class="text-under-lights">
                                     <div class="productTileParam">
-                                        <span class="productParam">Philips</span>
+                                        <!--<span class="productParam">Philips</span>-->
                                         <b>Łącznik jednobiegunowy (moduł) 10AX 6</b>
                                     </div>
                                     <div class="product_information">
                                         <p>Kod produktu: CW1.01/11</p>
-                                        <div class="productParam-icon">
+                                        <!--<div class="productParam-icon">
                                             <span class="available material-symbols-outlined">event_available</span>
                                             <span>1 szt.</span>
                                         </div>
                                         <div class="productParam-icon">
                                             <span class="material-symbols-outlined">local_shipping</span>
                                             <span>24H</span>
+                                        </div>-->
+                                        <div class="product-pricen">
+                                            <!--<span>Cena netto: 278,76 zł</span>--><s>656,85 zł</s>
                                         </div>
                                         <div class="product-pricen">
-                                            <span>Cena netto: 278,76 zł</span>
-                                        </div>
-                                        <div class="product-pricen">
-                                            <span>Twoja cena netto: <b>276,42 zł</b></span>
+                                            <!--<span>Twoja cena netto: <b>276,42 zł</b></span>--><b>442,85 zł</b>
                                         </div>
                                     </div>
                                 </div>
@@ -1352,24 +1352,24 @@
                                 <img src="photos/img_06.jpg" alt="Żarówka">
                                 <div class="text-under-lights">
                                     <div class="productTileParam">
-                                        <span class="productParam">Philips</span>
+                                        <!--<span class="productParam">Philips</span>-->
                                         <b>Łącznik jednobiegunowy (moduł) 10AX 7</b>
                                     </div>
                                     <div class="product_information">
                                         <p>Kod produktu: CW1.01/11</p>
-                                        <div class="productParam-icon">
+                                        <!--<div class="productParam-icon">
                                             <span class="unavailable material-symbols-outlined">event_busy</span>
                                             <span>0 szt.</span>
                                         </div>
                                         <div class="productParam-icon">
                                             <span class="material-symbols-outlined">local_shipping</span>
                                             <span>24H</span>
+                                        </div>-->
+                                        <div class="product-pricen">
+                                            <!--<span>Cena netto: 221,34 zł</span>--><s>656,85 zł</s>
                                         </div>
                                         <div class="product-pricen">
-                                            <span>Cena netto: 221,34 zł</span>
-                                        </div>
-                                        <div class="product-pricen">
-                                            <span>Twoja cena netto: <b>220,43 zł</b></span>
+                                            <!--<span>Twoja cena netto: <b>220,43 zł</b></span>--><b>442,85 zł</b>
                                         </div>
                                     </div>
                                 </div>
@@ -1414,8 +1414,9 @@
                     </div>
                 </div>
             </section>-->
+            </main>
 
-            <section>
+            <footer>
                 <div class="under-footer">
                     <div class="footer-information">
                         <div class="hide-info">
@@ -1507,7 +1508,6 @@
                         </div>
                     </div>-->
                 </div>
-            </section>
 
             <!--<section>
                 <div class="footerDetails">
@@ -1576,10 +1576,10 @@
                     </div>
                 </div>
             </section>-->
-        </main>
-        <footer>
+        <div class="foot_info">
             <div>Copyright 2022. Wszystkie prawa zastrzeżone</div>
             <div>Agencja Interaktywna [ti] Powered By 2ClickShop</div>
+        </div>
         </footer>
     </div>
     <script src="./scriptsJS/third-index.js"></script>
